@@ -1,0 +1,35 @@
+[
+  {
+    "scope": "https://api2.appsflyer.com:443",
+    "method": "POST",
+    "path": "/inappevent/com.dave",
+    "body": {
+      "appsflyer_id": "some-appflyer-id",
+      "advertising_id": "some-difa",
+      "customer_user_id": 1,
+      "eventName": "advance disbursed",
+      "eventValue": "{\"af_revenue\":4.99}",
+      "eventCurrency": "USD",
+      "ip": "some.ip",
+      "eventTime": "2020-07-06 23:53:36.000",
+      "af_events_api": "true",
+      "json": true
+    },
+    "status": 200,
+    "response": "ok",
+    "rawHeaders": [
+      "Content-Type",
+      "application/octet-stream",
+      "Date",
+      "Tue, 07 Jul 2020 00:08:56 GMT",
+      "Server",
+      "http-kit",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains",
+      "Content-Length",
+      "2",
+      "Connection",
+      "Close"
+    ]
+  }
+]

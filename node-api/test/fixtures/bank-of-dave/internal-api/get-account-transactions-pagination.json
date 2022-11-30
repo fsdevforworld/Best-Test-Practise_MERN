@@ -1,0 +1,172 @@
+[
+  {
+    "scope": "https://bank-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/internal-api/v1/bank-accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01+07%3A00%3A00&endsAt=2020-03-26+06%3A59%3A59&page=1&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "transactions": [
+        {
+          "id": "2dee9c11-40f2-4692-8453-85d0f6745982",
+          "amount": 10.23,
+          "isDirectDeposit": false,
+          "transactedAt": "2020-03-25T01:53:07.000Z",
+          "status": "pending",
+          "name": "Dave",
+          "transportMethod": "UNKNOWN"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "0cafb065-d1b6-4d7b-9ff4-35c0ad6964ed",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:16 GMT",
+      "Content-Length",
+      "855",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://bank-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/internal-api/v1/bank-accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01+07%3A00%3A00&endsAt=2020-03-26+06%3A59%3A59&page=2&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "transactions": [
+        {
+          "id": "d86fe335-478a-4f1f-94d9-92ae274a6c17",
+          "amount": -0.05,
+          "isDirectDeposit": false,
+          "transactedAt": "2020-03-25T01:53:05.000Z",
+          "status": "pending",
+          "name": "Dave",
+          "transportMethod": "UNKNOWN"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "0cafb065-d1b6-4d7b-9ff4-35c0ad6964ed",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:16 GMT",
+      "Content-Length",
+      "855",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://bank-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/internal-api/v1/bank-accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01+07%3A00%3A00&endsAt=2020-03-26+06%3A59%3A59&page=3&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "transactions": [
+        {
+          "id": "105ea8f1-a7c0-424a-ad1e-fdcce37a190d",
+          "amount": -0.05,
+          "isDirectDeposit": false,
+          "transactedAt": "2020-03-25T01:52:28.000Z",
+          "status": "settled",
+          "name": "Dave",
+          "transportMethod": "UNKNOWN"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "0cafb065-d1b6-4d7b-9ff4-35c0ad6964ed",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:16 GMT",
+      "Content-Length",
+      "855",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://bank-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/internal-api/v1/bank-accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01+07%3A00%3A00&endsAt=2020-03-26+06%3A59%3A59&page=4&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "transactions": [
+        {
+          "id": "1c03c395-502c-417c-ae3a-d4631ac68749",
+          "amount": 0.05,
+          "isDirectDeposit": false,
+          "transactedAt": "2020-03-25T01:51:55.000Z",
+          "status": "pending",
+          "name": "Dave",
+          "transportMethod": "UNKNOWN"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "0cafb065-d1b6-4d7b-9ff4-35c0ad6964ed",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:16 GMT",
+      "Content-Length",
+      "855",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://bank-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/internal-api/v1/bank-accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01+07%3A00%3A00&endsAt=2020-03-26+06%3A59%3A59&page=5&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "transactions": []
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "0cafb065-d1b6-4d7b-9ff4-35c0ad6964ed",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:16 GMT",
+      "Content-Length",
+      "855",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

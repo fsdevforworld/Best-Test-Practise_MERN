@@ -1,0 +1,32 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "GET",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/transactions/T4ECOVMVCQGO2aV6k6vYGg",
+    "body": "",
+    "status": 200,
+    "response": {
+      "SC": 200,
+      "EC": "0",
+      "referenceID": "test-ref-4",
+      "network": "Visa",
+      "networkRC": "00",
+      "status": "COMPLETED",
+      "approvalCode": "123034",
+      "amount": "0.10",
+      "last4": "9990"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Tue, 19 Feb 2019 20:48:30 GMT",
+      "Content-Length",
+      "156",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  }
+]

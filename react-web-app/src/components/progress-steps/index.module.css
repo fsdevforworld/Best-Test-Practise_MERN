@@ -1,0 +1,86 @@
+.steps {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.stepsItem {
+  padding: 0;
+  position: relative;
+  float: left;
+  width: 33%;
+}
+
+.stepsItem0 {
+  text-align: start;
+}
+
+.stepsItem1 {
+  text-align: center;
+}
+
+.stepsItem2 {
+  text-align: end;
+}
+
+.stepsItemContent {
+  display: inline-grid;
+}
+
+.stepsItemIcon {
+  background: var(--white);
+  color: var(--gray2);
+  border-radius: 100%;
+  width: 14px;
+  height: 14px;
+  margin: 0 auto 8px 0;
+  z-index: 1;
+  border: 2px solid;
+}
+
+.stepsItemText {
+  display: block;
+  font-size: 10px;
+  color: var(--gray4);
+  text-transform: uppercase;
+}
+
+.stepsItemLine {
+  display: inline-block;
+  height: 1px;
+  width: 140%;
+  float: left;
+  position: absolute;
+  top: 8px;
+  border-bottom: 2px dashed var(--gray2);
+}
+
+.stepsItemLine1 {
+  left: -95%;
+}
+
+.stepsItemLine2 {
+  left: -45%;
+}
+
+.stepsItemActive .stepsItemIcon {
+  border-color: var(--green3);
+}
+
+.stepsItemActive .stepsItemText {
+  color: var(--black);
+  font-weight: bold;
+}
+
+.stepsItemActive .stepsItemLine,
+.stepsItemCompleted .stepsItemLine {
+  border-bottom: 2px solid var(--green3);
+}
+
+.stepsItemCompleted .stepsItemIcon {
+  background-image: url('./completed.svg');
+  color: var(--green3);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

@@ -1,0 +1,898 @@
+{
+  "advanceApproval": {
+    "domain": "advance-approval:7777",
+    "serviceName": "advance-approval",
+    "migratedServiceName": "advance-approval:7777",
+    "servicePort": 7777,
+    "serviceTestRatio": 0
+  },
+  "amplitude": {
+    "apiKey": "secret:amplitude-apiKey",
+    "authToken": "secret:amplitude-authToken",
+    "secretKey": null
+  },
+  "appsflyer": {
+    "url": "https://api2.appsflyer.com/inappevent",
+    "gdprUrl": "https://hq1.appsflyer.com/gdpr/opengdpr_requests",
+    "pullApiToken": "secret:appsflyer-pullApiToken",
+    "ios": {
+      "devKey": "KLwkHu8BmvZsLBPnZUiyj9",
+      "appId": "id1193801909"
+    },
+    "android": {
+      "devKey": "iNUbh9H6nAtrPPg6mXzXwT",
+      "appId": "com.dave"
+    }
+  },
+  "appbot": {
+    "androidAppId": "1645754",
+    "iOSAppId": "1415129",
+    "username": "secret:appbot-username",
+    "password": "secret:appbot-password"
+  },
+  "aether": {
+    "servicePort": 7338
+  },
+  "directoryApi": {
+    "adminEmail": "mo@dave.com"
+  },
+  "heath": {
+    "domain": "heath:7447",
+    "serviceName": "heath",
+    "migratedServiceName": "heath:7447",
+    "servicePort": 7447,
+    "serviceTestRatio": 0,
+    "balanceLogTopic": "daily-balance-log",
+    "bankTransactionTopic": "bank-transaction-backfill",
+    "balanceLogServiceDomain": "balance-log-service-nodeport",
+    "batchedFetchBatchSize": 50,
+    "dualReadModeHundrethPercent": 0,
+    "migratedHundrethPercent": 0
+  },
+  "sombra": {
+    "stubResponse": "true"
+  },
+  "mxAtrium": {
+    "experiment": {
+      "active": "FALSE",
+      "limit": "0"
+    },
+    "apiKey": "secret:mxAtrium-apiKey",
+    "clientId": "secret:mxAtrium-clientId",
+    "baseUrl": "https://vestibule.mx.com",
+    "servicePort": 7298,
+    "webhookBasicAuth": {
+      "username": "test-username",
+      "password": "test-password"
+    }
+  },
+  "bankingDirect": {
+    "port": 7299,
+    "plaidSecret": "secret:bankingDirect-plaidSecret",
+    "plaidClientId": "PLAID"
+  },
+  "braze": {
+    "trackUrl": "https://rest.iad-03.braze.com",
+    "key": "secret:braze-key",
+    "sdkAuthentication": "secret:braze-sdk-authentication-private-key",
+    "plaidDownCampaign": {
+      "ios": "5baa8394-f95a-4bb4-8f16-e15159c3cfe4",
+      "android": "95fd8c22-01fd-5398-a9c9-299d80f395b7"
+    },
+    "paybackAdvanceFormCampaign": "5e130e86-27a7-405b-4242-38ce6561f1d7"
+  },
+  "cloudDebugger": {
+    "enabled": false
+  },
+  "crons": {
+    "reimbursementStart": 30,
+    "yamlPath": "infra/crons"
+  },
+  "datadog": {
+    "traceAgentHostname": "localhost",
+    "enabled": "false"
+  },
+  "datastore": {
+    "endpoint": "http://localhost:58000"
+  },
+  "dave": {
+    "website": {
+      "url": "https://dave.com"
+    },
+    "bank": {
+      "url": "http://host.docker.internal:3000",
+      "synapseEndpoints": {
+        "user": {
+          "patch": "/users/patch"
+        },
+        "transaction": {
+          "patch": "/transactions/patch",
+          "post": "/transactions/post"
+        }
+      }
+    },
+    "bankOfDaveInternalApi": {
+      "secret": "for-overdraft-eyes-only",
+      "reverseTransactionAvailable": false,
+      "url": "https://bank-api-staging.trydave.com"
+    },
+    "cookie": {
+      "secret": "hooloovoo"
+    },
+    "jwt": {
+      "secret": "foo",
+      "expiration": 3600
+    },
+    "api": {
+      "url": "http://localhost:8080"
+    },
+    "vpn": {
+      "ip": "104.197.239.227"
+    }
+  },
+  "db": {
+    "connectionLimit": 3,
+    "user": "dev",
+    "password": "password123",
+    "host": "mysql",
+    "port": "3306",
+    "name": "dave_dev",
+    "socketpath": null,
+    "logQueries": false,
+    "useReadReplica": false,
+    "replica": {
+      "host": "mysql",
+      "port": "3306",
+      "socketpath": null
+    }
+  },
+  "deploymentInfo": {
+    "branch": "development",
+    "commitRef": "HEAD",
+    "lastUpdated": "NOW"
+  },
+  "empyr": {
+    "url": "https://test.mogl.com/",
+    "clientId": "secret:empyr-clientId",
+    "clientSecret": "secret:empyr-clientSecret"
+  },
+  "subscriptions": {
+    "retreivePendingPaymentWindow": "1",
+    "preferAchBalanceThreshold": 75
+  },
+  "facebook": {
+    "accessKey": "secret:facebook-accessKey",
+    "pixelId": "2495100193841454"
+  },
+  "firebase": {
+    "databaseUrl": "https://dave-staging-173321.firebaseio.com",
+    "credentials": {
+      "type": "service_account",
+      "project_id": "dave-staging-173321",
+      "private_key_id": "secret:firebase-credentials-private_key_id",
+      "private_key": "secret:firebase-credentials-private_key",
+      "client_email": "firebase-adminsdk-brzmn@dave-staging-173321.iam.gserviceaccount.com",
+      "client_id": "secret:firebase-credentials-client_id",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "secret:firebase-credentials-client_x509_cert_url",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-brzmn%40dave-staging-173321.iam.gserviceaccount.com"
+    },
+    "dbPrefix": "dev",
+    "dbBase": "dave-staging-173321",
+    "remoteConfig": {
+      "host": "https://firebaseremoteconfig.googleapis.com",
+      "path": "/v1/projects/dave-staging-173321/remoteConfig",
+      "scopes": "https://www.googleapis.com/auth/firebase.remoteconfig"
+    }
+  },
+  "fraud": {
+    "heuristics": {
+      "oneTimePayment": {
+        "maxPayments": 8,
+        "timeWindowDays": 30
+      },
+      "oneTimePaymentAttempts": {
+        "maxAttempts": 15,
+        "timeWindowDays": 30
+      }
+    }
+  },
+  "risk": {
+    "totalEmailChanges": {
+      "lookbackDays": 90
+    },
+    "addressControl": {
+      "numberOfAddressUpdatesAllowed": 3,
+      "addressControlEnabled": true,
+      "passedKycLockDays": 90,
+      "addressUpdatesLookbackDays": 30
+    }
+  },
+  "helpCenter": {
+    "bankingRedisKey": "help-center:banking",
+    "overdraftRedisKey": "help-center:overdraft",
+    "advanceRedisKey": "help-center:advance"
+  },
+  "internal-auth": {
+    "clientId": "secret:internalAuth-clientId",
+    "secret": "secret:internalAuth-secret"
+  },
+  "internalDashboardApi": {
+    "servicePort": 7070,
+    "oauth2ClientId": "secret:internalDashboardApi-oauth2ClientId",
+    "dashboardBulkUpdate": {
+      "processChunkSize": 100,
+      "maximumCSVFileSizeBytes": 1000000000,
+      "maximumNumberOfRows": 100000,
+      "rowProcessingBatchSize": 100,
+      "outputCSVFileDelimiter": ",",
+      "gCloudAuthURLBase": "https://storage.cloud.google.com"
+    }
+  },
+  "goalsApi": {
+    "basePath": "https://bank-goals-api-staging-internal.trydave.com/internal",
+    "secret": "secret:goalsInternalApi-apiKey"
+  },
+  "overdraftApi": {
+    "basePath": "https://overdraft-staging-internal.trydave.com/internal",
+    "secret": "secret:overdraftInternalApi-apiKey"
+  },
+  "identityApi": {
+    "basePath": "https://identity-api-staging.trydave.com",
+    "clientId": "secret:identity-clientId",
+    "clientSecret": "secret:identity-clientSecret"
+  },
+  "googleCloud": {
+    "location": "us-central1",
+    "projectId": "dave-staging-173321",
+    "tasks": {
+      "signingEmail": "task-enqueuer-poc@dave-staging-173321.iam.gserviceaccount.com",
+      "handlers": {
+        "performACHCollection": {
+          "handlerURL": "https://staging-task-handler.trydave.com/performACHCollection",
+          "queueName": "sample-queue-poc"
+        },
+        "updateBraze": {
+          "handlerURL": "https://staging-task-handler.trydave.com/updateBraze",
+          "queueName": "broadcast-braze-event"
+        },
+        "updateSynapsepayUser": {
+          "handlerURL": "https://staging-task-handler.trydave.com/updateSynapsepayUser",
+          "queueName": "sample-queue-poc"
+        },
+        "performFraudCheck": {
+          "handlerURL": "https://staging-task-handler.trydave.com/performFraudCheck",
+          "queueName": "sample-queue-poc"
+        },
+        "refreshSanctionsScreening": {
+          "handlerURL": "https://staging-task-handler.trydave.com/refreshSanctionsScreening",
+          "queueName": "sample-queue-poc"
+        },
+        "updatePendingSubscriptionPayment": {
+          "handlerURL": "https://staging-task-handler.trydave.com/updatePendingSubscriptionPayment",
+          "queueName": "sample-queue-poc"
+        },
+        "collectAfterBankAccountUpdate": {
+          "handlerURL": "https://staging-task-handler.trydave.com/collectAfterBankAccountUpdate",
+          "queueName": "sample-queue-poc"
+        },
+        "collectAfterBankAccountUpdateScheduled": {
+          "handlerURL": "https://staging-task-handler.trydave.com/collectAfterBankAccountUpdateScheduled",
+          "queueName": "sample-queue-poc"
+        },
+        "setSubscriptionDueDate": {
+          "handlerURL": "https://staging-task-handler.trydave.com/setSubscriptionDueDate",
+          "queueName": "sample-queue-poc"
+        },
+        "matchDisbursementBankTransaction": {
+          "handlerURL": "https://staging-task-handler.trydave.com/matchDisbursementBankTransaction",
+          "queueName": "sample-queue-poc"
+        },
+        "updateExpectedTransactions": {
+          "handlerURL": "https://staging-task-handler.trydave.com/updateExpectedTransactions",
+          "queueName": "sample-queue-poc"
+        },
+        "updatePaymentStatus": {
+          "handlerURL": "https://staging-task-handler.trydave.com/updatePaymentStatus",
+          "queueName": "sample-queue-poc"
+        },
+        "updateReimbursementStatus": {
+          "handlerURL": "https://staging-task-handler.trydave.com/updateReimbursementStatus",
+          "queueName": "sample-queue-poc"
+        },
+        "collectPastDueSubscription": {
+          "handlerURL": "https://staging-task-handler.trydave.com/collectPastDueSubscription",
+          "queueName": "sample-queue-poc"
+        },
+        "performPredictedPaycheckCollection": {
+          "handlerURL": "https://staging-task-handler.trydave.com/performPredictedPaycheckCollection",
+          "queueName": "sample-queue-poc"
+        },
+        "broadcastAdvanceApproval": {
+          "handlerURL": "https://staging-task-handler.trydave.com/broadcastAdvanceApproval",
+          "queueName": "sample-queue-poc"
+        },
+        "broadcastAdvanceDisbursement": {
+          "handlerURL": "https://staging-task-handler.trydave.com/broadcastAdvanceDisbursement",
+          "queueName": "sample-queue-poc"
+        },
+        "broadcastAdvancePayment": {
+          "handlerURL": "https://staging-task-handler.trydave.com/broadcastAdvancePayment",
+          "queueName": "sample-queue-poc"
+        },
+        "broadcastAdvanceTipChanged": {
+          "handlerURL": "https://staging-task-handler.trydave.com/broadcastAdvanceTipChanged",
+          "queueName": "sample-queue-poc"
+        },
+        "broadcastPaymentChanged": {
+          "handlerURL": "https://staging-task-handler.trydave.com/broadcastPaymentChanged",
+          "queueName": "sample-queue-poc"
+        },
+        "broadcastBankDisconnect": {
+          "handlerURL": "https://staging-task-handler.trydave.com/broadcastBankDisconnect",
+          "queueName": "sample-queue-poc"
+        },
+        "sideHustleNotifications": {
+          "handlerURL": "https://staging-task-handler.trydave.com/sideHustleNotifications",
+          "queueName": "sample-queue-poc"
+        },
+        "subscriptionCollectionPredictedPayday": {
+          "handlerURL": "https://staging-task-handler.trydave.com/subscriptionCollectionPredictedPayday",
+          "queueName": "sample-queue-poc"
+        },
+        "tivanGatherAdvance": {
+          "handlerURL": "https://taneleer.staging.trydave.com/advance/gathering",
+          "queueName": "tivan-gather"
+        },
+        "tivanGatherAdvanceUseCurrentBalance": {
+          "handlerURL": "https://taneleer.staging.trydave.com/advance/gathering",
+          "queueName": "tivan-gather-use-current-balance"
+        },
+        "tivanGatherApiAdvance": {
+          "handlerURL": "https://taneleer.staging.trydave.com/advance/gathering-once",
+          "queueName": "tivan-gather-api-tasks"
+        },
+        "stitchOldAccountTransactions": {
+          "handlerURL": "https://staging-task-handler.trydave.com/stitchOldAccountTransactions",
+          "queueName": "sample-queue-poc"
+        },
+        "updateDisbursementStatus": {
+          "handlerURL": "https://staging-task-handler.trydave.com/updateDisbursementStatus",
+          "queueName": "sample-queue-poc"
+        },
+        "initiateBankConnectionRefresh": {
+          "handlerURL": "https://staging-task-handler.trydave.com/initiateBankConnectionRefresh",
+          "queueName": "sample-queue-poc"
+        },
+        "processBankConnectionRefresh": {
+          "handlerURL": "https://staging-task-handler.trydave.com/processBankConnectionRefresh",
+          "queueName": "sample-queue-poc"
+        },
+        "completeBankConnectionRefresh": {
+          "handlerURL": "https://staging-task-handler.trydave.com/completeBankConnectionRefresh",
+          "queueName": "sample-queue-poc"
+        },
+        "processDashboardBulkUpdate": {
+          "handlerURL": "https://staging-task-handler.trydave.com/processDashboardBulkUpdate",
+          "queueName": "sample-queue-poc"
+        }
+      }
+    }
+  },
+  "gke": {
+    "taskPoolName": "task-pool-high-cpu",
+    "dockerImageName": "us.gcr.io/dave-173321/api-dave-v2:latest"
+  },
+  "kms": {
+    "keyPath": "projects/dave-173321/locations/global/keyRings/staging/cryptoKeys/api"
+  },
+  "k8s": {
+    "environment": "development",
+    "cluster": "local",
+    "projectId": "local",
+    "name": "development",
+    "namespace": "default",
+    "nodeName": "local",
+    "logLevel": "debug"
+  },
+  "liveChat": {
+    "agentCountRedisKey": "live-chat:agent-count"
+  },
+  "loomisApi": {
+    "basePath": null,
+    "serviceName": "loomis-api",
+    "servicePort": 7337,
+    "timeout": {
+      "response": 60000,
+      "deadline": 70000
+    },
+    "migrationMode": {
+      "payments": {
+        "mode": "unmigrated",
+        "dualReadRollout": 0,
+        "migratedRollout": 0
+      },
+      "paymentMethods": {
+        "mode": "unmigrated",
+        "dualReadRollout": 0,
+        "migratedRollout": 0
+      }
+    },
+    "migratedHost": "loomis.trydave.com",
+    "migratedPort": 80
+  },
+  "minAppVersion": {
+    "sendVerification": "2.16.8",
+    "login": "2.16.8",
+    "resetPassword": "2.16.8",
+    "phoneNumberChange": "2.16.8",
+    "config": "2.47.0",
+    "identityVerification": "2.18.2"
+  },
+  "phoneNumbers": {
+    "easyVerification": false,
+    "verificationTtl": 600,
+    "shouldSendVerificationCode": true,
+    "triggerContractChange": [],
+    "contractChangeTtl": 86400
+  },
+  "plaid": {
+    "maxUpdaterMessages": 10,
+    "clientId": "secret:plaid-clientId",
+    "publicKey": "secret:plaid-publicKey",
+    "secret": "secret:plaid-secret",
+    "environment": "sandbox",
+    "balanceCheckLimiterRatio": 1,
+    "balanceCheckLimiterPrefix": "default",
+    "webhookUrl": "https://staging.trydave.com/v1/bank/plaid_webhook"
+  },
+  "pubsub": {
+    "subscriptionPrefix": "",
+    "topicPrefix": "",
+    "advanceCollectionTopic": "collect-advance",
+    "advanceCollectionSubscriptionName": "collect-advance",
+    "scheduledAdvanceCollectionTopic": "collect-scheduled-advance",
+    "scheduledAdvanceCollectionSubscriptionName": "collect-scheduled-advance",
+    "tinyMoneyHardPullCollectionTopic": "collect-tiny-money-advance-hard-pull",
+    "tinyMoneyHardPullCollectionSubscriptionName": "collect-tiny-money-advance-hard-pull",
+    "balanceLog": "daily-balance-log",
+    "advanceProcessorMaxMessages": 10,
+    "scheduledAdvanceProcessorMaxMessages": 10,
+    "tinyMoneyHardPullCollectionMaxMessages": 10,
+    "advanceCollectionPublishConcurrency": 10,
+    "scheduledAdvanceCollectionPublishConcurrency": 10,
+    "tinyMoneyHardPullCollectionPublishConcurrency": 10,
+    "snowflakePubsub": {
+      "bankConnectionUpdate": "bank_connection_update"
+    },
+    "bankOfDave": {
+      "bankTransactions": {
+        "topicName": "bod-bank-transactions",
+        "subscriptionName": "bod-bank-transactions"
+      },
+      "insufficientFundsTransaction": {
+        "topicName": "bod-broadcast-insufficient-funds-transaction",
+        "subscriptionName": "bod-overdraft-api-broadcast-insufficient-funds-transaction"
+      },
+      "projectId": "dave-staging-173321"
+    },
+    "covid19Stimulus": {
+      "enabled": false
+    },
+    "synapsepay": {
+      "updateUser": {
+        "topicName": "synapsepay-update-user",
+        "subscriptionName": "overdraft-synapsepay-update-user"
+      }
+    }
+  },
+  "redis": {
+    "api": {
+      "host": "redis",
+      "port": "6379",
+      "db": "0"
+    },
+    "jobProcessor": {
+      "host": "redis",
+      "port": "6379",
+      "db": "0"
+    }
+  },
+  "ml": {
+    "useBackgroundScoring": "TRUE",
+    "underwritingEnabled": true,
+    "underwriting": {
+      "accountAgeFailureGMV1": {
+        "modelType": "global_model_random_sample",
+        "scoreLimits": {
+          "75": 0.99
+        },
+        "oracle": {
+          "version": {
+            "major": 1,
+            "minor": 0
+          },
+          "timeout": 10000
+        }
+      },
+      "incomeValidationFailureGMV1": {
+        "modelType": "global_model_random_sample",
+        "scoreLimits": "calculated",
+        "oracle": {
+          "version": {
+            "major": 1,
+            "minor": 0
+          },
+          "timeout": 10000
+        }
+      },
+      "incomeValidationSuccessGMV1": {
+        "modelType": "global_model_random_sample",
+        "scoreLimits": "calculated",
+        "oracle": {
+          "version": {
+            "major": 1,
+            "minor": 0
+          },
+          "timeout": 10000
+        }
+      },
+      "daveBankingGMV1": {
+        "modelType": "global_model_random_sample",
+        "scoreLimits": "calculated",
+        "oracle": {
+          "version": {
+            "major": 1,
+            "minor": 0
+          },
+          "timeout": 10000
+        }
+      },
+      "incomeValidationNodeSingleObservation": {
+        "experiment": {
+          "active": false
+        }
+      },
+      "accountAgeFailureUWv2": {
+        "modelType": "global_model_v2",
+        "scoreLimits": {
+          "75": 0.953
+        },
+        "oracle": {
+          "version": {
+            "major": 2,
+            "minor": 0,
+            "tag": "o2-alpha-3"
+          },
+          "timeout": 10000
+        }
+      },
+      "daveBankingUWv2": {
+        "modelType": "global_model_v2",
+        "scoreLimits": {
+          "0": {
+            "200": 0.571,
+            "100": 0.434
+          },
+          "1": {
+            "200": 0.854,
+            "100": 0.707
+          },
+          "2": {
+            "200": 0.867,
+            "100": 0.804
+          },
+          "5": {
+            "200": 0.858,
+            "100": 0.791
+          },
+          "10": {
+            "200": 0.424,
+            "100": 0.418
+          }
+        },
+        "oracle": {
+          "version": {
+            "major": 2,
+            "minor": 0,
+            "tag": "o2-alpha-3"
+          },
+          "timeout": 10000
+        }
+      },
+      "incomeValidationSuccessUWv2": {
+        "modelType": "global_model_v2",
+        "scoreLimits": {
+          "100": 0.885,
+          "75": 0.79,
+          "50": 0.789,
+          "25": 0.778,
+          "20": 0.73,
+          "15": 0.716,
+          "10": 0.654,
+          "5": 0.574
+        },
+        "oracle": {
+          "version": {
+            "major": 2,
+            "minor": 0,
+            "tag": "o2-alpha-3"
+          },
+          "timeout": 10000
+        }
+      },
+      "incomeValidationFailureUWv2": {
+        "modelType": "global_model_v2",
+        "scoreLimits": {
+          "100": 0.968,
+          "75": 0.92,
+          "50": 0.899,
+          "25": 0.819,
+          "20": 0.793,
+          "15": 0.767,
+          "10": 0.661,
+          "5": 0.083
+        },
+        "oracle": {
+          "version": {
+            "major": 2,
+            "minor": 0,
+            "tag": "o2-alpha-3"
+          },
+          "timeout": 10000
+        }
+      }
+    },
+    "predictedPayback": {
+      "modelType": "predicted_payback_date_model",
+      "scoreLimit": 0.69,
+      "oracle": {
+        "timeout": 5000,
+        "version": {
+          "major": 1,
+          "minor": 0
+        }
+      },
+      "enabled": "FALSE"
+    },
+    "globalPredictedPayback": {
+      "modelType": "predicted_payback_date_global_model",
+      "oracle": {
+        "timeout": 5000,
+        "version": {
+          "major": 1,
+          "minor": 1
+        }
+      },
+      "enabled": false
+    }
+  },
+  "promotionsApi": {
+    "serviceName": "promotions-api",
+    "basePath": "https://promotions-api-staging.trydave.com",
+    "servicePort": 8080
+  },
+  "rateLimits": {
+    "loginsByIp": {
+      "perHour": 100
+    },
+    "loginsTotal": {
+      "perMinute": 80
+    }
+  },
+  "recurringTransaction": {
+    "autoDetectNewIncome": true,
+    "autoDetectNewIncomeTTL": 86400,
+    "autoDetectNewExpenses": true,
+    "autoDetectExpensesExperimentLimit": 1,
+    "autoDetectNewExpensesTTL": 604800,
+    "singleMatch": {
+      "experimentRatio": 0.1
+    },
+    "domain": "recurring-transaction:7878",
+    "serviceName": "recurring-transaction",
+    "servicePort": 7878
+  },
+  "resetPassword": {
+    "daveBanking": {
+      "userHasVerfiedSSN": {
+        "jwt": {
+          "expiration": 600
+        }
+      }
+    }
+  },
+  "scripts": {
+    "balanceLogStartingId": 0,
+    "balanceLogEndingId": 20000,
+    "balanceLogMigrationConcurrency": 5,
+    "achReturnRepayment": {
+      "taskLimit": 5000,
+      "bucketName": "some-gcs-bucket",
+      "filePath": "some-gcs-file",
+      "internalUser": 1
+    }
+  },
+  "sendgrid": {
+    "apiKey": "secret:sendgrid-apiKey",
+    "emailVerificationId": "4e5e5c2b-0a3e-4b88-a669-9987a7c4c06e"
+  },
+  "services": {
+    "sigtermStopDelay": 12000,
+    "port": 8081,
+    "balanceLogUrl": "localhost:8085",
+    "oracle": {
+      "baseUrl": "http://oracle"
+    },
+    "name": "node-api"
+  },
+  "skipRateLimit": false,
+  "snowflake": {
+    "account": "qc63563",
+    "username": "bacon",
+    "password": "bacon",
+    "database": "DAVE_STAGING",
+    "schema": "PUBLIC",
+    "warehouse": "dave_wh",
+    "clientSessionKeepAlive": true
+  },
+  "seedUser": {
+    "serviceName": "seed-user",
+    "servicePort": 7740
+  },
+  "synapsepay": {
+    "hostUrl": "https://uat-api.synapsefi.com",
+    "clientId": "secret:synapsepay-clientId",
+    "clientSecret": "secret:synapsepay-clientSecret",
+    "environment": "sandbox",
+    "feeNodeId": "5c37918951112300617059f9",
+    "receivingNodeId": "5c37916d51112300617059ee",
+    "disbursingNodeIdACH": "605a3853c54d7b08a19c9400",
+    "receivingNodeIdACH": "605a376cc54d7b08a19c93fe",
+    "disbursingNodeId": "5c37918951112300617059f9",
+    "disbursingUserFingerprint": "f5bdaca10a5e1f73e78eb6fec5fdc934",
+    "disbursingUserId": "56310bc186c27373fbe8cab7",
+    "userFingerprintSecret": "secret:synapsepay-clientSecret",
+    "alternateFingerprintSecret": "secret:synapsepay-clientSecret",
+    "userFingerprintRedisKey": "synapsepay_users_with_old_fingerprint",
+    "useNewACH": false
+  },
+  "tabapay": {
+    "settlementAccount": "BQsCNSGV0IY6SjArjuOS9Q",
+    "url": "api.sandbox.tabapay.net:10443",
+    "token": "secret:tabapay-token",
+    "clientId": "secret:tabapay-clientId",
+    "advanceSubId": "0001",
+    "subscriptionSubId": "0001",
+    "bankFundingSubId": "0005",
+    "sftp": {
+      "sftpUsername": "name",
+      "sshPrivateKey": "private_key",
+      "host": "sftp.trydave.com",
+      "port": 22,
+      "directory": "/home/tabapay"
+    },
+    "experiments": {
+      "repaymentACH": {
+        "percent": 0,
+        "overrides": []
+      },
+      "disbursementACH": {
+        "percent": 0,
+        "overrides": []
+      }
+    }
+  },
+  "tivan": {
+    "host": "tivan",
+    "tivanBalanceCheckLockSeconds": "7200",
+    "triggers": {
+      "bankAccountUpdate": {
+        "hundredthPercent": "1",
+        "adHocHundredthPercent": 0
+      },
+      "dailyCronjob": {
+        "hundredthPercent": "1"
+      },
+      "userPayment": {
+        "tivanPercentage": 0,
+        "internalUsersEnabled": true
+      },
+      "blind-payday-date-collection": {
+        "hundredthPercent": 0
+      }
+    }
+  },
+  "twilio": {
+    "messagingSid": "secret:twilio-messagingSid",
+    "sid": "secret:twilio-sid",
+    "secret": "secret:twilio-secret",
+    "phoneNumber": "+15005550006"
+  },
+  "zendesk": {
+    "email": "zendesk@dave.com",
+    "url": "https://davesaves1576795597.zendesk.com",
+    "token": "secret:zendesk-token",
+    "customTicketFields": {
+      "ticketPriority": 360026512311,
+      "bucket": 360031465271,
+      "phoneNumber": 360030478332,
+      "userSubmittedReason": 360030478632,
+      "daveUserId": 360031822991,
+      "daveMemberType": 360031752732,
+      "bankingUserSubmittedReason": 360031999131
+    },
+    "brands": {
+      "dave": 360003393931,
+      "daveBanking": 360004063471
+    },
+    "chat": {
+      "url": "https://rtm.zopim.com",
+      "token": ""
+    },
+    "guide": {
+      "bankingUrl": "https://davebanking.zendesk.com",
+      "overdraftUrl": "https://davesaves.zendesk.com"
+    }
+  },
+  "appcast": {
+    "baseUrl": "https://api.appcast.io",
+    "apiKey": "secret:appcast-apiKey",
+    "defaultSearchValues": {
+      "r": "25miles",
+      "jobs_per_page": 50,
+      "page": 0
+    },
+    "defaultSortValues": {
+      "sort_by": "cpa",
+      "sort_direction": "desc"
+    }
+  },
+  "experiments": {
+    "add-one-day-to-payback-date_friday": {
+      "active": false,
+      "ratio": 0.075,
+      "limit": 15000
+    },
+    "add-one-day-to-payback-date_not-friday": {
+      "active": false,
+      "ratio": 0.025,
+      "limit": 15000
+    },
+    "max-score-payback-date": {
+      "active": false,
+      "limit": 60000,
+      "ratio": 0.33
+    },
+    "global-payback-date-model-experiment": {
+      "active": false,
+      "limit": 5000,
+      "ratio": 0.015
+    },
+    "match-account-transition-income": {
+      "active": true,
+      "limit": 5000,
+      "ratio": 0.25
+    },
+    "accountAgeFailureUWv2": {
+      "active": false,
+      "ratio": 0.0
+    },
+    "daveBankingUWv2": {
+      "active": false,
+      "ratio": 0.0
+    },
+    "incomeValidationSuccessUWv2": {
+      "active": false,
+      "ratio": 0.0
+    },
+    "incomeValidationFailureUWv2": {
+      "active": false,
+      "ratio": 0.0
+    }
+  },
+  "usps": {
+    "userId": "secret:usps-userId"
+  }
+}

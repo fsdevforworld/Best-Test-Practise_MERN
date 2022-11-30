@@ -1,0 +1,133 @@
+[
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/transactions/get",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "access_token": "access-sandbox-01f630cc-e08f-4d89-9021-26a1577abcdf",
+      "start_date": "2019-01-01",
+      "end_date": "2019-02-01",
+      "options": {
+        "account_ids": ["BxRggReRAgfGegorM4JAHlR5gpExQPFwWELDl"]
+      }
+    },
+    "status": 200,
+    "response": {
+      "accounts": [
+        {
+          "account_id": "BxRggReRAgfGegorM4JAHlR5gpExQPFwWELDl",
+          "balances": {
+            "available": 200,
+            "current": 210,
+            "limit": null
+          },
+          "mask": "1111",
+          "name": "Plaid Saving",
+          "official_name": "Plaid Silver Standard 0.1% Interest Saving",
+          "subtype": "savings",
+          "type": "depository"
+        }
+      ],
+      "item": {
+        "available_products": ["assets", "balance", "credit_details", "identity", "income"],
+        "billed_products": ["auth", "transactions"],
+        "error": null,
+        "institution_id": "ins_3",
+        "item_id": "gVbLLbjbdLfRxo3DAwrGhp81QWDKrmcgGwaK8",
+        "webhook": "https://dave-dick.ngrok.io/v1/bank/plaid_webhook"
+      },
+      "request_id": "uQFn66z85ueNTqN",
+      "total_transactions": 2,
+      "transactions": [
+        {
+          "account_id": "BxRggReRAgfGegorM4JAHlR5gpExQPFwWELDl",
+          "account_owner": null,
+          "amount": 25,
+          "category": ["Payment", "Credit Card"],
+          "category_id": "16001000",
+          "date": "2019-01-21",
+          "location": {
+            "address": null,
+            "city": null,
+            "lat": null,
+            "lon": null,
+            "state": null,
+            "store_number": null,
+            "zip": null
+          },
+          "name": "CREDIT CARD 3333 PAYMENT *//",
+          "payment_meta": {
+            "by_order_of": null,
+            "payee": null,
+            "payer": null,
+            "payment_method": null,
+            "payment_processor": null,
+            "ppd_id": null,
+            "reason": null,
+            "reference_number": null
+          },
+          "pending": false,
+          "pending_transaction_id": null,
+          "transaction_id": "6Wg11grg51FpqgmZ68nXUPoZNn8D5Lfg9ZG3q",
+          "transaction_type": "special"
+        },
+        {
+          "account_id": "BxRggReRAgfGegorM4JAHlR5gpExQPFwWELDl",
+          "account_owner": null,
+          "amount": -4.22,
+          "category": ["Food and Drink", "Restaurants"],
+          "category_id": "13005000",
+          "date": "2019-01-16",
+          "location": {
+            "address": null,
+            "city": null,
+            "lat": null,
+            "lon": null,
+            "state": null,
+            "store_number": null,
+            "zip": null
+          },
+          "name": "INTRST PYMNT",
+          "payment_meta": {
+            "by_order_of": null,
+            "payee": null,
+            "payer": null,
+            "payment_method": null,
+            "payment_processor": null,
+            "ppd_id": null,
+            "reason": null,
+            "reference_number": null
+          },
+          "pending": false,
+          "pending_transaction_id": null,
+          "transaction_id": "Xn8DD8X86DuLWozEZmRVfzVpaQBPWefd6ZyEM",
+          "transaction_type": "place"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Tue, 12 Feb 2019 21:14:29 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options",
+      "DENY",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-XSS-Protection",
+      "1; mode=block"
+    ]
+  }
+]

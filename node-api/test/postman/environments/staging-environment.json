@@ -1,0 +1,224 @@
+{
+  "id": "e793d58b-2832-4e7a-876b-c84a3100bdc0",
+  "name": "staging",
+  "values": [
+    {
+      "key": "bank_connection_token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "bank_connection_userId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "bank_account_token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "bank_account_userId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "bank_account_id",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "paycheck1_recurring_transaction_id",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "user_token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "user_userId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "bank_connection_connectionId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "DAVE_POSTMAN_API_KEY",
+      "value": "ae25e21b627543b596589c2ccaba3db6",
+      "enabled": true
+    },
+    {
+      "key": "new_user_token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "big_money_advance_defaultBankAccountId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "big_money_advance_token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "big_money_advance_userId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "big_money_advance_id",
+      "value": null,
+      "enabled": true
+    },
+    {
+      "key": "tiny_money_advance_defaultBankAccountId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "tiny_money_advance_token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "STAGING_URL",
+      "value": "https://staging.trydave.com",
+      "enabled": true
+    },
+    {
+      "key": "new_user_phone_number",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "verification_code",
+      "value": "111111",
+      "enabled": true
+    },
+    {
+      "key": "default_password",
+      "value": "Password1!",
+      "enabled": true
+    },
+    {
+      "key": "loomis_token",
+      "value": "aa1137c0-91e9-409f-922c-cff6fea92cf2",
+      "enabled": true
+    },
+    {
+      "key": "bod_advance_defaultBankAccountId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "bod_advance_token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "bod_advance_userId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "demoted_to_tiny_money_advance_token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "demoted_to_tiny_money_defaultBankAccountId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "demoted_to_tiny_money_advance_defaultBankAccountId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "disbursement_not_received_advance_defaultBankAccountId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "disbursement_not_received_advance_token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "micro_deposit_needed_advance_defaultBankAccountId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "micro_deposit_needed_advance_token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "micro_deposit_incomplete_advance_defaultBankAccountId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "micro_deposit_incomplete_advance_token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "no_recurring_income_advance_defaultBankAccountId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "no_recurring_income_advance_token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "bod_advance_id",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "solvency_fail_11_days_advance_defaultBankAccountId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "solvency_fail_11_days_advance_token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "solvency_fail_paid_today_advance_defaultBankAccountId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "solvency_fail_paid_today_advance_token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "tiny_money_5_advance_defaultBankAccountId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "tiny_money_5_advance_token",
+      "value": "",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2020-05-20T20:46:26.460Z",
+  "_postman_exported_using": "Postman/7.23.0"
+}

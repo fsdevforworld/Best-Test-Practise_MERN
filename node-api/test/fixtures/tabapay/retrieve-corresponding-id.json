@@ -1,0 +1,79 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "POST",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/transactions",
+    "body": {
+      "referenceID": "test-id-3",
+      "type": "pull",
+      "accounts": {
+        "sourceAccountID": "AL8FE3HESGAxb8ti45bJsQ",
+        "destinationAccountID": "BQsCNSGV0IY6SjArjuOS9Q"
+      },
+      "amount": "0.11",
+      "correspondingID": "iv0SGbGEwEODctjpqSXvwQ",
+      "pullOptions": {
+        "quasiCash": true,
+        "recurring": false
+      }
+    },
+    "status": 400,
+    "response": {
+      "SC": 400,
+      "EC": "3C5E501C",
+      "EM": "correspondingID"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Thu, 12 Dec 2019 03:15:08 GMT",
+      "Content-Length",
+      "49",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  },
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "POST",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/transactions",
+    "body": {
+      "referenceID": "test-id-3",
+      "type": "pull",
+      "accounts": {
+        "sourceAccountID": "AL8FE3HESGAxb8ti45bJsQ",
+        "destinationAccountID": "BQsCNSGV0IY6SjArjuOS9Q"
+      },
+      "amount": "0.11",
+      "pullOptions": {
+        "quasiCash": true,
+        "recurring": false
+      }
+    },
+    "status": 200,
+    "response": {
+      "SC": 200,
+      "EC": "0",
+      "transactionID": "gLQEFrzVCEml_S9SHq6Bgw",
+      "network": "Visa",
+      "networkRC": "00",
+      "status": "COMPLETED",
+      "approvalCode": "031509"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Thu, 12 Dec 2019 03:15:09 GMT",
+      "Content-Length",
+      "139",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  }
+]

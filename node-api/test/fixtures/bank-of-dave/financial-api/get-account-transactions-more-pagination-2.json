@@ -1,0 +1,1769 @@
+[
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2218cd79-8c78-4b18-8c74-575d362517a4/accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01T07%3A00%3A00Z&endsAt=2019-11-09T07%3A59%3A59Z&page=1&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "5dc935c6-b78c-4109-bbc8-85a3bb0b1170",
+          "debit": false,
+          "amount": 80.64,
+          "recentStatus": "PROCESSING-DEBIT",
+          "recentStatusNote": "",
+          "statusHistory": [
+            {
+              "date": 1573074628778,
+              "note": "Transaction Created.",
+              "status": "CREATED",
+              "status_id": "1"
+            },
+            {
+              "date": 1573074630082,
+              "note": "",
+              "status": "PROCESSING-DEBIT",
+              "status_id": "2"
+            }
+          ],
+          "pending": true,
+          "transactedAt": "2019-11-06T21:10:28.000Z",
+          "settledAt": null,
+          "source": {
+            "name": "Dave",
+            "legalNames": ["Dave"]
+          },
+          "created": "2019-11-06T21:10:30.000Z",
+          "updated": "2019-11-06T22:01:00.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null,
+          "disputed": false,
+          "userDismissed": "NOT_NEEDED",
+          "amountBreakdown": {
+            "amount": 80.64,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse",
+      "total": 18
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "0cafb065-d1b6-4d7b-9ff4-35c0ad6964ed",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:16 GMT",
+      "Content-Length",
+      "855",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2218cd79-8c78-4b18-8c74-575d362517a4/accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01T07%3A00%3A00Z&endsAt=2019-11-09T07%3A59%3A59Z&page=2&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "da161624-03b1-4d78-939e-e06db777d609",
+          "debit": false,
+          "amount": 53.68,
+          "recentStatus": "PROCESSING-DEBIT",
+          "recentStatusNote": "",
+          "statusHistory": [
+            {
+              "date": 1573073975668,
+              "note": "Transaction Created.",
+              "status": "CREATED",
+              "status_id": "1"
+            },
+            {
+              "date": 1573073976911,
+              "note": "",
+              "status": "PROCESSING-DEBIT",
+              "status_id": "2"
+            }
+          ],
+          "pending": true,
+          "transactedAt": "2019-11-06T20:59:35.000Z",
+          "settledAt": null,
+          "source": {
+            "name": "Dave",
+            "legalNames": ["Dave"]
+          },
+          "created": "2019-11-06T20:59:36.000Z",
+          "updated": "2019-11-06T21:01:01.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null,
+          "disputed": false,
+          "userDismissed": "NOT_NEEDED",
+          "amountBreakdown": {
+            "amount": 53.68,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse",
+      "total": 18
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "6c618d08-de20-4f34-9322-913882880e3f",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:16 GMT",
+      "Content-Length",
+      "855",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2218cd79-8c78-4b18-8c74-575d362517a4/accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01T07%3A00%3A00Z&endsAt=2019-11-09T07%3A59%3A59Z&page=3&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "2b2dca50-420d-418d-a729-03aea99180fd",
+          "debit": true,
+          "amount": 48.17,
+          "recentStatus": "SETTLED",
+          "recentStatusNote": "",
+          "statusHistory": [
+            {
+              "date": 1573073664162,
+              "note": "Transaction Created.",
+              "status": "CREATED",
+              "status_id": "1"
+            },
+            {
+              "date": 1573074462166,
+              "note": "",
+              "status": "PROCESSING-DEBIT",
+              "status_id": "2"
+            },
+            {
+              "date": 1573074463892,
+              "note": "",
+              "status": "PROCESSING-CREDIT",
+              "status_id": "3"
+            },
+            {
+              "date": 1573074463897,
+              "note": "",
+              "status": "SETTLED",
+              "status_id": "4"
+            }
+          ],
+          "pending": false,
+          "type": "POS_DEBIT",
+          "transactedAt": "2019-11-06T20:54:24.000Z",
+          "settledAt": "2019-11-06T21:07:43.000Z",
+          "source": {
+            "name": "Synapse",
+            "legalNames": ["Synapse"],
+            "meta": {
+              "address": "101 2nd St San Francisco, CA 94105",
+              "merchantLogo": "https://cdn4.synapsefi.com/uploads/2018/12/06/C5kBTGoEcA1erNIXmPHlhZWzy6R7VQ02dbi9p4DxsUJqMnSLgw.png",
+              "primaryCategory": "7523",
+              "secondaryCategory": "NOT_RECURRING",
+              "merchantCategory": "pos",
+              "merchantSubCategory": "discretionary_spending",
+              "phoneNumber": "(931) 279-6729",
+              "webSite": "https://synapsefi.com",
+              "foreignTransaction": false
+            }
+          },
+          "created": "2019-11-06T20:54:25.000Z",
+          "updated": "2019-11-06T21:08:00.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null,
+          "disputed": false,
+          "userDismissed": "NOT_NEEDED",
+          "amountBreakdown": {
+            "amount": 48.17,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse",
+      "total": 18
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "4993d40c-4bf6-4c98-974c-145ab40c8b20",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:16 GMT",
+      "Content-Length",
+      "1438",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2218cd79-8c78-4b18-8c74-575d362517a4/accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01T07%3A00%3A00Z&endsAt=2019-11-09T07%3A59%3A59Z&page=4&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "8b4db546-79aa-4eea-81ae-dcbfc2bd8a16",
+          "debit": true,
+          "amount": 85.32,
+          "recentStatus": "SETTLED",
+          "recentStatusNote": "",
+          "statusHistory": [
+            {
+              "date": 1573073651543,
+              "note": "Transaction Created.",
+              "status": "CREATED",
+              "status_id": "1"
+            },
+            {
+              "date": 1573074437549,
+              "note": "",
+              "status": "PROCESSING-DEBIT",
+              "status_id": "2"
+            },
+            {
+              "date": 1573074439619,
+              "note": "",
+              "status": "PROCESSING-CREDIT",
+              "status_id": "3"
+            },
+            {
+              "date": 1573074439624,
+              "note": "",
+              "status": "SETTLED",
+              "status_id": "4"
+            }
+          ],
+          "pending": false,
+          "type": "CASH_WITHDRAWAL",
+          "transactedAt": "2019-11-06T20:54:11.000Z",
+          "settledAt": "2019-11-06T21:07:19.000Z",
+          "source": {
+            "name": "Synapse",
+            "legalNames": ["Synapse"],
+            "meta": {
+              "address": "101 2nd St San Francisco, CA 94105",
+              "atmFee": "0.00"
+            }
+          },
+          "created": "2019-11-06T20:54:12.000Z",
+          "updated": "2019-11-06T21:08:00.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null,
+          "disputed": false,
+          "userDismissed": "NOT_NEEDED",
+          "amountBreakdown": {
+            "amount": 85.32,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse",
+      "total": 18
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "5b04d8f3-7808-4706-aaec-bde7b42e4fd7",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:16 GMT",
+      "Content-Length",
+      "1117",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2218cd79-8c78-4b18-8c74-575d362517a4/accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01T07%3A00%3A00Z&endsAt=2019-11-09T07%3A59%3A59Z&page=5&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "d3ef2a88-cd9f-4fd1-bd80-f3759d0e9426",
+          "debit": true,
+          "amount": 49.27,
+          "recentStatus": "SETTLED",
+          "recentStatusNote": "",
+          "statusHistory": [
+            {
+              "date": 1573073644683,
+              "note": "Transaction Created.",
+              "status": "CREATED",
+              "status_id": "1"
+            },
+            {
+              "date": 1573074410958,
+              "note": "",
+              "status": "PROCESSING-DEBIT",
+              "status_id": "2"
+            },
+            {
+              "date": 1573074413340,
+              "note": "",
+              "status": "PROCESSING-CREDIT",
+              "status_id": "3"
+            },
+            {
+              "date": 1573074413356,
+              "note": "",
+              "status": "SETTLED",
+              "status_id": "4"
+            }
+          ],
+          "pending": false,
+          "type": "CASH_WITHDRAWAL",
+          "transactedAt": "2019-11-06T20:54:04.000Z",
+          "settledAt": "2019-11-06T21:06:53.000Z",
+          "source": {
+            "name": "Synapse",
+            "legalNames": ["Synapse"],
+            "meta": {
+              "address": "101 2nd St San Francisco, CA 94105",
+              "atmFee": "0.00"
+            }
+          },
+          "created": "2019-11-06T20:54:05.000Z",
+          "updated": "2019-11-06T21:07:00.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null,
+          "disputed": false,
+          "userDismissed": "NOT_NEEDED",
+          "amountBreakdown": {
+            "amount": 49.27,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse",
+      "total": 18
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "4fd90637-30d4-4068-8986-796a4e1dc9b4",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:17 GMT",
+      "Content-Length",
+      "1117",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2218cd79-8c78-4b18-8c74-575d362517a4/accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01T07%3A00%3A00Z&endsAt=2019-11-09T07%3A59%3A59Z&page=6&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "8cc08631-0f10-4297-9ed4-6bd79527beff",
+          "debit": true,
+          "amount": 74.81,
+          "recentStatus": "SETTLED",
+          "recentStatusNote": "",
+          "statusHistory": [
+            {
+              "date": 1573073636618,
+              "note": "Transaction Created.",
+              "status": "CREATED",
+              "status_id": "1"
+            },
+            {
+              "date": 1573074195813,
+              "note": "",
+              "status": "PROCESSING-DEBIT",
+              "status_id": "2"
+            },
+            {
+              "date": 1573074197764,
+              "note": "",
+              "status": "PROCESSING-CREDIT",
+              "status_id": "3"
+            },
+            {
+              "date": 1573074197842,
+              "note": "",
+              "status": "SETTLED",
+              "status_id": "4"
+            }
+          ],
+          "pending": false,
+          "type": "CASH_WITHDRAWAL",
+          "transactedAt": "2019-11-06T20:53:56.000Z",
+          "settledAt": "2019-11-06T21:03:17.000Z",
+          "source": {
+            "name": "Synapse",
+            "legalNames": ["Synapse"],
+            "meta": {
+              "address": "101 2nd St San Francisco, CA 94105",
+              "atmFee": "0.00"
+            }
+          },
+          "created": "2019-11-06T20:53:57.000Z",
+          "updated": "2019-11-06T21:04:00.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null,
+          "disputed": false,
+          "userDismissed": "NOT_NEEDED",
+          "amountBreakdown": {
+            "amount": 74.81,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse",
+      "total": 18
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "01224543-ab86-4c42-a1d5-bbabc93b383b",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:17 GMT",
+      "Content-Length",
+      "1117",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2218cd79-8c78-4b18-8c74-575d362517a4/accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01T07%3A00%3A00Z&endsAt=2019-11-09T07%3A59%3A59Z&page=7&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "b46b5edb-dc1c-42dc-91c4-38810912cb64",
+          "debit": true,
+          "amount": 80.64,
+          "recentStatus": "SETTLED",
+          "recentStatusNote": "",
+          "statusHistory": [
+            {
+              "date": 1573073591088,
+              "note": "Transaction Created.",
+              "status": "CREATED",
+              "status_id": "1"
+            },
+            {
+              "date": 1573074483372,
+              "note": "",
+              "status": "PROCESSING-DEBIT",
+              "status_id": "2"
+            },
+            {
+              "date": 1573074485496,
+              "note": "",
+              "status": "PROCESSING-CREDIT",
+              "status_id": "3"
+            },
+            {
+              "date": 1573074485501,
+              "note": "",
+              "status": "SETTLED",
+              "status_id": "4"
+            }
+          ],
+          "pending": false,
+          "type": "CASH_WITHDRAWAL",
+          "transactedAt": "2019-11-06T20:53:11.000Z",
+          "settledAt": "2019-11-06T21:08:05.000Z",
+          "source": {
+            "name": "Synapse",
+            "legalNames": ["Synapse"],
+            "meta": {
+              "address": "101 2nd St San Francisco, CA 94105",
+              "atmFee": "0.00"
+            }
+          },
+          "created": "2019-11-06T20:53:13.000Z",
+          "updated": "2019-11-06T21:09:00.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null,
+          "disputed": true,
+          "userDismissed": "NOT_NEEDED",
+          "amountBreakdown": {
+            "amount": 80.64,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse",
+      "total": 18
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "dcc0b27e-6071-4473-9273-e43e7420cc11",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:17 GMT",
+      "Content-Length",
+      "1116",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2218cd79-8c78-4b18-8c74-575d362517a4/accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01T07%3A00%3A00Z&endsAt=2019-11-09T07%3A59%3A59Z&page=8&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "be72e8b3-4f13-4c00-88df-264b97f11643",
+          "debit": true,
+          "amount": 39.78,
+          "recentStatus": "SETTLED",
+          "recentStatusNote": "",
+          "statusHistory": [
+            {
+              "date": 1573073530205,
+              "note": "Transaction Created.",
+              "status": "CREATED",
+              "status_id": "1"
+            },
+            {
+              "date": 1573074121003,
+              "note": "",
+              "status": "PROCESSING-DEBIT",
+              "status_id": "2"
+            },
+            {
+              "date": 1573074123701,
+              "note": "",
+              "status": "PROCESSING-CREDIT",
+              "status_id": "3"
+            },
+            {
+              "date": 1573074123705,
+              "note": "",
+              "status": "SETTLED",
+              "status_id": "4"
+            }
+          ],
+          "pending": false,
+          "type": "POS_DEBIT",
+          "transactedAt": "2019-11-06T20:52:10.000Z",
+          "settledAt": "2019-11-06T21:02:03.000Z",
+          "source": {
+            "name": "Synapse",
+            "legalNames": ["Synapse"],
+            "meta": {
+              "address": "101 2nd St San Francisco, CA 94105",
+              "merchantLogo": "https://cdn4.synapsefi.com/uploads/2018/12/06/C5kBTGoEcA1erNIXmPHlhZWzy6R7VQ02dbi9p4DxsUJqMnSLgw.png",
+              "primaryCategory": "7523",
+              "secondaryCategory": "NOT_RECURRING",
+              "merchantCategory": "pos",
+              "merchantSubCategory": "discretionary_spending",
+              "phoneNumber": "(931) 279-6729",
+              "webSite": "https://synapsefi.com",
+              "foreignTransaction": false
+            }
+          },
+          "created": "2019-11-06T20:52:11.000Z",
+          "updated": "2019-11-06T21:03:01.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null,
+          "disputed": false,
+          "userDismissed": "NOT_NEEDED",
+          "amountBreakdown": {
+            "amount": 39.78,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse",
+      "total": 18
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "d0f554f9-dc3e-4206-b753-f5219af1c7c3",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:17 GMT",
+      "Content-Length",
+      "1438",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2218cd79-8c78-4b18-8c74-575d362517a4/accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01T07%3A00%3A00Z&endsAt=2019-11-09T07%3A59%3A59Z&page=9&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "eae4db56-1eb0-49b5-9872-41b4b467ddaa",
+          "debit": true,
+          "amount": 53.68,
+          "recentStatus": "SETTLED",
+          "recentStatusNote": "",
+          "statusHistory": [
+            {
+              "date": 1573073516560,
+              "note": "Transaction Created.",
+              "status": "CREATED",
+              "status_id": "1"
+            },
+            {
+              "date": 1573073803481,
+              "note": "",
+              "status": "PROCESSING-DEBIT",
+              "status_id": "2"
+            },
+            {
+              "date": 1573073805341,
+              "note": "",
+              "status": "PROCESSING-CREDIT",
+              "status_id": "3"
+            },
+            {
+              "date": 1573073805347,
+              "note": "",
+              "status": "SETTLED",
+              "status_id": "4"
+            }
+          ],
+          "pending": false,
+          "type": "POS_DEBIT",
+          "transactedAt": "2019-11-06T20:51:56.000Z",
+          "settledAt": "2019-11-06T20:56:45.000Z",
+          "source": {
+            "name": "Synapse",
+            "legalNames": ["Synapse"],
+            "meta": {
+              "address": "101 2nd St San Francisco, CA 94105",
+              "merchantLogo": "https://cdn4.synapsefi.com/uploads/2018/12/06/C5kBTGoEcA1erNIXmPHlhZWzy6R7VQ02dbi9p4DxsUJqMnSLgw.png",
+              "primaryCategory": "7523",
+              "secondaryCategory": "NOT_RECURRING",
+              "merchantCategory": "pos",
+              "merchantSubCategory": "discretionary_spending",
+              "phoneNumber": "(931) 279-6729",
+              "webSite": "https://synapsefi.com",
+              "foreignTransaction": false
+            }
+          },
+          "created": "2019-11-06T20:51:57.000Z",
+          "updated": "2019-11-06T20:57:00.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null,
+          "disputed": true,
+          "userDismissed": "NOT_NEEDED",
+          "amountBreakdown": {
+            "amount": 53.68,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse",
+      "total": 18
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "fa9f48c8-e1aa-4266-9c19-ef4720d0eace",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:17 GMT",
+      "Content-Length",
+      "1437",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2218cd79-8c78-4b18-8c74-575d362517a4/accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01T07%3A00%3A00Z&endsAt=2019-11-09T07%3A59%3A59Z&page=10&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "90dab82d-e729-40ee-9869-a7a118ab05f8",
+          "debit": true,
+          "amount": 20.78,
+          "recentStatus": "SETTLED",
+          "recentStatusNote": "",
+          "statusHistory": [
+            {
+              "date": 1573073509031,
+              "note": "Transaction Created.",
+              "status": "CREATED",
+              "status_id": "1"
+            },
+            {
+              "date": 1573074173194,
+              "note": "",
+              "status": "PROCESSING-DEBIT",
+              "status_id": "2"
+            },
+            {
+              "date": 1573074174767,
+              "note": "",
+              "status": "PROCESSING-CREDIT",
+              "status_id": "3"
+            },
+            {
+              "date": 1573074174782,
+              "note": "",
+              "status": "SETTLED",
+              "status_id": "4"
+            }
+          ],
+          "pending": false,
+          "type": "POS_DEBIT",
+          "transactedAt": "2019-11-06T20:51:49.000Z",
+          "settledAt": "2019-11-06T21:02:54.000Z",
+          "source": {
+            "name": "Synapse",
+            "legalNames": ["Synapse"],
+            "meta": {
+              "address": "101 2nd St San Francisco, CA 94105",
+              "merchantLogo": "https://cdn4.synapsefi.com/uploads/2018/12/06/C5kBTGoEcA1erNIXmPHlhZWzy6R7VQ02dbi9p4DxsUJqMnSLgw.png",
+              "primaryCategory": "7523",
+              "secondaryCategory": "NOT_RECURRING",
+              "merchantCategory": "pos",
+              "merchantSubCategory": "discretionary_spending",
+              "phoneNumber": "(931) 279-6729",
+              "webSite": "https://synapsefi.com",
+              "foreignTransaction": false
+            }
+          },
+          "created": "2019-11-06T20:51:50.000Z",
+          "updated": "2019-11-06T21:03:01.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null,
+          "disputed": false,
+          "userDismissed": "NOT_NEEDED",
+          "amountBreakdown": {
+            "amount": 20.78,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse",
+      "total": 18
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "51c719bb-3e29-4b85-9adb-99fe83588d45",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:17 GMT",
+      "Content-Length",
+      "1438",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2218cd79-8c78-4b18-8c74-575d362517a4/accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01T07%3A00%3A00Z&endsAt=2019-11-09T07%3A59%3A59Z&page=11&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "462c2ebf-4632-4a8a-9566-fd155689cc67",
+          "debit": true,
+          "amount": 12.8,
+          "recentStatus": "SETTLED",
+          "recentStatusNote": "",
+          "statusHistory": [
+            {
+              "date": 1573073501090,
+              "note": "Transaction Created.",
+              "status": "CREATED",
+              "status_id": "1"
+            },
+            {
+              "date": 1573073879846,
+              "note": "",
+              "status": "PROCESSING-DEBIT",
+              "status_id": "2"
+            },
+            {
+              "date": 1573073881995,
+              "note": "",
+              "status": "PROCESSING-CREDIT",
+              "status_id": "3"
+            },
+            {
+              "date": 1573073882028,
+              "note": "",
+              "status": "SETTLED",
+              "status_id": "4"
+            }
+          ],
+          "pending": false,
+          "type": "POS_DEBIT",
+          "transactedAt": "2019-11-06T20:51:41.000Z",
+          "settledAt": "2019-11-06T20:58:02.000Z",
+          "source": {
+            "name": "Synapse",
+            "legalNames": ["Synapse"],
+            "meta": {
+              "address": "101 2nd St San Francisco, CA 94105",
+              "merchantLogo": "https://cdn4.synapsefi.com/uploads/2018/12/06/C5kBTGoEcA1erNIXmPHlhZWzy6R7VQ02dbi9p4DxsUJqMnSLgw.png",
+              "primaryCategory": "7523",
+              "secondaryCategory": "NOT_RECURRING",
+              "merchantCategory": "pos",
+              "merchantSubCategory": "discretionary_spending",
+              "phoneNumber": "(931) 279-6729",
+              "webSite": "https://synapsefi.com",
+              "foreignTransaction": false
+            }
+          },
+          "created": "2019-11-06T20:51:42.000Z",
+          "updated": "2019-11-06T20:59:00.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null,
+          "disputed": false,
+          "userDismissed": "NOT_NEEDED",
+          "amountBreakdown": {
+            "amount": 12.8,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse",
+      "total": 18
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "572ec94a-d2c9-4435-915e-a0f087f64fee",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:18 GMT",
+      "Content-Length",
+      "1436",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2218cd79-8c78-4b18-8c74-575d362517a4/accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01T07%3A00%3A00Z&endsAt=2019-11-09T07%3A59%3A59Z&page=12&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "70c8271a-8d21-4635-b091-03c8e1035613",
+          "debit": true,
+          "amount": 27.58,
+          "recentStatus": "SETTLED",
+          "recentStatusNote": "",
+          "statusHistory": [
+            {
+              "date": 1573073492700,
+              "note": "Transaction Created.",
+              "status": "CREATED",
+              "status_id": "1"
+            },
+            {
+              "date": 1573073839832,
+              "note": "",
+              "status": "PROCESSING-DEBIT",
+              "status_id": "2"
+            },
+            {
+              "date": 1573073841290,
+              "note": "",
+              "status": "PROCESSING-CREDIT",
+              "status_id": "3"
+            },
+            {
+              "date": 1573073841315,
+              "note": "",
+              "status": "SETTLED",
+              "status_id": "4"
+            }
+          ],
+          "pending": false,
+          "type": "POS_DEBIT",
+          "transactedAt": "2019-11-06T20:51:32.000Z",
+          "settledAt": "2019-11-06T20:57:21.000Z",
+          "source": {
+            "name": "Synapse",
+            "legalNames": ["Synapse"],
+            "meta": {
+              "address": "101 2nd St San Francisco, CA 94105",
+              "merchantLogo": "https://cdn4.synapsefi.com/uploads/2018/12/06/C5kBTGoEcA1erNIXmPHlhZWzy6R7VQ02dbi9p4DxsUJqMnSLgw.png",
+              "primaryCategory": "7523",
+              "secondaryCategory": "NOT_RECURRING",
+              "merchantCategory": "pos",
+              "merchantSubCategory": "discretionary_spending",
+              "phoneNumber": "(931) 279-6729",
+              "webSite": "https://synapsefi.com",
+              "foreignTransaction": false
+            }
+          },
+          "created": "2019-11-06T20:51:34.000Z",
+          "updated": "2019-11-06T20:58:00.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null,
+          "disputed": false,
+          "userDismissed": "NOT_NEEDED",
+          "amountBreakdown": {
+            "amount": 27.58,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse",
+      "total": 18
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "192a094d-9fd1-47ee-9f3e-c0521afbd2f9",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:18 GMT",
+      "Content-Length",
+      "1438",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2218cd79-8c78-4b18-8c74-575d362517a4/accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01T07%3A00%3A00Z&endsAt=2019-11-09T07%3A59%3A59Z&page=13&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "372f8d39-d9ef-40b3-8b6e-88639c7ad568",
+          "debit": true,
+          "amount": 56.97,
+          "recentStatus": "SETTLED",
+          "recentStatusNote": "",
+          "statusHistory": [
+            {
+              "date": 1573073483282,
+              "note": "Transaction Created.",
+              "status": "CREATED",
+              "status_id": "1"
+            },
+            {
+              "date": 1573074514599,
+              "note": "",
+              "status": "PROCESSING-DEBIT",
+              "status_id": "2"
+            },
+            {
+              "date": 1573074516378,
+              "note": "",
+              "status": "PROCESSING-CREDIT",
+              "status_id": "3"
+            },
+            {
+              "date": 1573074516404,
+              "note": "",
+              "status": "SETTLED",
+              "status_id": "4"
+            }
+          ],
+          "pending": false,
+          "type": "POS_DEBIT",
+          "transactedAt": "2019-11-06T20:51:23.000Z",
+          "settledAt": "2019-11-06T21:08:36.000Z",
+          "source": {
+            "name": "Synapse",
+            "legalNames": ["Synapse"],
+            "meta": {
+              "address": "101 2nd St San Francisco, CA 94105",
+              "merchantLogo": "https://cdn4.synapsefi.com/uploads/2018/12/06/C5kBTGoEcA1erNIXmPHlhZWzy6R7VQ02dbi9p4DxsUJqMnSLgw.png",
+              "primaryCategory": "7523",
+              "secondaryCategory": "NOT_RECURRING",
+              "merchantCategory": "pos",
+              "merchantSubCategory": "discretionary_spending",
+              "phoneNumber": "(931) 279-6729",
+              "webSite": "https://synapsefi.com",
+              "foreignTransaction": false
+            }
+          },
+          "created": "2019-11-06T20:51:24.000Z",
+          "updated": "2019-11-06T21:09:00.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null,
+          "disputed": false,
+          "userDismissed": "NOT_NEEDED",
+          "amountBreakdown": {
+            "amount": 56.97,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse",
+      "total": 18
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "378e1136-f570-44eb-96ce-bc5f4242bf95",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:18 GMT",
+      "Content-Length",
+      "1438",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2218cd79-8c78-4b18-8c74-575d362517a4/accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01T07%3A00%3A00Z&endsAt=2019-11-09T07%3A59%3A59Z&page=14&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "d80113d9-9810-4339-a507-7babc19787de",
+          "debit": false,
+          "amount": 73.52,
+          "recentStatus": "SETTLED",
+          "recentStatusNote": "",
+          "statusHistory": [
+            {
+              "date": 1573073457942,
+              "note": "Transaction Created.",
+              "status": "CREATED",
+              "status_id": "1"
+            },
+            {
+              "date": 1573074104990,
+              "note": "",
+              "status": "PROCESSING-DEBIT",
+              "status_id": "2"
+            },
+            {
+              "date": 1573074104999,
+              "note": "",
+              "status": "PROCESSING-CREDIT",
+              "status_id": "3"
+            },
+            {
+              "date": 1573074105158,
+              "note": "",
+              "status": "SETTLED",
+              "status_id": "4"
+            }
+          ],
+          "pending": false,
+          "transactedAt": "2019-11-06T20:50:57.000Z",
+          "settledAt": "2019-11-06T21:01:45.000Z",
+          "source": {
+            "name": "Synapse",
+            "legalNames": ["Synapse"]
+          },
+          "created": "2019-11-06T20:50:59.000Z",
+          "updated": "2019-11-06T21:02:00.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null,
+          "disputed": false,
+          "userDismissed": "NOT_NEEDED",
+          "amountBreakdown": {
+            "amount": 73.52,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse",
+      "total": 18
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "ecd8d61a-b61e-4d43-9b6b-1855b387afd6",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:18 GMT",
+      "Content-Length",
+      "1021",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2218cd79-8c78-4b18-8c74-575d362517a4/accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01T07%3A00%3A00Z&endsAt=2019-11-09T07%3A59%3A59Z&page=15&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "1215490b-efe7-431c-a273-475e391fbfca",
+          "debit": false,
+          "amount": 76.95,
+          "recentStatus": "SETTLED",
+          "recentStatusNote": "",
+          "statusHistory": [
+            {
+              "date": 1573073445799,
+              "note": "Transaction Created.",
+              "status": "CREATED",
+              "status_id": "1"
+            },
+            {
+              "date": 1573073799843,
+              "note": "",
+              "status": "PROCESSING-DEBIT",
+              "status_id": "2"
+            },
+            {
+              "date": 1573073799885,
+              "note": "",
+              "status": "PROCESSING-CREDIT",
+              "status_id": "3"
+            },
+            {
+              "date": 1573073799977,
+              "note": "",
+              "status": "SETTLED",
+              "status_id": "4"
+            }
+          ],
+          "pending": false,
+          "transactedAt": "2019-11-06T20:50:45.000Z",
+          "settledAt": "2019-11-06T20:56:39.000Z",
+          "source": {
+            "name": "Synapse",
+            "legalNames": ["Synapse"]
+          },
+          "created": "2019-11-06T20:50:46.000Z",
+          "updated": "2019-11-06T20:57:00.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null,
+          "disputed": false,
+          "userDismissed": "NOT_NEEDED",
+          "amountBreakdown": {
+            "amount": 76.95,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse",
+      "total": 18
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "1e5e05cf-6d71-49f7-ad98-bfb44843c278",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:18 GMT",
+      "Content-Length",
+      "1021",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2218cd79-8c78-4b18-8c74-575d362517a4/accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01T07%3A00%3A00Z&endsAt=2019-11-09T07%3A59%3A59Z&page=16&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "5096ca44-0a22-4a63-b7f0-33b1eecd2601",
+          "debit": false,
+          "amount": 86.49,
+          "recentStatus": "SETTLED",
+          "recentStatusNote": "",
+          "statusHistory": [
+            {
+              "date": 1573073409790,
+              "note": "Transaction Created.",
+              "status": "CREATED",
+              "status_id": "1"
+            },
+            {
+              "date": 1573074199374,
+              "note": "",
+              "status": "PROCESSING-DEBIT",
+              "status_id": "2"
+            },
+            {
+              "date": 1573074199402,
+              "note": "",
+              "status": "PROCESSING-CREDIT",
+              "status_id": "3"
+            },
+            {
+              "date": 1573074199424,
+              "note": "",
+              "status": "SETTLED",
+              "status_id": "4"
+            }
+          ],
+          "pending": false,
+          "transactedAt": "2019-11-06T20:50:09.000Z",
+          "settledAt": "2019-11-06T21:03:19.000Z",
+          "source": {
+            "name": "Synapse",
+            "legalNames": ["Synapse"]
+          },
+          "created": "2019-11-06T20:50:10.000Z",
+          "updated": "2019-11-06T21:04:00.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null,
+          "disputed": false,
+          "userDismissed": "NOT_NEEDED",
+          "amountBreakdown": {
+            "amount": 86.49,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse",
+      "total": 18
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "f3e87bb4-16ba-4c02-be54-1a3208b13ec6",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:18 GMT",
+      "Content-Length",
+      "1021",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2218cd79-8c78-4b18-8c74-575d362517a4/accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01T07%3A00%3A00Z&endsAt=2019-11-09T07%3A59%3A59Z&page=17&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "e74e29f8-8c87-4da9-b568-8a59d2d954dd",
+          "debit": false,
+          "amount": 3.68,
+          "recentStatus": "SETTLED",
+          "recentStatusNote": "",
+          "statusHistory": [
+            {
+              "date": 1573073399791,
+              "note": "Transaction Created.",
+              "status": "CREATED",
+              "status_id": "1"
+            },
+            {
+              "date": 1573073907529,
+              "note": "",
+              "status": "PROCESSING-DEBIT",
+              "status_id": "2"
+            },
+            {
+              "date": 1573073907535,
+              "note": "",
+              "status": "PROCESSING-CREDIT",
+              "status_id": "3"
+            },
+            {
+              "date": 1573073907601,
+              "note": "",
+              "status": "SETTLED",
+              "status_id": "4"
+            }
+          ],
+          "pending": false,
+          "transactedAt": "2019-11-06T20:49:59.000Z",
+          "settledAt": "2019-11-06T20:58:27.000Z",
+          "source": {
+            "name": "Synapse",
+            "legalNames": ["Synapse"]
+          },
+          "created": "2019-11-06T20:50:00.000Z",
+          "updated": "2019-11-06T20:59:00.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null,
+          "disputed": false,
+          "userDismissed": "NOT_NEEDED",
+          "amountBreakdown": {
+            "amount": 3.68,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse",
+      "total": 18
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "16b4c5eb-cc5f-4f1c-9e0b-3123fd6db708",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:19 GMT",
+      "Content-Length",
+      "1019",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2218cd79-8c78-4b18-8c74-575d362517a4/accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01T07%3A00%3A00Z&endsAt=2019-11-09T07%3A59%3A59Z&page=18&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "c783b724-fecc-44d8-8ec9-f4acd8224d71",
+          "debit": true,
+          "amount": 47.56,
+          "recentStatus": "SETTLED",
+          "recentStatusNote": "",
+          "statusHistory": [
+            {
+              "date": 1573073388230,
+              "note": "Transaction Created.",
+              "status": "CREATED",
+              "status_id": "1"
+            },
+            {
+              "date": 1573074230618,
+              "note": "",
+              "status": "PROCESSING-DEBIT",
+              "status_id": "2"
+            },
+            {
+              "date": 1573074232523,
+              "note": "",
+              "status": "PROCESSING-CREDIT",
+              "status_id": "3"
+            },
+            {
+              "date": 1573074232528,
+              "note": "",
+              "status": "SETTLED",
+              "status_id": "4"
+            }
+          ],
+          "pending": false,
+          "transactedAt": "2019-11-06T20:49:48.000Z",
+          "settledAt": "2019-11-06T21:03:52.000Z",
+          "source": {
+            "name": "Synapse",
+            "legalNames": ["Synapse"]
+          },
+          "created": "2019-11-06T20:49:49.000Z",
+          "updated": "2019-11-06T21:04:00.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null,
+          "disputed": false,
+          "userDismissed": "NOT_NEEDED",
+          "amountBreakdown": {
+            "amount": 47.56,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse",
+      "total": 18
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "285f9d80-875a-4963-af4d-58c679e7b728",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:19 GMT",
+      "Content-Length",
+      "1020",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2218cd79-8c78-4b18-8c74-575d362517a4/accounts/9f79bba2-0725-4667-804c-749d0b68e827/transactions?startsAt=2019-11-01T07%3A00%3A00Z&endsAt=2019-11-09T07%3A59%3A59Z&page=19&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [],
+      "message": "success",
+      "name": "ApiResponse",
+      "total": 18
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "4418aa6b-0c68-4c4b-91e9-1b6a3c459379",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 19 Nov 2019 01:12:19 GMT",
+      "Content-Length",
+      "97",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

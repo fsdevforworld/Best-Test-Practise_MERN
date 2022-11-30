@@ -1,0 +1,32 @@
+[
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/0/accounts",
+    "body": "",
+    "status": 404,
+    "response": {
+      "name": "NotFound",
+      "message": "NotFound",
+      "code": 404,
+      "type": "NOT_FOUND_ERROR",
+      "data": {}
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "dd6999b2-8ae0-4a42-b3ad-537e93ef6a85",
+      "Content-type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 26 Mar 2019 19:30:44 GMT",
+      "Transfer-Encoding",
+      "chunked",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

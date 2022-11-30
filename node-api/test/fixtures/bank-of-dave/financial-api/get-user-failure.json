@@ -1,0 +1,67 @@
+[
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/bacon/info",
+    "body": "",
+    "status": 401,
+    "response": {
+      "name": "Unauthorized",
+      "message": "Unauthorized",
+      "code": 401,
+      "type": "AUTHORIZATION_ERROR",
+      "data": {}
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "aee75212-2258-4279-adfb-23851095f885",
+      "Content-type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Thu, 04 Apr 2019 21:14:00 GMT",
+      "Transfer-Encoding",
+      "chunked",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "http://127.0.0.1:50895",
+    "method": "POST",
+    "path": "/v2/bank_connection/bank_of_dave",
+    "body": {
+      "bankOfDaveUserUUID": "bacon"
+    },
+    "status": 500,
+    "response": {
+      "type": "internal_api",
+      "message": "Unauthorized\nConfused? Send us this error ID: afa7f0ac",
+      "customCode": null,
+      "data": {}
+    },
+    "rawHeaders": [
+      "X-Powered-By",
+      "Express",
+      "Cache-Control",
+      "no-cache",
+      "Pragma",
+      "no-cache",
+      "Expires",
+      "0",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "119",
+      "ETag",
+      "W/\"77-GXUii1MkCsaeqVQFoKCVtZEQDok\"",
+      "Date",
+      "Thu, 04 Apr 2019 21:14:00 GMT",
+      "Connection",
+      "close"
+    ]
+  }
+]

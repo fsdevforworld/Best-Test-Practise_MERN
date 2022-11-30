@@ -1,0 +1,36 @@
+[
+  {
+    "scope": "https://bank-api-staging.trydave.com:443",
+    "method": "POST",
+    "path": "/internal-api/v1/bank-accounts/0b39346b-9b00-4aee-a11e-0428fd13df81/collect",
+    "body": {
+      "amount": 1,
+      "referenceId": "pelican-123-0002"
+    },
+    "status": 200,
+    "response": {
+      "transaction": {
+        "amount": -1,
+        "id": "a7991145-f1c7-4d43-933c-b46d60952b17",
+        "status": "pending",
+        "transactedAt": "2020-04-02T16:14:28.000Z"
+      }
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "95c194bf-3452-42bc-acef-9b22863dc64e",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Thu, 04 Apr 2019 20:02:30 GMT",
+      "Content-Length",
+      "972",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

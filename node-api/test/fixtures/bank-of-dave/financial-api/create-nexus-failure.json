@@ -1,0 +1,32 @@
+[
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/bacon/info",
+    "body": "",
+    "status": 401,
+    "response": {
+      "name": "Unauthorized",
+      "message": "Unauthorized",
+      "code": 401,
+      "type": "AUTHORIZATION_ERROR",
+      "data": {}
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "fa300587-f446-46b1-abaa-ad735d1b78f6",
+      "Content-type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Thu, 04 Apr 2019 21:46:19 GMT",
+      "Transfer-Encoding",
+      "chunked",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

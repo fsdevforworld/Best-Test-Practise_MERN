@@ -1,0 +1,32 @@
+[
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/1783460/accounts/ellie-rulez/transactions?startsAt=2019-03-01T08%3A00%3A00Z&endsAt=2019-03-26T06%3A59%3A59Z&page=1&perPage=1",
+    "body": "",
+    "status": 404,
+    "response": {
+      "name": "NotFound",
+      "message": "NotFound (NodeID: core-banking-sandbox-5f9d8c7b9c-kcb8d-33-1)",
+      "code": 404,
+      "type": "NOT_FOUND_ERROR",
+      "data": {}
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "4340888d-fdde-453b-b0cb-264245464dc3",
+      "Content-type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 02 Apr 2019 23:47:47 GMT",
+      "Transfer-Encoding",
+      "chunked",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

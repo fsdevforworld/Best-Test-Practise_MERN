@@ -1,0 +1,30 @@
+[
+  {
+    "scope": "https://promotions-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/manage/user-info?id=123456789",
+    "body": "",
+    "status": 404,
+    "response": {
+      "error": "segmentUser records not found for id 123456789"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx/1.17.10",
+      "Date",
+      "Wed, 03 Mar 2021 23:16:06 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "58",
+      "Connection",
+      "close",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"3a-wkDO+R+ZDNEKdS0mmj9Uq+YVUFI\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  }
+]

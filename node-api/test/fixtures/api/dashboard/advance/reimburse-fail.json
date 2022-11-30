@@ -1,0 +1,34 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "POST",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/transactions",
+    "body": {
+      "referenceID": "4fpul462f422123",
+      "type": "push",
+      "amount": "0.01",
+      "accounts": {
+        "sourceAccountID": "BQsCNSGV0IY6SjArjuOS9Q",
+        "destinationAccountID": "AL8FE3HESGAxb8ti45bJsQ"
+      }
+    },
+    "status": 409,
+    "response": {
+      "SC": 409,
+      "EC": "3C5E5710",
+      "EM": "referenceID"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Tue, 11 Feb 2020 21:55:23 GMT",
+      "Content-Length",
+      "45",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  }
+]

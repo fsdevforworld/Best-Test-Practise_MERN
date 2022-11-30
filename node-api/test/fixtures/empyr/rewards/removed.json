@@ -1,0 +1,71 @@
+{
+  "type": "REMOVED",
+  "transaction": {
+    "id": 3465159,
+    "amount": 9.56,
+    "cashbackAmount": 0.88,
+    "cashbackBilled": 0.88,
+    "referralFee": 0.88,
+    "dateOfTransaction": 1473727324000,
+    "rewardTime": 1473741727000,
+    "dateProcessed": 1473663600000,
+    "venue": {
+      "id": 3844,
+      "name": "Big E's Pizza",
+      "latitude": 33.790007,
+      "longitude": -118.1536038,
+      "distance": null,
+      "phone": "(562) 498-8788",
+      "thumbnailUrl": {
+        "value": "/images/business/3844/big-e-s-pizza1870620740-thumb.jpg"
+      },
+      "rating": 3.5,
+      "address": {
+        "streetAddress": "3225 E Pacific Coast Hwy",
+        "postalCode": "90755",
+        "city": "Signal Hill",
+        "state": "CA",
+        "metroId": 2,
+        "metroName": "Los Angeles Area",
+        "metroImage": {
+          "value": "/images/metros/LA_Mobile.png"
+        },
+        "metroActive": true
+      },
+      "applicationId": 1
+    },
+    "user": {
+      "id": 617149,
+      "firstname": "Living",
+      "lastname": "Social",
+      "thumbnailUrl": {
+        "value": "/images/user/userDefault.png"
+      },
+      "email": null,
+      "privacyLevel": "EVERYONE",
+      "address": {
+        "streetAddress": null,
+        "postalCode": "20005",
+        "city": "Washington",
+        "state": "DC",
+        "metroId": 5354,
+        "metroName": "Washington DC",
+        "metroImage": {
+          "value": "/images/metros/US_Mobile.png"
+        },
+        "metroActive": false
+      },
+      "donatePercent": 0.0,
+      "numAlerts": 0
+    },
+    "cardId": 526915,
+    "clearingAmount": null,
+    "authorizationAmount": 9.56,
+    "last4": "0971"
+  },
+  "payable": null,
+  "card": null,
+  "transactionReport": null,
+  "statsReport": null,
+  "business": null
+}

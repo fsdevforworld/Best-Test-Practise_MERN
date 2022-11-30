@@ -1,0 +1,6 @@
+{
+  "access_token": "a115aee8-ae80-4c6f-b879-6068cb2562a9",
+  "token_type": "bearer",
+  "expires_in": 2260,
+  "scope": "users_email users_read cards_read cards_write users_write users_create"
+}

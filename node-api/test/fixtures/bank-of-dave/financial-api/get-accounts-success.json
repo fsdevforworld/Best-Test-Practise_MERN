@@ -1,0 +1,53 @@
+[
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/1783460/accounts",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "account[]",
+      "data": [
+        {
+          "uuid": "0b39346b-9b00-4aee-a11e-0428fd13df81",
+          "active": true,
+          "allowed": "CREDIT-AND-DEBIT",
+          "nickname": "Sandbox Debit Card Checking",
+          "balance": 0.1,
+          "created": "2019-03-04T18:47:06.000Z",
+          "updated": "2019-03-26T19:27:03.000Z",
+          "cards": [],
+          "regularACH": {
+            "accountNumber": "9899880434",
+            "regularRouting": "084106768",
+            "wireRouting": "084106768"
+          },
+          "directDepositACH": {
+            "accountNumber": "9892601028",
+            "regularRouting": "084106768",
+            "wireRouting": "084106768"
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "37241b4d-3722-4d47-a29e-f34eff005d8c",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 26 Mar 2019 19:27:46 GMT",
+      "Content-Length",
+      "516",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

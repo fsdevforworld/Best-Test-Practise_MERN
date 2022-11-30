@@ -1,0 +1,39 @@
+[
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/item/remove",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "access_token": "access-sandbox-01f630cc-e08f-4d89-9021-26a1577abcdf"
+    },
+    "status": 200,
+    "response": {
+      "removed": true,
+      "request_id": "6mhGZu9nA9FwEWQ"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Thu, 14 Feb 2019 22:13:24 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "56",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options",
+      "DENY",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-XSS-Protection",
+      "1; mode=block"
+    ]
+  }
+]

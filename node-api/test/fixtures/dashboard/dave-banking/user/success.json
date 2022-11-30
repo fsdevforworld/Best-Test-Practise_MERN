@@ -1,0 +1,39 @@
+[
+  {
+    "scope": "https://bank-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/internal-api/v1/users/3",
+    "body": "",
+    "status": 200,
+    "response": {
+      "bankAccounts": [
+        {
+          "accountNumber": "269101003201",
+          "currentBalance": 0,
+          "id": "4c6fe58e23484a0da98a683fe343e2b5",
+          "name": "error refer Checking",
+          "routingNumber": "084106768",
+          "status": "active"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx/1.17.7",
+      "Date",
+      "Mon, 20 Jul 2020 17:20:40 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "186",
+      "Connection",
+      "close",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"ba-jSVbTnVF4LWn8ockNlSeRncvKds\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  }
+]

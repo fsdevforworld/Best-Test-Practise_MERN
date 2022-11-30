@@ -1,0 +1,21 @@
+[
+  {
+    "scope": "http://oracle-v1-0",
+    "method": "POST",
+    "path": "/underwriting/global_model_random_sample/score",
+    "body": {
+      "user_id": 1,
+      "bank_account_id": 1,
+      "payback_date": "2020-06-19",
+      "cache_only": false
+    },
+    "status": 201,
+    "response": {
+      "score": 0.83249,
+      "metadata": {
+        "cached_at": null,
+        "cached_from": null
+      }
+    }
+  }
+]

@@ -1,0 +1,99 @@
+.inputWrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.label {
+  color: var(--gray4);
+  font-size: 18px;
+  position: absolute;
+  left: 12px;
+  top: calc(50% - 10.5px);
+  padding: 0 4px;
+  pointer-events: none;
+  background: var(--white);
+  transition: top 200ms ease;
+}
+.input {
+  background-clip: padding-box;
+  border: 2px solid var(--gray2);
+  border-radius: 6px;
+  color: var(--black);
+  font-size: 20px;
+  outline: none;
+  padding: 12px 14px 14px 14px;
+  position: relative;
+}
+
+.input-date-picker {
+  width: calc(100% - 32px);
+}
+
+.input-lg {
+  padding: 20px 14px 22px;
+  border-width: 1px;
+  border-color: var(--gray3);
+}
+
+.input-dark {
+  background-color: #212121;
+  border-color: #636363;
+  color: var(--gray2);
+}
+
+.label-lg {
+  color: var(--gray3);
+  font-weight: 500;
+}
+
+.label-dark {
+  background-color: #212121;
+  color: #b0b0b0;
+}
+
+.inputError {
+  border: 2px solid var(--candy3);
+  padding-right: 50px;
+}
+
+.labelError {
+  color: var(--candy3);
+}
+
+.input.inputError:focus {
+  border-color: var(--candy3);
+}
+
+.input:focus {
+  border-color: var(--green3);
+}
+
+.input:focus + .label {
+  color: var(--green3);
+  font-size: 12px;
+  top: -7px;
+}
+
+.input.inputError:focus + .label {
+  color: var(--candy3);
+}
+
+.input:not(:placeholder-shown) + .label {
+  font-size: 12px;
+  top: -7px;
+}
+
+.errorText {
+  margin-left: 16px;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.icon {
+  position: absolute;
+  top: calc(50% - 10px);
+  right: 20px;
+}

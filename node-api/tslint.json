@@ -1,0 +1,34 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "quotemark": [true, "single", "avoid-escape"],
+    "object-literal-sort-keys": false,
+    "no-console": true,
+    "ordered-imports": false,
+    "comment-format": false,
+    "jsdoc-format": false,
+    "arrow-parens": [true, "ban-single-arg-parens"],
+    "no-unnecessary-initializer": false,
+    "max-line-length": false,
+    "max-classes-per-file": false,
+    "no-empty": false,
+    "semicolon": false,
+    "interface-over-type-literal": false,
+    "no-require-imports": true,
+    "variable-name": [true, "check-format", "allow-leading-underscore", "allow-pascal-case"],
+    "object-literal-key-quotes": [true, "as-needed"],
+    "ban": [
+      true,
+      "eval",
+      ["describe", "only"],
+      ["it", "only"],
+      ["context", "only"],
+      ["sinon", "stub"],
+      ["sinon", "useFakeTimers"]
+    ],
+    "switch-default": true
+  },
+  "linterOptions": {
+    "exclude": ["dist"]
+  }
+}

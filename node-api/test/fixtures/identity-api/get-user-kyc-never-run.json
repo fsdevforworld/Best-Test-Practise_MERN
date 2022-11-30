@@ -1,0 +1,40 @@
+[
+  {
+    "scope": "https://identity-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/api/v1/users/2",
+    "body": "",
+    "status": 200,
+    "response": {
+      "userInfo": {
+        "firstName": "Alfonso",
+        "lastName": "Legros",
+        "email": null,
+        "phone": "+14917133717"
+      },
+      "kycStatus": {
+        "status": "never_run"
+      }
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx/1.17.7",
+      "Date",
+      "Mon, 26 Apr 2021 23:26:25 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "423",
+      "Connection",
+      "close",
+      "Vary",
+      "Accept-Encoding",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"1a7-onyD7BP2T6BfVaUScMA9zaGqsMo\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  }
+]

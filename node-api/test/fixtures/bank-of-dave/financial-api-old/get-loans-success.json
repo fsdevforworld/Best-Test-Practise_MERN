@@ -1,0 +1,74 @@
+[
+  {
+    "scope": "http://localhost:3002",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/60779/accounts/fedde053-1c79-47b5-87b4-813aaafdab56/loans",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "loan[]",
+      "data": [
+        {
+          "uuid": "69a18850-d5da-45c2-9e69-530ea8dbfd59",
+          "loanReferenceId": "5",
+          "loanReferenceType": "ADVANCE",
+          "initialAmount": 100,
+          "metadata": {},
+          "created": "2019-03-20T05:18:30.000Z",
+          "updated": "2019-03-20T05:18:30.000Z",
+          "loanTransactions": [
+            {
+              "uuid": "f5def95f-88fd-4562-be04-0ffb323cc2d3",
+              "transactionType": "ADVANCE",
+              "created": "2019-03-20T05:18:30.000Z",
+              "updated": "2019-03-20T05:18:30.000Z",
+              "transaction": {
+                "uuid": "dcdc60ac-31c3-4b2a-bd49-2eae9ef19532",
+                "debit": false,
+                "amount": 100,
+                "amountBreakdown": {
+                  "amount": 100,
+                  "fees": {
+                    "surcharge": 0,
+                    "totalFeeAmount": 0,
+                    "feeDetails": [
+                      {
+                        "feeType": "Facilitator Fee",
+                        "feeAmount": 0
+                      }
+                    ]
+                  }
+                },
+                "pending": true,
+                "type": "TRANSFER",
+                "source": {
+                  "name": "Test Debit Card",
+                  "legalNames": ["Test Debit Card"]
+                },
+                "created": "2019-03-20T05:18:29.000Z",
+                "updated": "2019-03-20T05:18:29.000Z",
+                "returned": false,
+                "returnedMessage": null
+              }
+            }
+          ]
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "5f1d6169-0057-4399-8996-dc64debd7dd5",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Wed, 20 Mar 2019 05:19:57 GMT",
+      "Connection",
+      "close",
+      "Content-Length",
+      "896"
+    ]
+  }
+]

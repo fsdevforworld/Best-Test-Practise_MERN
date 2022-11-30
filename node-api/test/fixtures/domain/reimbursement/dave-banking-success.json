@@ -1,0 +1,99 @@
+[
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "POST",
+    "path": "/financial/api/1.0/users/9660f451-f5b3-4259-8568-7d816c93068e/accounts/02fd800f-9e74-4a9d-8268-7133285fc709/loans",
+    "body": {
+      "amount": 0.1,
+      "loanReferenceId": "4c8a69a3d86f3b2",
+      "transactionReferenceId": "4c8a69a3d86f3b2",
+      "loanReferenceType": "ADVANCE"
+    },
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "loan",
+      "data": {
+        "uuid": "e255b1bd-47f9-40eb-a72d-ec95c5cee36b",
+        "loanReferenceId": "4c8a69a3d86f3b2",
+        "loanReferenceType": "ADVANCE",
+        "initialAmount": 0.1,
+        "metadata": {},
+        "created": "2020-02-06T19:34:54.000Z",
+        "updated": "2020-02-06T19:34:54.000Z",
+        "loanTransactions": [
+          {
+            "uuid": "d5e83be5-d768-475b-8d71-b373b952aaa3",
+            "transactionReferenceId": "4c8a69a3d86f3b2",
+            "transactionType": "ADVANCE",
+            "failed": false,
+            "error": null,
+            "created": "2020-02-06T19:34:54.000Z",
+            "updated": "2020-02-06T19:34:56.000Z",
+            "transaction": {
+              "uuid": "fb16bfb4-e4eb-4b19-9590-3f916bc5a6dc",
+              "debit": false,
+              "amount": 0.1,
+              "recentStatus": "CREATED",
+              "recentStatusNote": "Transaction Created.",
+              "statusHistory": [
+                {
+                  "date": 1581017696128,
+                  "note": "Transaction Created.",
+                  "status": "CREATED",
+                  "status_id": "1"
+                }
+              ],
+              "pending": true,
+              "type": "DAVE",
+              "transactedAt": "2020-02-06T19:34:56.000Z",
+              "settledAt": null,
+              "source": {
+                "name": "Dave",
+                "legalNames": ["Dave"]
+              },
+              "created": "2020-02-06T19:34:56.000Z",
+              "updated": "2020-02-06T19:34:56.000Z",
+              "returned": false,
+              "cancelled": false,
+              "returnedMessage": null,
+              "disputed": false,
+              "userDismissed": "NOT_NEEDED",
+              "amountBreakdown": {
+                "amount": 0.1,
+                "fees": {
+                  "surcharge": 0,
+                  "totalFeeAmount": 0,
+                  "feeDetails": [
+                    {
+                      "feeType": "Facilitator Fee",
+                      "feeAmount": 0
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      },
+      "message": "success",
+      "name": "ApiResponse"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "cda6f6e6-27bf-49f0-a993-4230064b8bbc",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Thu, 06 Feb 2020 19:34:57 GMT",
+      "Content-Length",
+      "1247",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

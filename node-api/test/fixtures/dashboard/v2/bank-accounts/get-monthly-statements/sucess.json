@@ -1,0 +1,57 @@
+[
+  {
+    "scope": "https://bank-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/internal-api/v1/bank-accounts/c49adcd0890411ebbd8a693742e169dc/monthly-statements",
+    "body": "",
+    "status": 200,
+    "response": {
+      "statements": [
+        {
+          "month": "06",
+          "year": "2021",
+          "accountId": "c49adcd0890411ebbd8a693742e169dc",
+          "isEmpty": true
+        },
+        {
+          "id": "73b17ddd1f494de79b2e77ff918a5a93",
+          "accountId": "c49adcd0890411ebbd8a693742e169dc",
+          "month": "05",
+          "year": "2021",
+          "isEmpty": false
+        },
+        {
+          "id": "20e7ff5446eb47fabb53fbb20690e80b",
+          "accountId": "c49adcd0890411ebbd8a693742e169dc",
+          "month": "04",
+          "year": "2021",
+          "isEmpty": false
+        },
+        {
+          "month": "03",
+          "year": "2021",
+          "accountId": "c49adcd0890411ebbd8a693742e169dc",
+          "isEmpty": true
+        }
+      ]
+    },
+    "rawHeaders": [
+      "X-Powered-By",
+      "Express",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "462",
+      "ETag",
+      "W/\"1ce-IbEr+7dNFpDlOJMUoOdSnGZ5bpg\"",
+      "Date",
+      "Tue, 13 Jul 2021 17:19:09 GMT",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

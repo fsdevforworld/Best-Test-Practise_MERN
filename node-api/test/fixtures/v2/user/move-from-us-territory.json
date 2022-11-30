@@ -1,0 +1,48 @@
+[
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/address-verification",
+    "body": {
+      "address_street": "1800 BARKER CYPRESS RD",
+      "address_city": "HOUSTON",
+      "address_subdivision": "TX",
+      "address_country_code": "US",
+      "address_postal_code": "77084"
+    },
+    "status": 200,
+    "response": [
+      "1f8b080000000000000364cf4d6bc3300c06e0fb7e45d039870c062dbeeda33018ac2569613b19255687c0b1836507d292ff3eba654de86e42cf2b249dc190e59e02d66c390ea0e68625ddb208bb2f9d1c47c86fb21a1dda4158409da1c31019adeed1b2011543a21cbac02d8641bbd4d61434bb498f68e53f4fcbae2cd478672e81dbc159ae339785630ece87162d9fc868342690fc1c3795baf9fdf0757ba8f6db77c867f0c9c530e8c61b0205876a619d9788f68f56ab62fdb0508981288282fb7551644f8fe5dba6cc9e3f77e5a6aab2f265994cb5e19e85bd0305fb0f18c7bb6f000000ffff030000d9f10e7f010000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Sun, 31 May 2020 19:06:23 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "cf-request-id",
+      "030db9d057000004df1ea97200000001",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "59c2f8c6fca404df-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  }
+]

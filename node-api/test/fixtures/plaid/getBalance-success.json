@@ -1,0 +1,114 @@
+[
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/accounts/balance/get",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "access_token": "access-sandbox-01f630cc-e08f-4d89-9021-26a1577abcdf",
+      "options": {}
+    },
+    "status": 200,
+    "response": {
+      "accounts": [
+        {
+          "account_id": "3gKDDKlKoDioMVg6X8PGHgLpk8VBR5fqr68dL",
+          "balances": {
+            "available": 100,
+            "current": 110,
+            "limit": null
+          },
+          "mask": "0000",
+          "name": "Plaid Checking",
+          "official_name": "Plaid Gold Standard 0% Interest Checking",
+          "subtype": "checking",
+          "type": "depository"
+        },
+        {
+          "account_id": "BxRggReRAgfGegorM4JAHlR5gpExQPFwWELDl",
+          "balances": {
+            "available": 200,
+            "current": 210,
+            "limit": null
+          },
+          "mask": "1111",
+          "name": "Plaid Saving",
+          "official_name": "Plaid Silver Standard 0.1% Interest Saving",
+          "subtype": "savings",
+          "type": "depository"
+        },
+        {
+          "account_id": "zqmEEmymVECEr6amVXvzH7p6K1jdDJSo7rg4r",
+          "balances": {
+            "available": null,
+            "current": 1000,
+            "limit": null
+          },
+          "mask": "2222",
+          "name": "Plaid CD",
+          "official_name": "Plaid Bronze Standard 0.2% Interest CD",
+          "subtype": "cd",
+          "type": "brokerage"
+        },
+        {
+          "account_id": "xVrZZrbryZf6KDrBJmlxhqboZ16xvwHn7jAdX",
+          "balances": {
+            "available": null,
+            "current": 410,
+            "limit": 2000
+          },
+          "mask": "3333",
+          "name": "Plaid Credit Card",
+          "official_name": "Plaid Diamond 12.5% APR Interest Credit Card",
+          "subtype": "credit card",
+          "type": "credit"
+        },
+        {
+          "account_id": "rVJ44J8J14fKLgkAj74yTZGdXvz9BjtlP4D3w",
+          "balances": {
+            "available": 43200,
+            "current": 43200,
+            "limit": null
+          },
+          "mask": "4444",
+          "name": "Plaid Money Market",
+          "official_name": "Plaid Platinum Standard 1.85% Interest Money Market",
+          "subtype": "money market",
+          "type": "other"
+        }
+      ],
+      "item": {
+        "available_products": ["assets", "balance", "credit_details", "identity", "income"],
+        "billed_products": ["auth", "transactions"],
+        "error": null,
+        "institution_id": "ins_3",
+        "item_id": "gVbLLbjbdLfRxo3DAwrGhp81QWDKrmcgGwaK8",
+        "webhook": "https://dave-dick.ngrok.io/v1/bank/plaid_webhook"
+      },
+      "request_id": "fsNmvcfCzWbuEjr"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Tue, 12 Feb 2019 20:52:24 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options",
+      "DENY",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-XSS-Protection",
+      "1; mode=block"
+    ]
+  }
+]

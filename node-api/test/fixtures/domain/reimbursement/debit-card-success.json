@@ -1,0 +1,38 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "POST",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/transactions",
+    "body": {
+      "referenceID": "32ed1462f422ba7",
+      "type": "push",
+      "amount": "0.10",
+      "accounts": {
+        "sourceAccountID": "BQsCNSGV0IY6SjArjuOS9Q",
+        "destinationAccountID": "AL8FE3HESGAxb8ti45bJsQ"
+      }
+    },
+    "status": 200,
+    "response": {
+      "SC": 200,
+      "EC": "0",
+      "transactionID": "jCcVeZiUWKVj-pWNWxImvQ",
+      "network": "Visa",
+      "networkRC": "00",
+      "status": "COMPLETED",
+      "approvalCode": "192964"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Wed, 05 Feb 2020 22:04:26 GMT",
+      "Content-Length",
+      "139",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  }
+]

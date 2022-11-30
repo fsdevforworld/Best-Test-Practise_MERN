@@ -1,0 +1,50 @@
+[
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/address-verification",
+    "body": {
+      "address_street": "PO Box 123",
+      "address_city": "Los Angeles",
+      "address_subdivision": "CA",
+      "address_country_code": "US",
+      "address_postal_code": "90019"
+    },
+    "status": 200,
+    "response": [
+      "1f8b08000000000000037ccf3d6bc3400c06e0bdbfc268f69036439bdbd212b284ba100add0ed9a706817c67a4b3c10dfeefa15f899ba19bd0f3be201d2190f0408a350be7111cf4d6993f6f85a0bcca788c28a3b1813b42879a19c50f281cc0bda31895d029b7a8a38f7d5b937a8eff72cb661c0f67366a520c9f81ebe245fe76a61262d216853f28780c41c9becefb197df3fddbaeda17ebe7ed66b7d94379c1d4c7aca36f522070f03ab72e5946f9a5d56271ff3053cb4a94c1c14b553c566fc5eddd72ae7d1d7860e314c1c1d31aa6e9e6040000ffff03007d99925c71010000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Wed, 22 Jul 2020 22:32:31 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d160e8d48c4be6abac01c529637003db81595457150; expires=Fri, 21-Aug-20 22:32:30 GMT; path=/; domain=.synapsefi.com; HttpOnly; SameSite=Lax; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "cf-request-id",
+      "041a4136c70000991d58801200000001",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "5b709e37af78991d-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  }
+]

@@ -1,0 +1,248 @@
+[
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/transactions/get",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "access_token": "access-sandbox-1fbf327f-6bf1-423d-b966-425d420d0fa2",
+      "start_date": "2019-03-28",
+      "end_date": "2019-04-06",
+      "options": {
+        "count": 500,
+        "offset": 0,
+        "account_ids": ["Z5qdlz6kPgFDRx1RzD6MuLdW6PxjKACg6JwQm"]
+      }
+    },
+    "status": 200,
+    "response": {
+      "accounts": [
+        {
+          "account_id": "Z5qdlz6kPgFDRx1RzD6MuLdW6PxjKACg6JwQm",
+          "balances": {
+            "available": 100,
+            "current": 110,
+            "limit": null
+          },
+          "mask": "0000",
+          "name": "Plaid Checking",
+          "official_name": "Plaid Gold Standard 0% Interest Checking",
+          "subtype": "checking",
+          "type": "depository"
+        }
+      ],
+      "item": {
+        "available_products": ["assets", "balance", "credit_details", "identity", "income"],
+        "billed_products": ["auth", "transactions"],
+        "error": null,
+        "institution_id": "ins_1",
+        "item_id": "R58Rmj6lzVFR9PL9BRjEUj4bd8rrLjFRLJ8vq",
+        "webhook": "https://dave-dick.ngrok.io/v1/bank/plaid_webhook"
+      },
+      "request_id": "kzRxW2gDL5TRlqO",
+      "total_transactions": 1,
+      "transactions": [
+        {
+          "account_id": "Z5qdlz6kPgFDRx1RzD6MuLdW6PxjKACg6JwQm",
+          "account_owner": null,
+          "amount": 25,
+          "category": ["Payment", "Credit Card"],
+          "category_id": "16001000",
+          "date": "2019-03-28",
+          "location": {
+            "address": null,
+            "city": null,
+            "lat": null,
+            "lon": null,
+            "state": null,
+            "store_number": null,
+            "zip": null
+          },
+          "name": "CREDIT CARD 3333 PAYMENT *//",
+          "payment_meta": {
+            "by_order_of": null,
+            "payee": null,
+            "payer": null,
+            "payment_method": null,
+            "payment_processor": null,
+            "ppd_id": null,
+            "reason": null,
+            "reference_number": null
+          },
+          "pending": false,
+          "pending_transaction_id": null,
+          "transaction_id": "6Wg11grg51FpqgmZ68nXUPoZNn8D5Lfg9ZG3q",
+          "transaction_type": "special"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Thu, 04 Apr 2019 04:23:08 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "839",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options",
+      "DENY",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-XSS-Protection",
+      "1; mode=block"
+    ]
+  },
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/accounts/balance/get",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "access_token": "access-sandbox-1fbf327f-6bf1-423d-b966-425d420d0fa2",
+      "options": {
+        "account_ids": ["Z5qdlz6kPgFDRx1RzD6MuLdW6PxjKACg6JwQm"]
+      }
+    },
+    "status": 200,
+    "response": {
+      "accounts": [
+        {
+          "account_id": "Z5qdlz6kPgFDRx1RzD6MuLdW6PxjKACg6JwQm",
+          "balances": {
+            "available": 100,
+            "current": 110,
+            "limit": null
+          },
+          "mask": "0000",
+          "name": "Plaid Checking",
+          "official_name": "Plaid Gold Standard 0% Interest Checking",
+          "subtype": "checking",
+          "type": "depository"
+        }
+      ],
+      "item": {
+        "available_products": ["assets", "balance", "credit_details", "identity", "income"],
+        "billed_products": ["auth", "transactions"],
+        "error": null,
+        "institution_id": "ins_1",
+        "item_id": "R58Rmj6lzVFR9PL9BRjEUj4bd8rrLjFRLJ8vq",
+        "webhook": "https://dave-dick.ngrok.io/v1/bank/plaid_webhook"
+      },
+      "request_id": "AgYBgS3Tf34IYcw"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Thu, 04 Apr 2019 04:23:09 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "790",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options",
+      "DENY",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-XSS-Protection",
+      "1; mode=block"
+    ]
+  },
+  {
+    "scope": "http://127.0.0.1:63463",
+    "method": "POST",
+    "path": "/v2/bank_account/1/refresh",
+    "body": "",
+    "status": 200,
+    "response": "",
+    "rawHeaders": [
+      "X-Powered-By",
+      "Express",
+      "Cache-Control",
+      "no-cache",
+      "Pragma",
+      "no-cache",
+      "Expires",
+      "0",
+      "Date",
+      "Thu, 04 Apr 2019 04:23:08 GMT",
+      "Connection",
+      "close",
+      "Content-Length",
+      "0"
+    ]
+  },
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/accounts/get",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "access_token": "access-sandbox-1fbf327f-6bf1-423d-b966-425d420d0fa2"
+    },
+    "status": 200,
+    "response": {
+      "accounts": [
+        {
+          "account_id": "Z5qdlz6kPgFDRx1RzD6MuLdW6PxjKACg6JwQm",
+          "balances": {
+            "available": 100,
+            "current": 110,
+            "limit": null
+          },
+          "mask": "0000",
+          "name": "Plaid Checking",
+          "official_name": "Plaid Gold Standard 0% Interest Checking",
+          "subtype": "checking",
+          "type": "depository"
+        }
+      ],
+      "item": {
+        "available_products": ["assets", "balance", "credit_details", "identity", "income"],
+        "billed_products": ["auth", "transactions"],
+        "error": null,
+        "institution_id": "ins_1",
+        "item_id": "R58Rmj6lzVFR9PL9BRjEUj4bd8rrLjFRLJ8vq",
+        "webhook": "https://dave-dick.ngrok.io/v1/bank/plaid_webhook"
+      },
+      "request_id": "M4dMSIcGcoyJ8e2"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Tue, 02 Apr 2019 21:32:26 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options",
+      "DENY",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-XSS-Protection",
+      "1; mode=block"
+    ]
+  }
+]

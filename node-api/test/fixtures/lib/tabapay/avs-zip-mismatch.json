@@ -1,0 +1,73 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "POST",
+    "path": "/v1/clients/secret:tabapay-clientId_0005/cards?AVS",
+    "body": {
+      "owner": {
+        "name": {
+          "first": "Pelly",
+          "last": "Pelican"
+        },
+        "address": {
+          "line1": "123 Pelican Row",
+          "city": "Pelican City",
+          "state": "CA",
+          "zipcode": "99992"
+        }
+      },
+      "amount": "75.00",
+      "account": {
+        "accountID": "AfQW4HBFkSBi-i9r9na3Cw"
+      }
+    },
+    "status": 200,
+    "response": {
+      "SC": 200,
+      "EC": "0",
+      "card": {
+        "pull": {
+          "enabled": true,
+          "network": "Visa",
+          "type": "Debit",
+          "regulated": true,
+          "currency": "840",
+          "country": "840"
+        },
+        "push": {
+          "enabled": true,
+          "network": "Visa",
+          "type": "Debit",
+          "availability": "Immediate",
+          "regulated": true,
+          "currency": "840",
+          "country": "840"
+        }
+      },
+      "AVS": {
+        "networkRC": "05",
+        "authorizeID": "063504",
+        "resultText": "DECLINE",
+        "codeAVS": "A"
+      }
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Sun, 28 Feb 2021 06:35:04 GMT",
+      "Content-Length",
+      "352",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "X-XSS-Protection",
+      "1; mode=block",
+      "X-Content-Type-Options",
+      "nosniff"
+    ]
+  }
+]

@@ -1,0 +1,3950 @@
+{
+  "meta": {
+    "code": 200
+  },
+  "response": {
+    "results": {
+      "facetMap": {
+        "geo_distance": [
+          {
+            "name": "5",
+            "count": 12
+          },
+          {
+            "name": "10",
+            "count": 55
+          },
+          {
+            "name": "15",
+            "count": 109
+          },
+          {
+            "name": "25",
+            "count": 131
+          },
+          {
+            "name": "50",
+            "count": 164
+          }
+        ],
+        "business.ambiances": [
+          {
+            "name": "CASUAL",
+            "count": 129
+          },
+          {
+            "name": "ROMANTIC",
+            "count": 9
+          },
+          {
+            "name": "CLASSY",
+            "count": 4
+          },
+          {
+            "name": "TRENDY",
+            "count": 13
+          },
+          {
+            "name": "INTIMATE",
+            "count": 3
+          },
+          {
+            "name": "UPSCALE",
+            "count": 1
+          },
+          {
+            "name": "TOURISTY",
+            "count": 3
+          },
+          {
+            "name": "HIPSTER",
+            "count": 3
+          }
+        ],
+        "business.features": [
+          {
+            "name": "Take-out",
+            "count": 124
+          },
+          {
+            "name": "Wheelchair Accessible",
+            "count": 117
+          },
+          {
+            "name": "Vegetarian Options",
+            "count": 100
+          },
+          {
+            "name": "Good for Kids",
+            "count": 86
+          },
+          {
+            "name": "Catering Service",
+            "count": 80
+          },
+          {
+            "name": "Waiter Service",
+            "count": 65
+          },
+          {
+            "name": "TV",
+            "count": 60
+          },
+          {
+            "name": "Beer",
+            "count": 58
+          },
+          {
+            "name": "Wi-Fi",
+            "count": 58
+          },
+          {
+            "name": "Delivery",
+            "count": 56
+          },
+          {
+            "name": "Outdoor Seating",
+            "count": 56
+          },
+          {
+            "name": "Wine",
+            "count": 55
+          },
+          {
+            "name": "Takes Reservations",
+            "count": 36
+          },
+          {
+            "name": "Good for Singles",
+            "count": 34
+          },
+          {
+            "name": "Late Night",
+            "count": 32
+          },
+          {
+            "name": "Hard Alcohol",
+            "count": 22
+          },
+          {
+            "name": "Gluten Free",
+            "count": 20
+          },
+          {
+            "name": "Micro Brews",
+            "count": 17
+          },
+          {
+            "name": "Organic-Healthy",
+            "count": 16
+          },
+          {
+            "name": "Smoking Area",
+            "count": 11
+          },
+          {
+            "name": "Private Dining Rooms",
+            "count": 10
+          },
+          {
+            "name": "Valet Parking",
+            "count": 9
+          },
+          {
+            "name": "Live Music",
+            "count": 7
+          },
+          {
+            "name": "Romantic",
+            "count": 6
+          },
+          {
+            "name": "Bottle Service",
+            "count": 4
+          },
+          {
+            "name": "Dancing",
+            "count": 4
+          },
+          {
+            "name": "Karaoke",
+            "count": 4
+          },
+          {
+            "name": "Darts",
+            "count": 3
+          },
+          {
+            "name": "Good View",
+            "count": 3
+          },
+          {
+            "name": "Juke Box",
+            "count": 3
+          },
+          {
+            "name": "Pool",
+            "count": 3
+          },
+          {
+            "name": "Foosball",
+            "count": 1
+          }
+        ],
+        "business.bestNights": [
+          {
+            "name": "SUNDAY",
+            "count": 6
+          },
+          {
+            "name": "MONDAY",
+            "count": 2
+          },
+          {
+            "name": "TUESDAY",
+            "count": 6
+          },
+          {
+            "name": "WEDNESDAY",
+            "count": 4
+          },
+          {
+            "name": "THURSDAY",
+            "count": 24
+          },
+          {
+            "name": "FRIDAY",
+            "count": 67
+          },
+          {
+            "name": "SATURDAY",
+            "count": 54
+          }
+        ],
+        "basic.categories": [
+          {
+            "name": "restaurants",
+            "count": 143
+          },
+          {
+            "name": "american",
+            "count": 23
+          },
+          {
+            "name": "international",
+            "count": 20
+          },
+          {
+            "name": "asian",
+            "count": 16
+          },
+          {
+            "name": "coffee & tea",
+            "count": 16
+          },
+          {
+            "name": "drinks",
+            "count": 15
+          },
+          {
+            "name": "american (new)",
+            "count": 13
+          },
+          {
+            "name": "pizza",
+            "count": 13
+          },
+          {
+            "name": "cafe",
+            "count": 11
+          },
+          {
+            "name": "mexican",
+            "count": 11
+          },
+          {
+            "name": "bar",
+            "count": 9
+          },
+          {
+            "name": "italian",
+            "count": 9
+          },
+          {
+            "name": "dessert",
+            "count": 8
+          },
+          {
+            "name": "nightlife",
+            "count": 8
+          },
+          {
+            "name": "thai",
+            "count": 8
+          },
+          {
+            "name": "burgers",
+            "count": 7
+          },
+          {
+            "name": "indian",
+            "count": 7
+          },
+          {
+            "name": "mediterranean",
+            "count": 7
+          },
+          {
+            "name": "american (traditional)",
+            "count": 6
+          },
+          {
+            "name": "bars",
+            "count": 6
+          },
+          {
+            "name": "sports bar",
+            "count": 6
+          },
+          {
+            "name": "fine dining",
+            "count": 5
+          },
+          {
+            "name": "sandwiches",
+            "count": 5
+          },
+          {
+            "name": "bakery",
+            "count": 4
+          },
+          {
+            "name": "ice cream & frozen yogurt",
+            "count": 4
+          },
+          {
+            "name": "juice",
+            "count": 4
+          },
+          {
+            "name": "smoothies & juice bars",
+            "count": 4
+          },
+          {
+            "name": "subs & sandwiches",
+            "count": 4
+          },
+          {
+            "name": "japanese",
+            "count": 3
+          },
+          {
+            "name": "active life",
+            "count": 2
+          },
+          {
+            "name": "bowling",
+            "count": 2
+          },
+          {
+            "name": "breakfast",
+            "count": 2
+          },
+          {
+            "name": "chinese",
+            "count": 2
+          },
+          {
+            "name": "desserts",
+            "count": 2
+          },
+          {
+            "name": "event planning & services",
+            "count": 2
+          },
+          {
+            "name": "food",
+            "count": 2
+          },
+          {
+            "name": "french",
+            "count": 2
+          },
+          {
+            "name": "hot dogs",
+            "count": 2
+          },
+          {
+            "name": "lounges",
+            "count": 2
+          },
+          {
+            "name": "seafood",
+            "count": 2
+          },
+          {
+            "name": "sushi bar",
+            "count": 2
+          },
+          {
+            "name": "vietnamese",
+            "count": 2
+          },
+          {
+            "name": "wine bars",
+            "count": 2
+          },
+          {
+            "name": "asian fusion",
+            "count": 1
+          },
+          {
+            "name": "barbeque",
+            "count": 1
+          },
+          {
+            "name": "brazilian",
+            "count": 1
+          },
+          {
+            "name": "cajun/creole",
+            "count": 1
+          },
+          {
+            "name": "caribbean",
+            "count": 1
+          },
+          {
+            "name": "caterers",
+            "count": 1
+          },
+          {
+            "name": "cocktail bars",
+            "count": 1
+          },
+          {
+            "name": "cuban",
+            "count": 1
+          },
+          {
+            "name": "dance clubs",
+            "count": 1
+          },
+          {
+            "name": "deli",
+            "count": 1
+          },
+          {
+            "name": "diner",
+            "count": 1
+          },
+          {
+            "name": "middle eastern",
+            "count": 1
+          },
+          {
+            "name": "moroccan",
+            "count": 1
+          },
+          {
+            "name": "nightclubs",
+            "count": 1
+          },
+          {
+            "name": "sports bars",
+            "count": 1
+          },
+          {
+            "name": "steakhouse",
+            "count": 1
+          },
+          {
+            "name": "vegetarian",
+            "count": 1
+          },
+          {
+            "name": "venues & event spaces",
+            "count": 1
+          }
+        ],
+        "business.city": [
+          {
+            "name": "Tarzana",
+            "count": 1
+          },
+          {
+            "name": "Sylmar",
+            "count": 1
+          },
+          {
+            "name": "San Gabriel",
+            "count": 1
+          },
+          {
+            "name": "Pasadena",
+            "count": 1
+          },
+          {
+            "name": "Pacific Palisades",
+            "count": 1
+          },
+          {
+            "name": "Lomita",
+            "count": 1
+          },
+          {
+            "name": "Downey",
+            "count": 1
+          },
+          {
+            "name": "Chatsworth",
+            "count": 1
+          },
+          {
+            "name": "Calabasas",
+            "count": 1
+          },
+          {
+            "name": "Bellflower",
+            "count": 1
+          },
+          {
+            "name": "Winnetka",
+            "count": 2
+          },
+          {
+            "name": "West Hills",
+            "count": 2
+          },
+          {
+            "name": "North Hollywood",
+            "count": 2
+          },
+          {
+            "name": "Hermosa Beach",
+            "count": 2
+          },
+          {
+            "name": "Beverly Hills",
+            "count": 2
+          },
+          {
+            "name": "Studio City",
+            "count": 3
+          },
+          {
+            "name": "Sherman Oaks",
+            "count": 3
+          },
+          {
+            "name": "Redondo Beach",
+            "count": 3
+          },
+          {
+            "name": "Marina Del Rey",
+            "count": 3
+          },
+          {
+            "name": "Manhattan Beach",
+            "count": 3
+          },
+          {
+            "name": "Encino",
+            "count": 3
+          },
+          {
+            "name": "Burbank",
+            "count": 3
+          },
+          {
+            "name": "Torrance",
+            "count": 4
+          },
+          {
+            "name": "El Segundo",
+            "count": 4
+          },
+          {
+            "name": "Culver City",
+            "count": 4
+          },
+          {
+            "name": "Long Beach",
+            "count": 5
+          },
+          {
+            "name": "Glendale",
+            "count": 5
+          },
+          {
+            "name": "West Hollywood",
+            "count": 6
+          },
+          {
+            "name": "Canoga Park",
+            "count": 6
+          },
+          {
+            "name": "Woodland Hills",
+            "count": 10
+          },
+          {
+            "name": "Santa Monica",
+            "count": 15
+          },
+          {
+            "name": "Carlsbad",
+            "count": 18
+          },
+          {
+            "name": "Los Angeles",
+            "count": 46
+          }
+        ],
+        "business.serves": [
+          {
+            "name": "BREAKFAST",
+            "count": 34
+          },
+          {
+            "name": "LUNCH",
+            "count": 120
+          },
+          {
+            "name": "DINNER",
+            "count": 110
+          },
+          {
+            "name": "DESSERT",
+            "count": 83
+          }
+        ],
+        "basic.moglcategories": [
+          {
+            "name": "American (New)",
+            "count": 13
+          },
+          {
+            "name": "Pizza",
+            "count": 13
+          },
+          {
+            "name": "Cafe",
+            "count": 11
+          },
+          {
+            "name": "Mexican",
+            "count": 11
+          },
+          {
+            "name": "Bar",
+            "count": 9
+          },
+          {
+            "name": "Italian",
+            "count": 9
+          },
+          {
+            "name": "Thai",
+            "count": 8
+          },
+          {
+            "name": "Burgers",
+            "count": 7
+          },
+          {
+            "name": "Indian",
+            "count": 7
+          },
+          {
+            "name": "Mediterranean",
+            "count": 7
+          },
+          {
+            "name": "American (Traditional)",
+            "count": 6
+          },
+          {
+            "name": "Sports Bar",
+            "count": 6
+          },
+          {
+            "name": "Coffee & Tea",
+            "count": 5
+          },
+          {
+            "name": "Fine Dining",
+            "count": 5
+          },
+          {
+            "name": "Bakery",
+            "count": 4
+          },
+          {
+            "name": "Ice Cream & Frozen Yogurt",
+            "count": 4
+          },
+          {
+            "name": "Smoothies & Juice Bars",
+            "count": 4
+          },
+          {
+            "name": "Subs & Sandwiches",
+            "count": 4
+          },
+          {
+            "name": "Japanese",
+            "count": 3
+          },
+          {
+            "name": "Breakfast",
+            "count": 2
+          },
+          {
+            "name": "Chinese",
+            "count": 2
+          },
+          {
+            "name": "Desserts",
+            "count": 2
+          },
+          {
+            "name": "French",
+            "count": 2
+          },
+          {
+            "name": "Hot Dogs",
+            "count": 2
+          },
+          {
+            "name": "Sushi Bar",
+            "count": 2
+          },
+          {
+            "name": "Vietnamese",
+            "count": 2
+          },
+          {
+            "name": "Asian",
+            "count": 1
+          },
+          {
+            "name": "Asian Fusion",
+            "count": 1
+          },
+          {
+            "name": "Barbeque",
+            "count": 1
+          },
+          {
+            "name": "Brazilian",
+            "count": 1
+          },
+          {
+            "name": "Cajun/Creole",
+            "count": 1
+          },
+          {
+            "name": "Caribbean",
+            "count": 1
+          },
+          {
+            "name": "Cuban",
+            "count": 1
+          },
+          {
+            "name": "Deli",
+            "count": 1
+          },
+          {
+            "name": "Diner",
+            "count": 1
+          },
+          {
+            "name": "Middle Eastern",
+            "count": 1
+          },
+          {
+            "name": "Moroccan",
+            "count": 1
+          },
+          {
+            "name": "Nightclubs",
+            "count": 1
+          },
+          {
+            "name": "Steakhouse",
+            "count": 1
+          },
+          {
+            "name": "Vegetarian",
+            "count": 1
+          }
+        ],
+        "basic.mobileCategories": [
+          {
+            "name": "American",
+            "count": 23
+          },
+          {
+            "name": "International",
+            "count": 20
+          },
+          {
+            "name": "Asian",
+            "count": 16
+          },
+          {
+            "name": "Coffee & Tea",
+            "count": 16
+          },
+          {
+            "name": "Drinks",
+            "count": 15
+          },
+          {
+            "name": "Pizza",
+            "count": 13
+          },
+          {
+            "name": "Mexican",
+            "count": 11
+          },
+          {
+            "name": "Italian",
+            "count": 9
+          },
+          {
+            "name": "Dessert",
+            "count": 8
+          },
+          {
+            "name": "Burgers",
+            "count": 7
+          },
+          {
+            "name": "Fine Dining",
+            "count": 5
+          },
+          {
+            "name": "Sandwiches",
+            "count": 5
+          },
+          {
+            "name": "Juice",
+            "count": 4
+          },
+          {
+            "name": "Breakfast",
+            "count": 2
+          },
+          {
+            "name": "Seafood",
+            "count": 2
+          },
+          {
+            "name": "Barbeque",
+            "count": 1
+          },
+          {
+            "name": "Nightlife",
+            "count": 1
+          },
+          {
+            "name": "Vegetarian",
+            "count": 1
+          }
+        ],
+        "business.priceRange": [
+          {
+            "name": "$$$",
+            "count": 7
+          },
+          {
+            "name": "$$",
+            "count": 80
+          },
+          {
+            "name": "$",
+            "count": 58
+          }
+        ],
+        "business.hasCashback": [
+          {
+            "name": "false",
+            "count": 164
+          }
+        ]
+      },
+      "results": [
+        {
+          "id": 1519,
+          "name": "Kaboom Jamaican Flavor",
+          "latitude": 34.040164947509766,
+          "longitude": -118.34126281738281,
+          "distance": 1.01,
+          "phone": "(310) 710-0030",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/1519/kaboom-jamaican-flavor700241484-thumb.jpg",
+          "rating": 4.5,
+          "ratingCount": 44,
+          "yelpId": "kaboom-jamaican-flavor-los-angeles",
+          "address": {
+            "streetAddress": "4641 W. Washington Blvd.",
+            "postalCode": "90016",
+            "city": "Los Angeles",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 1,
+          "primaryCategory": "Caribbean",
+          "categories": ["American (New)", "Caribbean"],
+          "bookmarked": false,
+          "description": "The kaboom will be Jamaican you crazy!  If you're craving some Caribbean rice and beans the Kaboom Jamaican Flavor in Los Angeles is a slice of paradise just for you. All authentic cuisine is made me true Jamaican who brought their flavors and recipes right to Southern California. Trust us, Mon! It is good stud.",
+          "priceRange": "$",
+          "menuUrl": "",
+          "medias": [
+            {
+              "id": 10433,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/1519/kaboom-jamaican-flavor1306144492.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/1519/kaboom-jamaican-flavor1306144492.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 10432,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/1519/kaboom-jamaican-flavor1987519370.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/1519/kaboom-jamaican-flavor1987519370.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 5947,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/1519/kaboom-jamaican-flavor1573956445.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/1519/kaboom-jamaican-flavor1573956445.jpg",
+              "type": "EMAIL_AMBIANCE"
+            }
+          ],
+          "buzz": [
+            "Delicious food and big portions.",
+            "Very pleased with the service and food. Their salads are the best!",
+            "The biggest meal I've gotten for the price in the OC."
+          ],
+          "features": [],
+          "ambiance": ["CASUAL"],
+          "serves": ["LUNCH", "DINNER"],
+          "attire": ["CASUAL"],
+          "acceptedCards": ["MasterCard", "Visa"],
+          "knownFor": "Authentic Jamaican Food",
+          "bestNights": ["FRIDAY", "SATURDAY"],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "10:00am-9:00pm",
+            "TUESDAY": "10:00am-9:00pm",
+            "WEDNESDAY": "10:00am-9:00pm",
+            "THURSDAY": "10:00am-9:00pm",
+            "FRIDAY": "10:00am-9:00pm",
+            "SATURDAY": "10:00am-10:00pm",
+            "SUNDAY": "12:00pm-8:00pm"
+          },
+          "defaultDiscount": 10.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 1366,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 10.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 03/14/2012. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": true,
+              "details": {
+                "dateAdded": 1331741836,
+                "startDate": 1331741836,
+                "maxActivations": 0,
+                "hasSchedule": false,
+                "scheduleType": "REWARD",
+                "schedule": {},
+                "hasDefault": true,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 1817,
+          "name": "D'Amore's Pizza - Mid-City West",
+          "latitude": 34.072933197021484,
+          "longitude": -118.37247467041016,
+          "distance": 1.88,
+          "phone": "(323) 951-0070",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/1817/d-amore-s-pizza-mid-city-west161685163-thumb.jpg",
+          "rating": 3.0,
+          "ratingCount": 115,
+          "yelpId": "d-amores-pizza-los-angeles-2",
+          "address": {
+            "streetAddress": "8369 W 3rd St, Ste D",
+            "postalCode": "90048",
+            "city": "Los Angeles",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 1,
+          "primaryCategory": "Pizza",
+          "categories": ["Pizza"],
+          "bookmarked": false,
+          "website": "http://www.damoresfamouspizza.com",
+          "description": "When the moon's in your eye like a big pizza pie, that's D'Amore's! Okay, that might have fell flat, but if you seek authentically Boston-style Italian pizza pies, then you've come to the right place. Having established a reputation of high-quality food, stellar service, and quick delivery to hungry L.A. patrons. Of course, it doesn't end at pizza; try their calzones, burgers, and hot or cold subs!",
+          "priceRange": "$",
+          "menuUrl": "http://www.damoresfamouspizza.com/assets/pdf/west_la_menu.pdf",
+          "medias": [
+            {
+              "id": 10412,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/1817/d-amore-s-pizza-mid-city-west1329917562.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/1817/d-amore-s-pizza-mid-city-west1329917562.jpg",
+              "type": "EMAIL_AMBIANCE"
+            },
+            {
+              "id": 8848,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/1817/d-amore-s-pizza-mid-city-west2078453256.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/1817/d-amore-s-pizza-mid-city-west2078453256.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 8847,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/1817/d-amore-s-pizza-mid-city-west924071702.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/1817/d-amore-s-pizza-mid-city-west924071702.jpg"
+            },
+            {
+              "id": 8846,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/1817/d-amore-s-pizza-mid-city-west260984838.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/1817/d-amore-s-pizza-mid-city-west260984838.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 8845,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/1817/d-amore-s-pizza-mid-city-west1648175638.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/1817/d-amore-s-pizza-mid-city-west1648175638.jpg"
+            },
+            {
+              "id": 8844,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/1817/d-amore-s-pizza-mid-city-west774282800.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/1817/d-amore-s-pizza-mid-city-west774282800.jpg"
+            }
+          ],
+          "buzz": [
+            "This place has the crust to die for",
+            "Hands down my favorite casual pizza restaurant in LA. I LOVE LOVE LOVE that their pizza crust is thin and crunchy.",
+            "I will say the pizza here is so delicious."
+          ],
+          "features": [],
+          "ambiance": ["CASUAL"],
+          "serves": ["LUNCH", "DINNER", "DESSERT"],
+          "attire": ["CASUAL"],
+          "acceptedCards": ["American Express", "Visa", "MasterCard"],
+          "knownFor": "Pizza Bianco",
+          "bestNights": ["WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "11:00am-11:00pm",
+            "TUESDAY": "11:00am-11:00pm",
+            "WEDNESDAY": "11:00am-4:00am",
+            "THURSDAY": "11:00am-4:00am",
+            "FRIDAY": "11:00am-4:00am",
+            "SATURDAY": "11:00am-4:00am",
+            "SUNDAY": "11:00am-11:00pm"
+          },
+          "defaultDiscount": 10.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 2521,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 10.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 06/05/2012. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": true,
+              "details": {
+                "dateAdded": 1338937178,
+                "startDate": 1338937178,
+                "maxActivations": 0,
+                "hasSchedule": false,
+                "scheduleType": "REWARD",
+                "schedule": {},
+                "hasDefault": true,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 3937,
+          "name": "Gaby's Express - La Cienega Blvd",
+          "latitude": 34.032352447509766,
+          "longitude": -118.3743896484375,
+          "distance": 1.91,
+          "phone": "(310) 202-8120",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/3937/gaby-s-express216895820-thumb.jpg",
+          "rating": 3.0,
+          "ratingCount": 153,
+          "yelpId": "gabys-express-mediterranean-cafe-culver-city",
+          "address": {
+            "streetAddress": "2901 S La Cienega Blvd",
+            "postalCode": "90232",
+            "city": "Culver City",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 1,
+          "primaryCategory": "Mediterranean",
+          "categories": ["Mediterranean"],
+          "bookmarked": false,
+          "website": "http://www.gabysexpress.com/",
+          "description": "Looking for tasty Lebanese food on the go? Gaby's Express is calling your name! This isn't any typical restaurant serving Lebanese food - this is the real deal. The chefs use traditional Lebanese recipes handed down through generations and bring those flavors to your. Each and every menu item is fresh, delicious and unique in it's own authentic way! Stop by Gaby's Express for excellent food at the best prices around town. ",
+          "priceRange": "$",
+          "menuUrl": "http://www.gabysexpress.com/express_menu.html",
+          "medias": [
+            {
+              "id": 29507,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3937/gaby-s-express13425383.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3937/gaby-s-express13425383.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 29506,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3937/gaby-s-express621627762.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3937/gaby-s-express621627762.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 29505,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3937/gaby-s-express618454679.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3937/gaby-s-express618454679.jpg",
+              "type": "EMAIL_AMBIANCE"
+            },
+            {
+              "id": 29503,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3937/gaby-s-express842997240.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3937/gaby-s-express842997240.jpg"
+            },
+            {
+              "id": 29502,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3937/gaby-s-express54455461.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3937/gaby-s-express54455461.jpg"
+            }
+          ],
+          "buzz": [
+            "Absolutely amazing. Large portions and plenty of flavor.",
+            "Portions are a great size, prices are very affordable, flavors are fantastic",
+            "I love the people behind the counter..so friendly and informative about the menu."
+          ],
+          "features": [],
+          "ambiance": ["CASUAL"],
+          "serves": ["LUNCH", "DINNER", "DESSERT"],
+          "attire": ["CASUAL"],
+          "acceptedCards": ["MasterCard", "Visa", "American Express"],
+          "knownFor": "Garlic Sauce",
+          "bestNights": [],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "11:00am-11:00pm",
+            "TUESDAY": "11:00am-11:00pm",
+            "WEDNESDAY": "11:00am-11:00pm",
+            "THURSDAY": "11:00am-11:00pm",
+            "FRIDAY": "11:00am-11:00pm",
+            "SATURDAY": "11:00am-10:00pm",
+            "SUNDAY": "11:00am-10:00pm"
+          },
+          "defaultDiscount": 10.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 10557,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 10.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 11/11/2013. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": true,
+              "details": {
+                "dateAdded": 1384206110,
+                "startDate": 1384206110,
+                "maxActivations": 0,
+                "hasSchedule": false,
+                "scheduleType": "REWARD",
+                "schedule": {},
+                "hasDefault": true,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 3891,
+          "name": "Tartine O Chocolat",
+          "latitude": 34.07355499267578,
+          "longitude": -118.37881469726562,
+          "distance": 2.16,
+          "phone": "(310) 275-4230",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/3891/tartine-o-chocolat471580912-thumb.jpg",
+          "rating": 4.0,
+          "ratingCount": 47,
+          "yelpId": "tartine-o-chocolat-beverly-hills",
+          "address": {
+            "streetAddress": "8556 W 3rd St",
+            "postalCode": "90048",
+            "city": "Los Angeles",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 1,
+          "primaryCategory": "Bakery",
+          "categories": ["Bakery"],
+          "bookmarked": false,
+          "website": "http://www.tartineochocolat2013.com",
+          "description": "Tartine O Chocolat is a delightful taste of France right in Beverly Hills.  Offering authentic and incredible French pastries, cakes, sandwiches and more, treat yourself!",
+          "priceRange": "$$",
+          "menuUrl": "",
+          "medias": [
+            {
+              "id": 28915,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3891/tartine-o-chocolat1488841267.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3891/tartine-o-chocolat1488841267.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 28914,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3891/tartine-o-chocolat449187849.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3891/tartine-o-chocolat449187849.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 28913,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3891/tartine-o-chocolat833578993.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3891/tartine-o-chocolat833578993.jpg",
+              "type": "EMAIL_AMBIANCE"
+            },
+            {
+              "id": 28912,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3891/tartine-o-chocolat2003112140.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3891/tartine-o-chocolat2003112140.jpg"
+            },
+            {
+              "id": 28911,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3891/tartine-o-chocolat131840122.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3891/tartine-o-chocolat131840122.jpg"
+            }
+          ],
+          "buzz": [
+            "Wonderful, authentic French baked goods.",
+            "Great atmosphere, attentive and kind wait staff and authentic French food!",
+            "The tiramisu is soooooo delicious! "
+          ],
+          "features": [],
+          "ambiance": ["CASUAL", "ROMANTIC"],
+          "serves": ["BREAKFAST", "LUNCH", "DESSERT"],
+          "attire": ["CASUAL"],
+          "acceptedCards": ["Visa", "American Express", "MasterCard"],
+          "knownFor": "Pastries",
+          "bestNights": [],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "8:00am-6:00pm",
+            "TUESDAY": "8:00am-6:00pm",
+            "WEDNESDAY": "8:00am-6:00pm",
+            "THURSDAY": "8:00am-6:00pm",
+            "FRIDAY": "8:00am-6:00pm",
+            "SATURDAY": "8:00am-6:00pm",
+            "SUNDAY": "8:00am-6:00pm"
+          },
+          "defaultDiscount": 10.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 10465,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 10.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 10/22/2013. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": true,
+              "details": {
+                "dateAdded": 1382488290,
+                "startDate": 1382488290,
+                "maxActivations": 0,
+                "hasSchedule": false,
+                "scheduleType": "REWARD",
+                "schedule": {},
+                "hasDefault": true,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 9211,
+          "name": "Locanda Veneta",
+          "latitude": 34.07339096069336,
+          "longitude": -118.38089752197266,
+          "distance": 2.24,
+          "phone": "(310) 274-1893",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/9211/locanda-veneta411346141-thumb.jpg",
+          "rating": 4.0,
+          "ratingCount": 433,
+          "yelpId": "locanda-veneta-los-angeles",
+          "address": {
+            "streetAddress": "8638 W 3rd St",
+            "postalCode": "90048",
+            "city": "Los Angeles",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 71,
+          "primaryCategory": "Italian",
+          "categories": ["Italian"],
+          "bookmarked": false,
+          "description": "One thing critics and diners can both agree on is Locanda Veneta's place among the top echelon of Italian eateries in LA. You'll find praise rolling in from all directions, as Locanda Veneta works to transport you to Venice without ever having to leave its cozy confines. Chef and Owner Andre was nominated by peers as one of the country's best chefs, and he was featured in the inaugural edition of the \"Best Chefs America\" publication. And, like any great Italian spot, here you'll find Old World influences and modern sensibilities, like the use of fresh ingredients to craft the kitchen's culinary art. Often times, it's the simplest ingredients that create the biggest tastes.  Locanda Veneta never disappoints offering up undeniably great dishes like earthy seasonal vegetable minestrone, the mushroom medley risotto, homemade Lasagna Della Nonna, and braised lamb shank. The menu also features the dazzling Linguine al Frutti di Mare, which takes homemade linguine in a red or white sauce and tosses it with lobster tails, mussels, shrimps, and manila clams. Many of the pasta, meat, and fish dishes are classically dressed with fresh herbs, garlic, and olive oil. The Venetian Sunday Special, Power Lunch, and other enticing offerings help add an exceptional touch to any of your meals -- from the causal to the sophisticated. Of course you'll want to try the desserts, because who can pass up a masterfully-prepared Tiramisu, Panna Cotta, or Italian Amaretto Cheesecake? The food menu isn't the only thing winning praise from appreciative diners. The wine menu is as thoughtful, and the wonderfully curated selection is both affordable and approachable. From its cozy decor and extensive wine list, to celebrity clientele and an incredibly talented kitchen, Locanda Veneta has become its own culinary star that shows no sign of slowing its continued rise.",
+          "priceRange": "$$$",
+          "menuUrl": "",
+          "medias": [
+            {
+              "id": 49252,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9211/locanda-veneta1197670256.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9211/locanda-veneta1197670256.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49251,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9211/locanda-veneta1110594289.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9211/locanda-veneta1110594289.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49250,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9211/locanda-veneta1007239519.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9211/locanda-veneta1007239519.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49249,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9211/locanda-veneta1456954575.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9211/locanda-veneta1456954575.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49248,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9211/locanda-veneta212514361.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9211/locanda-veneta212514361.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49247,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9211/locanda-veneta57592736.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9211/locanda-veneta57592736.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49246,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9211/locanda-veneta1166736140.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9211/locanda-veneta1166736140.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49245,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9211/locanda-veneta2019002062.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9211/locanda-veneta2019002062.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49244,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9211/locanda-veneta1706088607.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9211/locanda-veneta1706088607.jpg",
+              "type": "EMAIL_FOOD"
+            }
+          ],
+          "buzz": [],
+          "features": [],
+          "ambiance": [],
+          "serves": [],
+          "attire": [],
+          "acceptedCards": [],
+          "bestNights": [],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "11:00am-9:00pm",
+            "TUESDAY": "11:00am-9:00pm",
+            "WEDNESDAY": "11:00am-9:00pm",
+            "THURSDAY": "11:00am-9:00pm",
+            "FRIDAY": "11:00am-9:30pm",
+            "SATURDAY": "5:00pm-9:30pm",
+            "SUNDAY": "5:00pm-8:30pm"
+          },
+          "defaultDiscount": 0.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 26320,
+              "rewardType": "PERCENT",
+              "rewardValue": 7.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 3.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 02/20/2018. Offer does not apply during scheduled times. Excludes: Fri,Sat. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": false,
+              "details": {
+                "dateAdded": 1519195249,
+                "startDate": 1519195249,
+                "hasSchedule": true,
+                "scheduleType": "EXCLUDE",
+                "schedule": {
+                  "FRIDAY": [
+                    {
+                      "id": 37899,
+                      "startsAt": 0,
+                      "endsAt": 2359,
+                      "rewardType": "PERCENT",
+                      "discount": 0.0,
+                      "active": false
+                    }
+                  ],
+                  "SATURDAY": [
+                    {
+                      "id": 37900,
+                      "startsAt": 0,
+                      "endsAt": 2359,
+                      "rewardType": "PERCENT",
+                      "discount": 0.0,
+                      "active": false
+                    }
+                  ]
+                },
+                "hasDefault": false,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              },
+              "excludedBySchedule": false
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 1518,
+          "name": "Brooklyn Pizza & Pasta",
+          "latitude": 34.05512237548828,
+          "longitude": -118.39266967773438,
+          "distance": 2.38,
+          "phone": "(310) 550-9990",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/1518/brooklyn-pizza-pasta774194614-thumb.jpg",
+          "rating": 3.05,
+          "ratingCount": 92,
+          "yelpId": "brooklyn-pizza-and-pasta-los-angeles",
+          "address": {
+            "streetAddress": "9228 W. Pico Blvd.",
+            "postalCode": "90035",
+            "city": "Los Angeles",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 1,
+          "primaryCategory": "Pizza",
+          "categories": ["Pizza"],
+          "bookmarked": false,
+          "website": "http://www.brooklynpizzaandpasta.net/",
+          "description": "Did you hear the good news? Brooklyn made it's way to Los Angeles! Well, in terms of pizza and pasta.  When you're at Brooklyn you can eat pizza, pasta, salad, wings, subs and more. Brooklyn Pizza has always given the people of Los Angeles quality food, fast delivery, and great customer service at a palatable price. Their pizza, pasta, and meats are prepared freshly daily.",
+          "priceRange": "$$",
+          "menuUrl": "",
+          "medias": [
+            {
+              "id": 10430,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/1518/brooklyn-pizza-pasta226766166.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/1518/brooklyn-pizza-pasta226766166.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 5866,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/1518/brooklyn-pizza-pasta459616583.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/1518/brooklyn-pizza-pasta459616583.jpg",
+              "type": "EMAIL_AMBIANCE"
+            },
+            {
+              "id": 5865,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/1518/brooklyn-pizza-pasta1120993521.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/1518/brooklyn-pizza-pasta1120993521.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 5864,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/1518/brooklyn-pizza-pasta847552378.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/1518/brooklyn-pizza-pasta847552378.jpg"
+            }
+          ],
+          "buzz": [
+            "The basil on the pepperoni pizza really compliments the soft cruz and sweet and pure sauce. It is easy moldable so eating it was a breeze.",
+            "It's a casual comfortable place with an extremely pleasant staff.",
+            "FINALLY! A real NY -style pizza place in LA.  "
+          ],
+          "features": [],
+          "ambiance": ["CASUAL"],
+          "serves": ["LUNCH", "DINNER", "DESSERT"],
+          "attire": ["CASUAL"],
+          "acceptedCards": ["MasterCard", "Visa"],
+          "knownFor": "Pepperoni Pizza",
+          "bestNights": [],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "11:30am-11:00pm",
+            "TUESDAY": "11:30am-11:00pm",
+            "WEDNESDAY": "11:30am-11:00pm",
+            "THURSDAY": "11:30am-11:00pm",
+            "FRIDAY": "11:30am-11:00pm",
+            "SATURDAY": "11:30am-11:00pm",
+            "SUNDAY": "11:30am-11:00pm"
+          },
+          "defaultDiscount": 10.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 1364,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 10.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 03/13/2012. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": true,
+              "details": {
+                "dateAdded": 1331666561,
+                "startDate": 1331666561,
+                "maxActivations": 0,
+                "hasSchedule": false,
+                "scheduleType": "REWARD",
+                "schedule": {},
+                "hasDefault": true,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 4361,
+          "name": "Oren Shabu",
+          "latitude": 34.06264877319336,
+          "longitude": -118.30854034423828,
+          "distance": 2.55,
+          "phone": "(213) 251-0010",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/4361/oren-shabu349919226-thumb.jpg",
+          "rating": 4.5,
+          "ratingCount": 44,
+          "yelpId": "oren-shabu-los-angeles",
+          "address": {
+            "streetAddress": "3785 Wilshire Blvd",
+            "postalCode": "90010",
+            "city": "Los Angeles",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 1,
+          "primaryCategory": "Japanese",
+          "categories": ["Japanese"],
+          "bookmarked": false,
+          "description": "Amazing Shabu on Willshire in Los Angeles! You have just found this gem and you must come by to enjoy the fresh vegetables, delicious meats and their four signature, made from scratch sauces! Top that off with impeccable service and a entertaining ambiance and you'll have a great dining experience at Oren Shabu!",
+          "priceRange": "$$",
+          "menuUrl": "",
+          "medias": [
+            {
+              "id": 34803,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/4361/oren-shabu1912217684.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/4361/oren-shabu1912217684.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 34802,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/4361/oren-shabu2130525898.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/4361/oren-shabu2130525898.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 34801,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/4361/oren-shabu609474958.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/4361/oren-shabu609474958.jpg"
+            },
+            {
+              "id": 4361,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/4361/oren-shabu1730961900.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/4361/oren-shabu1730961900.jpg",
+              "type": "EMAIL_AMBIANCE"
+            }
+          ],
+          "buzz": [
+            "The service was great. Music was great. Food..AMAZING!",
+            "Great service and food! Super friendly, fun music! The food is good portions, fresh and delicious!",
+            "They have a spicy dipping sauce which is SO GOOD. The head chef/owner told me that the recipe is secret."
+          ],
+          "features": [],
+          "ambiance": ["CASUAL"],
+          "serves": ["LUNCH", "DINNER"],
+          "attire": ["HIP", "CASUAL"],
+          "acceptedCards": ["Visa", "MasterCard"],
+          "knownFor": "SHABU",
+          "bestNights": ["THURSDAY", "FRIDAY", "SATURDAY"],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "Closed",
+            "TUESDAY": "11:00am-3:00pm, 5:00pm-10:00pm",
+            "WEDNESDAY": "11:00am-3:00pm, 5:00pm-10:00pm",
+            "THURSDAY": "11:00am-3:00pm, 5:00pm-10:00pm",
+            "FRIDAY": "11:00am-3:00pm, 5:00pm-10:00pm",
+            "SATURDAY": "11:00am-3:00pm, 5:00pm-10:00pm",
+            "SUNDAY": "5:00pm-10:00pm"
+          },
+          "defaultDiscount": 10.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 18733,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 10.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 08/28/2014. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": true,
+              "details": {
+                "dateAdded": 1409275069,
+                "startDate": 1409275069,
+                "maxActivations": 0,
+                "hasSchedule": false,
+                "scheduleType": "REWARD",
+                "schedule": {},
+                "hasDefault": true,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 3320,
+          "name": "Mocafe",
+          "latitude": 34.09071731567383,
+          "longitude": -118.36173248291016,
+          "distance": 2.73,
+          "phone": "(323) 848-7160",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/3320/mocafe1514352661-thumb.jpg",
+          "rating": 4.0,
+          "ratingCount": 82,
+          "yelpId": "mocafe-west-hollywood",
+          "address": {
+            "streetAddress": "7900 Santa Monica Blvd",
+            "postalCode": "90046",
+            "city": "Los Angeles",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 1,
+          "primaryCategory": "Coffee & Tea",
+          "categories": ["Coffee & Tea"],
+          "bookmarked": false,
+          "description": "West Hollywood is home to rich culture and history - however, most importantly, it is home to the very famous Mocafe. Looking for a breakfast place? Mocafe has the best food in the city with the best customer service. Looking for a place to grab lunch?  Mocafe has you covered with the freshest sandwiches and menu items you'll find in the WeHo area.",
+          "priceRange": "$$",
+          "menuUrl": "http://mocafela.com/menu.html",
+          "medias": [
+            {
+              "id": 29313,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3320/mocafe443958169.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3320/mocafe443958169.jpg",
+              "type": "EMAIL_AMBIANCE"
+            },
+            {
+              "id": 27500,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3320/mocafe1633821056.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3320/mocafe1633821056.jpg"
+            },
+            {
+              "id": 27498,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3320/mocafe1674231040.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3320/mocafe1674231040.jpg"
+            },
+            {
+              "id": 20449,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3320/mocafe1012602600.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3320/mocafe1012602600.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 20448,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3320/mocafe884247230.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3320/mocafe884247230.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 20447,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3320/mocafe60413684.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3320/mocafe60413684.jpg"
+            }
+          ],
+          "buzz": [
+            "a great place for breakfast in this city excellent food coffee and customer service!!!",
+            "Great place for an after work out breakfast! Nice and friendly staff",
+            "Mocafe has the best breakfast on the eastside of West Hollywood."
+          ],
+          "features": [],
+          "ambiance": ["CASUAL", "TRENDY"],
+          "serves": ["BREAKFAST", "LUNCH", "DINNER", "DESSERT"],
+          "attire": ["CASUAL"],
+          "acceptedCards": ["American Express", "MasterCard", "Visa"],
+          "knownFor": "Great seating, upbeat service, nice airy space, delicious food.",
+          "bestNights": ["FRIDAY"],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "7:00am-8:00pm",
+            "TUESDAY": "7:00am-8:00pm",
+            "WEDNESDAY": "7:00am-8:00pm",
+            "THURSDAY": "7:00am-8:00pm",
+            "FRIDAY": "7:00am-8:00pm",
+            "SATURDAY": "7:30am-8:00pm",
+            "SUNDAY": "7:30am-8:00pm"
+          },
+          "defaultDiscount": 10.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 7073,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 10.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 03/18/2013. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": true,
+              "details": {
+                "dateAdded": 1363642340,
+                "startDate": 1363642340,
+                "maxActivations": 0,
+                "hasSchedule": false,
+                "scheduleType": "REWARD",
+                "schedule": {},
+                "hasDefault": true,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 9074,
+          "name": "Sur Restaurant",
+          "latitude": 34.08121109008789,
+          "longitude": -118.38521575927734,
+          "distance": 2.79,
+          "phone": "(310) 289-2824",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/9074/sur-restaurant1214434847-thumb.jpg",
+          "rating": 3.5,
+          "ratingCount": 2604,
+          "yelpId": "sur-restaurant-and-lounge-west-hollywood-3",
+          "address": {
+            "streetAddress": "606 N Robertson Blvd",
+            "postalCode": "90069",
+            "city": "West Hollywood",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 71,
+          "primaryCategory": "American (New)",
+          "categories": ["Mediterranean", "French", "American (New)"],
+          "bookmarked": false,
+          "description": "Known for their sexy, southern European atmosphere and cuisine, Sur seems to have it all.  A lavish and low-lit hidden gem that's define to the details, it has exquisite food, a fabulous ambiance and a great staff.  Located on Robertson between Melrose and Santa Monica, it is just north of Los Angeles' trendiest shopping area.  Sur has become a favorite of celebrities like Penelope Cruz, Catherine Zeta-Jones, Jessica Simpson and Vanessa Williams, among countless others.  Their meats melt in your mouth, and the desserts are positively lush.  Try the steak, crispy chicken and the endive and pear salad.  Berry cobbler, pecan pie or caramelized pear desserts are a must to finish any meal there.  Dine in style either indoors or on the sidewalk patio with a rustic romantic appearance.  A private room for parties features antique Moroccan doors, a long wooden table, dripping candelabras and chandeliers and can hold up to 50 people.  Dress code is \"sexy casual,\" and the best lounge music can always be heard as you enjoy a one-of-a-kind evening at Sur.",
+          "priceRange": "$$$",
+          "menuUrl": "",
+          "medias": [
+            {
+              "id": 48171,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9074/sur-restaurant1619704410.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9074/sur-restaurant1619704410.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 48170,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9074/sur-restaurant521364622.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9074/sur-restaurant521364622.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 48169,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9074/sur-restaurant574136765.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9074/sur-restaurant574136765.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 48168,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9074/sur-restaurant148013048.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9074/sur-restaurant148013048.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 48167,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9074/sur-restaurant1708338186.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9074/sur-restaurant1708338186.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 48166,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9074/sur-restaurant69153166.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9074/sur-restaurant69153166.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 48165,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9074/sur-restaurant1602465199.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9074/sur-restaurant1602465199.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 48164,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9074/sur-restaurant892639429.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9074/sur-restaurant892639429.jpg",
+              "type": "EMAIL_FOOD"
+            }
+          ],
+          "buzz": [],
+          "features": [],
+          "ambiance": [],
+          "serves": [],
+          "attire": [],
+          "acceptedCards": [],
+          "bestNights": [],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "5:00pm-12:30am",
+            "TUESDAY": "5:00pm-12:30am",
+            "WEDNESDAY": "5:00pm-12:30am",
+            "THURSDAY": "5:00pm-1:00am",
+            "FRIDAY": "5:00pm-1:30am",
+            "SATURDAY": "5:00pm-1:30am",
+            "SUNDAY": "5:00pm-12:30am"
+          },
+          "defaultDiscount": 0.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": true,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 26182,
+              "rewardType": "PERCENT",
+              "rewardValue": 7.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 3.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 02/20/2018. Offer does not apply during scheduled times. Excludes: Sat. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": false,
+              "details": {
+                "dateAdded": 1519194260,
+                "startDate": 1519194260,
+                "hasSchedule": true,
+                "scheduleType": "EXCLUDE",
+                "schedule": {
+                  "SATURDAY": [
+                    {
+                      "id": 37671,
+                      "startsAt": 0,
+                      "endsAt": 2359,
+                      "rewardType": "PERCENT",
+                      "discount": 0.0,
+                      "active": false
+                    }
+                  ]
+                },
+                "hasDefault": false,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              },
+              "excludedBySchedule": false
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 9305,
+          "name": "Tortilla Republic-West Hollywood",
+          "latitude": 34.08141326904297,
+          "longitude": -118.38526153564453,
+          "distance": 2.8,
+          "phone": "(310) 657-9888",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/9305/tortilla-republic-west-hollywood2047854955-thumb.jpg",
+          "rating": 4.0,
+          "ratingCount": 679,
+          "yelpId": "tortilla-republic-west-hollywood-3",
+          "address": {
+            "streetAddress": "616 N Robertson Blvd",
+            "postalCode": "90069",
+            "city": "West Hollywood",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 71,
+          "primaryCategory": "Mexican",
+          "categories": ["Mexican", "Cocktail Bars"],
+          "bookmarked": false,
+          "description": "Tortilla Republic offers inventive Mexican fare bursting with unexpected flavors, and this place certainly sets the bar for bold, fresh flavors. With modern Mexican cantina fare on the menu, patrons are offered traditional Mexican dishes made with organic produce when available, and the freshest possible meats, cheeses and more. Each ingredient is sourced only from top-notch purveyors, which is why they use the products like Mary's chicken and prime beef here. It's that dedication that shows up on every plate, including dishes such as the short rib chili verde burrito, mole enchiladas, and the ever-popular carnitas, that crispy pork delicacy modernized with caramelized orange peels, pickled jalapenos, tomatillo fresca, guacamole, crema, and warm tortillas. All dishes are seasonally inspired and are guaranteed to satiate your craving for real Mexican cuisine and to please your inner foodie. Tortilla Republic features weekend brunch, lunch, and dinner menus, as well as gluten-free options to enjoy at this intimate and refined West Hollywood destination.",
+          "priceRange": "$$",
+          "menuUrl": "",
+          "medias": [
+            {
+              "id": 49964,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9305/tortilla-republic-west-hollywood605413572.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9305/tortilla-republic-west-hollywood605413572.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49963,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9305/tortilla-republic-west-hollywood636110569.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9305/tortilla-republic-west-hollywood636110569.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49962,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9305/tortilla-republic-west-hollywood1445428446.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9305/tortilla-republic-west-hollywood1445428446.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49961,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9305/tortilla-republic-west-hollywood1233525546.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9305/tortilla-republic-west-hollywood1233525546.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49960,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9305/tortilla-republic-west-hollywood495427610.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9305/tortilla-republic-west-hollywood495427610.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49959,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9305/tortilla-republic-west-hollywood455039575.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9305/tortilla-republic-west-hollywood455039575.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49958,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9305/tortilla-republic-west-hollywood629995774.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9305/tortilla-republic-west-hollywood629995774.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49957,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9305/tortilla-republic-west-hollywood1814624197.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9305/tortilla-republic-west-hollywood1814624197.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49956,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9305/tortilla-republic-west-hollywood1858765508.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9305/tortilla-republic-west-hollywood1858765508.jpg",
+              "type": "EMAIL_FOOD"
+            }
+          ],
+          "buzz": [],
+          "features": [],
+          "ambiance": [],
+          "serves": [],
+          "attire": [],
+          "acceptedCards": [],
+          "bestNights": [],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "3:00pm-10:00pm",
+            "TUESDAY": "11:30am-10:00pm",
+            "WEDNESDAY": "11:30am-10:00pm",
+            "THURSDAY": "11:30am-10:00pm",
+            "FRIDAY": "11:30am-11:00pm",
+            "SATURDAY": "10:00am-11:00pm",
+            "SUNDAY": "10:00am-10:00pm"
+          },
+          "defaultDiscount": 0.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 26414,
+              "rewardType": "PERCENT",
+              "rewardValue": 7.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 3.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 02/20/2018. Offer does not apply during scheduled times. Excludes: Fri,Sat. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": false,
+              "details": {
+                "dateAdded": 1519195953,
+                "startDate": 1519195953,
+                "hasSchedule": true,
+                "scheduleType": "EXCLUDE",
+                "schedule": {
+                  "FRIDAY": [
+                    {
+                      "id": 38056,
+                      "startsAt": 0,
+                      "endsAt": 2359,
+                      "rewardType": "PERCENT",
+                      "discount": 0.0,
+                      "active": false
+                    }
+                  ],
+                  "SATURDAY": [
+                    {
+                      "id": 38057,
+                      "startsAt": 0,
+                      "endsAt": 2359,
+                      "rewardType": "PERCENT",
+                      "discount": 0.0,
+                      "active": false
+                    }
+                  ]
+                },
+                "hasDefault": false,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              },
+              "excludedBySchedule": false
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 3794,
+          "name": "Froyo Life - Beverly Hills",
+          "latitude": 34.0634651184082,
+          "longitude": -118.39942932128906,
+          "distance": 2.87,
+          "phone": "(310) 777-0010",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/3794/froyo-life953920240-thumb.jpg",
+          "rating": 4.0,
+          "ratingCount": 62,
+          "yelpId": "froyo-life-beverly-hills",
+          "address": {
+            "streetAddress": "241 S Beverly Dr",
+            "postalCode": "90212",
+            "city": "Beverly Hills",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 1,
+          "primaryCategory": "Ice Cream & Frozen Yogurt",
+          "categories": ["Ice Cream & Frozen Yogurt"],
+          "bookmarked": false,
+          "website": "http://www.froyolife.com",
+          "description": "Froyo Life offers a delicious treat, just the way you want it!  With a self-serve set up, make your own creation by mixing the vast selection of creamy frozen yogurts and mouth-watering toppings!",
+          "priceRange": "$",
+          "menuUrl": "",
+          "medias": [
+            {
+              "id": 27791,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3794/froyo-life1647558372.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3794/froyo-life1647558372.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 27790,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3794/froyo-life1232177980.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3794/froyo-life1232177980.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 27789,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3794/froyo-life1972732528.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3794/froyo-life1972732528.jpg",
+              "type": "EMAIL_AMBIANCE"
+            },
+            {
+              "id": 27788,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3794/froyo-life810376270.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3794/froyo-life810376270.jpg"
+            },
+            {
+              "id": 27787,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3794/froyo-life616455596.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3794/froyo-life616455596.jpg"
+            }
+          ],
+          "buzz": [
+            "What really sets this place apart is the quality and variety of flavors of the yogurt.",
+            "This place is great!",
+            "Can't articulate how delicious this place is and what high quality yogurt this is as well!!"
+          ],
+          "features": [],
+          "ambiance": ["CASUAL"],
+          "serves": ["DESSERT"],
+          "attire": ["CASUAL"],
+          "acceptedCards": ["American Express", "MasterCard", "Visa"],
+          "knownFor": "",
+          "bestNights": [],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "11:00am-10:00pm",
+            "TUESDAY": "11:00am-10:00pm",
+            "WEDNESDAY": "11:00am-10:00pm",
+            "THURSDAY": "11:00am-10:00pm",
+            "FRIDAY": "11:00am-11:00pm",
+            "SATURDAY": "11:00am-11:00pm",
+            "SUNDAY": "11:00am-10:00pm"
+          },
+          "defaultDiscount": 10.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 10268,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 10.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 09/03/2013. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": true,
+              "details": {
+                "dateAdded": 1378236859,
+                "startDate": 1378236859,
+                "maxActivations": 0,
+                "hasSchedule": false,
+                "scheduleType": "REWARD",
+                "schedule": {},
+                "hasDefault": true,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 4042,
+          "name": "Bambou Le Pho",
+          "latitude": 34.090965270996094,
+          "longitude": -118.3718490600586,
+          "distance": 2.93,
+          "phone": "(323) 848-8880",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/4042/bambou-le-pho396537189-thumb.jpg",
+          "rating": 4.0,
+          "ratingCount": 306,
+          "yelpId": "bambou-le-pho-west-hollywood",
+          "address": {
+            "streetAddress": "8351 Santa Monica Blvd",
+            "postalCode": "90069",
+            "city": "West Hollywood",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 1,
+          "primaryCategory": "Vietnamese",
+          "categories": ["Vietnamese"],
+          "bookmarked": false,
+          "description": "Bambou Le Pho is a West Hollywood gem.  Offering delicious pho and other Vietnamese favorites, you won't be disappointed!",
+          "priceRange": "$$",
+          "menuUrl": "",
+          "medias": [
+            {
+              "id": 31358,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/4042/bambou-le-pho1862326861.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/4042/bambou-le-pho1862326861.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 31357,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/4042/bambou-le-pho892630639.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/4042/bambou-le-pho892630639.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 31356,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/4042/bambou-le-pho1505682105.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/4042/bambou-le-pho1505682105.jpg",
+              "type": "EMAIL_AMBIANCE"
+            },
+            {
+              "id": 31355,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/4042/bambou-le-pho664346144.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/4042/bambou-le-pho664346144.jpg"
+            },
+            {
+              "id": 4042,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/4042/bambou-le-pho1562579046.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/4042/bambou-le-pho1562579046.jpg"
+            }
+          ],
+          "buzz": [
+            "The pho is amazing! (Get the fish Pho)",
+            "Great food, atmosphere, service & parking",
+            "The food is delicious and always served fresh and hot (with a smile).  "
+          ],
+          "features": [],
+          "ambiance": ["CASUAL"],
+          "serves": ["LUNCH", "DINNER", "DESSERT"],
+          "attire": ["CASUAL"],
+          "acceptedCards": ["American Express", "MasterCard", "Visa"],
+          "knownFor": "Spring Rolls",
+          "bestNights": ["FRIDAY", "SATURDAY"],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "11:00am-11:00pm",
+            "TUESDAY": "11:00am-11:00pm",
+            "WEDNESDAY": "11:00am-11:00pm",
+            "THURSDAY": "11:00am-11:00pm",
+            "FRIDAY": "11:00am-11:00pm",
+            "SATURDAY": "11:00am-11:00pm",
+            "SUNDAY": "11:00am-11:00pm"
+          },
+          "defaultDiscount": 10.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 10767,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 10.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 01/17/2014. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": true,
+              "details": {
+                "dateAdded": 1389980754,
+                "startDate": 1389980754,
+                "maxActivations": 0,
+                "hasSchedule": false,
+                "scheduleType": "REWARD",
+                "schedule": {},
+                "hasDefault": true,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 9243,
+          "name": "El Floridita",
+          "latitude": 34.09410095214844,
+          "longitude": -118.32734680175781,
+          "distance": 3.2,
+          "phone": "(323) 871-8612",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/9243/el-floridita943770532-thumb.jpg",
+          "rating": 3.5,
+          "ratingCount": 347,
+          "yelpId": "el-floridita-los-angeles",
+          "address": {
+            "streetAddress": "1253 Vine St Ste #3",
+            "postalCode": "90038",
+            "city": "Los Angeles",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 71,
+          "primaryCategory": "Cuban",
+          "categories": ["Dance Clubs", "Cuban"],
+          "bookmarked": false,
+          "description": "Experience the warmth of Cuban hospitality, the authentic deliciousness of Cuba's cuisine and all the non-stop late-night action you can handle at El Floridita. Since 1987 this unique Cuban eatery has established itself as a true Latin gem, and many people flock to it for its outstanding combination of food, service and fun. Today, this iconic Hollywood hot-spot is frequented by A-list celebrities, so don't be surprised to be shaking your groove next to someone you recognize from television or the big screen. Head over for lunch or dinner and dine on scrumptious fare like the Tostones Rellenos (Creole shrimp stuffed plantains), the always popular Empanadas de Carne o Pollo, or skip the decision entirely and choose the El Floridita Appetizer Combo with a selection of some of the chef's best appetizers. Then, ready your taste buds for some of the most delicious Cuban entrees you can ever imagine: Ropa Vieja (shredded beef), 1/2 Pollo Asado a la Cubana (citrus-marinated chicken), Camarones Al Ajillo (garlic shrimp) and much more are on the menu just waiting for you to try. Then, after dinner, sit back and sip on a mojito or three and get ready for live music from the Latin orchestra and dance the night away. Not only is this amazing restaurant critically acclaimed, but it is also the recipient of many awards, so when you're craving some of the best Latin nightlife and undeniably the best Cuban meal, head to El Floridita!",
+          "priceRange": "$$",
+          "menuUrl": "",
+          "medias": [
+            {
+              "id": 49503,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9243/el-floridita1250231335.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9243/el-floridita1250231335.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49502,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9243/el-floridita1849233473.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9243/el-floridita1849233473.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49501,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9243/el-floridita969668610.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9243/el-floridita969668610.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49500,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9243/el-floridita56532491.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9243/el-floridita56532491.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49499,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9243/el-floridita110032482.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9243/el-floridita110032482.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49498,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9243/el-floridita185424401.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9243/el-floridita185424401.jpg",
+              "type": "EMAIL_FOOD"
+            }
+          ],
+          "buzz": [],
+          "features": [],
+          "ambiance": [],
+          "serves": [],
+          "attire": [],
+          "acceptedCards": [],
+          "bestNights": [],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "11:00am-2:00am",
+            "TUESDAY": "11:00am-9:00pm",
+            "WEDNESDAY": "11:00am-9:00pm",
+            "THURSDAY": "11:00am-9:00pm",
+            "FRIDAY": "11:00am-2:00am",
+            "SATURDAY": "11:00am-2:00am",
+            "SUNDAY": "11:00am-9:00pm"
+          },
+          "defaultDiscount": 0.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 26352,
+              "rewardType": "PERCENT",
+              "rewardValue": 7.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 3.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 02/20/2018. Offer does not apply during scheduled times. Excludes: Mon,Sat. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": false,
+              "details": {
+                "dateAdded": 1519195496,
+                "startDate": 1519195496,
+                "hasSchedule": true,
+                "scheduleType": "EXCLUDE",
+                "schedule": {
+                  "MONDAY": [
+                    {
+                      "id": 37950,
+                      "startsAt": 0,
+                      "endsAt": 2359,
+                      "rewardType": "PERCENT",
+                      "discount": 0.0,
+                      "active": false
+                    }
+                  ],
+                  "SATURDAY": [
+                    {
+                      "id": 37951,
+                      "startsAt": 0,
+                      "endsAt": 2359,
+                      "rewardType": "PERCENT",
+                      "discount": 0.0,
+                      "active": false
+                    }
+                  ]
+                },
+                "hasDefault": false,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              },
+              "excludedBySchedule": false
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 3608,
+          "name": "Dialog Cafe",
+          "latitude": 34.090484619140625,
+          "longitude": -118.3826904296875,
+          "distance": 3.2,
+          "phone": "(310) 289-1630",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/3608/dialog-cafe1251023493-thumb.jpg",
+          "rating": 4.5,
+          "ratingCount": 250,
+          "yelpId": "dialog-cafe-west-hollywood",
+          "address": {
+            "streetAddress": "8766 Holloway Dr",
+            "postalCode": "90069",
+            "city": "West Hollywood",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 1,
+          "primaryCategory": "Cafe",
+          "categories": ["Cafe"],
+          "bookmarked": false,
+          "website": "http://www.dialog-cafe.com",
+          "description": "Dialog Cafe is the best place to stumble into in West Hollywood. If you love great food, great vibes and great people, Dialog Cafe is just the place to go. It's hard to find a great place to eat and relax in West Hollywood, but take it from us - Dialog Cafe is an unforgettable spot that you'll love more each and every time you go. Bring your buddies and hang out!",
+          "priceRange": "$$",
+          "menuUrl": "http://www.dialog-cafe.com/menu.html",
+          "medias": [
+            {
+              "id": 30667,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3608/dialog-cafe1016864617.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3608/dialog-cafe1016864617.jpg"
+            },
+            {
+              "id": 24225,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3608/dialog-cafe725086638.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3608/dialog-cafe725086638.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 24222,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3608/dialog-cafe370580554.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3608/dialog-cafe370580554.jpg",
+              "type": "EMAIL_AMBIANCE"
+            },
+            {
+              "id": 24221,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3608/dialog-cafe1596377203.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3608/dialog-cafe1596377203.jpg"
+            },
+            {
+              "id": 24220,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3608/dialog-cafe101801235.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3608/dialog-cafe101801235.jpg"
+            }
+          ],
+          "buzz": [
+            "Everything was perfection.",
+            "Fantastic and adorable!",
+            "Question: could this place be anymore perfect  Answer: No!"
+          ],
+          "features": [],
+          "ambiance": ["CASUAL"],
+          "serves": ["BREAKFAST", "LUNCH"],
+          "attire": ["CASUAL"],
+          "acceptedCards": ["American Express", "MasterCard", "Visa"],
+          "knownFor": "Coffee",
+          "bestNights": [],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "7:00am-7:00pm",
+            "TUESDAY": "7:00am-7:00pm",
+            "WEDNESDAY": "7:00am-7:00pm",
+            "THURSDAY": "7:00am-7:00pm",
+            "FRIDAY": "7:00am-7:00pm",
+            "SATURDAY": "8:00am-5:00pm",
+            "SUNDAY": "8:00am-5:00pm"
+          },
+          "defaultDiscount": 10.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 9254,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 10.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 06/14/2013. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": true,
+              "details": {
+                "dateAdded": 1371229284,
+                "startDate": 1371229284,
+                "maxActivations": 0,
+                "hasSchedule": false,
+                "scheduleType": "REWARD",
+                "schedule": {},
+                "hasDefault": true,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 3624,
+          "name": "A Divine H2O",
+          "latitude": 34.09373474121094,
+          "longitude": -118.37799072265625,
+          "distance": 3.25,
+          "phone": "(310) 289-7800",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/3624/a-divine-h2o878140655-thumb.jpg",
+          "rating": 5.0,
+          "ratingCount": 7,
+          "yelpId": "a-divine-h2o-west-hollywood-2",
+          "address": {
+            "streetAddress": "8539 W Sunset Blvd Unit 6",
+            "postalCode": "90069",
+            "city": "West Hollywood",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 1,
+          "primaryCategory": "Smoothies & Juice Bars",
+          "categories": ["Smoothies & Juice Bars"],
+          "bookmarked": false,
+          "website": "http://www.adivineh2o.com",
+          "description": "Welcome to the world of A Divine H2O, where they are committed to provide Natural Ionic Calcium Alkaline Water to you through their Los Angeles water delivery service. A Divine H2O is your source for Natural Alkaline Water that has superior hydration to hydrate you faster, with super detoxifying benefits, replenishing essential minerals and helps boost your immune system.",
+          "priceRange": "$",
+          "menuUrl": "",
+          "medias": [
+            {
+              "id": 29092,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3624/a-divine-h2o2142952563.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3624/a-divine-h2o2142952563.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 29091,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3624/a-divine-h2o632375249.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3624/a-divine-h2o632375249.jpg",
+              "type": "EMAIL_AMBIANCE"
+            },
+            {
+              "id": 29090,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3624/a-divine-h2o669044764.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3624/a-divine-h2o669044764.jpg"
+            },
+            {
+              "id": 29089,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3624/a-divine-h2o1239115283.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3624/a-divine-h2o1239115283.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 24815,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3624/a-divine-h2o94201373.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3624/a-divine-h2o94201373.jpg"
+            }
+          ],
+          "buzz": [
+            "I can't stand drinking any other water now!!!",
+            "Best Alkaline water and Juice!!"
+          ],
+          "features": [],
+          "ambiance": ["CASUAL"],
+          "serves": ["LUNCH", "DINNER"],
+          "attire": ["CASUAL"],
+          "acceptedCards": ["American Express", "MasterCard", "Visa"],
+          "knownFor": "Alkaline Water",
+          "bestNights": [],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "10:00am-8:00pm",
+            "TUESDAY": "10:00am-8:00pm",
+            "WEDNESDAY": "10:00am-8:00pm",
+            "THURSDAY": "10:00am-8:00pm",
+            "FRIDAY": "10:00am-8:00pm",
+            "SATURDAY": "10:00am-8:00pm",
+            "SUNDAY": "11:00am-7:00pm"
+          },
+          "defaultDiscount": 10.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 9286,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 10.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 06/25/2013. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": true,
+              "details": {
+                "dateAdded": 1372180104,
+                "startDate": 1372180104,
+                "maxActivations": 0,
+                "hasSchedule": false,
+                "scheduleType": "REWARD",
+                "schedule": {},
+                "hasDefault": true,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 3938,
+          "name": "Gaby's Express - Sunset Blvd",
+          "latitude": 34.09089660644531,
+          "longitude": -118.38523864746094,
+          "distance": 3.31,
+          "phone": "(310) 854-1170",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/3938/gaby-s-express-sunset-blvd1237537206-thumb.jpg",
+          "rating": 3.5,
+          "ratingCount": 29,
+          "yelpId": "gabys-express-west-hollywood",
+          "address": {
+            "streetAddress": "8873 Sunset Blvd",
+            "postalCode": "90069",
+            "city": "West Hollywood",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 1,
+          "primaryCategory": "Mediterranean",
+          "categories": ["Mediterranean"],
+          "bookmarked": false,
+          "website": "http://www.gabysexpress.com",
+          "description": "Looking for tasty Lebanese food on the go? Gaby's Express is calling your name! This isn't any typical restaurant serving Lebanese food - this is the real deal. The chefs use traditional Lebanese recipes handed down through generations and bring those flavors to your. Each and every menu item is fresh, delicious and unique in it's own authentic way! Stop by Gaby's Express for excellent food at the best prices around town. ",
+          "priceRange": "$",
+          "menuUrl": "http://www.gabysexpress.com/express_menu.html",
+          "medias": [
+            {
+              "id": 29514,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3938/gaby-s-express-sunset-blvd245397386.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3938/gaby-s-express-sunset-blvd245397386.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 29513,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3938/gaby-s-express-sunset-blvd1998596081.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3938/gaby-s-express-sunset-blvd1998596081.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 29512,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3938/gaby-s-express-sunset-blvd1173710010.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3938/gaby-s-express-sunset-blvd1173710010.jpg",
+              "type": "EMAIL_AMBIANCE"
+            },
+            {
+              "id": 29511,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3938/gaby-s-express-sunset-blvd67511023.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3938/gaby-s-express-sunset-blvd67511023.jpg"
+            },
+            {
+              "id": 29510,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3938/gaby-s-express-sunset-blvd147067607.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3938/gaby-s-express-sunset-blvd147067607.jpg"
+            }
+          ],
+          "buzz": [
+            "Food is delicious, prices are great, and the staff are awesome!",
+            "Thank you for taking care of us!",
+            "A welcoming environment with a great variety of delicious dishes!"
+          ],
+          "features": [],
+          "ambiance": ["CASUAL"],
+          "serves": ["LUNCH", "DINNER", "DESSERT"],
+          "attire": ["CASUAL"],
+          "acceptedCards": ["MasterCard", "Visa"],
+          "knownFor": "",
+          "bestNights": [],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "11:00am-12:00am",
+            "TUESDAY": "11:00am-12:00am",
+            "WEDNESDAY": "11:00am-12:00am",
+            "THURSDAY": "11:00am-12:00am",
+            "FRIDAY": "11:00am-3:00am",
+            "SATURDAY": "11:00am-3:00am",
+            "SUNDAY": "11:00am-10:00pm"
+          },
+          "defaultDiscount": 10.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 10559,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 10.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 11/11/2013. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": true,
+              "details": {
+                "dateAdded": 1384207853,
+                "startDate": 1384207853,
+                "maxActivations": 0,
+                "hasSchedule": false,
+                "scheduleType": "REWARD",
+                "schedule": {},
+                "hasDefault": true,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 3658,
+          "name": "Stout - Hollywood",
+          "latitude": 34.099430084228516,
+          "longitude": -118.32949829101562,
+          "distance": 3.49,
+          "phone": "(323) 469-3800",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/3658/stout-hollywood1489171846-thumb.jpg",
+          "rating": 4.0,
+          "ratingCount": 982,
+          "yelpId": "stout-los-angeles",
+          "address": {
+            "streetAddress": "1544 N Cahuenga Blvd",
+            "postalCode": "90028",
+            "city": "Los Angeles",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 1,
+          "primaryCategory": "Burgers",
+          "categories": ["Burgers"],
+          "bookmarked": false,
+          "website": "http://www.stoutburgersandbeers.com/home",
+          "description": "Stout aspires to serve the new-style burger: free-ranged beef cooked medium rare, organic ground chicken, or a quinoa based veggie option, dressed with a variety of homemade toppings such as onions cooked down to the sweetness of maple syrup, specialty cheeses, smoky bacon, arugula and roasted tomatoes.  Sound delicious? It is! It will be worth dropping in just for a mid-afternoon burger.",
+          "priceRange": "$$",
+          "menuUrl": "http://www.stoutburgersandbeers.com/menu",
+          "medias": [
+            {
+              "id": 25035,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3658/stout-hollywood1529841440.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3658/stout-hollywood1529841440.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 25034,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3658/stout-hollywood133534849.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3658/stout-hollywood133534849.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 25033,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3658/stout-hollywood1068521930.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3658/stout-hollywood1068521930.jpg",
+              "type": "EMAIL_AMBIANCE"
+            },
+            {
+              "id": 25032,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3658/stout-hollywood742416420.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3658/stout-hollywood742416420.jpg"
+            },
+            {
+              "id": 25031,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3658/stout-hollywood24597675.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3658/stout-hollywood24597675.jpg"
+            }
+          ],
+          "buzz": [
+            "Every burger on the menu should be considered a national treasure.",
+            "My friends laugh when I say this place has the best burger on Earth, but I really feel that way. ",
+            "I love Stout to death. This is the greatest burger joint on the whole planet."
+          ],
+          "features": [],
+          "ambiance": ["CASUAL", "TRENDY"],
+          "serves": ["LUNCH", "DINNER", "DESSERT"],
+          "attire": ["HIP", "CASUAL"],
+          "acceptedCards": ["Visa", "American Express", "MasterCard"],
+          "knownFor": "Truffle Shuffle Burger",
+          "bestNights": [],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "11:30am-4:00am",
+            "TUESDAY": "11:30am-4:00am",
+            "WEDNESDAY": "11:30am-4:00am",
+            "THURSDAY": "11:30am-4:00am",
+            "FRIDAY": "11:30am-4:00am",
+            "SATURDAY": "11:30am-4:00am",
+            "SUNDAY": "11:30am-4:00am"
+          },
+          "defaultDiscount": 10.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 9993,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 10.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 07/02/2013. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": true,
+              "details": {
+                "dateAdded": 1372785291,
+                "startDate": 1372785291,
+                "maxActivations": 0,
+                "hasSchedule": false,
+                "scheduleType": "REWARD",
+                "schedule": {},
+                "hasDefault": true,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 9100,
+          "name": "Lucky Strike - Hollywood",
+          "latitude": 34.102333068847656,
+          "longitude": -118.33940124511719,
+          "distance": 3.53,
+          "phone": "(323) 467-7776",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/9100/lucky-strike-hollywood166529585-thumb.jpg",
+          "rating": 3.0,
+          "ratingCount": 443,
+          "yelpId": "lucky-strike-live-hollywood",
+          "address": {
+            "streetAddress": "6801 Hollywood Blvd",
+            "postalCode": "90028",
+            "city": "Los Angeles",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 71,
+          "categories": ["Lounges", "Bowling", "Venues & Event Spaces"],
+          "bookmarked": false,
+          "description": "Thriving at the bustling intersections of live music, chef-driven cuisine, nightlife and bowling, Lucky Strike has emerged as an industry leader in entertainment by crafting immersive, unforgettable experiences through timeless friendly service, one-of-a-kind atmosphere, chef-driven food & drink, and industry leading bowling. You'll find state-of-the-art bowling lanes with automatic scoring, private party space, DJ-hosted events with electronic art shows playing over the bowling lanes, and a restaurant where chef-prepared dishes are gourmet but still accessible. Located in Lucky Strike venues across the nation, A2Kitchens offer a gastropub dining experience along with a full-service mixologist bar to hungry and thirsty patrons. At the head of the culinary team is Chef Rodelio Aglibot, a world-renowned chef and food personality. You'll find his skillful touch on dishes which are dubbed rich comfort foods, and his contemporary takes on old favorites are all the rage. The crispy Wisconsin cheese curds with tomato jam, variety of poutines, street tacos and wings are all on the cutting edge of what is new and popular in the world of food. Handhelds like the meatball madness are sloppy but undeniably delicious, and the burgers are not your typical offerings either. There's plenty more on the menu, making this the perfect place for lunch, dinner or late-night snacks. Combine your meal with all the action from 12 bowling lanes, a private room, plenty of TVs, posh lounge and bar, VIP room, DJ booth and sophisticated AV system, live bands performing weekly, bottle service, Happy Hour specials, and party packages, and you can have a great time out from start to finish. Please note: adult-only (21+) bowling, entertainment and dancing after 8 p.m.",
+          "priceRange": "$$",
+          "menuUrl": "",
+          "medias": [
+            {
+              "id": 48378,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9100/lucky-strike-hollywood1606492104.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9100/lucky-strike-hollywood1606492104.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 48377,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9100/lucky-strike-hollywood138602913.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9100/lucky-strike-hollywood138602913.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 48376,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9100/lucky-strike-hollywood1997829950.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9100/lucky-strike-hollywood1997829950.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 48375,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9100/lucky-strike-hollywood330500791.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9100/lucky-strike-hollywood330500791.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 48374,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9100/lucky-strike-hollywood568495239.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9100/lucky-strike-hollywood568495239.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 48373,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9100/lucky-strike-hollywood1755069330.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9100/lucky-strike-hollywood1755069330.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 48372,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9100/lucky-strike-hollywood316003299.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9100/lucky-strike-hollywood316003299.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 48371,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9100/lucky-strike-hollywood1696159030.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9100/lucky-strike-hollywood1696159030.jpg",
+              "type": "EMAIL_FOOD"
+            }
+          ],
+          "buzz": [],
+          "features": [],
+          "ambiance": [],
+          "serves": [],
+          "attire": [],
+          "acceptedCards": [],
+          "bestNights": [],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "12:00pm-1:00am",
+            "TUESDAY": "12:00pm-1:00am",
+            "WEDNESDAY": "12:00pm-1:00am",
+            "THURSDAY": "12:00pm-2:00am",
+            "FRIDAY": "12:00pm-2:00am",
+            "SATURDAY": "11:00am-2:00am",
+            "SUNDAY": "11:00am-1:00am"
+          },
+          "defaultDiscount": 0.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 26209,
+              "rewardType": "PERCENT",
+              "rewardValue": 7.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 3.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 02/20/2018. Offer does not apply during scheduled times. Excludes: Sat. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": false,
+              "details": {
+                "dateAdded": 1519194454,
+                "startDate": 1519194454,
+                "hasSchedule": true,
+                "scheduleType": "EXCLUDE",
+                "schedule": {
+                  "SATURDAY": [
+                    {
+                      "id": 37719,
+                      "startsAt": 0,
+                      "endsAt": 2359,
+                      "rewardType": "PERCENT",
+                      "discount": 0.0,
+                      "active": false
+                    }
+                  ]
+                },
+                "hasDefault": false,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              },
+              "excludedBySchedule": false
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 3471,
+          "name": "Tinhorn Flats Saloon & Grill",
+          "latitude": 34.102359771728516,
+          "longitude": -118.33828735351562,
+          "distance": 3.54,
+          "phone": "(323) 462-2210",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/3471/tinhorn-flats-saloon-grill1367227406-thumb.jpg",
+          "rating": 3.5,
+          "ratingCount": 90,
+          "yelpId": "tinhorn-flats-saloon-and-grill-los-angeles",
+          "address": {
+            "streetAddress": "1724 N Highland Ave, Ste 100",
+            "postalCode": "90028",
+            "city": "Los Angeles",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 1,
+          "primaryCategory": "Sports Bar",
+          "categories": ["Sports Bar"],
+          "bookmarked": false,
+          "website": "http://www.tinhornflats.com",
+          "description": "Famous for its swinging saloon doors, welcoming atmosphere and good company, Tinhorn Flats Bar & Grill is one of Los Angeles' best country Western grills that is perfect for those looking for an old fashion feel. Bring your appetite and your thirst for a good time at Tinhorn Flats!",
+          "priceRange": "$$",
+          "menuUrl": "http://www.tinhornflatshollywood.com/menu.html",
+          "medias": [
+            {
+              "id": 21961,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3471/tinhorn-flats-saloon-grill802964425.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3471/tinhorn-flats-saloon-grill802964425.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 21960,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3471/tinhorn-flats-saloon-grill766919423.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3471/tinhorn-flats-saloon-grill766919423.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 21959,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3471/tinhorn-flats-saloon-grill1572070044.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3471/tinhorn-flats-saloon-grill1572070044.jpg",
+              "type": "EMAIL_AMBIANCE"
+            },
+            {
+              "id": 21958,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3471/tinhorn-flats-saloon-grill483390989.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3471/tinhorn-flats-saloon-grill483390989.jpg"
+            },
+            {
+              "id": 21957,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3471/tinhorn-flats-saloon-grill1259448917.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3471/tinhorn-flats-saloon-grill1259448917.jpg"
+            }
+          ],
+          "buzz": [
+            "Great spot, great food specials.",
+            "great atmosphere.",
+            "Everything was very good!"
+          ],
+          "features": [],
+          "ambiance": ["CASUAL"],
+          "serves": ["LUNCH", "DINNER", "DESSERT"],
+          "attire": ["CASUAL"],
+          "acceptedCards": ["American Express", "MasterCard", "Visa"],
+          "knownFor": "Amazing Happy Hour and Fantastic Burgers",
+          "bestNights": ["MONDAY", "THURSDAY", "FRIDAY", "SATURDAY"],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "11:00am-2:00am",
+            "TUESDAY": "11:00am-2:00am",
+            "WEDNESDAY": "11:00am-2:00am",
+            "THURSDAY": "11:00am-2:00am",
+            "FRIDAY": "11:00am-2:00am",
+            "SATURDAY": "11:00am-2:00am",
+            "SUNDAY": "11:00am-2:00am"
+          },
+          "defaultDiscount": 10.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 7782,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 10.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 04/24/2013. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": true,
+              "details": {
+                "dateAdded": 1366810212,
+                "startDate": 1366810212,
+                "maxActivations": 0,
+                "hasSchedule": false,
+                "scheduleType": "REWARD",
+                "schedule": {},
+                "hasDefault": true,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 3749,
+          "name": "Hart's Cafe",
+          "latitude": 34.101871490478516,
+          "longitude": -118.33499908447266,
+          "distance": 3.55,
+          "phone": "(323) 465-9970",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/3749/hart-s-cafe1334850576-thumb.jpg",
+          "rating": 4.5,
+          "ratingCount": 29,
+          "yelpId": "harts-cafe-hollywood",
+          "address": {
+            "streetAddress": "6655 Hollywood Blvd",
+            "postalCode": "90028",
+            "city": "Los Angeles",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 1,
+          "primaryCategory": "Cafe",
+          "categories": ["Cafe"],
+          "bookmarked": false,
+          "description": "Hart's Cafe is a hidden gem, located in the middle of Hollywood Blvd, it's the perfect escape from the hustle and bustle.  Offering incredible food and friendly service, your first stop at Hart's Cafe won't be your last.",
+          "priceRange": "$",
+          "menuUrl": "",
+          "medias": [
+            {
+              "id": 27046,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3749/hart-s-cafe1826244602.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3749/hart-s-cafe1826244602.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 27045,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3749/hart-s-cafe689174359.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3749/hart-s-cafe689174359.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 27044,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3749/hart-s-cafe2110085011.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3749/hart-s-cafe2110085011.jpg",
+              "type": "EMAIL_AMBIANCE"
+            },
+            {
+              "id": 27043,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3749/hart-s-cafe1930644439.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3749/hart-s-cafe1930644439.jpg"
+            },
+            {
+              "id": 27042,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3749/hart-s-cafe976547855.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3749/hart-s-cafe976547855.jpg"
+            }
+          ],
+          "buzz": [
+            "Everything was very fresh!",
+            "Hart's have the best fish tacos in the area that I've had so far. The chipotle sauce is incredible.",
+            "Overall - awesome experience. I will for sure be going back."
+          ],
+          "features": [],
+          "ambiance": ["CASUAL"],
+          "serves": ["BREAKFAST", "LUNCH", "DINNER", "DESSERT"],
+          "attire": ["CASUAL"],
+          "acceptedCards": ["American Express", "MasterCard", "Visa"],
+          "knownFor": "",
+          "bestNights": [],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "12:00am-12:00am",
+            "TUESDAY": "12:00am-12:00am",
+            "WEDNESDAY": "12:00am-12:00am",
+            "THURSDAY": "12:00am-12:00am",
+            "FRIDAY": "12:00am-12:00am",
+            "SATURDAY": "12:00am-12:00am",
+            "SUNDAY": "12:00am-12:00am"
+          },
+          "defaultDiscount": 10.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 10175,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 10.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 08/16/2013. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": true,
+              "details": {
+                "dateAdded": 1376675583,
+                "startDate": 1376675583,
+                "maxActivations": 0,
+                "hasSchedule": false,
+                "scheduleType": "REWARD",
+                "schedule": {},
+                "hasDefault": true,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 3618,
+          "name": "Roni's",
+          "latitude": 34.065391540527344,
+          "longitude": -118.4121322631836,
+          "distance": 3.6,
+          "phone": "(310) 772-0040",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/3618/roni-s546431639-thumb.jpg",
+          "rating": 3.5,
+          "ratingCount": 86,
+          "yelpId": "ronis-beverly-hills",
+          "address": {
+            "streetAddress": "9911 S Santa Monica Blvd",
+            "postalCode": "90212",
+            "city": "Beverly Hills",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 1,
+          "primaryCategory": "Italian",
+          "categories": ["Italian"],
+          "bookmarked": false,
+          "website": "http://www.ieatatronis.com",
+          "description": "Established in 1991, Roni's continues to serve the community as one of the most reliable and family friendly dining experiences in Beverly Hills. Enjoy the service and fine foods created by Roni and David who are always there to take care of you and make you feel like you are part of Roni's family. You'll never leave hungry or unhappy when you got to Roni's. ",
+          "priceRange": "$$",
+          "menuUrl": "http://www.ieatatronis.com/menu.pdf",
+          "medias": [
+            {
+              "id": 24614,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3618/roni-s936034096.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3618/roni-s936034096.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 24613,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3618/roni-s1733251308.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3618/roni-s1733251308.jpg"
+            },
+            {
+              "id": 24612,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3618/roni-s32620997.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3618/roni-s32620997.jpg",
+              "type": "EMAIL_AMBIANCE"
+            },
+            {
+              "id": 24611,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3618/roni-s898653546.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3618/roni-s898653546.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 24610,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3618/roni-s1821959101.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3618/roni-s1821959101.jpg"
+            }
+          ],
+          "buzz": [
+            "YES the sweet potato fries were OUTSTANDING!",
+            "Have gone back twice to get the cajun blackened salmon for dinner - SOOOOOOOO GOOD! ",
+            "Great service and amazing sandwiches!"
+          ],
+          "features": [],
+          "ambiance": ["CASUAL"],
+          "serves": ["BREAKFAST", "LUNCH", "DINNER", "DESSERT"],
+          "attire": ["CASUAL"],
+          "acceptedCards": ["American Express", "MasterCard", "Visa"],
+          "knownFor": "Sweet Potato Fries",
+          "bestNights": [],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "8:00am-1:00am",
+            "TUESDAY": "8:00am-1:00am",
+            "WEDNESDAY": "8:00am-1:00am",
+            "THURSDAY": "8:00am-1:00am",
+            "FRIDAY": "8:00am-1:00am",
+            "SATURDAY": "8:00am-1:00am",
+            "SUNDAY": "8:00am-1:00am"
+          },
+          "defaultDiscount": 10.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 9274,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 10.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 06/20/2013. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": true,
+              "details": {
+                "dateAdded": 1371762271,
+                "startDate": 1371762271,
+                "maxActivations": 0,
+                "hasSchedule": false,
+                "scheduleType": "REWARD",
+                "schedule": {},
+                "hasDefault": true,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 3940,
+          "name": "Gaby's Mediterranean Restaurant",
+          "latitude": 34.02012634277344,
+          "longitude": -118.40506744384766,
+          "distance": 3.8,
+          "phone": "(310) 559-1800",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/3940/gaby-s-mediterranean-restaurant1545662596-thumb.jpg",
+          "rating": 3.5,
+          "ratingCount": 575,
+          "yelpId": "gabys-mediterranean-restaurant-and-cafe-los-angeles",
+          "address": {
+            "streetAddress": "10445 Venice Blvd",
+            "postalCode": "90034",
+            "city": "Los Angeles",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 1,
+          "primaryCategory": "Mediterranean",
+          "categories": ["Mediterranean"],
+          "bookmarked": false,
+          "website": "http://www.gabysexpress.com",
+          "description": "Looking for tasty Lebanese food on the go? Gaby's Express is calling your name! This isn't any typical restaurant serving Lebanese food - this is the real deal. The chefs use traditional Lebanese recipes handed down through generations and bring those flavors to your. Each and every menu item is fresh, delicious and unique in it's own authentic way! Stop by Gaby's Express for excellent food at the best prices around town. ",
+          "priceRange": "$$",
+          "menuUrl": "http://www.gabysexpress.com/mediterranean_menu.html",
+          "medias": [
+            {
+              "id": 29530,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3940/gaby-s-mediterranean-restaurant732635670.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3940/gaby-s-mediterranean-restaurant732635670.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 29529,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3940/gaby-s-mediterranean-restaurant1304723808.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3940/gaby-s-mediterranean-restaurant1304723808.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 29528,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3940/gaby-s-mediterranean-restaurant1656497674.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3940/gaby-s-mediterranean-restaurant1656497674.jpg",
+              "type": "EMAIL_AMBIANCE"
+            },
+            {
+              "id": 29527,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3940/gaby-s-mediterranean-restaurant997951041.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3940/gaby-s-mediterranean-restaurant997951041.jpg"
+            },
+            {
+              "id": 29526,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3940/gaby-s-mediterranean-restaurant1447659025.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3940/gaby-s-mediterranean-restaurant1447659025.jpg"
+            }
+          ],
+          "buzz": [
+            "The food is always delicious from the lamb kabobs, baba ganoush, flavorful lemon chicken, to the cilantro mahi mahi. ",
+            "I ordered the kefta kabob sandwich and it was DELICIOUS! ",
+            "We've been coming here for years and have never been disappointed. "
+          ],
+          "features": [],
+          "ambiance": ["CASUAL"],
+          "serves": ["LUNCH", "DINNER", "DESSERT"],
+          "attire": ["CASUAL"],
+          "acceptedCards": ["MasterCard", "American Express", "Visa"],
+          "knownFor": "Pitas",
+          "bestNights": [],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "11:00am-1:00am",
+            "TUESDAY": "11:00am-1:00am",
+            "WEDNESDAY": "11:00am-1:00am",
+            "THURSDAY": "11:00am-1:00am",
+            "FRIDAY": "11:00am-1:00am",
+            "SATURDAY": "11:00am-1:00am",
+            "SUNDAY": "11:00am-1:00am"
+          },
+          "defaultDiscount": 10.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 10563,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 10.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 11/11/2013. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": true,
+              "details": {
+                "dateAdded": 1384210448,
+                "startDate": 1384210448,
+                "maxActivations": 0,
+                "hasSchedule": false,
+                "scheduleType": "REWARD",
+                "schedule": {},
+                "hasDefault": true,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 3310,
+          "name": "Thai Patio",
+          "latitude": 34.101890563964844,
+          "longitude": -118.30595397949219,
+          "distance": 4.3,
+          "phone": "(323) 466-3890",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/3310/thai-patio1580692078-thumb.jpg",
+          "rating": 3.5,
+          "ratingCount": 817,
+          "yelpId": "thai-patio-los-angeles-3",
+          "address": {
+            "streetAddress": "5273 Hollywood Blvd",
+            "postalCode": "90027",
+            "city": "Los Angeles",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 1,
+          "primaryCategory": "Ice Cream & Frozen Yogurt",
+          "categories": ["Ice Cream & Frozen Yogurt"],
+          "bookmarked": false,
+          "description": "Thai Patio features delicious Thai cuisine with live music and great service.",
+          "priceRange": "$$",
+          "menuUrl": "",
+          "medias": [
+            {
+              "id": 21138,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3310/thai-patio2117741946.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3310/thai-patio2117741946.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 21137,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3310/thai-patio316731061.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3310/thai-patio316731061.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 21136,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3310/thai-patio2101132310.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3310/thai-patio2101132310.jpg",
+              "type": "EMAIL_AMBIANCE"
+            },
+            {
+              "id": 21135,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3310/thai-patio1673361728.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3310/thai-patio1673361728.jpg"
+            },
+            {
+              "id": 21134,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/3310/thai-patio1737013417.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/3310/thai-patio1737013417.jpg"
+            }
+          ],
+          "buzz": [
+            "The papaya salad with raw blue crab was delicious, crab was very fresh and tasty.",
+            "It's really a cools experience to eat here.",
+            " this is some of the best, affordable thai I've had in LA. "
+          ],
+          "features": [],
+          "ambiance": ["CASUAL"],
+          "serves": ["LUNCH", "DINNER"],
+          "attire": ["CASUAL"],
+          "acceptedCards": ["MasterCard", "Visa"],
+          "knownFor": "Best Pad Thai, Mango Sticky Rice",
+          "bestNights": ["FRIDAY"],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "11:00am-2:00am",
+            "TUESDAY": "11:00am-2:00am",
+            "WEDNESDAY": "11:00am-2:00am",
+            "THURSDAY": "11:00am-2:00am",
+            "FRIDAY": "11:00am-3:00am",
+            "SATURDAY": "11:00am-2:00am",
+            "SUNDAY": "11:00am-2:00am"
+          },
+          "defaultDiscount": 10.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 7053,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 10.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 03/14/2013. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": true,
+              "details": {
+                "dateAdded": 1363279512,
+                "startDate": 1363279512,
+                "maxActivations": 0,
+                "hasSchedule": false,
+                "scheduleType": "REWARD",
+                "schedule": {},
+                "hasDefault": true,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 9227,
+          "name": "Nizam Indian Cuisine",
+          "latitude": 34.03990936279297,
+          "longitude": -118.42906188964844,
+          "distance": 4.54,
+          "phone": "(310) 470-1441",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/9227/nizam-indian-cuisine842153178-thumb.jpg",
+          "rating": 4.0,
+          "ratingCount": 308,
+          "yelpId": "nizam-of-india-los-angeles-6",
+          "address": {
+            "streetAddress": "10871 W Pico Blvd",
+            "postalCode": "90064",
+            "city": "Los Angeles",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 71,
+          "primaryCategory": "Indian",
+          "categories": ["Indian"],
+          "bookmarked": false,
+          "description": "Nizam of India was established in 1985 and was the first Indian restaurant in the West LA area. There's a love of cooking and passion for good Indian food here that has helped create a following that has been with the restaurant since it first opened its doors. Everything is served up in a relaxed and welcoming setting that you and your friends and family are sure to enjoy. Whether you are in the mood to indulge in something new or just want to enjoy some old favorites, Nizam has the inventive menu and attentive service that will leave you truly satisfied. No matter what your occasion calls for or your appetite demands, the friendly staff at Nizam of India promise to make your next dining experience a pleasant one. Nizam originally served only Punjab-style cuisine, but over the years the kitchen has added other popular Indian dishes from all over the country. One of the most requested dishes is the Chicken Tikka Makhani, the House Special, and the Shrimp Malabar. Try them, or pick any one of the dozens of other selections that are sure to make dining out fun and flavorful. Also check out the fabulous all you can eat Lunch Buffet - everyday from 11:00 am - 2:45 pm, or take advantage of delivery right to your home or office. You can even order online for the ultimate convenience.",
+          "priceRange": "$$",
+          "menuUrl": "",
+          "medias": [
+            {
+              "id": 49383,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9227/nizam-indian-cuisine1684936089.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9227/nizam-indian-cuisine1684936089.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49382,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9227/nizam-indian-cuisine1675845845.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9227/nizam-indian-cuisine1675845845.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49381,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9227/nizam-indian-cuisine890478967.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9227/nizam-indian-cuisine890478967.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49380,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9227/nizam-indian-cuisine115048132.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9227/nizam-indian-cuisine115048132.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49379,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9227/nizam-indian-cuisine1194873917.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9227/nizam-indian-cuisine1194873917.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49378,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9227/nizam-indian-cuisine558027587.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9227/nizam-indian-cuisine558027587.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49377,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9227/nizam-indian-cuisine1089157792.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9227/nizam-indian-cuisine1089157792.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 49376,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/9227/nizam-indian-cuisine48844344.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/9227/nizam-indian-cuisine48844344.jpg",
+              "type": "EMAIL_FOOD"
+            }
+          ],
+          "buzz": [],
+          "features": [],
+          "ambiance": [],
+          "serves": [],
+          "attire": [],
+          "acceptedCards": [],
+          "bestNights": [],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "11:00am-3:00pm, 5:00pm-10:30pm",
+            "TUESDAY": "11:00am-3:00pm, 5:00pm-10:30pm",
+            "WEDNESDAY": "11:00am-3:00pm, 5:00pm-10:30pm",
+            "THURSDAY": "11:00am-3:00pm, 5:00pm-10:30pm",
+            "FRIDAY": "11:00am-3:00pm, 5:00pm-11:00pm",
+            "SATURDAY": "11:00am-3:00pm, 5:00pm-11:00pm",
+            "SUNDAY": "11:00am-3:00pm, 5:00pm-10:30pm"
+          },
+          "defaultDiscount": 0.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 26336,
+              "rewardType": "PERCENT",
+              "rewardValue": 7.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 3.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 02/20/2018. Offer does not apply during scheduled times. Excludes: Sat. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": false,
+              "details": {
+                "dateAdded": 1519195371,
+                "startDate": 1519195371,
+                "hasSchedule": true,
+                "scheduleType": "EXCLUDE",
+                "schedule": {
+                  "SATURDAY": [
+                    {
+                      "id": 37926,
+                      "startsAt": 0,
+                      "endsAt": 2359,
+                      "rewardType": "PERCENT",
+                      "discount": 0.0,
+                      "active": false
+                    }
+                  ]
+                },
+                "hasDefault": false,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              },
+              "excludedBySchedule": false
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        },
+        {
+          "id": 2843,
+          "name": "Nizam of India",
+          "latitude": 34.04011154174805,
+          "longitude": -118.42919158935547,
+          "distance": 4.54,
+          "phone": "(310) 470-1440",
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/2843/nizam-of-india1292491435-thumb.jpg",
+          "rating": 3.49,
+          "ratingCount": 159,
+          "yelpId": "nizam-of-india-los-angeles",
+          "address": {
+            "streetAddress": "10871 W Pico Blvd",
+            "postalCode": "90064",
+            "city": "Los Angeles",
+            "state": "ca",
+            "metroName": "Los Angeles Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 1,
+          "primaryCategory": "Indian",
+          "categories": ["Indian"],
+          "bookmarked": false,
+          "website": "http://www.nizamindianfood.com",
+          "description": "Nizam of India features delicious and authentic Indian cuisine.",
+          "priceRange": "$$",
+          "menuUrl": "http://www.nizamindianfood.com/menu.html",
+          "medias": [
+            {
+              "id": 29554,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/2843/nizam-of-india573821707.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/2843/nizam-of-india573821707.jpg",
+              "type": "EMAIL_AMBIANCE"
+            },
+            {
+              "id": 25934,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/2843/nizam-of-india1591208295.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/2843/nizam-of-india1591208295.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 25933,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/2843/nizam-of-india1950668844.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/2843/nizam-of-india1950668844.jpg"
+            },
+            {
+              "id": 17454,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/2843/nizam-of-india1791721404.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/2843/nizam-of-india1791721404.jpg"
+            },
+            {
+              "id": 17453,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/2843/nizam-of-india709723466.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/2843/nizam-of-india709723466.jpg",
+              "type": "EMAIL_FOOD"
+            },
+            {
+              "id": 17452,
+              "mediumUrl": "https://test.mogl.com:444/imagesr/w-640_h-480/business/2843/nizam-of-india1379924174.jpg",
+              "largeUrl": "https://test.mogl.com:444/imagesr/w-960_h-640/business/2843/nizam-of-india1379924174.jpg"
+            }
+          ],
+          "buzz": [
+            "The service is excellent as well as the food.",
+            "Great food! I am Indian and take it from me..this is as close as it gets to authentic Indian cuisine. Just delicious!",
+            "Our favorite Indian place in LA!"
+          ],
+          "features": [],
+          "ambiance": ["CASUAL"],
+          "serves": ["LUNCH", "DINNER"],
+          "attire": ["CASUAL"],
+          "acceptedCards": ["MasterCard", "Visa", "American Express"],
+          "knownFor": "Great lunch buffet, Sag Paneer, Chicken Tikka Masala",
+          "bestNights": ["FRIDAY", "SATURDAY"],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -8,
+          "simpleHours": {
+            "MONDAY": "11:00am-10:00pm",
+            "TUESDAY": "11:00am-10:00pm",
+            "WEDNESDAY": "11:00am-10:00pm",
+            "THURSDAY": "11:00am-10:00pm",
+            "FRIDAY": "11:00am-11:00pm",
+            "SATURDAY": "11:00am-11:00pm",
+            "SUNDAY": "11:00am-10:00pm"
+          },
+          "defaultDiscount": 10.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 5122,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 10.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 11/16/2012. Maximum individual reward 250 dollars.",
+              "requiresActivation": false,
+              "basic": true,
+              "details": {
+                "dateAdded": 1353119008,
+                "startDate": 1353119008,
+                "maxActivations": 0,
+                "hasSchedule": false,
+                "scheduleType": "REWARD",
+                "schedule": {},
+                "hasDefault": true,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "TUESDAY",
+          "businessLocalTime": "1244"
+        }
+      ],
+      "hits": 164
+    }
+  }
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "scope": "https://bank-goals-api-staging-internal.trydave.com:443",
+    "method": "PATCH",
+    "path": "/internal/v1/recurring-goal-transfer/aa6e5e00db9211eba429cb876f0e3424",
+    "body": {
+      "recurrence": {
+        "interval": "weekly",
+        "intervalParams": ["monday"]
+      }
+    },
+    "status": 200,
+    "response": {
+      "goalId": "8814390059ed11ebb6b9fbdaaa3455fa",
+      "recurringTransferId": "aa6e5e00db9211eba429cb876f0e3424",
+      "transferType": "intrabank",
+      "targetAccountId": "62500071978946f6bd038e85c737f0c8",
+      "amount": 10,
+      "nextScheduledOn": "2021-07-12",
+      "recurrence": {
+        "interval": "weekly",
+        "intervalParams": ["monday"]
+      },
+      "created": "2021-07-03T00:07:33.000Z"
+    },
+    "rawHeaders": [
+      "Date",
+      "Fri, 09 Jul 2021 22:03:54 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "325",
+      "Connection",
+      "close",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"145-lt+iLMxf7PicGiQkE3pppsVMA9s\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  }
+]

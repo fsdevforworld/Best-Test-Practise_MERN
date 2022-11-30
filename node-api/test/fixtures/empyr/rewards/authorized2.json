@@ -1,0 +1,79 @@
+{
+  "type": "AUTHORIZED",
+  "transaction": {
+    "id": 2322820,
+    "amount": 123.45,
+    "cashbackAmount": 11.3882625,
+    "dateOfTransaction": 1442500647000,
+    "rewardTime": 1442500647000,
+    "dateProcessed": 1442473200000,
+    "venue": {
+      "id": 1165,
+      "name": "Rubino's Pizza",
+      "latitude": 33.5863013,
+      "longitude": -117.6589186,
+      "distance": null,
+      "phone": "(949) 582-1166",
+      "thumbnailUrl": {
+        "value": "/images/business/1165/rubino-s-pizza380640325-thumb.jpg"
+      },
+      "rating": 3.5447800159454346,
+      "address": {
+        "streetAddress": " 26012 Marguerite Pkwy",
+        "postalCode": "92691",
+        "city": "Mission Viejo",
+        "state": "CA",
+        "metroId": 3,
+        "metroName": "Orange County Area",
+        "metroImage": {
+          "value": "/images/metros/OC_Mobile.png"
+        },
+        "metroActive": true
+      }
+    },
+    "user": {
+      "id": 480123,
+      "firstname": "Joe",
+      "lastname": "Johnson",
+      "thumbnailUrl": {
+        "value": "/images/user/userDefault.png"
+      },
+      "email": null,
+      "privacyLevel": "EVERYONE",
+      "address": {
+        "streetAddress": null,
+        "postalCode": "90210",
+        "city": "Beverly Hills",
+        "state": "CA",
+        "metroId": 2,
+        "metroName": "Los Angeles Area",
+        "metroImage": {
+          "value": "/images/metros/LA_Mobile.png"
+        },
+        "metroActive": true
+      },
+      "donatePercent": 0.0,
+      "numAlerts": 0
+    },
+    "redemptions": [
+      {
+        "id": 2332618,
+        "state": "COMPLETED",
+        "dateAdded": 1546552615000,
+        "dateReversed": null,
+        "cashbackAmount": 1.04,
+        "referralFee": 0.75,
+        "qualifiedSpend": 9.44,
+        "publisherCommission": 0.2,
+        "resellerCommission": 0,
+        "offerId": 28860
+      }
+    ],
+    "cardId": 382100,
+    "last4": "4567",
+    "clearingAmount": null,
+    "authorizationAmount": 123.45
+  },
+  "payable": null,
+  "card": null
+}

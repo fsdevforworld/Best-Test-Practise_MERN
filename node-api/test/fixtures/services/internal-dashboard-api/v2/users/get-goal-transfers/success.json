@@ -1,0 +1,52 @@
+[
+  {
+    "scope": "https://bank-goals-api-staging-internal.trydave.com:443",
+    "method": "GET",
+    "path": "/internal/v1/goals/f44d9770a6d611ebb48ef3eb5e400874/transfers",
+    "body": "",
+    "status": 200,
+    "response": {
+      "goalTransfers": [
+        {
+          "id": "85615540a99211eb925ab9d760d4dca2",
+          "goalId": "f44d9770a6d611ebb48ef3eb5e400874",
+          "referenceId": "494b1f1680c54bb7bf522e51bed3dcf2",
+          "description": "Transfer from Plaid Checking to lkwejl",
+          "targetAccountId": "1873896",
+          "transferType": "ach",
+          "amount": 50,
+          "recurringTransferId": "19752860a6d711ebb48ef3eb5e400874",
+          "initiatedAt": "2021-04-30T09:00:33.000Z",
+          "status": "pending"
+        },
+        {
+          "id": "3620c9b0a6d711ebb48ef3eb5e400874",
+          "goalId": "f44d9770a6d611ebb48ef3eb5e400874",
+          "referenceId": "c4e949fc767049c2b3b866b1459e0cd3",
+          "description": "Transfer from Plaid Checking to lkwejl",
+          "targetAccountId": "1873896",
+          "transferType": "ach",
+          "amount": 2,
+          "initiatedAt": "2021-04-26T21:34:42.000Z",
+          "status": "pending"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Date",
+      "Fri, 30 Apr 2021 22:53:12 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "697",
+      "Connection",
+      "close",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"2b9-c8y4xEGdSvgKBLUnWHp9D3S5YHY\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  }
+]

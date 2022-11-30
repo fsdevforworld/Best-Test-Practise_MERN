@@ -1,0 +1,85 @@
+[
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "POST",
+    "path": "/financial/api/1.0/users/2a82e635-d1dd-46c1-bc82-56f722a6e698/accounts/0b39346b-9b00-4aee-a11e-0428fd13df81/payments",
+    "body": {
+      "amount": 1,
+      "paymentReferenceId": "6d3e0be98a003cc",
+      "paymentReferenceType": "COLLECTION",
+      "transactionReferenceId": "6d3e0be98a003cc"
+    },
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "payment",
+      "data": {
+        "uuid": "8c4d548d-316f-4159-9560-219a79987afd",
+        "paymentReferenceId": "6d3e0be98a003cc",
+        "paymentReferenceType": "COLLECTION",
+        "initialAmount": 1,
+        "metadata": {},
+        "created": "2019-04-18T22:47:40.000Z",
+        "updated": "2019-04-18T22:47:40.000Z",
+        "paymentTransactions": [
+          {
+            "uuid": "9657f85b-08fe-4313-a9bc-8da1e0e3e43a",
+            "transactionReferenceId": "6d3e0be98a003cc",
+            "transactionType": "COLLECTION",
+            "failed": false,
+            "error": null,
+            "created": "2019-04-18T22:47:40.000Z",
+            "updated": "2019-04-18T22:47:44.000Z",
+            "transaction": {
+              "uuid": "fd915fbd-122a-4e0d-8226-73ebf3fc3acc",
+              "debit": true,
+              "amount": 1,
+              "amountBreakdown": {
+                "amount": 1,
+                "fees": {
+                  "surcharge": 0,
+                  "totalFeeAmount": 0,
+                  "feeDetails": [
+                    {
+                      "feeType": "Facilitator Fee",
+                      "feeAmount": 0
+                    }
+                  ]
+                }
+              },
+              "pending": true,
+              "type": "DAVE",
+              "source": {
+                "name": "Dave",
+                "legalNames": ["Dave"]
+              },
+              "created": "2019-04-18T22:47:42.000Z",
+              "updated": "2019-04-18T22:47:42.000Z",
+              "returned": false,
+              "cancelled": false,
+              "returnedMessage": null
+            }
+          }
+        ]
+      },
+      "message": "success",
+      "name": "ApiResponse"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "8196f7e1-19cf-42be-9eb8-00d35a0b5bc5",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Thu, 18 Apr 2019 22:47:44 GMT",
+      "Content-Length",
+      "980",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

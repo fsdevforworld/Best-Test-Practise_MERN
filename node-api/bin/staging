@@ -1,0 +1,39 @@
+#!/bin/bash
+
+set -e
+
+ACTION="$1"
+SOCKETS_DIR="$2"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+PROJECT_DIR="$( cd "$( dirname "$DIR" )" && pwd )"
+
+if [[ "$ACTION" != "deploy" && "$ACTION" != "migrate" && "$ACTION" != "seed" ]] ; then
+    echo "Invalid action. Must be one of \"deploy\", \"migrate\", \"seed\"."
+    exit 0
+fi
+
+# Package up and deploy current working directory to staging.
+if [[ "$ACTION" = "deploy" ]] ; then
+    gcloud docker --authorize-only
+    /bin/bash "$DIR/redeploy" staging staging --skip-git-tag
+    exit 0
+fi
+
+export NODE_ENV="staging"
+
+# Uses database.json for db creds.
+if [[ "$ACTION" = "migrate" ]] ; then
+    echo "Using STAGING_* environment variables from \".env\"."
+    eval $(cat "$PROJECT_DIR/.env" | grep "export STAGING_")
+    npm run migrate --env staging
+    exit 0
+fi
+
+# Uses regular environment vars for db creds.
+if [[ "$ACTION" = "seed" ]] ; then
+    echo "Using STAGING_* environment variables from \".env\" as default vars."
+    # This maps the STAGING_DB_* vars to DB_*.
+    eval $(cat "$PROJECT_DIR/.env" | grep "export STAGING_" | sed -e 's/STAGING_SOCKET_PATH/DB_SOCKETPATH/g' | sed -e 's/STAGING_//g')
+    npm run staging-seed
+    exit 0
+fi

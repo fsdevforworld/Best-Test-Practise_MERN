@@ -1,0 +1,89 @@
+{
+  "business": null,
+  "card": null,
+  "payable": null,
+  "statsReport": null,
+  "transaction": {
+    "amount": 2.88,
+    "authorizationAmount": 2.88,
+    "cardId": 10253860,
+    "cashbackAmount": 0.29,
+    "cashbackBilled": 0.29,
+    "clearingAmount": null,
+    "dateOfTransaction": 1556214980000,
+    "dateProcessed": 1556175600000,
+    "duplicationSource": null,
+    "id": 23756218,
+    "last4": "9538",
+    "redemptions": [
+      {
+        "cashbackAmount": 0.29,
+        "dateAdded": 1556214981000,
+        "dateReversed": null,
+        "id": 14486670,
+        "offerId": 312212,
+        "publisherCommission": 0.0324,
+        "qualifiedSpend": 2.88,
+        "referralFee": 0.12,
+        "resellerCommission": 0,
+        "state": "COMPLETED"
+      }
+    ],
+    "referralFee": 0.12,
+    "rewardTime": 1556214981000,
+    "user": {
+      "address": {
+        "city": "Greenville",
+        "metroActive": false,
+        "metroId": 346,
+        "metroImage": {
+          "value": "/images/metros/US_Mobile.png"
+        },
+        "metroName": "Greenville NC",
+        "postalCode": "27834",
+        "state": "NC",
+        "streetAddress": null
+      },
+      "donatePercent": 0,
+      "email": "2899207-dave-user@dave.com",
+      "firstname": "Christopher",
+      "id": 10671158,
+      "lastname": "Beauchemin",
+      "numAlerts": 0,
+      "privacyLevel": "NO_ONE",
+      "thumbnailUrl": {
+        "value": "/images/user/userDefault.png"
+      }
+    },
+    "venue": {
+      "address": {
+        "city": "Holbrook",
+        "metroActive": false,
+        "metroId": 601,
+        "metroImage": {
+          "value": "/images/metros/US_Mobile.png"
+        },
+        "metroName": "New York",
+        "postalCode": "11741",
+        "state": "NY",
+        "streetAddress": "411 Furrows Rd"
+      },
+      "applicationId": 73,
+      "businessToken": null,
+      "distance": null,
+      "id": 69125,
+      "latitude": 40.8069979,
+      "longitude": -73.0729569,
+      "name": "Baskin Robbins",
+      "phone": "(631) 467-2419",
+      "rating": 2.5,
+      "ratingCount": 5,
+      "thumbnailUrl": {
+        "value": "/images/business/69125/baskin-robbins2091778790-thumb.jpg"
+      },
+      "yelpId": "rqx9_a2ntZw-ILZypTuZKA"
+    }
+  },
+  "transactionReport": null,
+  "type": "AUTHORIZED"
+}

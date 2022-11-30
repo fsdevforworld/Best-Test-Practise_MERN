@@ -1,0 +1,52 @@
+enum ActionCode {
+  ActivateAccount = 'activate-account',
+  AdvanceDisbursementStatusChange = 'advance-disbursement-status-change',
+  AdvancePaymentStatusChange = 'advance-payment-status-change',
+  AdvanceFeeChange = 'fee-change',
+  AdvancePaybackDateChange = 'payback-date-change',
+  AdvanceTipChange = 'tip-change',
+  ArchiveBankConnection = 'archive-bank-connection',
+  BulkUpdateAccountClosure = 'bulk-update-account-closure',
+  BulkUpdateAdminNote = 'bulk-update-admin-note',
+  BulkUpdateFraudBlock = 'bulk-update-fraud-block',
+  BulkUpdateCstCancelWithoutRefund = 'bulk-update-cst-cancel-without-refund',
+  BulkUpdateCstSuspend = 'bulk-update-cst-suspend',
+  CancelRecurringGoalsTransfer = 'cancel-recurring-goals-transfer',
+  CloseAccount = 'close-account',
+  CoolOffPeriodWaive = 'cool-off-period-waive',
+  CreateAdvanceRefund = 'create-advance-refund',
+  CreateAdvanceRepayment = 'create-advance-repayment',
+  CreateEmailVerification = 'create-email-verification',
+  CreateUserNote = 'create-user-note',
+  DownloadMonthlyStatement = 'download-monthly-statement',
+  FreezeAdvancePayback = 'freeze-advance-payback',
+  GiveFreeMonths = 'give-free-months',
+  PauseAccount = 'pause-account',
+  RecurringGoalsTransferChangeAmount = 'recurring-goals-transfer-change-amount',
+  RecurringGoalsTransferChangeGoal = 'recurring-goals-transfer-change-goal',
+  RecurringGoalsTransferChangeRecurrence = 'recurring-goals-transfer-change-recurrence',
+  RefundSubscription = 'refund-subscription',
+  RunApproval = 'run-approval',
+  UnfreezeAdvancePayback = 'unfreeze-advance-payback',
+  UpdateDefaultBankAccount = 'update-default-bank-account',
+  UpdateGoalStatus = 'update-goal-status',
+  UserAddressChange = 'user-address-change',
+  UserBirthdateChange = 'user-birthdate-change',
+  UserFirstNameChange = 'user-first-name-change',
+  UserLastNameChange = 'user-last-name-change',
+  UserPhoneNumberChange = 'user-phone-number-change',
+  WaiveAdvanceOutstanding = 'waive-advance-outstanding',
+  WaiveSubscription = 'waive-subscription',
+  // please update the dashboard-action seed when modifying this list
+}
+
+const UserProfileModificationActionCodes = [
+  ActionCode.UserFirstNameChange,
+  ActionCode.UserLastNameChange,
+  ActionCode.UserBirthdateChange,
+  ActionCode.UserAddressChange,
+  ActionCode.UserPhoneNumberChange,
+];
+
+export default ActionCode;
+export { UserProfileModificationActionCodes };

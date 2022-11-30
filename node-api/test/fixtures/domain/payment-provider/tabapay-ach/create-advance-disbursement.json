@@ -1,0 +1,43 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "POST",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/transactions",
+    "body": {
+      "referenceID": "2sadlgk0823lasgd",
+      "type": "push",
+      "accounts": {
+        "sourceAccountID": "BQsCNSGV0IY6SjArjuOS9Q",
+        "destinationAccount": {
+          "bank": {
+            "accountNumber": "123456789",
+            "routingNumber": "123456",
+            "accountType": "C"
+          }
+        }
+      },
+      "amount": "75.00",
+      "achOptions": "N"
+    },
+    "status": 200,
+    "response": {
+      "SC": 200,
+      "EC": "0",
+      "transactionID": "wDA3NYwFgQ2BN04SeqkbKw",
+      "status": "PENDING",
+      "approvalCode": "178298"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Thu, 12 Dec 2019 00:16:20 GMT",
+      "Content-Length",
+      "139",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  }
+]

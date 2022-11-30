@@ -1,0 +1,109 @@
+[
+  {
+    "scope": "https://bank-goals-api-staging-internal.trydave.com:443",
+    "method": "GET",
+    "path": "/internal/v1/goal-accounts",
+    "body": "",
+    "status": 200,
+    "response": {
+      "goalAccount": {
+        "id": "963c6840569111ebb6b9fbdaaa3455fa",
+        "accountId": "95a97710569111eb87f1233a85870c75",
+        "status": "active"
+      }
+    },
+    "rawHeaders": [
+      "Date",
+      "Tue, 30 Mar 2021 00:09:07 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "122",
+      "Connection",
+      "close",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"7a-n4KkqTxiB+MyMNTW28kLOClxCbk\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  },
+  {
+    "scope": "https://bank-goals-api-staging-internal.trydave.com:443",
+    "method": "GET",
+    "path": "/internal/v1/goals",
+    "body": "",
+    "status": 200,
+    "response": {
+      "goals": [
+        {
+          "id": "34b51e705aa911ebb6b9fbdaaa3455fa",
+          "currentBalance": 0,
+          "goalAccountId": "963c6840569111ebb6b9fbdaaa3455fa",
+          "goalType": "fun_experience",
+          "motivation": "Asldkjga asldkjga alskdjfa s",
+          "name": "Fun Fund",
+          "targetAmount": 1000,
+          "created": "2021-01-19T22:53:54.000Z"
+        },
+        {
+          "id": "8814390059ed11ebb6b9fbdaaa3455fa",
+          "currentBalance": 0,
+          "goalAccountId": "963c6840569111ebb6b9fbdaaa3455fa",
+          "goalType": "home",
+          "motivation": "Alsjdflakj asldkjf a;wlkejalkje alkejal ealkjel",
+          "name": "Home",
+          "targetAmount": 200,
+          "created": "2021-01-19T00:30:29.000Z"
+        },
+        {
+          "id": "b316dec056b211ebb6b9fbdaaa3455fa",
+          "currentBalance": 0,
+          "goalAccountId": "963c6840569111ebb6b9fbdaaa3455fa",
+          "goalType": "car",
+          "motivation": "Awesome aslkdjalsk aldkfjga s asldkjga sldkja alksdglak asdlkjga alskdjgal a;lskdjgalk a;Lakshmi asldkjga;lskdjg alskdjgalks dlkgjasldkjg asldkjga asldkjgalskdjg alsdkjgalskdj a;lkjealkejglakjsejasdlkjgas dlkgjal;Kia a wlekjgalksja ;lakjselkj",
+          "name": "Buy a car",
+          "targetAmount": 200,
+          "created": "2021-01-14T21:51:47.000Z"
+        },
+        {
+          "id": "bdb6314059ec11ebb6b9fbdaaa3455fa",
+          "currentBalance": 0,
+          "goalAccountId": "963c6840569111ebb6b9fbdaaa3455fa",
+          "goalType": "debt_payoff",
+          "motivation": "aalskdjalskd asldkjga swells slide algkajw elkjaslkej galksje",
+          "name": "Pay off debt",
+          "targetAmount": 400,
+          "created": "2021-01-19T00:24:49.000Z"
+        },
+        {
+          "id": "e3f7a1505ad611ebb6b9fbdaaa3455fa",
+          "currentBalance": 0,
+          "goalAccountId": "963c6840569111ebb6b9fbdaaa3455fa",
+          "goalType": "medical_illness",
+          "motivation": "Better",
+          "name": "Rona",
+          "targetAmount": 200,
+          "created": "2021-01-20T04:20:55.000Z"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Date",
+      "Tue, 30 Mar 2021 00:09:07 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "1520",
+      "Connection",
+      "close",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"5f0-VJU8N3COXMcevqbgOKUT7Y2KpWE\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  }
+]

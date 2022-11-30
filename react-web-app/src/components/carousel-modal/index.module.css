@@ -1,0 +1,128 @@
+.modal {
+  background-color: var(--white);
+  bottom: 0;
+  box-sizing: border-box;
+  min-height: 588px;
+  height: 99vh;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.content {
+  box-sizing: border-box;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  outline: currentcolor none medium;
+  padding: 17px;
+  top: 0;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+.headerIcon {
+  cursor: pointer;
+  width: max-content;
+}
+
+.slide {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.image {
+  margin-top: 60px;
+}
+.title {
+  margin-top: 60px;
+}
+.body {
+  height: 160px;
+  width: 288px;
+}
+
+.swiperPaginationBullet {
+  background: var(--gray5);
+  border-radius: 100%;
+  cursor: pointer;
+  display: inline-block;
+  height: 8px;
+  margin: 0 4px;
+  opacity: 0.24;
+  width: 8px;
+}
+
+.swiperPaginationBulletActive {
+  opacity: 1;
+}
+
+.swiperButtonNext,
+.swiperButtonPrevious {
+  background-color: transparent;
+  border: none;
+  bottom: 1%;
+  cursor: pointer;
+  position: absolute;
+  visibility: hidden;
+  /*
+  11 since the pagination styling from the library has a z-index of 10.
+  so the buttons are ontop of the pagination and actually clickable
+  */
+  z-index: 11;
+}
+
+.swiperButtonNext {
+  left: auto;
+  right: 10px;
+}
+
+.swiperButtonPrevious {
+  left: 10px;
+  right: auto;
+}
+
+.swiperButtonDisabled {
+  cursor: auto;
+  opacity: 0.2;
+}
+
+@media (min-width: 768px) and (min-height: 768px) {
+  .modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: auto;
+    width: auto;
+  }
+  .content {
+    background-color: var(--white);
+    border-radius: 6px;
+    display: block;
+    height: auto;
+    left: 50%;
+    padding: 24px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 588px;
+  }
+
+  .body {
+    margin-bottom: 96px;
+    width: 350px;
+  }
+
+  .swiperButtonNext,
+  .swiperButtonPrevious {
+    visibility: visible;
+  }
+}

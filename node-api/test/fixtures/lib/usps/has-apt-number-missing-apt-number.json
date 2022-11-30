@@ -1,0 +1,38 @@
+[
+  {
+    "scope": "https://secure.shippingapis.com:443",
+    "method": "GET",
+    "path": "/ShippingAPI.dll?API=Verify&XML=%3C%3Fxml%20version%3D%221.0%22%3F%3E%3CAddressValidateRequest%20USERID%3D%22MOCKVALUE%22%3E%3CRevision%3E1%3C%2FRevision%3E%3CAddress%3E%3CAddress1%2F%3E%3CAddress2%3E411%20S%20Virgil%20Ave%3C%2FAddress2%3E%3CCity%3ELos%20Angeles%3C%2FCity%3E%3CState%3ECA%3C%2FState%3E%3CUrbanization%2F%3E%3CZip5%3E90020%3C%2FZip5%3E%3CZip4%2F%3E%3C%2FAddress%3E%3C%2FAddressValidateRequest%3E",
+    "body": "",
+    "status": 200,
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<AddressValidateResponse><Address><Address2>411 S VIRGIL AVE</Address2><City>LOS ANGELES</City><State>CA</State><Zip5>90020</Zip5><Zip4>1408</Zip4><DeliveryPoint>99</DeliveryPoint><ReturnText>Default address: The address you entered was found but more information is needed (such as an apartment, suite, or box number) to match to a specific address.</ReturnText><CarrierRoute>C002</CarrierRoute><Footnotes>H</Footnotes><DPVConfirmation>D</DPVConfirmation><DPVCMRA>N</DPVCMRA><DPVFootnotes>AAN1</DPVFootnotes><Business>N</Business><CentralDeliveryPoint>N</CentralDeliveryPoint><Vacant>N</Vacant></Address></AddressValidateResponse>",
+    "rawHeaders": [
+      "X-Backside-Transport",
+      "OK OK",
+      "Cache-Control",
+      "private",
+      "Content-Type",
+      "text/xml",
+      "Server",
+      "Microsoft-IIS/10.0",
+      "X-AspNet-Version",
+      "4.0.30319",
+      "X-Powered-By",
+      "ASP.NET",
+      "Date",
+      "Sat, 13 Mar 2021 20:31:40 GMT",
+      "X-Global-Transaction-ID",
+      "e41d6174604d2142918f764f",
+      "Access-Control-Allow-Origin",
+      "*",
+      "Connection",
+      "Keep-Alive",
+      "Content-Length",
+      "670",
+      "X-FRAME-OPTIONS",
+      "SAMEORIGIN",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains"
+    ]
+  }
+]

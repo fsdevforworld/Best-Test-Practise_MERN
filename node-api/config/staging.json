@@ -1,0 +1,177 @@
+{
+  "advanceApproval": {
+    "domain": "advance-approval-nodeport:80",
+    "serviceTestRatio": 1
+  },
+  "braze": {
+    "plaidDownCampaign": {
+      "ios": "38f3123a-0f1d-4ea0-91c3-5ecafbc2f41d",
+      "android": "dce296de-c868-4838-be6f-a0d43bc3df0c"
+    },
+    "paybackAdvanceFormCampaign": "0d3b32ee-5b32-a01c-61d8-286f62d28cb0"
+  },
+  "datastore": {
+    "endpoint": null
+  },
+  "db": {
+    "name": "dave_staging"
+  },
+  "dave": {
+    "api": {
+      "url": "https://staging.trydave.com"
+    },
+    "bankOfDaveInternalApi": {
+      "url": "https://bank-api-staging.trydave.com"
+    }
+  },
+  "firebase": {
+    "dbPrefix": "staging"
+  },
+  "facebook": {
+    "pixelId": "370076790033519"
+  },
+  "empyr": {
+    "url": "https://www.mogl.com/"
+  },
+  "googleCloud": {
+    "projectId": "dave-staging-173321",
+    "images": {
+      "bucket": "dave-staging-173321"
+    }
+  },
+  "gke": {
+    "taskPoolName": "task-pool",
+    "dockerImageName": "us.gcr.io/dave-staging-173321/api-dave-v2:latest"
+  },
+  "heath": {
+    "domain": "heath-nodeport",
+    "balanceLogTopic": "staging_daily-balance-log",
+    "bankTransactionTopic": "staging_bank-transaction-backfill"
+  },
+  "k8s": {
+    "environment": "staging",
+    "cluster": "dave-staging",
+    "logLevel": "info"
+  },
+  "ml": {
+    "underwritingEnabled": false,
+    "underwriting": {
+      "incomeValidationFailureGMV1": {
+        "oracle": {
+          "version": {
+            "major": 0,
+            "minor": 0
+          }
+        }
+      },
+      "accountAgeFailureGMV1": {
+        "oracle": {
+          "version": {
+            "major": 0,
+            "minor": 0
+          }
+        }
+      },
+      "incomeValidationSuccessGMV1": {
+        "oracle": {
+          "version": {
+            "major": 0,
+            "minor": 0
+          }
+        }
+      },
+      "daveBankingGMV1": {
+        "oracle": {
+          "version": {
+            "major": 0,
+            "minor": 0
+          }
+        }
+      },
+      "accountAgeFailureUWv2": {
+        "oracle": {
+          "version": {
+            "major": 0,
+            "minor": 0,
+            "tag": null
+          }
+        }
+      },
+      "daveBankingUWv2": {
+        "oracle": {
+          "version": {
+            "major": 0,
+            "minor": 0,
+            "tag": null
+          }
+        }
+      },
+      "incomeValidationSuccessUWv2": {
+        "oracle": {
+          "version": {
+            "major": 0,
+            "minor": 0,
+            "tag": null
+          }
+        }
+      },
+      "incomeValidationFailureUWv2": {
+        "oracle": {
+          "version": {
+            "major": 0,
+            "minor": 0,
+            "tag": null
+          }
+        }
+      }
+    },
+    "predictedPayback": {
+      "oracle": {
+        "version": {
+          "major": 0,
+          "minor": 0
+        },
+        "timeout": 0.1
+      },
+      "enabled": "TRUE"
+    }
+  },
+  "loomisApi": {
+    "serviceName": "loomis-api",
+    "servicePort": 7337,
+    "fetchTransactionRolloutPercentage": 100,
+    "createTransactionRolloutPercentage": 100,
+    "reverseTransactionRolloutPercentage": 100
+  },
+  "phoneNumbers": {
+    "easyVerification": true,
+    "shouldSendVerificationCode": false,
+    "triggerContractChange": ["+18999113333"]
+  },
+  "pubsub": {
+    "subscriptionPrefix": "staging_",
+    "topicPrefix": "staging_"
+  },
+  "services": {
+    "balanceLogUrl": "balance-log-service-nodeport:80"
+  },
+  "seedUser": {
+    "serviceName": "seed-user",
+    "servicePort": 7740
+  },
+  "skipRateLimit": true,
+  "sombra": {
+    "url": "https://sombra-staging.trydave.com"
+  },
+  "tivan": {
+    "tivanBalanceCheckLockSeconds": "7200",
+    "triggers": {
+      "bankAccountUpdate": {
+        "hundredthPercent": "1"
+      },
+      "dailyCronjob": {
+        "hundredthPercent": "1"
+      }
+    }
+  }
+}

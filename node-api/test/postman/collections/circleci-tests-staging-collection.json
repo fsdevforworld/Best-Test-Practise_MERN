@@ -1,0 +1,3565 @@
+{
+  "info": {
+    "_postman_id": "4d8c5191-3d15-46bf-a66a-fc4966374cd6",
+    "name": "Node API - CircleCI Tests (Staging)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Verify phone number",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "c9f0d995-a312-406d-9f53-7b5a405d3e7f",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify response body returns with \"ok\": true",
+              "pm.test(\"response body returns with ok: true\", () => {",
+              "    pm.expect(jsonData.ok).to.eql(true);",
+              "});",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "45017987-55b5-432d-80b1-e192f09706e0",
+            "exec": [
+              "// I hate that I have to do this, temporary solution to make sure seeds are ready to be used",
+              "setTimeout(function () { }, 30000);",
+              "",
+              "// set a random phone number for a new user",
+              "pm.environment.set(\"new_user_phone_number\", pm.variables.replaceIn('{{$randomPhoneNumber}}'));",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-device-id",
+            "value": "1A01478A-3844-42AB-9DEF-47DFAB2C5554",
+            "type": "text"
+          },
+          {
+            "key": "x-device-type",
+            "value": "ios",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"phoneNumber\": \"{{new_user_phone_number}}\",\n\t\"verificationCodeOnly\": false,\n\t\"isSignUp\": true\n}",
+          "options": {}
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/user/verify",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "user", "verify"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Verify phone number & code",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "906a7d55-677c-44bc-b5ff-f0fca2545c95",
+            "exec": [""],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "911235fb-ebb5-4d93-afb8-066d1ab42283",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify id is not null and is a number",
+              "pm.test(\"id is not null and is a number\", () => {",
+              "    pm.expect(jsonData.id).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.id === \"number\").to.be.true;",
+              "    ",
+              "});",
+              "",
+              "// verify created is not null",
+              "pm.test(\"created is not null\", () => {",
+              "    pm.expect(jsonData.created).to.not.eql(null);",
+              "});",
+              "",
+              "// verify email is null",
+              "pm.test(\"email is null\", () => {",
+              "    pm.expect(jsonData.email).to.eql(null);",
+              "});",
+              "",
+              "// verify phoneNumber is not null",
+              "pm.test(\"phoneNumber is not null\", () => {",
+              "    pm.expect(jsonData.phoneNumber).to.not.eql(null);",
+              "});",
+              "",
+              "// verify birthdate is null",
+              "pm.test(\"birthdate is null\", () => {",
+              "    pm.expect(jsonData.birthdate).to.eql(null);",
+              "});",
+              "",
+              "// verify tester is false",
+              "pm.test(\"tester is false\", () => {",
+              "    pm.expect(jsonData.tester).to.eql(false);",
+              "});",
+              "",
+              "// verify token is not null",
+              "pm.test(\"token is not null\", () => {",
+              "    pm.expect(jsonData.token).to.not.eql(null);",
+              "});",
+              "   ",
+              "// verify settings is an empty object",
+              "pm.test(\"settings is an empty object\", () => {",
+              "    pm.expect(jsonData.settings).to.be.an('object').that.is.empty;",
+              "});",
+              "",
+              "// verify cool off statuses are correct",
+              "pm.test(\"cool off statuses are correct\", () => {",
+              "    pm.expect(jsonData.coolOffStatus.coolOffDate).to.eql(null);",
+              "    pm.expect(jsonData.coolOffStatus.isCoolingOff).to.eql(false);",
+              "});",
+              "",
+              "// verify identityVerified is false",
+              "pm.test(\"identityVerified is false\", () => {",
+              "    pm.expect(jsonData.identityVerified).to.eql(false);",
+              "});",
+              "",
+              "// verify nextSubscriptionPaymentDate is null",
+              "pm.test(\"nextSubscriptionPaymentDate is null\", () => {",
+              "    pm.expect(jsonData.nextSubscriptionPaymentDate).to.eql(null);",
+              "});",
+              "",
+              "// verify usedTwoMonthsFree is null",
+              "pm.test(\"usedTwoMonthsFree is null\", () => {",
+              "    pm.expect(jsonData.usedTwoMonthsFree).to.eql(null);",
+              "});",
+              "",
+              "// verify notification is an empty array",
+              "pm.test(\"notification is an empty array\", () => {",
+              "    pm.expect(jsonData.notification).to.be.an('array').that.is.empty;",
+              "});",
+              "",
+              "// verify emailVerification is null",
+              "pm.test(\"emailVerification is null\", () => {",
+              "    pm.expect(jsonData.emailVerification).to.eql(null);",
+              "});",
+              "",
+              "// verify hasPassword is false",
+              "pm.test(\"hasPassword is false\", () => {",
+              "    pm.expect(jsonData.hasPassword).to.eql(false);",
+              "});",
+              "",
+              "// verify membershipPause is null",
+              "pm.test(\"membershipPause is null\", () => {",
+              "    pm.expect(jsonData.membershipPause).to.eql(null);",
+              "});",
+              "",
+              "// set new user auth token in an environment variable for future use",
+              "pm.environment.set(\"new_user_token\", jsonData.token);"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-device-id",
+            "value": "1A01478A-3844-42AB-9DEF-47DFAB2C5554",
+            "type": "text"
+          },
+          {
+            "key": "x-device-type",
+            "value": "ios",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n      \"phoneNumber\": \"{{new_user_phone_number}}\",\n      \"code\": \"{{verification_code}}\"\n}\n",
+          "options": {}
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/user",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "user"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login with existing phone number and password",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "906a7d55-677c-44bc-b5ff-f0fca2545c95",
+            "exec": [""],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "911235fb-ebb5-4d93-afb8-066d1ab42283",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify id is not null and is a number",
+              "pm.test(\"id is not null and is a number\", () => {",
+              "    pm.expect(jsonData.id).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.id === \"number\").to.be.true;",
+              "",
+              "});",
+              "",
+              "// verify firstName and lastName are not null",
+              "pm.test(\"firstName and lastName are not null\", () => {",
+              "    pm.expect(jsonData.firstName).to.not.eql(null);",
+              "    pm.expect(jsonData.lastName).to.not.eql(null);",
+              "});",
+              "",
+              "",
+              "// verify email is null",
+              "pm.test(\"email is null\", () => {",
+              "    pm.expect(jsonData.email).to.eql(null);",
+              "});",
+              "",
+              "// verify phoneNumber is not null",
+              "pm.test(\"phoneNumber is not null\", () => {",
+              "    pm.expect(jsonData.phoneNumber).to.not.eql(null);",
+              "});",
+              "",
+              "// verify birthdate is not null",
+              "pm.test(\"birthdate is not null\", () => {",
+              "    pm.expect(jsonData.birthdate).to.not.eql(null);",
+              "});",
+              "",
+              "// verify tester is true",
+              "pm.test(\"tester is true\", () => {",
+              "    pm.expect(jsonData.tester).to.eql(true);",
+              "});",
+              "",
+              "// verify token is not null",
+              "pm.test(\"token is not null\", () => {",
+              "    pm.expect(jsonData.token).to.not.eql(null);",
+              "});",
+              "",
+              "// verify targetSpend is not null and is a number",
+              "pm.test(\"targetSpend is not null and is a number\", () => {",
+              "    pm.expect(jsonData.settings.targetSpend).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.settings.targetSpend === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify address properties are not null",
+              "pm.test(\"address properties are not null\", () => {",
+              "    pm.expect(jsonData.addressLine1).to.not.eql(null);",
+              "    pm.expect(jsonData.addressLine2).to.not.eql(null);",
+              "    pm.expect(jsonData.city).to.not.eql(null);",
+              "    pm.expect(jsonData.state).to.not.eql(null);",
+              "    pm.expect(jsonData.zipCode).to.not.eql(null);",
+              "});",
+              "",
+              "// verify defaultBankAccountId property is a number and is not null",
+              "pm.test(\"defaultBankAccountId property is not null\", () => {",
+              "    pm.expect(jsonData.defaultBankAccountId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.defaultBankAccountId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify emailVerified is false",
+              "pm.test(\"emailVerified is false\", () => {",
+              "    pm.expect(jsonData.emailVerified).to.eql(false);",
+              "});",
+              "",
+              "// verify profileImage is null",
+              "pm.test(\"profileImage is null\", () => {",
+              "    pm.expect(jsonData.profileImage).to.eql(null);",
+              "});",
+              "",
+              "// verify licenseImage is null",
+              "pm.test(\"licenseImage is null\", () => {",
+              "    pm.expect(jsonData.licenseImage).to.eql(null);",
+              "});",
+              "",
+              "// verify secondaryEmail is null",
+              "pm.test(\"secondaryEmail is null\", () => {",
+              "    pm.expect(jsonData.secondaryEmail).to.eql(null);",
+              "});",
+              "",
+              "// verify cool off statuses are correct",
+              "pm.test(\"cool off statuses are correct\", () => {",
+              "    pm.expect(jsonData.coolOffStatus.coolOffDate).to.eql(null);",
+              "    pm.expect(jsonData.coolOffStatus.isCoolingOff).to.eql(false);",
+              "});",
+              "",
+              "// verify identityVerified is true",
+              "pm.test(\"identityVerified is true\", () => {",
+              "    pm.expect(jsonData.identityVerified).to.eql(true);",
+              "});",
+              "",
+              "// verify nextSubscriptionPaymentDate property is not null",
+              "pm.test(\"nextSubscriptionPaymentDate property is not null\", () => {",
+              "    pm.expect(jsonData.nextSubscriptionPaymentDate).to.not.eql(null);",
+              "});",
+              "",
+              "// verify usedTwoMonthsFree is null",
+              "pm.test(\"usedTwoMonths free is null\", () => {",
+              "    pm.expect(jsonData.usedTwoMonthsFree).to.eql(null);",
+              "});",
+              "",
+              "// verify notification is an empty array",
+              "pm.test(\"notification is an empty array\", () => {",
+              "    pm.expect(jsonData.notification).to.be.an('array').that.is.empty;",
+              "});",
+              "",
+              "// verify emailVerification values are not null",
+              "pm.test(\"emailVerification values are not null\", () => {",
+              "    pm.expect(jsonData.emailVerification.id).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.emailVerification.id === \"number\").to.be.true;",
+              "    pm.expect(jsonData.emailVerification.userId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.emailVerification.userId === \"number\").to.be.true;",
+              "    pm.expect(jsonData.emailVerification.email).to.not.eql(null);",
+              "    pm.expect(jsonData.emailVerification.verified).to.eql(null);",
+              "    pm.expect(jsonData.emailVerification.created).to.not.eql(null);",
+              "    pm.expect(jsonData.emailVerification.updated).to.not.eql(null);",
+              "});",
+              "",
+              "// verify hasPassword is true",
+              "pm.test(\"hasPassword is true\", () => {",
+              "    pm.expect(jsonData.hasPassword).to.eql(true);",
+              "});",
+              "",
+              "// verify membershipPause is null",
+              "pm.test(\"membershipPause is null\", () => {",
+              "    pm.expect(jsonData.membershipPause).to.eql(null);",
+              "});",
+              "",
+              "",
+              "// set user auth token in an environment variable for future use",
+              "pm.environment.set(\"user_token\", jsonData.token);",
+              "",
+              "// set user_userId in an environment variable for future use",
+              "pm.environment.set(\"user_userId\", jsonData.id);"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-device-id",
+            "type": "text",
+            "value": "1A02477A-3844-42AC-9DEF-47DFAB2C4555"
+          },
+          {
+            "key": "x-device-type",
+            "type": "text",
+            "value": "ios"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "x-app-version",
+            "value": "2.16.8",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n      \"phoneNumber\": \"9494567890\",\n      \"password\": \"{{default_password}}\",\n      \"mfaCode\": \"111111\"\n}\n",
+          "options": {}
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/user/login",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "user", "login"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login with email and password",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "906a7d55-677c-44bc-b5ff-f0fca2545c95",
+            "exec": [""],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "911235fb-ebb5-4d93-afb8-066d1ab42283",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify id is not null and is a number",
+              "pm.test(\"id is not null and is a number\", () => {",
+              "    pm.expect(jsonData.id).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.id === \"number\").to.be.true;",
+              "    ",
+              "});",
+              "",
+              "// verify firstName and lastName are not null",
+              "pm.test(\"firstName and lastName are not null\", () => {",
+              "   pm.expect(jsonData.firstName).to.not.eql(null);",
+              "   pm.expect(jsonData.lastName).to.not.eql(null);",
+              "});",
+              "",
+              "",
+              "// verify email is not null",
+              "pm.test(\"email is not null\", () => {",
+              "   pm.expect(jsonData.email).to.not.eql(null);",
+              "});",
+              "",
+              "// verify phoneNumber is not null",
+              "pm.test(\"phoneNumber is not null\", () => {",
+              "    pm.expect(jsonData.phoneNumber).to.not.eql(null);",
+              "});",
+              "",
+              "// verify birthdate is not null",
+              "pm.test(\"birthdate is not null\", () => {",
+              "    pm.expect(jsonData.birthdate).to.not.eql(null);",
+              "});",
+              "",
+              "// verify tester is false",
+              "pm.test(\"tester is false\", () => {",
+              "    pm.expect(jsonData.tester).to.eql(false);",
+              "});",
+              "",
+              "// verify token property is not null",
+              "pm.test(\"token property is not null\", () => {",
+              "    pm.expect(jsonData.token).to.not.eql(null);",
+              "});",
+              "",
+              "// verify settings is an object",
+              "pm.test(\"settings is an object\", () => {",
+              "    pm.expect(jsonData.settings).to.be.an('object').that.is.not.empty;",
+              "});",
+              "",
+              "// verify address properties are not null",
+              "pm.test(\"address properties are null\", () => {",
+              "    pm.expect(jsonData.addressLine1).to.not.eql(null);",
+              "    pm.expect(jsonData.addressLine2).to.not.eql(null);",
+              "    pm.expect(jsonData.city).to.not.eql(null);",
+              "    pm.expect(jsonData.state).to.not.eql(null);",
+              "    pm.expect(jsonData.zipCode).to.not.eql(null);",
+              "});",
+              "",
+              "// verify defaultBankAccountId property is a number and is not null",
+              "pm.test(\"defaultBankAccountId property is a number and is not null\", () => {",
+              "    pm.expect(jsonData.defaultBankAccountId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.defaultBankAccountId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify emailVerified is true",
+              "pm.test(\"email verified is true\", () => {",
+              "    pm.expect(jsonData.emailVerified).to.eql(true);",
+              "});",
+              "",
+              "// verify profileImage is null",
+              "pm.test(\"profileImage is null\", () => {",
+              "    pm.expect(jsonData.profileImage).to.eql(null);",
+              "});",
+              "",
+              "// verify licenseImage is null",
+              "pm.test(\"licenseImage is null\", () => {",
+              "    pm.expect(jsonData.licenseImage).to.eql(null);",
+              "});",
+              "   ",
+              "// verify secondaryEmail is null",
+              "pm.test(\"secondaryEmail is null\", () => {",
+              "    pm.expect(jsonData.secondaryEmail).to.eql(null);",
+              "});   ",
+              "    ",
+              "// verify cool off statuses",
+              "pm.test(\"cool off statuses are correct\", () => {",
+              "    pm.expect(jsonData.coolOffStatus.coolOffDate).to.eql(null);",
+              "    pm.expect(jsonData.coolOffStatus.isCoolingOff).to.eql(false);",
+              "});   ",
+              "    ",
+              "// verify identityVerified is true",
+              "pm.test(\"identityVerified is true\", () => {",
+              "    pm.expect(jsonData.identityVerified).to.eql(true);",
+              "});",
+              "",
+              "// verify nextSubscriptionPaymentDate property is not null",
+              "pm.test(\"nextSubscriptionPaymentDate property is not null\", () => {",
+              "    pm.expect(jsonData.nextSubscriptionPaymentDate).to.not.eql(null);",
+              "});",
+              "",
+              "// verify usedTwoMonthsFree is null",
+              "pm.test(\"usedTwoMonths free is null\", () => {",
+              "    pm.expect(jsonData.usedTwoMonthsFree).to.eql(null);",
+              "});",
+              "",
+              "// verify notification is an empty array",
+              "pm.test(\"notification is an empty array\", () => {",
+              "    pm.expect(jsonData.notification).to.be.an('array').that.is.empty;",
+              "});",
+              "",
+              "// verify email verification values are not null",
+              "pm.test(\"email verification values are not null\", () => {",
+              "    pm.expect(jsonData.emailVerification.id).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.emailVerification.id === \"number\").to.be.true;",
+              "    pm.expect(jsonData.emailVerification.userId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.emailVerification.userId === \"number\").to.be.true;",
+              "    pm.expect(jsonData.emailVerification.email).to.not.eql(null);",
+              "    pm.expect(jsonData.emailVerification.verified).to.eql(null);",
+              "    pm.expect(jsonData.emailVerification.created).to.not.eql(null);",
+              "    pm.expect(jsonData.emailVerification.updated).to.not.eql(null);",
+              "});",
+              "    ",
+              "// verify hasPassword is true",
+              "pm.test(\"hasPassword is true\", () => {",
+              "    pm.expect(jsonData.hasPassword).to.eql(true);",
+              "});",
+              "",
+              "// verify membershipPause is null",
+              "pm.test(\"membershipPause is null\", () => {",
+              "    pm.expect(jsonData.membershipPause).to.eql(null);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-device-id",
+            "type": "text",
+            "value": "1A02477A-3844-42AC-9DEF-47DFAB2C4555"
+          },
+          {
+            "key": "x-device-type",
+            "type": "text",
+            "value": "ios"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "x-app-version",
+            "value": "2.16.8",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n      \"email\": \"user-has-email-949@and-password.com\",\n      \"password\": \"{{default_password}}\",\n      \"mfaCode\": \"111111\"\n}\n",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/user/login",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "user", "login"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get user",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "651727df-4e77-4532-9131-cee78b9a8430",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify id is not null and is a number",
+              "pm.test(\"id is not null and is a number\", () => {",
+              "    pm.expect(jsonData.id).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.id === \"number\").to.be.true;",
+              "    ",
+              "});",
+              "",
+              "// verify firstName and lastName are not null",
+              "pm.test(\"firstName and lastName are not null\", () => {",
+              "   pm.expect(jsonData.firstName).to.not.eql(null);",
+              "   pm.expect(jsonData.lastName).to.not.eql(null);",
+              "});",
+              "",
+              "",
+              "// verify email is not null",
+              "pm.test(\"email is not null\", () => {",
+              "   pm.expect(jsonData.email).to.not.eql(null);",
+              "});",
+              "",
+              "// verify phoneNumber is not null",
+              "pm.test(\"phone number is not null\", () => {",
+              "    pm.expect(jsonData.phoneNumber).to.not.eql(null);",
+              "});",
+              "",
+              "// verify birthdate is not null",
+              "pm.test(\"birthdate is not null\", () => {",
+              "    pm.expect(jsonData.birthdate).to.not.eql(null);",
+              "});",
+              "",
+              "// verify tester is true",
+              "pm.test(\"tester is true\", () => {",
+              "    pm.expect(jsonData.tester).to.eql(true);",
+              "});",
+              "",
+              "// verify token is not null",
+              "pm.test(\"token is not null\", () => {",
+              "    pm.expect(jsonData.token).to.not.eql(null);",
+              "});",
+              "",
+              "// verify targetSpend is not null and is a number",
+              "pm.test(\"targetSpend is equal to 1000\", () => {",
+              "    pm.expect(jsonData.settings.targetSpend).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.settings.targetSpend === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify address properties are not null",
+              "pm.test(\"address properties are not null\", () => {",
+              "    pm.expect(jsonData.addressLine1).to.not.eql(null);",
+              "    pm.expect(jsonData.addressLine2).to.not.eql(null);",
+              "    pm.expect(jsonData.city).to.not.eql(null);",
+              "    pm.expect(jsonData.state).to.not.eql(null);",
+              "    pm.expect(jsonData.zipCode).to.not.eql(null);",
+              "});",
+              "",
+              "// verify defaultBankAccountId property is a number and is not null",
+              "pm.test(\"defaultBankAccountId property is not null\", () => {",
+              "    pm.expect(jsonData.defaultBankAccountId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.defaultBankAccountId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify emailVerified is false",
+              "pm.test(\"emailVerified is false\", () => {",
+              "    pm.expect(jsonData.emailVerified).to.eql(false);",
+              "});",
+              "",
+              "// verify profileImage is null",
+              "pm.test(\"profileImage is null\", () => {",
+              "    pm.expect(jsonData.profileImage).to.eql(null);",
+              "});",
+              "",
+              "// verify licenseImage is null",
+              "pm.test(\"licenseImage is null\", () => {",
+              "    pm.expect(jsonData.licenseImage).to.eql(null);",
+              "});",
+              "   ",
+              "// verify secondaryEmail is null",
+              "pm.test(\"secondaryEmail is null\", () => {",
+              "    pm.expect(jsonData.secondaryEmail).to.eql(null);",
+              "});   ",
+              "    ",
+              "// verify cool off statuses are correct",
+              "pm.test(\"cool off statuses are correct\", () => {",
+              "    pm.expect(jsonData.coolOffStatus.coolOffDate).to.eql(null);",
+              "    pm.expect(jsonData.coolOffStatus.isCoolingOff).to.eql(false);",
+              "});   ",
+              "    ",
+              "// verify identityVerified is true",
+              "pm.test(\"identityVerified is true\", () => {",
+              "    pm.expect(jsonData.identityVerified).to.eql(true);",
+              "});",
+              "",
+              "// verify nextSubscriptionPaymentDate is not null",
+              "pm.test(\"nextSubscriptionPaymentDate is not null\", () => {",
+              "    pm.expect(jsonData.nextSubscriptionPaymentDate).to.not.eql(null);",
+              "});",
+              "",
+              "// verify usedTwoMonthsFree is null",
+              "pm.test(\"usedTwoMonths free is null\", () => {",
+              "    pm.expect(jsonData.usedTwoMonthsFree).to.eql(null);",
+              "});",
+              "",
+              "// verify notification property is an empty array",
+              "pm.test(\"notification property exists\", () => {",
+              "    pm.expect(jsonData.notification).to.be.an('array').that.is.empty;",
+              "});",
+              "",
+              "// verify emailVerification values are correct",
+              "pm.test(\"emailVerification values are correct\", () => {",
+              "    pm.expect(jsonData.emailVerification.id).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.emailVerification.id === \"number\").to.be.true;",
+              "    pm.expect(jsonData.emailVerification.userId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.emailVerification.userId === \"number\").to.be.true;",
+              "    pm.expect(jsonData.emailVerification.email).to.not.eql(null);",
+              "    pm.expect(jsonData.emailVerification.verified).to.eql(null);",
+              "    pm.expect(jsonData.emailVerification.created).to.not.eql(null);",
+              "    pm.expect(jsonData.emailVerification.updated).to.not.eql(null);",
+              "});",
+              "    ",
+              "// verify hasPassword is true",
+              "pm.test(\"hasPassword is true\", () => {",
+              "    pm.expect(jsonData.hasPassword).to.eql(true);",
+              "});",
+              "",
+              "// verify membershipPause is null",
+              "pm.test(\"membershipPause is null\", () => {",
+              "    pm.expect(jsonData.membershipPause).to.eql(null);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "{{user_token}}",
+            "type": "text"
+          },
+          {
+            "key": "x-device-id",
+            "value": "1A02477A-3844-42AC-9DEF-47DFAB2C4555",
+            "type": "text"
+          },
+          {
+            "key": "x-device-type",
+            "value": "ios",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/user",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "user"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update user",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "71023d7d-d040-44fa-95ea-23db061e6458",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify id is not null and is a number",
+              "pm.test(\"id is not null and is a number\", () => {",
+              "    pm.expect(jsonData.id).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.id === \"number\").to.be.true;",
+              "    ",
+              "});",
+              "",
+              "// verify firstName and lastName are not null",
+              "pm.test(\"firstName and lastName are not null\", () => {",
+              "   pm.expect(jsonData.firstName).to.not.eql(null);",
+              "   pm.expect(jsonData.lastName).to.not.eql(null);",
+              "});",
+              "",
+              "",
+              "// verify email is not null",
+              "pm.test(\"email is not null\", () => {",
+              "   pm.expect(jsonData.email).to.not.eql(null);",
+              "});",
+              "",
+              "// verify phoneNumber is not null",
+              "pm.test(\"phoneNumber is not null\", () => {",
+              "    pm.expect(jsonData.phoneNumber).to.not.eql(null);",
+              "});",
+              "",
+              "// verify birthdate is not null",
+              "pm.test(\"birthdate is not null\", () => {",
+              "    pm.expect(jsonData.birthdate).to.not.eql(null);",
+              "});",
+              "",
+              "// verify tester is true",
+              "pm.test(\"tester is true\", () => {",
+              "    pm.expect(jsonData.tester).to.eql(true);",
+              "});",
+              "",
+              "// verify token is not null",
+              "pm.test(\"token is not null\", () => {",
+              "    pm.expect(jsonData.token).to.not.eql(null);",
+              "});",
+              "",
+              "// verify targetSpend is not null and is a number",
+              "pm.test(\"targetSpend is not null and is a number\", () => {",
+              "    pm.expect(jsonData.settings.targetSpend).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.settings.targetSpend === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify address properties are correctly updated",
+              "pm.test(\"address properties are correctly updated\", () => {",
+              "    pm.expect(jsonData.addressLine1).to.eql(\"1277 S COCHRAN AVE\");",
+              "    pm.expect(jsonData.addressLine2).to.eql(null);",
+              "    pm.expect(jsonData.city).to.eql(\"LOS ANGELES\");",
+              "    pm.expect(jsonData.state).to.eql(\"CA\");",
+              "    pm.expect(jsonData.zipCode).to.eql(\"90019\");",
+              "});",
+              "",
+              "// verify defaultBankAccountId is a number and is not null",
+              "pm.test(\"defaultBankAccountId a number and is not null\", () => {",
+              "    pm.expect(jsonData.defaultBankAccountId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.defaultBankAccountId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify emailVerified is false",
+              "pm.test(\"emailVerified is false\", () => {",
+              "    pm.expect(jsonData.emailVerified).to.eql(false);",
+              "});",
+              "",
+              "// verify profileImage is null",
+              "pm.test(\"profileImage is null\", () => {",
+              "    pm.expect(jsonData.profileImage).to.eql(null);",
+              "});",
+              "",
+              "// verify licenseImage is null",
+              "pm.test(\"licenseImage is null\", () => {",
+              "    pm.expect(jsonData.licenseImage).to.eql(null);",
+              "});",
+              "   ",
+              "// verify secondaryEmail is null",
+              "pm.test(\"secondaryEmail is null\", () => {",
+              "    pm.expect(jsonData.secondaryEmail).to.eql(null);",
+              "});   ",
+              "    ",
+              "// verify cool off statuses",
+              "pm.test(\"cool off statuses are correct\", () => {",
+              "    pm.expect(jsonData.coolOffStatus.coolOffDate).to.eql(null);",
+              "    pm.expect(jsonData.coolOffStatus.isCoolingOff).to.eql(false);",
+              "});   ",
+              "    ",
+              "// verify identityVerified is true",
+              "pm.test(\"identityVerified is true\", () => {",
+              "    pm.expect(jsonData.identityVerified).to.eql(true);",
+              "});",
+              "",
+              "// verify nextSubscriptionPaymentDate is not null",
+              "pm.test(\"nextSubscriptionPaymentDate is not null\", () => {",
+              "    pm.expect(jsonData.nextSubscriptionPaymentDate).to.not.eql(null);",
+              "});",
+              "",
+              "// verify usedTwoMonthsFree is null",
+              "pm.test(\"usedTwoMonthsFree is null\", () => {",
+              "    pm.expect(jsonData.usedTwoMonthsFree).to.eql(null);",
+              "});",
+              "",
+              "// verify notification is an empty array",
+              "pm.test(\"notification is an empty array\", () => {",
+              "    pm.expect(jsonData.notification).to.be.an('array').that.is.empty;",
+              "});",
+              "",
+              "// verify emailVerification values are correct",
+              "pm.test(\"emailVerification values are correct\", () => {",
+              "    pm.expect(jsonData.emailVerification.id).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.emailVerification.id === \"number\").to.be.true;",
+              "    pm.expect(jsonData.emailVerification.userId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.emailVerification.userId === \"number\").to.be.true;",
+              "    pm.expect(jsonData.emailVerification.email).to.not.eql(null);",
+              "    pm.expect(jsonData.emailVerification.verified).to.eql(null);",
+              "    pm.expect(jsonData.emailVerification.created).to.not.eql(null);",
+              "    pm.expect(jsonData.emailVerification.updated).to.not.eql(null);",
+              "});",
+              "    ",
+              "// verify hasPassword is true",
+              "pm.test(\"hasPassword is true\", () => {",
+              "    pm.expect(jsonData.hasPassword).to.eql(true);",
+              "});",
+              "",
+              "// verify membershipPause is null",
+              "pm.test(\"membershipPause is null\", () => {",
+              "    pm.expect(jsonData.membershipPause).to.eql(null);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "{{user_token}}",
+            "type": "text"
+          },
+          {
+            "key": "x-device-id",
+            "value": "1A02477A-3844-42AC-9DEF-47DFAB2C4555",
+            "type": "text"
+          },
+          {
+            "key": "x-device-type",
+            "value": "ios",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": \"{{user_userId}}\",\n    \"firstName\": \"Dave\",\n    \"lastName\": \"DaBear\",\n    \"addressLine1\": \"1277 S Cochran Ave\",\n    \"city\": \"Los Angeles\",\n    \"state\": \"CA\",\n    \"zipCode\": \"90019\"\n}",
+          "options": {}
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/user",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "user"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete user",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "d0ae2064-d6c9-4f4a-a7cc-31257909441b",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 409",
+              "pm.test(\"status code is 409\", () => {",
+              "    pm.response.to.have.status(409);",
+              "});",
+              "",
+              "// verify type is conflict",
+              "pm.test(\"type is conflict\", () => {",
+              "    pm.expect(jsonData.type).to.eql(\"conflict\");",
+              "});",
+              "",
+              "// verify message contains \"User cannot be deleted\"",
+              "pm.test(\"message contains User cannot be deleted\", () => {",
+              "    pm.expect(jsonData).to.have.property(\"message\");",
+              "    pm.expect(pm.response.text()).to.include(\"User cannot be deleted.\");",
+              "});",
+              "",
+              "// verify custom code is null",
+              "pm.test(\"custom code is null\", () => {",
+              "    pm.expect(jsonData.customCode).to.eql(null);",
+              "});",
+              "",
+              "// data property exists",
+              "pm.test(\"data property exists\", () => {",
+              "    pm.expect(jsonData).to.have.property(\"data\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "x-device-id",
+            "type": "text",
+            "value": "1A02477A-3844-42AC-9DEF-47DFAB2C4555"
+          },
+          {
+            "key": "x-device-type",
+            "type": "text",
+            "value": "ios"
+          },
+          {
+            "key": "authorization",
+            "type": "text",
+            "value": "{{user_token}}"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"reason\": \"I don't like this app\",\n\t\"additionalInfo\": \"none\"\n}\n",
+          "options": {}
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/user/{{user_userId}}",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "user", "{{user_userId}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get firebase credentials",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "66e9045f-3d13-4f05-b4af-173941239fc4",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify uuid is not null",
+              "pm.test(\"uuid is not null\", () => {",
+              "    pm.expect(jsonData.uuid).to.not.eql(null);",
+              "});",
+              "",
+              "// verify firebaseToken is not null",
+              "pm.test(\"firebaseToken is not null\", () => {",
+              "    pm.expect(jsonData.firebaseToken).to.not.eql(null);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "{{user_token}}",
+            "type": "text"
+          },
+          {
+            "key": "x-device-id",
+            "value": "1A02477A-3844-42AC-9DEF-47DFAB2C4555",
+            "type": "text"
+          },
+          {
+            "key": "x-device-type",
+            "value": "ios",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/user/credentials/firebase",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "user", "credentials", "firebase"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get terms for an advance (big money)",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "b327840d-1149-48f3-b085-6649dadc2b0d",
+            "exec": [
+              "// log user in",
+              "const logUserIn = {",
+              "  url: 'https://staging.trydave.com/v2/user/login',",
+              "  method: 'POST',",
+              "  header: {",
+              "    'x-device-id': '1A01477A-3844-42AB-9DEF-47DFAB2C4558',",
+              "    'x-device-type': 'ios',",
+              "    'Content-Type': 'application/json',",
+              "    'x-app-version': '2.16.8'",
+              "  },",
+              "  body: {",
+              "    mode: 'raw',",
+              "    raw: JSON.stringify({ \"phoneNumber\": \"9491111100\", \"password\": \"Password1!\", \"mfaCode\": \"111111\" })",
+              "  }",
+              "}",
+              "",
+              "// log user in and set environment variables for follow up requests",
+              "pm.sendRequest(logUserIn, function (err, res) {",
+              "  pm.environment.set(\"big_money_advance_token\", res.json().token);",
+              "  pm.environment.set(\"big_money_advance_userId\", res.json().id);",
+              "  pm.environment.set(\"big_money_advance_defaultBankAccountId\", res.json().defaultBankAccountId);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "918dc849-4cbc-487b-8f4b-e2499ced09df",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify recurringTransactionId is not null and is a number",
+              "pm.test(\"recurringTransactionId is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].recurringTransactionId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].recurringTransactionId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify advanceApprovalId is not null and is a number",
+              "pm.test(\"advanceApprovalId is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].advanceApprovalId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].advanceApprovalId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify approved is true",
+              "pm.test(\"approved is true\", () => {",
+              "    pm.expect(jsonData[0].approved).to.eql(true);",
+              "});",
+              "",
+              "// verify advanceType is NORMAL_ADVANCE",
+              "pm.test(\"advanceType is NORMAL_ADVANCE\", () => {",
+              "    pm.expect(jsonData[0].advanceType).to.eql(\"NORMAL_ADVANCE\");",
+              "});",
+              "",
+              "// verify advanceEngineRuleDescriptions is an object of arrays",
+              "pm.test(\"advanceEngineRuleDescriptions is an object of arrays\", () => {",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions).to.be.an('object').that.is.not.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.passed).to.be.an('array').that.is.not.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.failed).to.be.an('array').that.is.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.pending).to.be.an('array').that.is.empty;",
+              "});",
+              "",
+              "// verify approvedAmounts are correct",
+              "pm.test(\"approvedAmounts are correct\", () => {",
+              "    pm.expect(jsonData[0].approvedAmounts[0]).to.eql(25);",
+              "    pm.expect(jsonData[0].approvedAmounts[1]).to.eql(50);",
+              "    pm.expect(jsonData[0].approvedAmounts[2]).to.eql(75);",
+              "});",
+              "",
+              "// verify isExperimental is a boolean",
+              "pm.test(\"isExperimental is a boolean\", () => {",
+              "    pm.expect(typeof jsonData[0].isExperimental === \"boolean\").to.eql(true);",
+              "});",
+              "",
+              "// verify income date and displayName are not null",
+              "pm.test(\"income date and displayName are not null\", () => {",
+              "    pm.expect(jsonData[0].income.date).to.not.eql(null);",
+              "    pm.expect(jsonData[0].income.displayName).to.not.eql(null);",
+              "});",
+              "",
+              "// verify paybackDates is null",
+              "pm.test(\"paybackDates is null\", () => {",
+              "    pm.expect(jsonData[0].paybackDates).to.eql(null);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "type": "text",
+            "value": "{{big_money_advance_token}}"
+          },
+          {
+            "key": "x-device-id",
+            "type": "text",
+            "value": "1A01477A-3844-42AB-9DEF-47DFAB2C4558"
+          },
+          {
+            "key": "x-device-type",
+            "type": "text",
+            "value": "ios"
+          },
+          {
+            "key": "x-app-version",
+            "type": "text",
+            "value": "2.16.8"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/advance/terms?amount=&bank_account_id={{big_money_advance_defaultBankAccountId}}&showAllResults=true",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "advance", "terms"],
+          "query": [
+            {
+              "key": "amount",
+              "value": ""
+            },
+            {
+              "key": "bank_account_id",
+              "value": "{{big_money_advance_defaultBankAccountId}}"
+            },
+            {
+              "key": "showAllResults",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Request an advance (big money)",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "906a7d55-677c-44bc-b5ff-f0fca2545c95",
+            "exec": [""],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "911235fb-ebb5-4d93-afb8-066d1ab42283",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify amount is 75",
+              "pm.test(\"amount is 75\", () => {",
+              "    pm.expect(jsonData.amount).to.eql(75);",
+              "});",
+              "",
+              "// verify bankAccountId is not null and is a number",
+              "pm.test(\"bankAccountId is not null and is a number\", () => {",
+              "    pm.expect(jsonData.bankAccountId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.bankAccountId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify created is not null",
+              "pm.test(\"created is not null\", () => {",
+              "    pm.expect(jsonData.created).to.not.eql(null);",
+              "});",
+              "",
+              "// verify delivery is express",
+              "pm.test(\"delivery is express\", () => {",
+              "    pm.expect(jsonData.delivery).to.eql(\"express\");",
+              "});",
+              "",
+              "// verify disbursementStatus is PENDING",
+              "pm.test(\"disbursementStatus is PENDING\", () => {",
+              "    pm.expect(jsonData.disbursementStatus).to.eql(\"PENDING\");",
+              "});",
+              "",
+              "// verify expectedDelivery is not null",
+              "pm.test(\"expectedDelivery is not null\", () => {",
+              "    pm.expect(jsonData.expectedDelivery).to.not.eql(null);",
+              "});",
+              "",
+              "// verify fee is 4.99",
+              "pm.test(\"fee is 4.99\", () => {",
+              "    pm.expect(jsonData.fee).to.eql(4.99);",
+              "});",
+              "",
+              "// verify id is not null and is a number",
+              "pm.test(\"id is not null and is a number\", () => {",
+              "    pm.expect(jsonData.id).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.id === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify network is null",
+              "pm.test(\"network is null\", () => {",
+              "    pm.expect(jsonData.network).to.eql(null);",
+              "});",
+              "",
+              "// verify outstanding is 87.49",
+              "pm.test(\"outstanding is 87.49\", () => {",
+              "    pm.expect(jsonData.outstanding).to.eql(87.49);",
+              "});",
+              "",
+              "// verify paybackDate is not null",
+              "pm.test(\"paybackDate is not null\", () => {",
+              "    pm.expect(jsonData.paybackDate).to.not.eql(null);",
+              "});",
+              "",
+              "// verify tip is 7.5",
+              "pm.test(\"tip is 7.5\", () => {",
+              "    pm.expect(jsonData.tip).to.eql(7.5);",
+              "});",
+              "",
+              "// verify tipPercent is 10",
+              "pm.test(\"tipPercent is 10\", () => {",
+              "    pm.expect(jsonData.tipPercent).to.eql(10);",
+              "});",
+              "",
+              "// set advance id in an environment variable for future use",
+              "pm.environment.set(\"big_money_advance_id\", jsonData.id);"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "authorization",
+            "type": "text",
+            "value": "{{big_money_advance_token}}"
+          },
+          {
+            "key": "x-device-id",
+            "type": "text",
+            "value": "1A01477A-3844-42AB-9DEF-47DFAB2C4558"
+          },
+          {
+            "key": "x-device-type",
+            "type": "text",
+            "value": "ios"
+          },
+          {
+            "key": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "x-app-version",
+            "type": "text",
+            "value": "2.16.8"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n      \"amount\": 75,\n      \"delivery\": \"express\",\n      \"bank_account_id\": \"{{big_money_advance_defaultBankAccountId}}\",\n      \"tip_percent\": 10\n}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/advance",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "advance"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get terms for an advance (micro deposit incomplete)",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "b0879a63-2662-4592-a476-e471ac96e7d3",
+            "exec": [
+              "// log user in",
+              "const logUserIn = {",
+              "  url: 'https://staging.trydave.com/v2/user/login',",
+              "  method: 'POST',",
+              "  header: {",
+              "    'x-device-id': '1A01477A-3844-42AB-9DEF-50DFAB3C4558',",
+              "    'x-device-type': 'ios',",
+              "    'Content-Type': 'application/json',",
+              "    'x-app-version': '2.16.8'",
+              "  },",
+              "  body: {",
+              "    mode: 'raw',",
+              "    raw: JSON.stringify({ \"phoneNumber\": \"9491111042\", \"password\": \"Password1!\", \"mfaCode\": \"111111\" })",
+              "  }",
+              "}",
+              "",
+              "// log user in and set environment variables for follow up requests",
+              "pm.sendRequest(logUserIn, function (err, res) {",
+              "  pm.environment.set(\"micro_deposit_incomplete_advance_token\", res.json().token);",
+              "  pm.environment.set(\"micro_deposit_incomplete_advance_defaultBankAccountId\", res.json().defaultBankAccountId);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "6cd78d24-827a-49ba-ac96-d3cd33174e20",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify approved is false",
+              "pm.test(\"approved is false\", () => {",
+              "    pm.expect(jsonData[0].approved).to.eql(false);",
+              "});",
+              "",
+              "// verify advanceApprovalId is not null and is a number",
+              "pm.test(\"advanceApprovalId is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].advanceApprovalId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].advanceApprovalId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify displayMessage indicates micro-deposit still needs to be validated",
+              "pm.test(\"displayMessage indicates micro-deposit still needs to be validated\", () => {",
+              "    pm.expect(jsonData[0].displayMessage).to.eql(\"Your bank account still needs to be validated with micro-deposits. This takes ~4 business days.\");",
+              "});",
+              "",
+              "// verify message is MicroDepositFourDays",
+              "pm.test(\"message is MicroDepositFourDays\", () => {",
+              "    pm.expect(jsonData[0].message).to.eql(\"MicroDepositFourDays\");",
+              "});",
+              "",
+              "// verify income_needed is false",
+              "pm.test(\"income_needed is false\", () => {",
+              "    pm.expect(jsonData[0].income_needed).to.eql(false);",
+              "});",
+              "",
+              "// verify type is micro-deposit-incomplete",
+              "pm.test(\"type is micro-deposit-incomplete\", () => {",
+              "    pm.expect(jsonData[0].type).to.eql(\"micro-deposit-incomplete\");",
+              "});",
+              "",
+              "// verify advanceEngineRuleDescriptions is an object of arrays",
+              "pm.test(\"advanceEngineRuleDescriptions is an object of arrays\", () => {",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions).to.be.an('object').that.is.not.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.passed).to.be.an('array').that.is.not.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.failed).to.be.an('array').that.is.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.pending).to.be.an('array').that.is.not.empty;",
+              "});",
+              "",
+              "// verify isExperimental is a boolean",
+              "pm.test(\"isExperimental is a boolean\", () => {",
+              "    pm.expect(typeof jsonData[0].isExperimental === \"boolean\").to.eql(true);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "type": "text",
+            "value": "{{micro_deposit_incomplete_advance_token}}"
+          },
+          {
+            "key": "x-device-id",
+            "type": "text",
+            "value": "1A01477A-3844-42AB-9DEF-50DFAB3C4558"
+          },
+          {
+            "key": "x-device-type",
+            "type": "text",
+            "value": "ios"
+          },
+          {
+            "key": "x-app-version",
+            "type": "text",
+            "value": "2.16.8"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/advance/terms?amount=&bank_account_id={{micro_deposit_incomplete_advance_defaultBankAccountId}}&showAllResults=true",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "advance", "terms"],
+          "query": [
+            {
+              "key": "amount",
+              "value": ""
+            },
+            {
+              "key": "bank_account_id",
+              "value": "{{micro_deposit_incomplete_advance_defaultBankAccountId}}"
+            },
+            {
+              "key": "showAllResults",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get terms for an advance (no recurring income)",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "090fe82a-33db-4791-b711-9bc270a57cc8",
+            "exec": [
+              "// log user in",
+              "const logUserIn = {",
+              "  url: 'https://staging.trydave.com/v2/user/login',",
+              "  method: 'POST',",
+              "  header: {",
+              "    'x-device-id': '1A01477A-3844-42AB-9DEF-51DFAB3C4558',",
+              "    'x-device-type': 'ios',",
+              "    'Content-Type': 'application/json',",
+              "    'x-app-version': '2.16.8'",
+              "  },",
+              "  body: {",
+              "    mode: 'raw',",
+              "    raw: JSON.stringify({ \"phoneNumber\": \"9494560200\", \"password\": \"Password1!\", \"mfaCode\": \"111111\" })",
+              "  }",
+              "}",
+              "",
+              "// log user in and set environment variables for follow up requests",
+              "pm.sendRequest(logUserIn, function (err, res) {",
+              "  pm.environment.set(\"no_recurring_income_advance_token\", res.json().token);",
+              "  pm.environment.set(\"no_recurring_income_advance_defaultBankAccountId\", res.json().defaultBankAccountId);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "5948abad-7afe-4173-bc2c-cd580207ecfe",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify recurringTransactionId is null",
+              "pm.test(\"recurringTransactionId is null\", () => {",
+              "    pm.expect(jsonData[0].recurringTransactionId).to.eql(null);",
+              "});",
+              "",
+              "// verify advanceApprovalId is not null and is a number",
+              "pm.test(\"advanceApprovalId is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].advanceApprovalId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].advanceApprovalId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify approved is true",
+              "pm.test(\"approved is true\", () => {",
+              "    pm.expect(jsonData[0].approved).to.eql(true);",
+              "});",
+              "",
+              "// verify advanceType is MICRO_ADVANCE",
+              "pm.test(\"advanceType is MICRO_ADVANCE\", () => {",
+              "    pm.expect(jsonData[0].advanceType).to.eql(\"MICRO_ADVANCE\");",
+              "});",
+              "",
+              "// verify type is missing-paycheck",
+              "pm.test(\"type is missing-paycheck\", () => {",
+              "    pm.expect(jsonData[0].type).to.eql(\"missing-paycheck\");",
+              "});",
+              "",
+              "// verify message indicates bank doesn't show any reliable income",
+              "pm.test(\"message indicates bank doesn't show any reliable income\", () => {",
+              "    pm.expect(jsonData[0].message).to.eql(\"Your bank doesn’t show any reliable income to advance from.\");",
+              "});",
+              "",
+              "// verify advanceEngineRuleDescriptions is an object of arrays",
+              "pm.test(\"advanceEngineRuleDescriptions is an object of arrays\", () => {",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions).to.be.an('object').that.is.not.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.passed).to.be.an('array').that.is.not.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.failed).to.be.an('array').that.is.not.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.pending).to.be.an('array').that.is.not.empty;",
+              "});",
+              "",
+              "// verify approvedAmounts are correct",
+              "pm.test(\"approvedAmounts are correct\", () => {",
+              "    pm.expect(jsonData[0].approvedAmounts[0]).to.eql(5);",
+              "});",
+              "",
+              "// verify isExperimental is a boolean",
+              "pm.test(\"isExperimental is a boolean\", () => {",
+              "    pm.expect(typeof jsonData[0].isExperimental === \"boolean\").to.eql(true);",
+              "});",
+              "",
+              "// verify income date and displayName are not null",
+              "pm.test(\"income date and displayName are not null\", () => {",
+              "    pm.expect(jsonData[0].income.date).to.not.eql(null);",
+              "    pm.expect(jsonData[0].income.displayName).to.not.eql(null);",
+              "});",
+              "",
+              "// verify paybackDates is an object with an available dates array and a default",
+              "pm.test(\"paybackDates is an object with an available dates array and a default\", () => {",
+              "    pm.expect(jsonData[0].paybackDates).to.be.an('object').that.is.not.empty;",
+              "    pm.expect(jsonData[0].paybackDates.available).to.be.an('array').that.is.not.empty;",
+              "    pm.expect(jsonData[0].paybackDates.default).to.not.eql(null);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "type": "text",
+            "value": "{{no_recurring_income_advance_token}}"
+          },
+          {
+            "key": "x-device-id",
+            "type": "text",
+            "value": "1A01477A-3844-42AB-9DEF-51DFAB3C4558"
+          },
+          {
+            "key": "x-device-type",
+            "type": "text",
+            "value": "ios"
+          },
+          {
+            "key": "x-app-version",
+            "type": "text",
+            "value": "2.16.8"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/advance/terms?amount=&bank_account_id={{no_recurring_income_advance_defaultBankAccountId}}&showAllResults=true",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "advance", "terms"],
+          "query": [
+            {
+              "key": "amount",
+              "value": ""
+            },
+            {
+              "key": "bank_account_id",
+              "value": "{{no_recurring_income_advance_defaultBankAccountId}}"
+            },
+            {
+              "key": "showAllResults",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get terms for an advance (solvency fail 11 days)",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "eeb9ce47-91bc-4ea1-8255-e893d46cbeb1",
+            "exec": [
+              "// log user in",
+              "const logUserIn = {",
+              "  url: 'https://staging.trydave.com/v2/user/login',",
+              "  method: 'POST',",
+              "  header: {",
+              "    'x-device-id': '1A01477A-3844-42AB-9DEF-52DFAB3C4558',",
+              "    'x-device-type': 'ios',",
+              "    'Content-Type': 'application/json',",
+              "    'x-app-version': '2.16.8'",
+              "  },",
+              "  body: {",
+              "    mode: 'raw',",
+              "    raw: JSON.stringify({ \"phoneNumber\": \"9494560600\", \"password\": \"Password1!\", \"mfaCode\": \"111111\" })",
+              "  }",
+              "}",
+              "",
+              "// log user in and set environment variables for follow up requests",
+              "pm.sendRequest(logUserIn, function (err, res) {",
+              "  pm.environment.set(\"solvency_fail_11_days_advance_token\", res.json().token);",
+              "  pm.environment.set(\"solvency_fail_11_days_advance_defaultBankAccountId\", res.json().defaultBankAccountId);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "81814c2c-4bf0-4ebf-ab6a-545a15439100",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify approved is false",
+              "pm.test(\"approved is false\", () => {",
+              "    pm.expect(jsonData[0].approved).to.eql(false);",
+              "});",
+              "",
+              "// verify advanceApprovalId is not null and is a number",
+              "pm.test(\"advanceApprovalId is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].advanceApprovalId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].advanceApprovalId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify displayMessage indicates payday needs to be within a certain timeframe to qualify",
+              "pm.test(\"displayMessage indicates payday needs to be within a certain timeframe to qualify\", () => {",
+              "    pm.expect(jsonData[0]).to.have.property(\"displayMessage\");",
+              "    pm.expect(pm.response.text()).to.include(\"Your payday needs to be within the next\");",
+              "});",
+              "",
+              "// verify message is PredictedUpcomingIncome",
+              "pm.test(\"message is PredictedUpcomingIncome\", () => {",
+              "    pm.expect(jsonData[0].message).to.eql(\"PredictedUpcomingIncome\");",
+              "});",
+              "",
+              "// verify income_needed is false",
+              "pm.test(\"income_needed is false\", () => {",
+              "    pm.expect(jsonData[0].income_needed).to.eql(false);",
+              "});",
+              "",
+              "// verify type is predicted-upcoming-income",
+              "pm.test(\"type is predicted-upcoming-income\", () => {",
+              "    pm.expect(jsonData[0].type).to.eql(\"predicted-upcoming-income\");",
+              "});",
+              "",
+              "// verify interpolations in an object and has a remainingDays property",
+              "pm.test(\"interpolations in an object and has a remainingDays property\", () => {",
+              "    pm.expect(jsonData[0].extra.interpolations).to.be.an('object').that.is.not.empty;",
+              "    pm.expect(jsonData[0].extra.interpolations.remainingDays).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].extra.interpolations.remainingDays === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify advanceEngineRuleDescriptions is an object of arrays",
+              "pm.test(\"advanceEngineRuleDescriptions is an object of arrays\", () => {",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions).to.be.an('object').that.is.not.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.passed).to.be.an('array').that.is.not.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.failed).to.be.an('array').that.is.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.pending).to.be.an('array').that.is.not.empty;",
+              "});",
+              "",
+              "// verify isExperimental is a boolean",
+              "pm.test(\"isExperimental is a boolean\", () => {",
+              "    pm.expect(typeof jsonData[0].isExperimental === \"boolean\").to.eql(true);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "type": "text",
+            "value": "{{solvency_fail_11_days_advance_token}}"
+          },
+          {
+            "key": "x-device-id",
+            "type": "text",
+            "value": "1A01477A-3844-42AB-9DEF-52DFAB3C4558"
+          },
+          {
+            "key": "x-device-type",
+            "type": "text",
+            "value": "ios"
+          },
+          {
+            "key": "x-app-version",
+            "type": "text",
+            "value": "2.16.8"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/advance/terms?amount=&bank_account_id={{solvency_fail_11_days_advance_defaultBankAccountId}}&showAllResults=true",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "advance", "terms"],
+          "query": [
+            {
+              "key": "amount",
+              "value": ""
+            },
+            {
+              "key": "bank_account_id",
+              "value": "{{solvency_fail_11_days_advance_defaultBankAccountId}}"
+            },
+            {
+              "key": "showAllResults",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get terms for an advance (solvency fail paid today)",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "2816c4cb-2006-458b-9b97-b2df4ca338b5",
+            "exec": [
+              "// log user in",
+              "const logUserIn = {",
+              "  url: 'https://staging.trydave.com/v2/user/login',",
+              "  method: 'POST',",
+              "  header: {",
+              "    'x-device-id': '1A01477A-3844-42AB-9DEF-53DFAB3C4558',",
+              "    'x-device-type': 'ios',",
+              "    'Content-Type': 'application/json',",
+              "    'x-app-version': '2.16.8'",
+              "  },",
+              "  body: {",
+              "    mode: 'raw',",
+              "    raw: JSON.stringify({ \"phoneNumber\": \"9494560601\", \"password\": \"Password1!\", \"mfaCode\": \"111111\" })",
+              "  }",
+              "}",
+              "",
+              "// log user in and set environment variables for follow up requests",
+              "pm.sendRequest(logUserIn, function (err, res) {",
+              "  pm.environment.set(\"solvency_fail_paid_today_advance_token\", res.json().token);",
+              "  pm.environment.set(\"solvency_fail_paid_today_advance_defaultBankAccountId\", res.json().defaultBankAccountId);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "92d65e25-1ebf-436d-adba-761dd850de03",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify approved is false",
+              "pm.test(\"approved is false\", () => {",
+              "    pm.expect(jsonData[0].approved).to.eql(false);",
+              "});",
+              "",
+              "// verify advanceApprovalId is not null and is a number",
+              "pm.test(\"advanceApprovalId is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].advanceApprovalId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].advanceApprovalId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify displayMessage indicates we can't advance money on payday",
+              "pm.test(\"displayMessage indicates we can't advance money on payday\", () => {",
+              "   pm.expect(jsonData[0].displayMessage).to.eql(\"I can't advance you money on your payday. I'll notify you when you're eligible or you can try again later.\");",
+              "});",
+              "",
+              "// verify message is CannotBePaidToday",
+              "pm.test(\"message is CannotBePaidToday\", () => {",
+              "    pm.expect(jsonData[0].message).to.eql(\"CannotBePaidToday\");",
+              "});",
+              "",
+              "// verify income_needed is false",
+              "pm.test(\"income_needed is false\", () => {",
+              "    pm.expect(jsonData[0].income_needed).to.eql(false);",
+              "});",
+              "",
+              "// verify type is payday-today",
+              "pm.test(\"type is payday-today\", () => {",
+              "    pm.expect(jsonData[0].type).to.eql(\"payday-today\");",
+              "});",
+              "",
+              "// verify interpolations in an object and has a remainingDays property",
+              "pm.test(\"interpolations in an object and has a remainingDays property\", () => {",
+              "    pm.expect(jsonData[0].extra.interpolations).to.be.an('object').that.is.not.empty;",
+              "    pm.expect(jsonData[0].extra.interpolations.remainingDays).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].extra.interpolations.remainingDays === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify advanceEngineRuleDescriptions is an object of arrays",
+              "pm.test(\"advanceEngineRuleDescriptions is an object of arrays\", () => {",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions).to.be.an('object').that.is.not.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.passed).to.be.an('array').that.is.not.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.failed).to.be.an('array').that.is.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.pending).to.be.an('array').that.is.not.empty;",
+              "});",
+              "",
+              "// verify isExperimental is a boolean",
+              "pm.test(\"isExperimental is a boolean\", () => {",
+              "    pm.expect(typeof jsonData[0].isExperimental === \"boolean\").to.eql(true);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "type": "text",
+            "value": "{{solvency_fail_paid_today_advance_token}}"
+          },
+          {
+            "key": "x-device-id",
+            "type": "text",
+            "value": "1A01477A-3844-42AB-9DEF-53DFAB3C4558"
+          },
+          {
+            "key": "x-device-type",
+            "type": "text",
+            "value": "ios"
+          },
+          {
+            "key": "x-app-version",
+            "type": "text",
+            "value": "2.16.8"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/advance/terms?amount=&bank_account_id={{solvency_fail_paid_today_advance_defaultBankAccountId}}&showAllResults=true",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "advance", "terms"],
+          "query": [
+            {
+              "key": "amount",
+              "value": ""
+            },
+            {
+              "key": "bank_account_id",
+              "value": "{{solvency_fail_paid_today_advance_defaultBankAccountId}}"
+            },
+            {
+              "key": "showAllResults",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get terms for an advance (tiny money 5)",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "a6958b7d-494f-48b4-bf5c-d3f32725c592",
+            "exec": [
+              "// log user in",
+              "const logUserIn = {",
+              "  url: 'https://staging.trydave.com/v2/user/login',",
+              "  method: 'POST',",
+              "  header: {",
+              "    'x-device-id': '1A01477A-3844-42AB-9DEF-55DFAB2C4558',",
+              "    'x-device-type': 'ios',",
+              "    'Content-Type': 'application/json',",
+              "    'x-app-version': '2.16.8'",
+              "  },",
+              "  body: {",
+              "    mode: 'raw',",
+              "    raw: JSON.stringify({ \"phoneNumber\": \"9494560400\", \"password\": \"Password1!\", \"mfaCode\": \"111111\" })",
+              "  }",
+              "}",
+              "",
+              "// log user in and set environment variables for follow up requests",
+              "pm.sendRequest(logUserIn, function (err, res) {",
+              "  pm.environment.set(\"tiny_money_5_advance_token\", res.json().token);",
+              "  pm.environment.set(\"tiny_money_5_advance_defaultBankAccountId\", res.json().defaultBankAccountId);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "0e2ccf32-15f5-4f95-a25d-ccd3a1a94b3d",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify recurringTransactionId is not null and is a number",
+              "pm.test(\"recurringTransactionId is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].recurringTransactionId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].recurringTransactionId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify advanceApprovalId is not null and is a number",
+              "pm.test(\"advanceApprovalId is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].advanceApprovalId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].advanceApprovalId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify approved is true",
+              "pm.test(\"approved is true\", () => {",
+              "    pm.expect(jsonData[0].approved).to.eql(true);",
+              "});",
+              "",
+              "// verify advanceType is MICRO_ADVANCE",
+              "pm.test(\"advanceType is MICRO_ADVANCE\", () => {",
+              "    pm.expect(jsonData[0].advanceType).to.eql(\"MICRO_ADVANCE\");",
+              "});",
+              "",
+              "// verify type is historical-payday-insolvent",
+              "pm.test(\"type is historical-payday-insolvent\", () => {",
+              "    pm.expect(jsonData[0].type).to.eql(\"historical-payday-insolvent\");",
+              "});",
+              "",
+              "// verify message indicates payday insolvent",
+              "pm.test(\"message indicates payday insolvent\", () => {",
+              "    pm.expect(jsonData[0].message).to.eql(\"Sorry, but I can’t. \\n Dave Tip: Keeping even a small balance at the end of payday makes your account stronger.\");",
+              "});",
+              "",
+              "// verify path contains article about solvency",
+              "pm.test(\"path contains article about solvency\", () => {",
+              "    pm.expect(jsonData[0].path).to.eql(\"articles/360001266552--For-your-safety-I-need-to-see-a-cushion-of-at-least-115-the-day-after-your-last-2-paydays-\");",
+              "});",
+              "",
+              "// verify advanceEngineRuleDescriptions is an object of arrays",
+              "pm.test(\"advanceEngineRuleDescriptions is an object of arrays\", () => {",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions).to.be.an('object').that.is.not.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.passed).to.be.an('array').that.is.not.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.failed).to.be.an('array').that.is.not.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.pending).to.be.an('array').that.is.empty;",
+              "});",
+              "",
+              "// verify approvedAmounts are correct",
+              "pm.test(\"approvedAmounts are correct\", () => {",
+              "    pm.expect(jsonData[0].approvedAmounts[0]).to.eql(5);",
+              "});",
+              "",
+              "// verify isExperimental is a boolean",
+              "pm.test(\"isExperimental is a boolean\", () => {",
+              "    pm.expect(typeof jsonData[0].isExperimental === \"boolean\").to.eql(true);",
+              "});",
+              "",
+              "// verify income date and displayName are not null",
+              "pm.test(\"income date and displayName are not null\", () => {",
+              "    pm.expect(jsonData[0].income.date).to.not.eql(null);",
+              "    pm.expect(jsonData[0].income.displayName).to.not.eql(null);",
+              "});",
+              "",
+              "// verify paybackDates is an object with an available dates array and a default",
+              "pm.test(\"paybackDates is an object with an available dates array and a default\", () => {",
+              "    pm.expect(jsonData[0].paybackDates).to.be.an('object').that.is.not.empty;",
+              "    pm.expect(jsonData[0].paybackDates.available).to.be.an('array').that.is.not.empty;",
+              "    pm.expect(jsonData[0].paybackDates.default).to.not.eql(null);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "type": "text",
+            "value": "{{tiny_money_5_advance_token}}"
+          },
+          {
+            "key": "x-device-id",
+            "type": "text",
+            "value": "1A01477A-3844-42AB-9DEF-55DFAB2C4558"
+          },
+          {
+            "key": "x-device-type",
+            "type": "text",
+            "value": "ios"
+          },
+          {
+            "key": "x-app-version",
+            "type": "text",
+            "value": "2.16.8"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/advance/terms?amount=&bank_account_id={{tiny_money_5_advance_defaultBankAccountId}}&showAllResults=true",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "advance", "terms"],
+          "query": [
+            {
+              "key": "amount",
+              "value": ""
+            },
+            {
+              "key": "bank_account_id",
+              "value": "{{tiny_money_5_advance_defaultBankAccountId}}"
+            },
+            {
+              "key": "showAllResults",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get terms for an advance (tiny money)",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "98c3c80a-7714-4e84-8d8c-1bbb908ed7ca",
+            "exec": [
+              "// log user in",
+              "const logUserIn = {",
+              "  url: 'https://staging.trydave.com/v2/user/login',",
+              "  method: 'POST',",
+              "  header: {",
+              "    'x-device-id': '1A01477A-3844-42AB-9DEF-56DFAB2C4558',",
+              "    'x-device-type': 'ios',",
+              "    'Content-Type': 'application/json',",
+              "    'x-app-version': '2.16.8'",
+              "  },",
+              "  body: {",
+              "    mode: 'raw',",
+              "    raw: JSON.stringify({ \"phoneNumber\": \"9491111110\", \"password\": \"Password1!\", \"mfaCode\": \"111111\" })",
+              "  }",
+              "}",
+              "",
+              "// log user in and set environment variables for follow up requests",
+              "pm.sendRequest(logUserIn, function (err, res) {",
+              "  pm.environment.set(\"tiny_money_advance_token\", res.json().token);",
+              "  pm.environment.set(\"tiny_money_advance_defaultBankAccountId\", res.json().defaultBankAccountId);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "8826052f-4a83-44de-8684-1b15995e9edf",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify recurringTransactionId is not null and is a number",
+              "pm.test(\"recurringTransactionId is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].recurringTransactionId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].recurringTransactionId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify advanceApprovalId is not null and is a number",
+              "pm.test(\"advanceApprovalId is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].advanceApprovalId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].advanceApprovalId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify approved is true",
+              "pm.test(\"approved is true\", () => {",
+              "    pm.expect(jsonData[0].approved).to.eql(true);",
+              "});",
+              "",
+              "// verify advanceType is MICRO_ADVANCE",
+              "pm.test(\"advanceType is MICRO_ADVANCE\", () => {",
+              "    pm.expect(jsonData[0].advanceType).to.eql(\"MICRO_ADVANCE\");",
+              "});",
+              "",
+              "// verify advanceEngineRuleDescriptions is an object of arrays",
+              "pm.test(\"advanceEngineRuleDescriptions is an object of arrays\", () => {",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions).to.be.an('object').that.is.not.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.passed).to.be.an('array').that.is.not.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.failed).to.be.an('array').that.is.not.empty;",
+              "    pm.expect(jsonData[0].advanceEngineRuleDescriptions.pending).to.be.an('array').that.is.not.empty;",
+              "});",
+              "",
+              "// verify approvedAmounts are correct",
+              "pm.test(\"approvedAmounts are correct\", () => {",
+              "    pm.expect(jsonData[0].approvedAmounts[0]).to.eql(10);",
+              "    pm.expect(jsonData[0].approvedAmounts[1]).to.eql(15);",
+              "    pm.expect(jsonData[0].approvedAmounts[2]).to.eql(20);",
+              "});",
+              "",
+              "// verify isExperimental is a boolean",
+              "pm.test(\"isExperimental is a boolean\", () => {",
+              "    pm.expect(typeof jsonData[0].isExperimental === \"boolean\").to.eql(true);",
+              "});",
+              "",
+              "// verify income date and displayName are not null",
+              "pm.test(\"income date and displayName are not null\", () => {",
+              "    pm.expect(jsonData[0].income.date).to.not.eql(null);",
+              "    pm.expect(jsonData[0].income.displayName).to.not.eql(null);",
+              "});",
+              "",
+              "// verify paybackDates is an object with an available dates array and a default",
+              "pm.test(\"paybackDates is an object with an available dates array and a default\", () => {",
+              "    pm.expect(jsonData[0].paybackDates).to.be.an('object').that.is.not.empty;",
+              "    pm.expect(jsonData[0].paybackDates.available).to.be.an('array').that.is.not.empty;",
+              "    pm.expect(jsonData[0].paybackDates.default).to.not.eql(null);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "type": "text",
+            "value": "{{tiny_money_advance_token}}"
+          },
+          {
+            "key": "x-device-id",
+            "type": "text",
+            "value": "1A01477A-3844-42AB-9DEF-56DFAB2C4558"
+          },
+          {
+            "key": "x-device-type",
+            "type": "text",
+            "value": "ios"
+          },
+          {
+            "key": "x-app-version",
+            "type": "text",
+            "value": "2.16.8"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/advance/terms?amount=&bank_account_id={{tiny_money_advance_defaultBankAccountId}}&showAllResults=true",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "advance", "terms"],
+          "query": [
+            {
+              "key": "amount",
+              "value": ""
+            },
+            {
+              "key": "bank_account_id",
+              "value": "{{tiny_money_advance_defaultBankAccountId}}"
+            },
+            {
+              "key": "showAllResults",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Request an advance (tiny money)",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "be5542df-983e-4cb8-bba3-d4e21a73b251",
+            "exec": [""],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "ae72cd39-a669-4107-8de1-2469abb0493b",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify amount is 10",
+              "pm.test(\"amount is 10\", () => {",
+              "    pm.expect(jsonData.amount).to.eql(10);",
+              "});",
+              "",
+              "// verify bankAccountId is not null and is a number",
+              "pm.test(\"bankAccountId is not null and is a number\", () => {",
+              "    pm.expect(jsonData.bankAccountId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.bankAccountId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify created is not null",
+              "pm.test(\"created is not null\", () => {",
+              "    pm.expect(jsonData.created).to.not.eql(null);",
+              "});",
+              "",
+              "// verify delivery is express",
+              "pm.test(\"delivery is express\", () => {",
+              "    pm.expect(jsonData.delivery).to.eql(\"express\");",
+              "});",
+              "",
+              "// verify disbursementStatus is PENDING",
+              "pm.test(\"disbursementStatus is PENDING\", () => {",
+              "    pm.expect(jsonData.disbursementStatus).to.eql(\"PENDING\");",
+              "});",
+              "",
+              "// verify expectedDelivery is not null",
+              "pm.test(\"expectedDelivery is not null\", () => {",
+              "    pm.expect(jsonData.expectedDelivery).to.not.eql(null);",
+              "});",
+              "",
+              "// verify fee is 2.49",
+              "pm.test(\"fee is 2.49\", () => {",
+              "    pm.expect(jsonData.fee).to.eql(2.49);",
+              "});",
+              "",
+              "// verify id is not null and is a number",
+              "pm.test(\"id is not null and is a number\", () => {",
+              "    pm.expect(jsonData.id).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.id === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify network is null",
+              "pm.test(\"network is null\", () => {",
+              "    pm.expect(jsonData.network).to.eql(null);",
+              "});",
+              "",
+              "// verify outstanding is 13.49",
+              "pm.test(\"outstanding is 13.49\", () => {",
+              "    pm.expect(jsonData.outstanding).to.eql(13.49);",
+              "});",
+              "",
+              "// verify paybackDate is not null",
+              "pm.test(\"paybackDate is not null\", () => {",
+              "    pm.expect(jsonData.paybackDate).to.not.eql(null);",
+              "});",
+              "",
+              "// verify tip is 1",
+              "pm.test(\"tip is 1\", () => {",
+              "    pm.expect(jsonData.tip).to.eql(1);",
+              "});",
+              "",
+              "// verify tipPercent is 10",
+              "pm.test(\"tipPercent is 10\", () => {",
+              "    pm.expect(jsonData.tipPercent).to.eql(10);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "authorization",
+            "type": "text",
+            "value": "{{tiny_money_advance_token}}"
+          },
+          {
+            "key": "x-device-id",
+            "type": "text",
+            "value": "1A01477A-3844-42AB-9DEF-56DFAB2C4558"
+          },
+          {
+            "key": "x-device-type",
+            "type": "text",
+            "value": "ios"
+          },
+          {
+            "key": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "x-app-version",
+            "type": "text",
+            "value": "2.16.8"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n      \"amount\": 10,\n      \"delivery\": \"express\",\n      \"bank_account_id\": \"{{tiny_money_advance_defaultBankAccountId}}\",\n      \"tip_percent\": 10\n}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/advance",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "advance"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get fees for an advance (big money)",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "906a7d55-677c-44bc-b5ff-f0fca2545c95",
+            "exec": [""],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "911235fb-ebb5-4d93-afb8-066d1ab42283",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify standard is 0",
+              "pm.test(\"standard is 0\", () => {",
+              "    pm.expect(jsonData.standard).to.eql(0);",
+              "});",
+              "",
+              "// verify express is 4.99",
+              "pm.test(\"express is 4.99\", () => {",
+              "    pm.expect(jsonData.express).to.eql(4.99);",
+              "});",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "type": "text",
+            "value": "{{big_money_advance_token}}"
+          },
+          {
+            "key": "x-device-id",
+            "type": "text",
+            "value": "1A01477A-3844-42AB-9DEF-47DFAB2C4558"
+          },
+          {
+            "key": "x-device-type",
+            "type": "text",
+            "value": "ios"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {}
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/advance/fees",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "advance", "fees"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get user's advances (big money)",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "906a7d55-677c-44bc-b5ff-f0fca2545c95",
+            "exec": [""],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "911235fb-ebb5-4d93-afb8-066d1ab42283",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify id is not null and is a number",
+              "pm.test(\"id is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].id).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].id === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify bankAccountId is not null and is a number",
+              "pm.test(\"bankAccountId is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].bankAccountId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].bankAccountId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify paybackDate is not null",
+              "pm.test(\"paybackDate is not null\", () => {",
+              "    pm.expect(jsonData[0].paybackDate).to.not.eql(null);",
+              "});",
+              "",
+              "// verify amount is 75",
+              "pm.test(\"amount is 75\", () => {",
+              "    pm.expect(jsonData[0].amount).to.eql(75);",
+              "});",
+              "",
+              "// verify delivery is EXPRESS",
+              "pm.test(\"delivery is EXPRESS\", () => {",
+              "    pm.expect(jsonData[0].delivery).to.eql(\"EXPRESS\");",
+              "});",
+              "",
+              "// verify tip is 7.5",
+              "pm.test(\"tip is equal to 7.5\", () => {",
+              "    pm.expect(jsonData[0].tip).to.eql(7.5);",
+              "});",
+              "",
+              "// verify tipPercent is 10",
+              "pm.test(\"tipPercent is 10\", () => {",
+              "    pm.expect(jsonData[0].tipPercent).to.eql(10);",
+              "});",
+              "",
+              "// verify outstanding is 87.49",
+              "pm.test(\"outstanding is 87.49\", () => {",
+              "    pm.expect(jsonData[0].outstanding).to.eql(87.49);",
+              "});",
+              "",
+              "// verify fee is 4.99",
+              "pm.test(\"fee is 4.99\", () => {",
+              "    pm.expect(jsonData[0].fee).to.eql(4.99);",
+              "});",
+              "",
+              "// verify disbursementStatus is PENDING",
+              "pm.test(\"disbursementStatus is PENDING\", () => {",
+              "    pm.expect(jsonData[0].disbursementStatus).to.eql(\"PENDING\");",
+              "});",
+              "",
+              "// verify closed is false",
+              "pm.test(\"closed is false\", () => {",
+              "    pm.expect(jsonData[0].closed).to.eql(false);",
+              "});",
+              "",
+              "// verify payments is an empty array",
+              "pm.test(\"payments is an empty array\", () => {",
+              "    pm.expect(jsonData[0].payments).to.be.an('array').that.is.empty;",
+              "});",
+              "",
+              "// verify created is not null",
+              "pm.test(\"created is not null\", () => {",
+              "    pm.expect(jsonData[0].created).to.not.eql(null);",
+              "});",
+              "",
+              "// verify disbursementBankTransactionId is null",
+              "pm.test(\"disbursementBankTransactionId is null\", () => {",
+              "    pm.expect(jsonData[0].disbursementBankTransactionId).to.eql(null);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "type": "text",
+            "value": "{{big_money_advance_token}}"
+          },
+          {
+            "key": "x-device-id",
+            "type": "text",
+            "value": "1A01477A-3844-42AB-9DEF-47DFAB2C4558"
+          },
+          {
+            "key": "x-device-type",
+            "type": "text",
+            "value": "ios"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/advance",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "advance"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update an advance tip",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "906a7d55-677c-44bc-b5ff-f0fca2545c95",
+            "exec": [""],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "911235fb-ebb5-4d93-afb8-066d1ab42283",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify response body returns with success: true",
+              "pm.test(\"response body returns with success: true\", () => {",
+              "    pm.expect(jsonData.success).to.eql(true);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "authorization",
+            "type": "text",
+            "value": "{{big_money_advance_token}}"
+          },
+          {
+            "key": "x-device-id",
+            "type": "text",
+            "value": "1A01477A-3844-42AB-9DEF-47DFAB2C4558"
+          },
+          {
+            "key": "x-device-type",
+            "type": "text",
+            "value": "ios"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n      \"tip_percent\": 0\n}\n",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/advance/{{big_money_advance_id}}",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "advance", "{{big_money_advance_id}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Make a payment on an advance",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "906a7d55-677c-44bc-b5ff-f0fca2545c95",
+            "exec": [""],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "911235fb-ebb5-4d93-afb8-066d1ab42283",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 400",
+              "pm.test(\"status code is 400\", () => {",
+              "    pm.response.to.have.status(400);",
+              "});",
+              "",
+              "// verify type is invalid parameters",
+              "pm.test(\"type is invalid parameters\", () => {",
+              "    pm.expect(jsonData.type).to.eql(\"invalid_parameters\");",
+              "});",
+              "",
+              "// verify message is not null",
+              "pm.test(\"message is not null\", () => {",
+              "    pm.expect(jsonData.message).to.not.eql(null);",
+              "});",
+              "",
+              "// verify cannot pay an advance within 24 hours message exists",
+              "pm.test(\"cannot pay an advance within 24 hours message exists\", () => {",
+              "    pm.expect(pm.response.text()).to.include(\"Cannot pay an advance within 24 hours of requesting it\");",
+              "});",
+              "",
+              "// verify customCode is not null and is a number",
+              "pm.test(\"customCode is not null\", () => {",
+              "    pm.expect(jsonData.customCode).to.not.eql(null);",
+              "    pm.expect(typeof jsonData.customCode === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify data is an empty object",
+              "pm.test(\"data is an empty object\", () => {",
+              "    pm.expect(jsonData.data).to.be.an('object').that.is.empty;",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "authorization",
+            "type": "text",
+            "value": "{{big_money_advance_token}}"
+          },
+          {
+            "key": "x-device-id",
+            "type": "text",
+            "value": "1A01477A-3844-42AB-9DEF-47DFAB2C4558"
+          },
+          {
+            "key": "x-device-type",
+            "type": "text",
+            "value": "ios"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n      \"amount\": 87.49,\n      \"bankAccountId\": \"{{big_money_advance_defaultBankAccountId}}\"\n}\n",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/advance/{{big_money_advance_id}}/payment",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "advance", "{{big_money_advance_id}}", "payment"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get bank account",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "90c4e8af-c37d-4477-b78e-0b1473853e96",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify id is not null and is a number",
+              "pm.test(\"id is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].id).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].id === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify displayName is not null",
+              "pm.test(\"displayName is not null\", () => {",
+              "    pm.expect(jsonData[0].displayName).to.not.eql(null);",
+              "});",
+              "",
+              "// verify lastFour is not null",
+              "pm.test(\"lastFour is not null\", () => {",
+              "    pm.expect(jsonData[0].lastFour).to.not.eql(null);",
+              "});",
+              "",
+              "// verify hasAccountRouting is true",
+              "pm.test(\"hasAccountRouting is true\", () => {",
+              "    pm.expect(jsonData[0].hasAccountRouting).to.eql(true);",
+              "});",
+              "",
+              "// verify bankConnectionId is not null and is a number",
+              "pm.test(\"bankConnectionId is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].bankConnectionId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].bankConnectionId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify hasValidCredentials is true",
+              "pm.test(\"hasValidCredentials is true\", () => {",
+              "    pm.expect(jsonData[0].hasValidCredentials).to.eql(true);",
+              "});",
+              "",
+              "// verify available is not null and is a number",
+              "pm.test(\"available is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].available).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].available === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify current is not null and is a number",
+              "pm.test(\"current is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].current).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].current === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify microDeposit is not null",
+              "pm.test(\"microDeposit is not null\", () => {",
+              "    pm.expect(jsonData[0].microDeposit).to.eql(null);",
+              "});",
+              "",
+              "// verify numTransactions is not null and is a number",
+              "pm.test(\"numTransactions is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].numTransactions).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].numTransactions === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify institution object has correct values",
+              "pm.test(\"institution object has correct values\", () => {",
+              "    pm.expect(jsonData[0].institution.id).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].institution.id === \"number\").to.be.true;",
+              "    pm.expect(jsonData[0].institution.displayName).to.not.eql(null);",
+              "    pm.expect(jsonData[0].institution.logo).to.eql(null);",
+              "    pm.expect(jsonData[0].institution.primaryColor).to.not.eql(null);",
+              "});",
+              "",
+              "// verify paymentMethod object has correct values",
+              "pm.test(\"paymentMethod object has correct values\", () => {",
+              "    pm.expect(jsonData[0].paymentMethod.id).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].paymentMethod.id === \"number\").to.be.true;",
+              "    pm.expect(jsonData[0].paymentMethod.displayName).to.not.eql(null);",
+              "    pm.expect(jsonData[0].paymentMethod.scheme).to.not.eql(null);",
+              "    pm.expect(jsonData[0].paymentMethod.mask).to.not.eql(null);",
+              "    pm.expect(jsonData[0].paymentMethod.expiration).to.not.eql(null);",
+              "    pm.expect(jsonData[0].paymentMethod.invalid).to.eql(null);",
+              "    pm.expect(jsonData[0].paymentMethod.optedIntoDaveRewards).to.eql(false);",
+              "    pm.expect(jsonData[0].paymentMethod.empyrCardId).to.eql(null);",
+              "    pm.expect(jsonData[0].paymentMethod.zipCode).to.eql(null);",
+              "});",
+              "",
+              "// verify approval object has correct values",
+              "pm.test(\"approval object has correct values\", () => {",
+              "    pm.expect(jsonData[0].approval.incomeNeeded).to.eql(false);",
+              "    pm.expect(jsonData[0].approval.income.date).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].approval.income.amount === \"number\").to.be.true;",
+              "    pm.expect(jsonData[0].approval.income.amount).to.not.eql(null);",
+              "    pm.expect(jsonData[0].approval.income.displayName).to.not.eql(null);",
+              "    pm.expect(jsonData[0].approval.isSupportOverride).to.eql(false);",
+              "});",
+              "",
+              "// verify preApprovalWaistlist is false",
+              "pm.test(\"preApprovalWaistlist is false\", () => {",
+              "    pm.expect(jsonData[0].preApprovalWaitlist).to.eql(false);",
+              "});",
+              "",
+              "// verify hasReceivedTransactions is true",
+              "pm.test(\"hasReceivedTransactions is true\", () => {",
+              "    pm.expect(jsonData[0].hasReceivedTransactions).to.eql(true);",
+              "});",
+              "",
+              "// verify forecast object has correct values",
+              "pm.test(\"forecast object has correct values\", () => {",
+              "    pm.expect(jsonData[0].forecast.id).to.eql(null);",
+              "    pm.expect(typeof jsonData[0].forecast.userId === \"number\").to.be.true;",
+              "    pm.expect(jsonData[0].forecast.userId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].forecast.bankAccountId === \"number\").to.be.true;",
+              "    pm.expect(jsonData[0].forecast.bankAccountId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].forecast.startBalance === \"number\").to.be.true;",
+              "    pm.expect(jsonData[0].forecast.startBalance).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].forecast.lowestBalance === \"number\").to.be.true;",
+              "    pm.expect(jsonData[0].forecast.lowestBalance).to.not.eql(null);",
+              "    pm.expect(jsonData[0].forecast.pending).to.be.an('array').that.is.empty;",
+              "    pm.expect(jsonData[0].forecast.start).to.not.eql(null);",
+              "    pm.expect(jsonData[0].forecast.stop).to.not.eql(null);",
+              "    pm.expect(jsonData[0].forecast.paycheck).to.have.property('id');",
+              "    pm.expect(jsonData[0].forecast.paycheck.amount).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].forecast.paycheck.amount === \"number\").to.be.true;",
+              "    pm.expect(jsonData[0].forecast.paycheck.date).to.not.eql(null);",
+              "    pm.expect(jsonData[0].forecast.paycheck.displayName).to.not.eql(null);",
+              "    pm.expect(jsonData[0].forecast.paycheck.userFriendlyName).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].forecast.paycheck.recurringTransactionId === \"number\").to.be.true;",
+              "    pm.expect(jsonData[0].forecast.paycheck.recurringTransactionId).to.not.eql(null);",
+              "    pm.expect(jsonData[0].forecast.recurring).to.be.an('array').that.is.empty;",
+              "    pm.expect(jsonData[0].forecast.created).to.eql(null);",
+              "    pm.expect(jsonData[0].forecast.updated).to.eql(null);",
+              "    pm.expect(jsonData[0].deleted).to.eql(null);",
+              "    pm.expect(jsonData[0].bankingDataSource).to.not.eql(null);",
+              "    pm.expect(jsonData[0].hasReceivedFirstPaycheck).to.eql(null);",
+              "});",
+              "",
+              "// set bankAccountId in an environment variable for future use",
+              "pm.environment.set(\"bank_account_id\", jsonData[0].id);"
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "6435c342-4c3b-4b3a-ba98-174e3c66cf8b",
+            "exec": [
+              "// log user in",
+              "const logUserIn = {",
+              "  url: 'https://staging.trydave.com/v2/user/login',",
+              "  method: 'POST',",
+              "  header: {",
+              "    'x-device-id': '1A01477A-3844-42AB-9DEF-47DFAB2C4557',",
+              "    'x-device-type': 'ios',",
+              "    'Content-Type': 'application/json',",
+              "    'x-app-version': '2.16.8'",
+              "  },",
+              "  body: {",
+              "    mode: 'raw',",
+              "    raw: JSON.stringify({ \"phoneNumber\": \"9491111020\", \"password\": \"Password1!\", \"mfaCode\": \"111111\" })",
+              "  }",
+              "}",
+              "",
+              "// log user in and set environment variables for follow up requests",
+              "pm.sendRequest(logUserIn, function (err, res) {",
+              "  pm.environment.set(\"bank_account_token\", res.json().token);",
+              "  pm.environment.set(\"bank_account_id\", res.json().id);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-device-id",
+            "value": "1A01477A-3844-42AB-9DEF-47DFAB2C4557",
+            "type": "text"
+          },
+          {
+            "key": "x-device-type",
+            "value": "ios",
+            "type": "text"
+          },
+          {
+            "key": "authorization",
+            "value": "{{bank_account_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/bank_account",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "bank_account"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get recurring income",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "90c4e8af-c37d-4477-b78e-0b1473853e96",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// verify expected is an object",
+              "pm.test(\"expected is an object\", () => {",
+              "    pm.expect(jsonData[0].expected).to.be.an('object');",
+              "});",
+              "",
+              "// verify id in expected object is not null and is a number",
+              "pm.test(\"id in expected object is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].expected.id).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].expected.id === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify bankAccountId in expected object is not null and is a number",
+              "pm.test(\"bankAccountId in expected object is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].expected.bankAccountId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].expected.bankAccountId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify recurringTransactionId in expected object is not null and is a number",
+              "pm.test(\"recurringTransactionId in expected object is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].expected.recurringTransactionId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].expected.recurringTransactionId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify bankTransactionId in expected object is null",
+              "pm.test(\"bankTransactionId in expected object is null\", () => {",
+              "    pm.expect(jsonData[0].expected.bankTransactionId).to.eql(null);",
+              "});",
+              "",
+              "// verify displayName in expected object is not null",
+              "pm.test(\"displayName in expected object is not null\", () => {",
+              "    pm.expect(jsonData[0].expected.displayName).to.not.eql(null);",
+              "});",
+              "",
+              "// verify pendingDisplayName in expected object is null",
+              "pm.test(\"pendingDisplayName in expected object is null\", () => {",
+              "    pm.expect(jsonData[0].expected.pendingDisplayName).to.eql(null);",
+              "});",
+              "",
+              "// verify expectedAmount in expected object is a number and is not null",
+              "pm.test(\"expectedAmount is a number and is not null\", () => {",
+              "    pm.expect(jsonData[0].expected.expectedAmount).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].expected.expectedAmount === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify settledAmount in expected object is null",
+              "pm.test(\"settledAmount in expected object is null\", () => {",
+              "    pm.expect(jsonData[0].expected.settledAmount).to.eql(null);",
+              "});",
+              "",
+              "// verify extra in expected object is an empty object",
+              "pm.test(\"extra in expected object is an empty object\", () => {",
+              "    pm.expect(jsonData[0].expected.extra).to.be.an('object').that.is.empty;",
+              "});",
+              "",
+              "// verify status in expected object is PREDICTED",
+              "pm.test(\"status in expected object is PREDICTED\", () => {",
+              "    pm.expect(jsonData[0].expected.status).to.eql('PREDICTED');",
+              "});",
+              "",
+              "// verify expectedDate in expected object to not be null",
+              "pm.test(\"expectedDate in expected object to not be null\", () => {",
+              "    pm.expect(jsonData[0].expected.expectedDate).to.not.eql(null);",
+              "});",
+              "",
+              "// verify deleted in expected object is null",
+              "pm.test(\"deleted in expected object is null\", () => {",
+              "    pm.expect(jsonData[0].expected.deleted).to.eql(null);",
+              "});",
+              "",
+              "// verify pendingDate in expected object is null",
+              "pm.test(\"pendingDate in expected object is null\", () => {",
+              "    pm.expect(jsonData[0].expected.pendingDate).to.eql(null);",
+              "});",
+              "",
+              "// verify created in expected object is not null",
+              "pm.test(\"created in expected object is not null\", () => {",
+              "    pm.expect(jsonData[0].expected.created).to.not.eql(null);",
+              "});",
+              "",
+              "// verify updated in expected object is not null",
+              "pm.test(\"updated in expected object is not null\", () => {",
+              "    pm.expect(jsonData[0].expected.updated).to.not.eql(null);",
+              "});",
+              "",
+              "// verify observations is an array",
+              "pm.test(\"observations is an array\", () => {",
+              "    pm.expect(jsonData[0].observations).to.be.an('array');",
+              "});",
+              "",
+              "// verify id in observations is a number and is not null",
+              "pm.test(\"id in observations is a number and is not null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].id).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].observations[0].id === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify bankAccountId in observations is a number and is not null",
+              "pm.test(\"bankAccountId in observations is a number and is not null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].bankAccountId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].observations[0].bankAccountId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify userId in observations is a number and is not null",
+              "pm.test(\"userId in observations is a number and is not null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].userId).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].observations[0].userId === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify externalId in observations is not null",
+              "pm.test(\"externalId in observations is not null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].externalId).to.not.eql(null);",
+              "});",
+              "",
+              "// verify externalName in observations is not null",
+              "pm.test(\"externalName in observations is not null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].externalName).to.not.eql(null);",
+              "});",
+              "",
+              "// verify displayName in observations is not null",
+              "pm.test(\"displayName in observations is not null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].displayName).to.not.eql(null);",
+              "});",
+              "",
+              "// verify amount in observations is a number and is not null",
+              "pm.test(\"amount in observations is a number and is not null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].amount).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].observations[0].amount === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify pending in observations is false",
+              "pm.test(\"pending in observations is false\", () => {",
+              "    pm.expect(jsonData[0].observations[0].pending).to.eql(false);",
+              "});",
+              "",
+              "// verify address in observations is null",
+              "pm.test(\"address in observations is null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].address).to.eql(null);",
+              "});",
+              "",
+              "// verify city in observations is null",
+              "pm.test(\"city in observations is null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].city).to.eql(null);",
+              "});",
+              "",
+              "// verify state in observations is null",
+              "pm.test(\"state in observations is null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].state).to.eql(null);",
+              "});",
+              "",
+              "// verify zipCode in observations is null",
+              "pm.test(\"zipCode in observations is null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].zipCode).to.eql(null);",
+              "});",
+              "",
+              "// verify plaidCategory in observations is null",
+              "pm.test(\"plaidCategory in observations is null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].plaidCategory).to.eql(null);",
+              "});",
+              "",
+              "// verify plaidCategoryId in observations is null",
+              "pm.test(\"plaidCategoryId in observations is null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].plaidCategoryId).to.eql(null);",
+              "});",
+              "",
+              "// verify id in merchantInfo object in observations array is a number and is not null",
+              "pm.test(\"id in merchantInfo object in observations array is a number and is not null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].merchantInfo.id).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].observations[0].merchantInfo.id === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify displayName in merchantInfo object in observations array is not null",
+              "pm.test(\"displayName in merchantInfo object in observations array is not null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].merchantInfo.displayName).to.not.eql(null);",
+              "});",
+              "",
+              "// verify url in merchantInfo object in observations array is not null",
+              "pm.test(\"url in merchantInfo object in observations array is not null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].merchantInfo.url).to.not.eql(null);",
+              "});",
+              "",
+              "// verify logo in merchantInfo object in observations array is not null",
+              "pm.test(\"logo in merchantInfo object in observations array is not null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].merchantInfo.logo).to.not.eql(null);",
+              "});",
+              "",
+              "// verify categoryImage in merchantInfo object in observations array is not null",
+              "pm.test(\"categoryImage in merchantInfo object in observations array is not null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].merchantInfo.categoryImage).to.not.eql(null);",
+              "});",
+              "",
+              "// verify transactionDate in observations array is not null",
+              "pm.test(\"transactionDate in observations array is not null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].transactionDate).to.not.eql(null);",
+              "});",
+              "",
+              "// verify created in observations array is not null",
+              "pm.test(\"created in observations array is not null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].created).to.not.eql(null);",
+              "});",
+              "",
+              "// verify updated in observations array is not null",
+              "pm.test(\"updated in observations array is not null\", () => {",
+              "    pm.expect(jsonData[0].observations[0].updated).to.not.eql(null);",
+              "});",
+              "",
+              "// verify id is not null and is a number",
+              "pm.test(\"id is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].id).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].id === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify userAmount is not null and is a number",
+              "pm.test(\"userAmount is not null and is a number\", () => {",
+              "    pm.expect(jsonData[0].userAmount).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].userAmount === \"number\").to.be.true;",
+              "});",
+              "",
+              "// verify userDisplayName is not null",
+              "pm.test(\"userDisplayName is not null\", () => {",
+              "    pm.expect(jsonData[0].userDisplayName).to.not.eql(null);",
+              "});",
+              "",
+              "// verify transactionDisplayName is not null",
+              "pm.test(\"transactionDisplayName is not null\", () => {",
+              "    pm.expect(jsonData[0].transactionDisplayName).to.not.eql(null);",
+              "});",
+              "",
+              "// verify interval is not null",
+              "pm.test(\"interval is not null\", () => {",
+              "    pm.expect(jsonData[0].interval).to.not.eql(null);",
+              "});",
+              "",
+              "// verify params is an array",
+              "pm.test(\"params is an array\", () => {",
+              "    pm.expect(jsonData[0].params).to.be.an('array');",
+              "});",
+              "",
+              "// verify status is VALID",
+              "pm.test(\"status is VALID\", () => {",
+              "    pm.expect(jsonData[0].status).to.be.eql('VALID');",
+              "});",
+              "",
+              "// verify lastOccurrence is not null",
+              "pm.test(\"lastOccurrence is not null\", () => {",
+              "    pm.expect(jsonData[0].lastOccurrence).to.not.eql(null);",
+              "});",
+              "",
+              "// verify nextOccurrence is not null",
+              "pm.test(\"nextOccurrence is not null\", () => {",
+              "    pm.expect(jsonData[0].nextOccurrence).to.not.eql(null);",
+              "});",
+              "",
+              "// verify missed is null",
+              "pm.test(\"missed is null\", () => {",
+              "    pm.expect(jsonData[0].missed).to.eql(null);",
+              "});",
+              "",
+              "// verify approved in advanceApproval object is true",
+              "pm.test(\"approved in advanceApproval object is true\", () => {",
+              "    pm.expect(jsonData[0].advanceApproval.approved).to.eql(true);",
+              "});",
+              "",
+              "// verify approvedAmounts array in advanceApproval object has correct values",
+              "pm.test(\"approvedAmounts array in advanceApproval object has correct values\", () => {",
+              "    pm.expect(jsonData[0].advanceApproval.approvedAmounts[0]).to.eql(25);",
+              "    pm.expect(jsonData[0].advanceApproval.approvedAmounts[1]).to.eql(50);",
+              "    pm.expect(jsonData[0].advanceApproval.approvedAmounts[2]).to.eql(75);",
+              "});",
+              "",
+              "// verify rejectionReasons in advanceApproval object is an empty array",
+              "pm.test(\"rejectionReasons in advanceApproval object is an empty array\", () => {",
+              "    pm.expect(jsonData[0].advanceApproval.rejectionReasons).to.be.an('array').that.is.empty",
+              "});",
+              "",
+              "// verify rollDirection is a number and is not null",
+              "pm.test(\"rollDirection is a number and is not null\", () => {",
+              "    pm.expect(jsonData[0].rollDirection).to.not.eql(null);",
+              "    pm.expect(typeof jsonData[0].rollDirection === \"number\").to.be.true;",
+              "});",
+              "",
+              "// set recurringTransactionId for paycheck 0 in an environment variable for future use",
+              "pm.environment.set(\"paycheck1_recurring_transaction_id\", jsonData[0].id);"
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "88e2d8b6-7d81-4a8d-9326-a7d1694564ef",
+            "exec": [""],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-device-id",
+            "type": "text",
+            "value": "1A01477A-3844-42AB-9DEF-47DFAB2C4557"
+          },
+          {
+            "key": "x-device-type",
+            "type": "text",
+            "value": "ios"
+          },
+          {
+            "key": "authorization",
+            "type": "text",
+            "value": "{{bank_account_token}}"
+          }
+        ],
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/bank_account/{{bank_account_id}}/recurring_income",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "bank_account", "{{bank_account_id}}", "recurring_income"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update main paycheck",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "9576cae6-b310-41a6-99dc-7c26283bf4a6",
+            "exec": [
+              "// verify status code is 200",
+              "pm.test(\"status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "x-device-id",
+            "value": "1A01477A-3844-42AB-9DEF-47DFAB2C4557",
+            "type": "text"
+          },
+          {
+            "key": "x-device-type",
+            "value": "ios",
+            "type": "text"
+          },
+          {
+            "key": "authorization",
+            "value": "{{bank_account_token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n      \"mainPaycheckRecurringTransactionId\": \"{{paycheck1_recurring_transaction_id}}\"\n}",
+          "options": {}
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/bank_account/{{bank_account_id}}",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "bank_account", "{{bank_account_id}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete bank account",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "9576cae6-b310-41a6-99dc-7c26283bf4a6",
+            "exec": [
+              "const jsonData = pm.response.json();",
+              "",
+              "// verify status code is 400",
+              "pm.test(\"status code is 400\", () => {",
+              "    pm.response.to.have.status(400);",
+              "});",
+              "",
+              "// verify type is invalid_parameters",
+              "pm.test(\"type is invalid_parameters\", () => {",
+              "    pm.expect(jsonData.type).to.eql(\"invalid_parameters\");",
+              "});",
+              "",
+              "// verify message contains cannot delete your only bank connection",
+              "pm.test(\"message contains cannot delete your only bank connection\", () => {",
+              "     pm.expect(jsonData.message).to.include(\"Cannot delete your only bank connection\");",
+              "});",
+              "",
+              "// verify customCode is null",
+              "pm.test(\"customCode is null\", () => {",
+              "     pm.expect(jsonData.customCode).to.eql(null);",
+              "});",
+              "",
+              "// verify data is an empty object",
+              "pm.test(\"data is an empty object\", () => {",
+              "     pm.expect(jsonData.data).to.be.an('object').that.is.empty;",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "x-device-id",
+            "value": "1A01477A-3844-42AB-9DEF-47DFAB2C4557",
+            "type": "text"
+          },
+          {
+            "key": "x-device-type",
+            "value": "ios",
+            "type": "text"
+          },
+          {
+            "key": "authorization",
+            "value": "{{bank_account_token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {}
+        },
+        "url": {
+          "raw": "{{STAGING_URL}}/v2/bank_account/{{bank_account_id}}",
+          "host": ["{{STAGING_URL}}"],
+          "path": ["v2", "bank_account", "{{bank_account_id}}"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}

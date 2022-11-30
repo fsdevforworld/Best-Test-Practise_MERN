@@ -1,0 +1,37 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "POST",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/transactions",
+    "body": {
+      "referenceID": "2019-04-10-003",
+      "type": "pull",
+      "accounts": {
+        "sourceAccountID": "AL8FE3HESGAxb8ti45bJsQ",
+        "destinationAccountID": "BQsCNSGV0IY6SjArjuOS9Q"
+      },
+      "amount": "0.04"
+    },
+    "status": 207,
+    "response": {
+      "SC": 207,
+      "EC": "3C5E9E00",
+      "transactionID": "CLA2BpwUCQukR6Vo0ArGdQ",
+      "network": "Visa",
+      "status": "UNKNOWN",
+      "errors": ["000E7520"]
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Thu, 12 Dec 2019 00:49:31 GMT",
+      "Content-Length",
+      "125",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  }
+]

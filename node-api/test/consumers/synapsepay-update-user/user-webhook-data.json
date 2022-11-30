@@ -1,0 +1,157 @@
+{
+  "_id": { "$oid": "5a7e272b77c19b0064a92f21" },
+  "_rest": {
+    "_id": "5a7e272b77c19b0064a92f21",
+    "client": { "id": "59460e2095062958cb0196c8", "name": "Dave, Inc" },
+    "doc_status": { "physical_doc": "SUBMITTED|VALID", "virtual_doc": "SUBMITTED|VALID" },
+    "documents": [
+      {
+        "entity_scope": "Bank & Financial Services",
+        "entity_type": "M",
+        "id": "5ef5d11b950bd79fc205f01343c244825338a53b6590b80572bf7af83d771b92",
+        "name": "Paul Henderson",
+        "permission_scope": "SEND|RECEIVE|TIER|2",
+        "physical_docs": [
+          {
+            "document_type": "LEGAL_AGREEMENT",
+            "id": "59e72738cfa3999e1d1bffd0aa09fc50aea5d59ad98808776be5cef7f3e8f98b",
+            "last_updated": 1536565853600,
+            "status": "SUBMITTED"
+          }
+        ],
+        "social_docs": [
+          {
+            "document_type": "PHONE_NUMBER",
+            "id": "e3e09a5403ea1568d50d63792fa1824a4ad41447c14c353c42b69197628eb929",
+            "last_updated": 1536565853601,
+            "status": "SUBMITTED|INVALID"
+          },
+          {
+            "document_type": "EMAIL",
+            "id": "a54e03dec5ec57c1069ff19a6463af21babe5dc8ba0dda1b84fed055e3874c80",
+            "last_updated": 1536565853601,
+            "status": "SUBMITTED|INVALID"
+          },
+          {
+            "document_type": "IP",
+            "id": "d0cfaf260709e4a05b06d61ae430c5e277772ec14bf15dbb64a8b7274cf91196",
+            "last_updated": 1536565853601,
+            "status": "SUBMITTED|INVALID"
+          },
+          {
+            "document_type": "ADDRESS",
+            "id": "fbf0e9e8fcd16d357fbe1e320b2a3fc3494de2169d5a73b687d28bac59915062",
+            "last_updated": 1536565853601,
+            "status": "SUBMITTED"
+          },
+          {
+            "document_type": "DATE",
+            "id": "b3bfaa1c61c9be153e5794cc39777e1029b790e04f190e9191136ade7b44b43e",
+            "last_updated": 1536565853601,
+            "status": "SUBMITTED"
+          }
+        ],
+        "virtual_docs": [
+          {
+            "document_type": "SSN",
+            "id": "00edc061f9ac0271832d91ac4e9c673a3d7f68df94b9c7b72bc7c2529694562d",
+            "last_updated": 1536565853598,
+            "status": "SUBMITTED|VALID"
+          }
+        ]
+      }
+    ],
+    "emails": [],
+    "extra": {
+      "cip_tag": 1,
+      "date_joined": 1501468601667,
+      "extra_security": false,
+      "is_business": false,
+      "last_updated": 1536565853496,
+      "public_note": null,
+      "supp_id": "0000025199-e92d93153cc00e6c4ce167245126b075"
+    },
+    "is_hidden": false,
+    "legal_names": ["Paul Henderson"],
+    "logins": [{ "email": "pa.hendersonjr@gmail.com", "scope": "READ_AND_WRITE" }],
+    "permission": "UNVERIFIED",
+    "phone_numbers": ["+18643573130"],
+    "photos": []
+  },
+  "client": { "id": "59460e2095062958cb0196c8", "name": "Dave, Inc" },
+  "doc_status": { "physical_doc": "SUBMITTED|VALID", "virtual_doc": "SUBMITTED|VALID" },
+  "documents": [
+    {
+      "entity_scope": "Bank & Financial Services",
+      "entity_type": "M",
+      "id": "5ef5d11b950bd79fc205f01343c244825338a53b6590b80572bf7af83d771b92",
+      "name": "Paul Henderson",
+      "permission_scope": "SEND|RECEIVE|TIER|2",
+      "physical_docs": [
+        {
+          "document_type": "LEGAL_AGREEMENT",
+          "id": "59e72738cfa3999e1d1bffd0aa09fc50aea5d59ad98808776be5cef7f3e8f98b",
+          "last_updated": { "$date": 1536565853600 },
+          "status": "SUBMITTED"
+        }
+      ],
+      "social_docs": [
+        {
+          "document_type": "PHONE_NUMBER",
+          "id": "e3e09a5403ea1568d50d63792fa1824a4ad41447c14c353c42b69197628eb929",
+          "last_updated": { "$date": 1536565853601 },
+          "status": "SUBMITTED|INVALID"
+        },
+        {
+          "document_type": "EMAIL",
+          "id": "a54e03dec5ec57c1069ff19a6463af21babe5dc8ba0dda1b84fed055e3874c80",
+          "last_updated": { "$date": 1536565853601 },
+          "status": "SUBMITTED|INVALID"
+        },
+        {
+          "document_type": "IP",
+          "id": "d0cfaf260709e4a05b06d61ae430c5e277772ec14bf15dbb64a8b7274cf91196",
+          "last_updated": { "$date": 1536565853601 },
+          "status": "SUBMITTED|INVALID"
+        },
+        {
+          "document_type": "ADDRESS",
+          "id": "fbf0e9e8fcd16d357fbe1e320b2a3fc3494de2169d5a73b687d28bac59915062",
+          "last_updated": { "$date": 1536565853601 },
+          "status": "SUBMITTED"
+        },
+        {
+          "document_type": "DATE",
+          "id": "b3bfaa1c61c9be153e5794cc39777e1029b790e04f190e9191136ade7b44b43e",
+          "last_updated": { "$date": 1536565853601 },
+          "status": "SUBMITTED"
+        }
+      ],
+      "virtual_docs": [
+        {
+          "document_type": "SSN",
+          "id": "00edc061f9ac0271832d91ac4e9c673a3d7f68df94b9c7b72bc7c2529694562d",
+          "last_updated": { "$date": 1536565853598 },
+          "status": "SUBMITTED|VALID"
+        }
+      ]
+    }
+  ],
+  "emails": [],
+  "extra": {
+    "cip_tag": 1,
+    "date_joined": { "$date": 1501468601667 },
+    "extra_security": false,
+    "is_business": false,
+    "last_updated": { "$date": 1536565853496 },
+    "public_note": null,
+    "supp_id": "0000025199-e92d93153cc00e6c4ce167245126b075"
+  },
+  "is_hidden": false,
+  "legal_names": ["Paul Henderson"],
+  "logins": [{ "email": "pa.hendersonjr@gmail.com", "scope": "READ_AND_WRITE" }],
+  "permission": "UNVERIFIED",
+  "phone_numbers": ["+18643573130"],
+  "photos": [],
+  "webhook_meta": { "function": "USER|PATCH", "updated_by": "BACKEND" }
+}

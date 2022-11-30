@@ -1,0 +1,39 @@
+{
+  "dev": {
+    "host": "mysql",
+    "driver": "mysql",
+    "user": "dev",
+    "password": "password123",
+    "database": "dave_dev",
+    "port": 3306
+  },
+  "test": {
+    "host": "mysql",
+    "driver": "mysql",
+    "user": "dev",
+    "password": "password123",
+    "database": "dave_dev",
+    "port": 3306
+  },
+  "ci": {
+    "host": "localhost",
+    "driver": "mysql",
+    "user": "dev",
+    "password": "password123",
+    "database": { "ENV": "DB_NAME" }
+  },
+  "production": {
+    "host": { "ENV": "DB_HOST" },
+    "driver": "mysql",
+    "user": { "ENV": "DB_USER" },
+    "password": { "ENV": "DB_PASSWORD" },
+    "database": { "ENV": "DB_NAME" }
+  },
+  "staging": {
+    "host": { "ENV": "DB_HOST" },
+    "driver": "mysql",
+    "user": { "ENV": "DB_USER" },
+    "password": { "ENV": "DB_PASSWORD" },
+    "database": { "ENV": "DB_NAME" }
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "scope": "http://test-balance-log-service-nodeport:8085",
+    "method": "GET",
+    "path": "/balance_history_max_daily/77777?startDate=1579507200000&endDate=1579852799999",
+    "status": 200,
+    "body": "",
+    "response": [
+      {
+        "id": "25f9e794323b453885f5181f1b624d0b#77777#1579766399999",
+        "bankAccountId": 77777,
+        "bankConnectionId": 78999,
+        "userId": 88888,
+        "current": 19.49,
+        "available": 11.2,
+        "processorAccountId": "mmm999qqq111",
+        "processorName": "PLAID",
+        "date": 1579766399999
+      },
+      {
+        "id": "25f9e794323b453885f5181f1b624d0b#77777#1579679999999",
+        "bankAccountId": 77777,
+        "bankConnectionId": 78999,
+        "userId": 88888,
+        "current": 81.5,
+        "available": 81.5,
+        "processorAccountId": "mmm999qqq111",
+        "processorName": "PLAID",
+        "date": 1579679999999
+      },
+      {
+        "id": "25f9e794323b453885f5181f1b624d0b#77777#1579593599999",
+        "bankAccountId": 77777,
+        "bankConnectionId": 78999,
+        "userId": 88888,
+        "current": 100,
+        "available": 95.87,
+        "processorAccountId": "mmm999qqq111",
+        "processorName": "PLAID",
+        "date": 1579593599999
+      }
+    ]
+  }
+]

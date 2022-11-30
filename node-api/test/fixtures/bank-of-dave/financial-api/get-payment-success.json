@@ -1,0 +1,124 @@
+[
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2a82e635-d1dd-46c1-bc82-56f722a6e698/accounts/0b39346b-9b00-4aee-a11e-0428fd13df81/payments/89ca9835-c1c0-46c2-b241-a0d71ebece94",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "payment",
+      "data": {
+        "uuid": "89ca9835-c1c0-46c2-b241-a0d71ebece94",
+        "paymentReferenceId": "collect-payment-success-20190412-0",
+        "paymentReferenceType": "PAYMENT",
+        "initialAmount": 100,
+        "metadata": {
+          "b": "m",
+          "n": "s",
+          "o": "!",
+          "r": "a",
+          "u": "r"
+        },
+        "created": "2019-04-12T20:30:22.000Z",
+        "updated": "2019-04-12T20:30:22.000Z",
+        "paymentTransactions": [
+          {
+            "uuid": "e33c119c-1cd5-4567-b2ea-5d87e328ce2b",
+            "transactionReferenceId": "collect-payment-success-20190412-0",
+            "transactionType": "COLLECTION",
+            "failed": false,
+            "error": null,
+            "created": "2019-04-12T20:30:22.000Z",
+            "updated": "2019-04-12T20:30:26.000Z",
+            "transaction": {
+              "uuid": "e909719e-0889-4c4f-ac0d-4b97e8d72353",
+              "debit": true,
+              "amount": 100,
+              "amountBreakdown": {
+                "amount": 100,
+                "fees": {
+                  "surcharge": 0,
+                  "totalFeeAmount": 0,
+                  "feeDetails": [
+                    {
+                      "feeType": "Synapse Facilitator Fee",
+                      "feeAmount": 0
+                    }
+                  ]
+                }
+              },
+              "pending": false,
+              "type": "DAVE",
+              "source": {
+                "name": "Dave",
+                "legalNames": ["Dave"]
+              },
+              "created": "2019-04-12T20:30:24.000Z",
+              "updated": "2019-04-12T20:31:03.000Z",
+              "returned": false,
+              "cancelled": false,
+              "returnedMessage": null
+            }
+          },
+          {
+            "uuid": "31765092-e6ba-4814-8fe5-e227ead6d40d",
+            "transactionReferenceId": "refund-payment-success-20190412",
+            "transactionType": "REFUND",
+            "failed": false,
+            "error": null,
+            "created": "2019-04-12T20:36:17.000Z",
+            "updated": "2019-04-12T20:36:20.000Z",
+            "transaction": {
+              "uuid": "bcc79b68-5261-4ad0-a631-edc89a22d552",
+              "debit": false,
+              "amount": 100,
+              "amountBreakdown": {
+                "amount": 100,
+                "fees": {
+                  "surcharge": 0,
+                  "totalFeeAmount": 0,
+                  "feeDetails": [
+                    {
+                      "feeType": "Synapse Facilitator Fee",
+                      "feeAmount": 0
+                    }
+                  ]
+                }
+              },
+              "pending": false,
+              "type": "DAVE",
+              "source": {
+                "name": "Dave",
+                "legalNames": ["Dave"]
+              },
+              "created": "2019-04-12T20:36:19.000Z",
+              "updated": "2019-04-12T20:37:03.000Z",
+              "returned": false,
+              "cancelled": false,
+              "returnedMessage": null
+            }
+          }
+        ]
+      },
+      "message": "success",
+      "name": "ApiResponse"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "885a5697-5da6-4e06-b73b-a3ad2b3b7ac9",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Fri, 12 Apr 2019 20:41:16 GMT",
+      "Content-Length",
+      "1745",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

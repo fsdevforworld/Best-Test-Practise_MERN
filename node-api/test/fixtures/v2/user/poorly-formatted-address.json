@@ -1,0 +1,48 @@
+[
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/address-verification",
+    "body": {
+      "address_street": "3555 lAs VeGaS bLvD s",
+      "address_city": "lv",
+      "address_subdivision": "nevada",
+      "address_country_code": "US",
+      "address_postal_code": "89109"
+    },
+    "status": 200,
+    "response": [
+      "1f8b080000000000000364cd310b83301005e03dbfe2b8b9434b11aa9ba5c545ba485d433437045223b92858f1bf97149152d777df7b370b00d464cd485e35c69a3061063870cf728b2de121bacef997b2e64d5a2aad3d316306b30000c03590edba50e615d4f722afbed55fe0862ef849b64e5384cf9de81d07653770494fc7f4df70f044219ecf4992c0f60dae657d83dd240f8d36a361e3bad879d4280016b17c000000ffff03002bcce011ff000000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Tue, 08 Oct 2019 23:26:48 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=de3b0c7e1f6841c5f130025f5457c58631570577207; expires=Wed, 07-Oct-20 23:26:47 GMT; path=/; domain=.synapsefi.com; HttpOnly; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "522be1bc797d9953-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  }
+]

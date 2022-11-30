@@ -1,0 +1,63 @@
+[
+  {
+    "scope": "https://gatewaytest.risepay.com:443",
+    "method": "POST",
+    "path": "/api/vault/customers",
+    "body": {
+      "firstName": "Ellie",
+      "lastName": "Demis",
+      "mobilePhoneNumber": "+17836205663",
+      "email": "eleanordemis@gmail.com",
+      "statusId": "1164d431-8053-43e0-8857-afca5c9a8d99"
+    },
+    "status": 201,
+    "response": {
+      "customerId": "c91f57a8-3d28-45fa-8cf6-66ee84700acf",
+      "statusId": "1164d431-8053-43e0-8857-afca5c9a8d99",
+      "firstName": "Ellie",
+      "lastName": "Demis",
+      "email": "eleanordemis@gmail.com",
+      "mobilePhoneNumber": "+17836205663",
+      "createdBy": "1000163371515",
+      "createdDate": "2018-11-30T11:56:51.073-08:00",
+      "addressList": null,
+      "accountList": null
+    },
+    "rawHeaders": [
+      "Cache-Control",
+      "no-cache",
+      "Pragma",
+      "no-cache",
+      "Content-Length",
+      "322",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Expires",
+      "-1",
+      "Server",
+      "Microsoft-IIS/7.5",
+      "X-AspNet-Version",
+      "4.0.30319",
+      "X-Powered-By",
+      "ASP.NET",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains",
+      "Content-Security-Policy",
+      "default-src https: data: 'unsafe-inline' 'unsafe-eval'",
+      "Public-Key-Pins",
+      "pin-sha256='X3pGTSOuJeEVw989IJ/cEtXUEmy52zs1TZQrU06KUKg='; pin-sha256='MHJYVThihUrJcxW6wcqyOISTXIsInsdj3xK8QrZbHec='; pin-sha256='isi41AizREkLvvft0IRW4u3XMFR2Yg7bvrF7padyCJg='; includeSubdomains; max-age=2592000",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "X-Xss-Protection",
+      "1; mode=block",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Referrer-Policy",
+      "strict-origin",
+      "Date",
+      "Fri, 30 Nov 2018 19:56:50 GMT",
+      "Connection",
+      "close"
+    ]
+  }
+]

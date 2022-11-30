@@ -1,0 +1,191 @@
+{
+  "_id": "59a19cebd83c19002ff78427",
+  "_links": {
+    "self": {
+      "href": "https://uat-api.synapsefi.com/v3.1/users/59a19cebd83c19002ff78427"
+    }
+  },
+  "_v": 2,
+  "client": {
+    "id": "59763d514e9eed00229f5459",
+    "name": "Paras Chitrakar"
+  },
+  "doc_status": {
+    "physical_doc": "SUBMITTED|VALID",
+    "virtual_doc": "SUBMITTED|VALID"
+  },
+  "documents": [
+    {
+      "address_city": "Los Angeles",
+      "address_country_code": "US",
+      "address_postal_code": "90013",
+      "address_street": "411 W 5th St #850",
+      "address_subdivision": "CA",
+      "alias": null,
+      "day": 20,
+      "email": "hi@leighjohnson.me",
+      "entity_scope": "Not Known",
+      "entity_type": "NOT_KNOWN",
+      "id": "d52b84828f7f43c9e0c7b19cafbb84564ed1f7629504bcf6d6c702568ac7d505",
+      "ip": "::ffff:127.0.0.1",
+      "month": 5,
+      "name": "Success Johnson",
+      "permission_scope": "SEND-AND-RECEIVE",
+      "phone_number": "+11000000001",
+      "physical_docs": [
+        {
+          "document_type": "LEGAL_AGREEMENT",
+          "document_value": "https://cdn.synapsepay.com/uploads/2017/08/26/viZyca2bk8KWmFn7zAoSgOBNHrJC5lfqD09hLjdpxTEtUMwesP.pdf",
+          "id": "46e10c00d578cec781967a7087e9a0ad4f0352b7dde527cdae8329af72d36a07",
+          "last_updated": 1503763693696,
+          "meta": {
+            "matches": {
+              "address": "not_found",
+              "dob": "not_found",
+              "identification": "not_found"
+            }
+          },
+          "status": "SUBMITTED"
+        }
+      ],
+      "screening_results": {
+        "561": "NO_MATCH",
+        "aucl": "NO_MATCH",
+        "concern_location": "NO_MATCH",
+        "dpl": "NO_MATCH",
+        "dtc": "NO_MATCH",
+        "el": "NO_MATCH",
+        "eucl": "NO_MATCH",
+        "fatf_non_cooperative_jurisdiction": "NO_MATCH",
+        "fbi_bank_robbers": "NO_MATCH",
+        "fbi_counter_intelligence": "NO_MATCH",
+        "fbi_crimes_against_children": "NO_MATCH",
+        "fbi_criminal_enterprise_investigations": "NO_MATCH",
+        "fbi_cyber": "NO_MATCH",
+        "fbi_domestic_terrorism": "NO_MATCH",
+        "fbi_human_trafficking": "NO_MATCH",
+        "fbi_murders": "NO_MATCH",
+        "fbi_violent_crimes": "NO_MATCH",
+        "fbi_wanted_terrorists": "NO_MATCH",
+        "fbi_white_collar": "NO_MATCH",
+        "fincen_red_list": "NO_MATCH",
+        "fse": "NO_MATCH",
+        "fto_sanctions": "NO_MATCH",
+        "futures_sanctions": "NO_MATCH",
+        "hkma_sanctions": "NO_MATCH",
+        "hm_treasury_sanctions": "NO_MATCH",
+        "isn": "NO_MATCH",
+        "mas_sanctions": "NO_MATCH",
+        "monitored_location": "NO_MATCH",
+        "ns-isa": "NO_MATCH",
+        "ofac_561_list": "NO_MATCH",
+        "ofac_eo13645": "NO_MATCH",
+        "ofac_fse": "NO_MATCH",
+        "ofac_fse_ir": "NO_MATCH",
+        "ofac_fse_sy": "NO_MATCH",
+        "ofac_isa": "NO_MATCH",
+        "ofac_ns_isa": "NO_MATCH",
+        "ofac_plc": "NO_MATCH",
+        "ofac_sdn": "NO_MATCH",
+        "ofac_ssi": "NO_MATCH",
+        "ofac_syria": "NO_MATCH",
+        "ofac_ukraine_eo13662": "NO_MATCH",
+        "osfi": "NO_MATCH",
+        "pep": "NO_MATCH",
+        "plc": "NO_MATCH",
+        "primary_concern": "NO_MATCH",
+        "sdn": "NO_MATCH",
+        "ssi": "NO_MATCH",
+        "tel_sanctions": "NO_MATCH",
+        "ukcl": "NO_MATCH",
+        "uvl": "NO_MATCH"
+      },
+      "social_docs": [
+        {
+          "document_type": "EMAIL",
+          "document_value": "hi@leighjohnson.me",
+          "id": "931ba05c0874a1ad4b3ce65e255a07602071ecb2976eecc7cc17a5363674b961",
+          "last_updated": 1503763693698,
+          "meta": {
+            "matches": {
+              "address": "not_found",
+              "dob": "not_found",
+              "identification": "not_found"
+            }
+          },
+          "status": "SUBMITTED|VALID"
+        },
+        {
+          "document_type": "PHONE_NUMBER",
+          "document_value": "+11000000001",
+          "id": "18c5b87d49ab2532eb4b0f5f10d7125016bd0edc3231b96ef857cffba783647f",
+          "last_updated": 1503763693698,
+          "meta": {
+            "matches": {
+              "address": "not_found",
+              "dob": "not_found",
+              "identification": "not_found"
+            }
+          },
+          "status": "SUBMITTED|VALID"
+        },
+        {
+          "document_type": "IP",
+          "document_value": "::ffff:127.0.0.1",
+          "id": "b0a6c37fba39740ae79780c61258217c58d8d94a7dec17ba32f7fefd74ace2ed",
+          "last_updated": 1503763693698,
+          "meta": {
+            "matches": {
+              "address": "not_found",
+              "dob": "not_found",
+              "identification": "not_found"
+            }
+          },
+          "status": "SUBMITTED|VALID"
+        }
+      ],
+      "virtual_docs": [
+        {
+          "document_type": "SSN",
+          "document_value": "123452222",
+          "id": "6038d2cdc28e8539bf5095b3a619bd235ec2f5d90028aad7d70016aa2eea3875",
+          "last_updated": 1503763693694,
+          "meta": {
+            "matches": {
+              "address": "not_found",
+              "dob": "not_found",
+              "identification": "not_found"
+            }
+          },
+          "status": "SUBMITTED|VALID"
+        }
+      ],
+      "year": 1990
+    }
+  ],
+  "emails": [],
+  "extra": {
+    "cip_tag": 1,
+    "date_joined": 1503763687557,
+    "extra_security": false,
+    "is_business": false,
+    "last_updated": 1503763726044,
+    "note": null,
+    "public_note": null,
+    "supp_id": null
+  },
+  "flag": "NOT-FLAGGED",
+  "ips": ["::ffff:127.0.0.1"],
+  "is_hidden": false,
+  "legal_names": ["Success Johnson"],
+  "logins": [
+    {
+      "email": "hi@leighjohnson.me",
+      "scope": "READ_AND_WRITE"
+    }
+  ],
+  "permission": "SEND-AND-RECEIVE",
+  "phone_numbers": ["+11000000001"],
+  "photos": [],
+  "refresh_token": "refresh_RowPblAx9tSen8CuVXmD3Jpkrhdy4B10ZONFQLU6"
+}

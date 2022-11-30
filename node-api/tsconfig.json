@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "outDir": "./dist",
+    "rootDirs": ["./bin", "./src", "./test"],
+    "declaration": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "importHelpers": true,
+    "sourceMap": true,
+    "listFiles": false,
+    "traceResolution": false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "pretty": true,
+    "diagnostics": false,
+    "strictNullChecks": false,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "lib": ["es2015", "es2017", "ES2020.Promise"],
+    "types": ["node"],
+    "baseUrl": "./",
+    "paths": {
+      "@api/*": ["./src/api/*"],
+      "@test-helpers": ["./test/test-helpers"],
+      "*": ["node_modules/@types/*", "./typings/*", "*"]
+    }
+  },
+  "include": [
+    "./typings/*",
+    "src/**/*.*",
+    "test/**/*.*",
+    "bin/**/*.*",
+    "migrations/**/*.ts",
+    "knexfile.ts"
+  ],
+  "exclude": ["node_modules", "./dist", "./bin/dev"]
+}

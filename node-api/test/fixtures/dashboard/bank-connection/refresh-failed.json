@@ -1,0 +1,283 @@
+[
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/sandbox/public_token/create",
+    "body": {
+      "institution_id": "ins_109508",
+      "public_key": "secret:plaid-publicKey",
+      "initial_products": ["transactions"]
+    },
+    "status": 200,
+    "response": [
+      "1f8b08000000000000ffaae65250502a284dcac94c8e2fc9cf4ecd53b282f1758b13f35292f22b744d52528c9312930d750d0c8d8c744d52cc9275132d922d740d92cc8d53535353934d2c4d9574400615a51696a61697c467a6808c31cfafca0ece734ead884ccba9ca4e52e2aa05040000fffff52866ba6e000000"
+    ],
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Mon, 29 Jul 2019 23:32:37 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "124",
+      "Connection",
+      "close",
+      "Content-Encoding",
+      "gzip",
+      "Vary",
+      "Accept-Encoding",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options",
+      "DENY",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-XSS-Protection",
+      "1; mode=block"
+    ]
+  },
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/item/public_token/exchange",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "public_token": "public-sandbox-4dd3bac1-0122-4d6c-a8c8-0b73eeeec495"
+    },
+    "status": 200,
+    "response": {
+      "access_token": "access-sandbox-1b3e73ec-f185-49da-b59d-f666b6e057fd",
+      "item_id": "aWGbeq846GCkpR4kkqa1sapb3kajjyH7mvgVn",
+      "request_id": "pzc4ClcMe6j3jCK"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Mon, 29 Jul 2019 23:32:38 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "164",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options",
+      "DENY",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-XSS-Protection",
+      "1; mode=block"
+    ]
+  },
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/sandbox/item/reset_login",
+    "body": {
+      "access_token": "access-sandbox-1b3e73ec-f185-49da-b59d-f666b6e057fd",
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret"
+    },
+    "status": 200,
+    "response": [
+      "1f8b08000000000000ffaae65250502a4a2d2c4d2d2e89cf4c51b252500a2b36ac32cf2928f32b29292a490b55d28128294e2d89cfc94fcfcc53b25228292a4de5aa05040000ffff4755b3cd3c000000"
+    ],
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Mon, 29 Jul 2019 23:32:41 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "80",
+      "Connection",
+      "close",
+      "Content-Encoding",
+      "gzip",
+      "Plaid-Version",
+      "2017-03-08",
+      "Vary",
+      "Accept-Encoding",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options",
+      "DENY",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-XSS-Protection",
+      "1; mode=block"
+    ]
+  },
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/accounts/get",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "access_token": "access-sandbox-1b3e73ec-f185-49da-b59d-f666b6e057fd"
+    },
+    "status": 400,
+    "response": {
+      "display_message": null,
+      "error_code": "ITEM_LOGIN_REQUIRED",
+      "error_message": "the login details of this item have changed (credentials, MFA, or required user action) and a user login is required to update this information. use Link's update mode to restore the item to a good state",
+      "error_type": "ITEM_ERROR",
+      "request_id": "289rzUYhsCBrTZs",
+      "suggested_action": null
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Mon, 29 Jul 2019 23:32:41 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "387",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08"
+    ]
+  },
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/accounts/get",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "access_token": "access-sandbox-1b3e73ec-f185-49da-b59d-f666b6e057fd"
+    },
+    "status": 400,
+    "response": {
+      "display_message": null,
+      "error_code": "ITEM_LOGIN_REQUIRED",
+      "error_message": "the login details of this item have changed (credentials, MFA, or required user action) and a user login is required to update this information. use Link's update mode to restore the item to a good state",
+      "error_type": "ITEM_ERROR",
+      "request_id": "Z8kctDMO7WFIoHE",
+      "suggested_action": null
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Mon, 29 Jul 2019 23:32:42 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "387",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08"
+    ]
+  },
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/accounts/get",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "access_token": "access-sandbox-1b3e73ec-f185-49da-b59d-f666b6e057fd"
+    },
+    "status": 400,
+    "response": {
+      "display_message": null,
+      "error_code": "ITEM_LOGIN_REQUIRED",
+      "error_message": "the login details of this item have changed (credentials, MFA, or required user action) and a user login is required to update this information. use Link's update mode to restore the item to a good state",
+      "error_type": "ITEM_ERROR",
+      "request_id": "1HKTrrGcMeIV5U7",
+      "suggested_action": null
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Mon, 29 Jul 2019 23:32:42 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "387",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08"
+    ]
+  },
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/accounts/get",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "access_token": "access-sandbox-1b3e73ec-f185-49da-b59d-f666b6e057fd"
+    },
+    "status": 400,
+    "response": {
+      "display_message": null,
+      "error_code": "ITEM_LOGIN_REQUIRED",
+      "error_message": "the login details of this item have changed (credentials, MFA, or required user action) and a user login is required to update this information. use Link's update mode to restore the item to a good state",
+      "error_type": "ITEM_ERROR",
+      "request_id": "23GrUbQpHTZkjXF",
+      "suggested_action": null
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Mon, 29 Jul 2019 23:32:42 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "387",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08"
+    ]
+  },
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/accounts/get",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "access_token": "access-sandbox-1b3e73ec-f185-49da-b59d-f666b6e057fd"
+    },
+    "status": 400,
+    "response": {
+      "display_message": null,
+      "error_code": "ITEM_LOGIN_REQUIRED",
+      "error_message": "the login details of this item have changed (credentials, MFA, or required user action) and a user login is required to update this information. use Link's update mode to restore the item to a good state",
+      "error_type": "ITEM_ERROR",
+      "request_id": "vyeYLNLdNAZOfRo",
+      "suggested_action": null
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Mon, 29 Jul 2019 23:32:43 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "387",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08"
+    ]
+  }
+]

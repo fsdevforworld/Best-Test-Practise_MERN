@@ -1,0 +1,139 @@
+[
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/accounts/get",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "access_token": "access-sandbox-6ec54ddc-28a3-4d68-b4dd-14593d1bb770"
+    },
+    "status": 200,
+    "response": {
+      "accounts": [
+        {
+          "account_id": "1n64o3b71BCLjKXeJ5BNi8xqwX8jqxF5w98qx",
+          "balances": {
+            "available": 100,
+            "current": 110,
+            "limit": null
+          },
+          "mask": "0000",
+          "name": "Plaid Checking",
+          "official_name": "Plaid Gold Standard 0% Interest Checking",
+          "subtype": "checking",
+          "type": "depository"
+        },
+        {
+          "account_id": "L8p4dyLx5wuBp3MnmxP6TX1VxkX8V1CPJ6Xey",
+          "balances": {
+            "available": 200,
+            "current": 210,
+            "limit": null
+          },
+          "mask": "1111",
+          "name": "Plaid Saving",
+          "official_name": "Plaid Silver Standard 0.1% Interest Saving",
+          "subtype": "savings",
+          "type": "depository"
+        },
+        {
+          "account_id": "pGMPrp1k3msABn3VWoQmcj61nxjZ16fLxlZJ3",
+          "balances": {
+            "available": null,
+            "current": 1000,
+            "limit": null
+          },
+          "mask": "2222",
+          "name": "Plaid CD",
+          "official_name": "Plaid Bronze Standard 0.2% Interest CD",
+          "subtype": "cd",
+          "type": "depository"
+        },
+        {
+          "account_id": "oA1JKNMdBoUmAdBE6pV7FK5aybKda5SR3Qdp7",
+          "balances": {
+            "available": null,
+            "current": 410,
+            "limit": 2000
+          },
+          "mask": "3333",
+          "name": "Plaid Credit Card",
+          "official_name": "Plaid Diamond 12.5% APR Interest Credit Card",
+          "subtype": "credit card",
+          "type": "credit"
+        },
+        {
+          "account_id": "g1MPRZ4l56uADl4nPjp6cwPDBVwoDPUgXNxL1",
+          "balances": {
+            "available": 43200,
+            "current": 43200,
+            "limit": null
+          },
+          "mask": "4444",
+          "name": "Plaid Money Market",
+          "official_name": "Plaid Platinum Standard 1.85% Interest Money Market",
+          "subtype": "money market",
+          "type": "depository"
+        },
+        {
+          "account_id": "8zJDnVlykPi9yjGJ87m5CaAQydaJQASwy7bZ8",
+          "balances": {
+            "available": null,
+            "current": 320.75,
+            "limit": null
+          },
+          "mask": "5555",
+          "name": "Plaid IRA",
+          "official_name": null,
+          "subtype": "ira",
+          "type": "brokerage"
+        },
+        {
+          "account_id": "EZVwqEjl5WtAwdNxmBzMcXr6PyXB6rCXL8qg5",
+          "balances": {
+            "available": null,
+            "current": 22258.294,
+            "limit": null
+          },
+          "mask": "6666",
+          "name": "Plaid 401k",
+          "official_name": null,
+          "subtype": "401k",
+          "type": "brokerage"
+        }
+      ],
+      "item": {
+        "available_products": ["assets", "balance", "identity", "income"],
+        "billed_products": ["auth", "transactions"],
+        "error": null,
+        "institution_id": "ins_35",
+        "item_id": "eZMP9Qde5DtJ7xd5vN1DTPmewMDeVXFLdNrJn",
+        "webhook": "https://dave-dick.ngrok.io/v1/bank/plaid_webhook"
+      },
+      "request_id": "YaxmJBoAX4eagei"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Thu, 14 Mar 2019 05:05:03 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options",
+      "DENY",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-XSS-Protection",
+      "1; mode=block"
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/address-verification",
+    "body": {
+      "address_street": "301 PR-26",
+      "address_city": "SAN JUAN",
+      "address_subdivision": "PR",
+      "address_country_code": "PR",
+      "address_postal_code": "00918"
+    },
+    "status": 200,
+    "response": [
+      "1f8b08000000000000037ccfb16ac3400c06e0bd4f11343be0a450d2dbb276082125f321fb942090ef8c743638c1ef5edab4b593219bd0a75f48570824dc9362c5c27900373584a078608f116530367057685133a3f81e8503b8138a5101ad72833af8d83515a9e7f8941b36e378fe67a33ac5f03df0189ce43e3316109336287ca1e0310425fb39efb7f4f5edadcfed6ef171dceea098247531ebe0eb14081cec0f336b9365943f2acbf7d566a69695288383d772b5d81f96ebb7397655e09e8d53bc6d1dc7972f000000ffff0300ae86189968010000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Sun, 31 May 2020 18:39:15 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=dc6c74ac9c57bece4665c011cf1f9804f1590950355; expires=Tue, 30-Jun-20 18:39:15 GMT; path=/; domain=.synapsefi.com; HttpOnly; SameSite=Lax; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "cf-request-id",
+      "030da0f9b6000098a5620cf200000001",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "59c2d10928de98a5-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  }
+]

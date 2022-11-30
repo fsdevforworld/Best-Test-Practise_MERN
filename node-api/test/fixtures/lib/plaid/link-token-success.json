@@ -1,0 +1,50 @@
+[
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/link/token/create",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "user": {
+        "client_user_id": "123",
+        "legal_name": "jeffrey jeff",
+        "phone_number": "+14155550123",
+        "phone_number_verified_time": "2020-01-01T00:00:00.000Z"
+      },
+      "client_name": "Dave",
+      "products": ["transactions"],
+      "country_codes": ["US"],
+      "language": "en",
+      "webhook": "https://staging.trydave.com/v1/bank/plaid_webhook"
+    },
+    "status": 200,
+    "response": {
+      "expiration": "2021-03-12T23:11:49Z",
+      "link_token": "link-sandbox-74782613-7657-4cc4-9f32-d3999523fd68",
+      "request_id": "G9CLTPCcVRyhtWq"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Fri, 12 Mar 2021 19:11:49 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "146",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2019-05-29",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options",
+      "DENY",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-XSS-Protection",
+      "1; mode=block"
+    ]
+  }
+]

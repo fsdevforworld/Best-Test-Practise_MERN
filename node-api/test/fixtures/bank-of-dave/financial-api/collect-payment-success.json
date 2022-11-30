@@ -1,0 +1,98 @@
+[
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "POST",
+    "path": "/financial/api/1.0/users/2a82e635-d1dd-46c1-bc82-56f722a6e698/accounts/0b39346b-9b00-4aee-a11e-0428fd13df81/payments",
+    "body": {
+      "amount": 100,
+      "paymentReferenceId": "collect-payment-success-20190412-0",
+      "paymentReferenceType": "PAYMENT",
+      "transactionReferenceId": "collect-payment-success-20190412-0",
+      "metadata": {
+        "b": "m",
+        "r": "a",
+        "u": "r",
+        "n": "s",
+        "o": "!"
+      }
+    },
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "payment",
+      "data": {
+        "uuid": "89ca9835-c1c0-46c2-b241-a0d71ebece94",
+        "paymentReferenceId": "collect-payment-success-20190412-0",
+        "paymentReferenceType": "PAYMENT",
+        "initialAmount": 100,
+        "metadata": {
+          "b": "m",
+          "n": "s",
+          "o": "!",
+          "r": "a",
+          "u": "r"
+        },
+        "created": "2019-04-12T20:30:22.000Z",
+        "updated": "2019-04-12T20:30:22.000Z",
+        "paymentTransactions": [
+          {
+            "uuid": "e33c119c-1cd5-4567-b2ea-5d87e328ce2b",
+            "transactionReferenceId": "collect-payment-success-20190412-0",
+            "transactionType": "COLLECTION",
+            "failed": false,
+            "error": null,
+            "created": "2019-04-12T20:30:22.000Z",
+            "updated": "2019-04-12T20:30:26.000Z",
+            "transaction": {
+              "uuid": "e909719e-0889-4c4f-ac0d-4b97e8d72353",
+              "debit": true,
+              "amount": 100,
+              "amountBreakdown": {
+                "amount": 100,
+                "fees": {
+                  "surcharge": 0,
+                  "totalFeeAmount": 0,
+                  "feeDetails": [
+                    {
+                      "feeType": "Facilitator Fee",
+                      "feeAmount": 0
+                    }
+                  ]
+                }
+              },
+              "pending": true,
+              "type": "DAVE",
+              "source": {
+                "name": "Dave",
+                "legalNames": ["Dave"]
+              },
+              "created": "2019-04-12T20:30:24.000Z",
+              "updated": "2019-04-12T20:30:24.000Z",
+              "returned": false,
+              "cancelled": false,
+              "returnedMessage": null
+            }
+          }
+        ]
+      },
+      "message": "success",
+      "name": "ApiResponse"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "82026116-13a1-487c-a1e1-99710f46d0cd",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Fri, 12 Apr 2019 20:30:26 GMT",
+      "Content-Length",
+      "1060",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

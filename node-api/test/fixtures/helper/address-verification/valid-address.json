@@ -1,0 +1,48 @@
+[
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/address-verification",
+    "body": {
+      "address_street": "1265 S Cochran Ave",
+      "address_city": "Los Angeles",
+      "address_subdivision": "CA",
+      "address_country_code": "US",
+      "address_postal_code": "90019"
+    },
+    "status": 200,
+    "response": [
+      "1f8b080000000000000364ccb10a83301804e03d4ff193b983165ad02d88b4832854da3544f30f816824898215dfbda48894bade7d770b01a012b59ad08a4669e5679a021ddde0f81e6ba4a7e07a633ba1d51b2517525a748ea6b0100000ba05bcdd1e8aaa0656def222afbfe35f62c6dedb99b74662a0cf83188cf342ef2089a238f937ce5b441feaf87cbd400d5995dd1fac04f6ca0f766ca49a9453a60f838c5102b092f5030000ffff0300c2c2241afe000000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Fri, 04 Oct 2019 22:33:39 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d075ca3c7c3dafe694e9cac5aef33df551570228419; expires=Sat, 03-Oct-20 22:33:39 GMT; path=/; domain=.synapsefi.com; HttpOnly; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "520a9e631c73e81d-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "POST",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/transactions",
+    "body": {
+      "referenceID": "test-wp-1",
+      "type": "pull",
+      "accounts": {
+        "sourceAccount": {
+          "card": {
+            "token": "0O6tG8YY9fL33Pi2ZfQobs7aMzx8ghEbuqCNfuiXMdhOwedKbTxfX-tvrxcRHIHYrHSLK6ZVpEsROSSsPGbN2HrCA0fYrje-ziOUMrv7dRpv0wyVX00Qr1tFMa4uxkGz6QZvXrZIWSLZ-Selqaiz8RIYLjvV5EINEMSmMNXk4uIYNcO1Jb_6hSWetgDD4tRCs5i9_tD6u1pz0-jpLuy11tNoe2nF0aLdM7yFN0PJG3AYprIJCl9UD1ZPSk4NT6RjxLfGz8lrqxLxVpXpv1TrNmtan1OKssyIIykEsUQAJRFaUqXnxboa276uFSAnQwUcJpXJM7Ta9hZ6N5BHxf1cAaQ"
+          },
+          "owner": {
+            "name": {
+              "first": "Jim",
+              "last": "Bob"
+            }
+          }
+        },
+        "destinationAccountID": "BQsCNSGV0IY6SjArjuOS9Q"
+      },
+      "amount": "0.11",
+      "pullOptions": {
+        "quasiCash": true,
+        "recurring": false
+      }
+    },
+    "status": 200,
+    "response": {
+      "SC": 200,
+      "EC": "0",
+      "transactionID": "THwXBTXVgEkn2jaOZSO-VQ",
+      "network": "STAR",
+      "networkRC": "00",
+      "status": "COMPLETED",
+      "approvalCode": "178346"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Thu, 12 Dec 2019 03:15:09 GMT",
+      "Content-Length",
+      "139",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  }
+]

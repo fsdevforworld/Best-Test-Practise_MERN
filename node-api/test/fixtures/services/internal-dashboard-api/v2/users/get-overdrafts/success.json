@@ -1,0 +1,65 @@
+[
+  {
+    "scope": "https://overdraft-staging-internal.trydave.com:443",
+    "method": "GET",
+    "path": "/internal/v1/accounts?userId=3898852",
+    "body": "",
+    "status": 200,
+    "response": {
+      "account": {
+        "id": "b330ad30f92511eb8a7e0da8effcdea0",
+        "balance": -200,
+        "extraCashAccountId": "b2392dd0f92511ebae8b81110d35839b",
+        "status": "ACTIVE"
+      },
+      "overdrafts": [
+        {
+          "id": "8bcca450f92611ebb7c5eddc7026a6d9",
+          "accountId": "b330ad30f92511eb8a7e0da8effcdea0",
+          "approvalId": 135822,
+          "approvedAmount": 200,
+          "created": "2021-08-09T15:29:11.000Z",
+          "disbursements": [
+            {
+              "id": "8bd3a930f92611ebb7c5eddc7026a6d9",
+              "amount": 200,
+              "disbursementMethodType": "DAVE",
+              "disbursementMethodLoomisId": "DAVE:a998c640f92511ebae8b81110d35839b",
+              "overdraftId": "8bcca450f92611ebb7c5eddc7026a6d9",
+              "status": "COMPLETE"
+            }
+          ],
+          "screenshotUrl": null,
+          "settlementDate": "2021-08-16",
+          "settlements": [
+            {
+              "id": "008cfd20f92811eb83ba0144d4f97f39",
+              "amount": 200,
+              "created": "2021-08-09T15:39:36.000Z",
+              "overdraftId": "8bcca450f92611ebb7c5eddc7026a6d9",
+              "settlementMethodLoomisId": "DAVE:a998c640f92511ebae8b81110d35839b",
+              "status": "FAILED"
+            }
+          ],
+          "status": "OPEN"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Date",
+      "Thu, 12 Aug 2021 00:46:15 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "876",
+      "Connection",
+      "close",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"36c-phmlWlGUZNdpbkcEqRKZURmeOws\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  }
+]

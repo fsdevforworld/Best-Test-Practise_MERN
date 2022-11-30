@@ -1,0 +1,46 @@
+version: '3'
+services:
+  node-api:
+    image: dave-api-v2
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    ports:
+      - '8080'
+    environment:
+      NODE_ENV: dev
+      PUBSUB_EMULATOR_HOST: pubsub-emulator:8681
+      PHONE_NUMBER_SEED: ${PHONE_NUMBER_SEED}
+    command: >
+      bash -c "
+      ./bin/wait-for-it.sh -t 30 mysql:3306 &&
+      ./node_modules/.bin/nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+    depends_on:
+      - redis
+      - mysql
+    volumes:
+      - ./src:/opt/app/src
+      - ./test:/opt/app/test
+      - ./migrations:/opt/app/migrations
+      - ./config:/opt/app/config
+      - ./bin:/opt/app/bin
+      - ./package.json:/opt/app/package.json
+      - ./package-lock.json:/opt/app/package-lock.json
+  redis:
+    image: 'redis:alpine'
+    logging:
+      driver: none
+  mysql:
+    image: 'mysql:5.7'
+    command: "--character-set-server='utf8mb4' --collation-server='utf8mb4_unicode_ci'"
+    ports:
+      - '3306'
+    logging:
+      driver: none
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: password123
+      MYSQL_DATABASE: dave_dev
+    volumes:
+      - ./migrations/seeds:/docker-entrypoint-initdb.d

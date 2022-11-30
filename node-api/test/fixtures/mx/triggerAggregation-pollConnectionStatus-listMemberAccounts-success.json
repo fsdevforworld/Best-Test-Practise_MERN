@@ -1,0 +1,170 @@
+[
+  {
+    "scope": "https://vestibule.mx.com",
+    "method": "POST",
+    "path": "/users/USR-fake-user-guid/members/MBR-fake-member-guid/aggregate",
+    "status": 200,
+    "response": {
+      "member": {
+        "aggregated_at": "2016-10-13T18:07:57+00:00",
+        "connection_status": "CONNECTED",
+        "guid": "MBR-fake-member-guid",
+        "identifier": "unique_id",
+        "institution_code": "chase",
+        "is_being_aggregated": true,
+        "metadata": "{\"credentials_last_refreshed_at\": \"2015-10-15\"}",
+        "name": "Chase Bank",
+        "status": "INITIATED",
+        "successfully_aggregated_at": "2016-10-13T17:57:38+00:00",
+        "user_guid": "USR-fake-user-guid"
+      }
+    },
+    "rawHeaders": ["mx-api-key", "test-mx-api-key", "mx-client-id", "test-mx-client-id"]
+  },
+  {
+    "scope": "https://vestibule.mx.com",
+    "method": "GET",
+    "path": "/users/USR-fake-user-guid/members/MBR-fake-member-guid/status",
+    "status": 200,
+    "response": {
+      "member": {
+        "aggregated_at": "2016-10-13T18:07:57+00:00",
+        "connection_status": "CONNECTED",
+        "guid": "MBR-fake-member-guid",
+        "is_being_aggregated": true,
+        "metadata": "{\"credentials_last_refreshed_at\": \"2015-10-15\"}",
+        "status": "INITIATED",
+        "successfully_aggregated_at": "2016-10-13T17:57:38+00:00",
+        "user_guid": "USR-fake-user-guid",
+        "has_processed_accounts": false,
+        "has_processed_transactions": false
+      }
+    },
+    "rawHeaders": ["mx-api-key", "test-mx-api-key", "mx-client-id", "test-mx-client-id"]
+  },
+  {
+    "scope": "https://vestibule.mx.com",
+    "method": "GET",
+    "path": "/users/USR-fake-user-guid/members/MBR-fake-member-guid/status",
+    "status": 200,
+    "response": {
+      "member": {
+        "aggregated_at": "2016-10-13T18:07:57+00:00",
+        "connection_status": "CONNECTED",
+        "guid": "MBR-fake-member-guid",
+        "is_being_aggregated": false,
+        "metadata": "{\"credentials_last_refreshed_at\": \"2015-10-15\"}",
+        "status": "COMPLETED",
+        "successfully_aggregated_at": "2016-10-13T17:57:38+00:00",
+        "user_guid": "USR-fake-user-guid",
+        "has_processed_accounts": true,
+        "has_processed_transactions": false
+      }
+    },
+    "rawHeaders": ["mx-api-key", "test-mx-api-key", "mx-client-id", "test-mx-client-id"]
+  },
+  {
+    "scope": "https://vestibule.mx.com",
+    "method": "GET",
+    "path": "/users/USR-fake-user-guid/members/MBR-fake-member-guid/accounts",
+    "status": 200,
+    "response": {
+      "accounts": [
+        {
+          "apr": 1.0,
+          "apy": 1.0,
+          "available_balance": 956.0,
+          "available_credit": 100,
+          "balance": 955.0,
+          "created_at": "2016-10-13T17:57:37+00:00",
+          "credit_limit": 100,
+          "currency_code": "USD",
+          "day_payment_is_due": 20,
+          "guid": "ACT-06d7f44b-caae-0f6e-1383-01f52e75dcb1",
+          "institution_code": "chase",
+          "interest_rate": null,
+          "is_closed": false,
+          "last_payment": null,
+          "last_payment_at": null,
+          "matures_on": null,
+          "member_guid": "MBR-fake-member-list-member-accounts-success",
+          "minimum_balance": null,
+          "minimum_payment": null,
+          "name": "Test Checking Account 1",
+          "original_balance": null,
+          "payment_due_at": null,
+          "payoff_balance": null,
+          "started_on": null,
+          "subtype": null,
+          "total_account_value": null,
+          "type": "CHECKING",
+          "updated_at": "2016-10-13T18:08:00+00:00",
+          "user_guid": "USR-fake-user-list-member-accounts-success"
+        },
+        {
+          "apr": 1.0,
+          "apy": 1.0,
+          "available_balance": 1578.0,
+          "available_credit": 100,
+          "balance": 1577.0,
+          "created_at": "2016-10-13T17:57:37+00:00",
+          "credit_limit": 100,
+          "currency_code": "USD",
+          "day_payment_is_due": 20,
+          "guid": "ACT-04323j-caae-0f3fe-1384-01f234e75dcb1",
+          "institution_code": "chase",
+          "interest_rate": null,
+          "is_closed": false,
+          "last_payment": null,
+          "last_payment_at": null,
+          "matures_on": null,
+          "member_guid": "MBR-fake-member-list-member-accounts-success",
+          "minimum_balance": null,
+          "minimum_payment": null,
+          "name": "Test Checking Account 2",
+          "original_balance": null,
+          "payment_due_at": null,
+          "payoff_balance": null,
+          "started_on": null,
+          "subtype": null,
+          "total_account_value": null,
+          "type": "CHECKING",
+          "updated_at": "2016-10-13T18:08:00+00:00",
+          "user_guid": "USR-fake-user-list-member-accounts-success"
+        },
+        {
+          "apr": 1.0,
+          "apy": 1.0,
+          "available_balance": 3000.0,
+          "available_credit": 100,
+          "balance": 3000.0,
+          "created_at": "2016-10-13T17:57:37+00:00",
+          "credit_limit": 100,
+          "currency_code": "USD",
+          "day_payment_is_due": 20,
+          "guid": "ACT-04fds3j-caae-0f3fe-1384-01f2dsf75sd1",
+          "institution_code": "chase",
+          "interest_rate": null,
+          "is_closed": false,
+          "last_payment": null,
+          "last_payment_at": null,
+          "matures_on": null,
+          "member_guid": "MBR-fake-member-list-member-accounts-success",
+          "minimum_balance": null,
+          "minimum_payment": null,
+          "name": "Test Savings Account 2",
+          "original_balance": null,
+          "payment_due_at": null,
+          "payoff_balance": null,
+          "started_on": null,
+          "subtype": null,
+          "total_account_value": null,
+          "type": "SAVINGS",
+          "updated_at": "2016-10-13T18:08:00+00:00",
+          "user_guid": "USR-fake-user-list-member-accounts-success"
+        }
+      ]
+    },
+    "rawHeaders": ["mx-api-key", "test-mx-api-key", "mx-client-id", "test-mx-client-id"]
+  }
+]

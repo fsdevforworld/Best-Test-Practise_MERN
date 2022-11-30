@@ -1,0 +1,66 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "POST",
+    "path": "/v1/clients/secret:tabapay-clientId/cards",
+    "body": {
+      "owner": {
+        "name": {
+          "first": "Taurean",
+          "last": "Nader"
+        },
+        "address": {
+          "line1": "123 Main St",
+          "line2": "Apt 456",
+          "city": "Livengood",
+          "state": "AK",
+          "zipcode": "00000"
+        },
+        "phone": {
+          "number": "4398241071",
+          "countryCode": "1"
+        }
+      },
+      "card": {
+        "data": "Kn6QSothcob43P1Ahw6l64pVY_dh-4LAfsTeKGObps0AdLH_GVR0n1m27f11AshkVSFb5JJYsYtMTC3Z0Y6AFH8cbx0B3N3XfO4EiJDLYiuLAxq7XJfpUnf2zYxGRn4Rot-GmBsrPpKwnOYlm3e2w7mdW6HcGTCEPFHnuEK1ulJOobOmk_i4Vr6Y3i7xuhFFzbowztiYzSA8U9W0lXLj0smYpwcxzeNMkrFWLqTF2MfSwmtBdFRGZp_CiKxh4-7CA9dMdcIbwACqMtukwhR-cv_RYuH-G8fE3YlBxk2rmavYDdJfe9S3CqIKvZTnKgqW8njj_NRKBbZsKn-aFJFQgA",
+        "keyID": "yFAmO2KCCCihxVC3IAw_xg"
+      }
+    },
+    "status": 200,
+    "response": {
+      "SC": 200,
+      "EC": "0",
+      "card": {
+        "pull": {
+          "enabled": true,
+          "network": "NYCE",
+          "type": "Credit",
+          "regulated": false,
+          "currency": "840",
+          "country": "840"
+        },
+        "push": {
+          "enabled": true,
+          "network": "NYCE",
+          "type": "Credit",
+          "availability": "Immediate",
+          "regulated": false,
+          "currency": "840",
+          "country": "840"
+        }
+      }
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Tue, 19 Nov 2019 00:29:54 GMT",
+      "Content-Length",
+      "271",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  }
+]

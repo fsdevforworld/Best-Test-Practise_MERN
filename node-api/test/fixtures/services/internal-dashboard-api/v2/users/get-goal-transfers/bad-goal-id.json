@@ -1,0 +1,29 @@
+[
+  {
+    "scope": "https://bank-goals-api-staging-internal.trydave.com:443",
+    "method": "GET",
+    "path": "/internal/v1/goals/no-goal/transfers",
+    "body": "",
+    "status": 404,
+    "response": {
+      "customCode": "NOT_FOUND",
+      "message": "Goal not found"
+    },
+    "rawHeaders": [
+      "Date",
+      "Fri, 30 Apr 2021 22:56:39 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "53",
+      "Connection",
+      "close",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"35-RdzFaHGxhGw8rQ4c/cC2A0pKIsY\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  }
+]

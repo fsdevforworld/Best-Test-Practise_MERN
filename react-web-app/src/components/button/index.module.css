@@ -1,0 +1,21 @@
+.button {
+  border-color: var(--transparent);
+  border-radius: 6px;
+  color: var(--white);
+  font-family: 'Larsseit', serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 56px;
+  width: 100%;
+  background-color: var(--green3);
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--green4);
+}
+
+.button:disabled {
+  background-color: var(--gray3);
+  cursor: default;
+}

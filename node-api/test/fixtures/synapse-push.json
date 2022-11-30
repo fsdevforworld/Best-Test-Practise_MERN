@@ -1,0 +1,119 @@
+[
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "GET",
+    "path": "/v3.1/users/56310bc186c27373fbe8cab7",
+    "body": "",
+    "status": 200,
+    "response": [
+      "1f8b0800000000000003ac54c18eda3010bdf31596cf0b242590c069d9262b516d519765b7adaaca32ce841812dbb51d5abae5dfab982c70680e95388e3df3de9b9967bf7610c284a77882f07034f0bd15f3a3117b170ec241b68288d155886f5c52c1c5d6e0097aed208410365064a708219c6ba8639c5babcca4dfafa8ed52c57b662fa83290f11e93657f37e8f9fdca8036fd563a8778e8207470c4ace020ec99b8111b8d294bc7c0560396069e97d170489937726211c2829650e73d1de9ef67f804984a468ca5b6bae846e57bc3192d482a992b7bbefb385b2e93f8cfcbf46116bfa1eeb8b6557bd625455582b035c3b7efee084aca8bcbf897d5f42c8071452c5de309f21bae945a201bc905d40dfb4130f28641148cc751d86438086280559adb3d9ea08c16069a4b6ec8aa325c80a949adaede2e0a6a2ca9540def8087c13888c2c00fc3d1b0493195528d29ce3d7143729ea6202e8970016b5a907adaaeb7637d4c7750171e3b2de49a8bf3edc9316e223547cad9f6d6ea7d4a7750bba499762d8449e5d6b848a63199ce63f279315b268d456e5af014d5d45c1350efa9101b990b23c5edb540d720f51aae06672cece07aeadc4efe17ecb47205bae4c67029dc3349e671773a8fbb8be47d327b498e1f8acaa50022aa7205fac23bffeea3cd23adbb6e196fcb2acfc27369e5c52bd590693039b172eb8c7f3a08bf7e3173f8f16143a3b55766778b7b3de5bfc570f7bc7ffaf498fe7c50416197be873b87bf000000ffff0300b97483c564050000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Wed, 13 Feb 2019 01:57:28 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=dc701b629dc56674fea533ef368e32bae1550023047; expires=Thu, 13-Feb-20 01:57:27 GMT; path=/; domain=.synapsefi.com; HttpOnly; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "4a83af30882798ad-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  },
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/oauth/56310bc186c27373fbe8cab7",
+    "body": {
+      "refresh_token": "refresh_7YXsNeqJja8g0mfBRFrAizn5vUySPQdwLp4ltT10"
+    },
+    "status": 200,
+    "response": [
+      "1f8b08000000000000036c925d6f82301486eff9150dd7cb52be7177289dce0f50a8cbdcb29052ea642a384083cefdf7051889d55d9ee7bce7396973be050044ba8959520471243e0051333ba443896eea5436145d9564ca8c70d911ef2ea209d9b22a6c9303033e49a2302dc168d103f23d6c82acdcc519cb0352543949d32054a0ac9a7c374eaaae21c3bfa994ec8b55b066c70a3705f49e8c2fdc9fc5c3f43527cc45e5fe397b3c2d3e55ba1daf8f70a45851624fb44690b165c6f255c02d9020d72bd235abf7b640eb4efce2e3ab6f27d65851cb971981a3ecb41838e8308d8ca1340fb1bce9796eb322a7e9ae7afc9b000000e2dc47de796ae1dea06eb7a48f705b3bae8dfcf3d4f5afc855e4a6e6a435b1d11861d422ec590eef6dc885a7023735e7ad09eff5e75d0761dedcb20b5783fe219cdfc7164613e45ccdb6b4860200eff5d7ee7396b567a82b120ca9d49ca1a12c436652121aa2f0f30b0000ffff0300a0b5bb83b4020000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Wed, 13 Feb 2019 01:57:28 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d23d86d99683397aff948fdd3af52a2341550023048; expires=Thu, 13-Feb-20 01:57:28 GMT; path=/; domain=.synapsefi.com; HttpOnly; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "4a83af32d86098a7-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  },
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "GET",
+    "path": "/v3.1/users/56310bc186c27373fbe8cab7/nodes/5c37918951112300617059f9/trans/5c5247c0fe8c6b0069375ae7",
+    "body": "",
+    "status": 200,
+    "response": [
+      "1f8b08000000000000039455cb6edb3010bce72b089e1399d45bbeb5b653042d9220720f4511182b6a150b914581a4820445febdd05b716234bd59de2567766746fa734608dde5295d12ea09cf7603c1320c859f30e6474ee00106f4bc6d2af2f251d325f9734608215463918d4f84d0bdc2e699ee8da9f472b1a8c15c40955bfaa5844a63965b421e164f8ec517b546a5179eef7096081efac20e9cc0c9120c0524c1a29429ea85279c20e261e471ce6d87319f07cc8bb2686114944df904d996cfeb1921af1ded27ba2476fb130eb22ecd34c1f8ec5becbcfb4bd44a61295e9a417ec66b3a5e238a1ce767fb8d85114402fc6e04dfe5b6c020c922da5f57c2019bbe353c2189a14c13f94cbeff5a11db62d3ddf86c14cc68698d0d525917c5404b21184c77b2a44bc23d370c239f47b6eb7a7dc3839275d5c9383b96570d388f6c8bfba1c52c3ef02ac014ed5d949db391ac342dd94ba9885429aabc7c2002544a32a948230af18493720759ca3c9e31c67c3760680719d17552a219ea9ee7a013398cd961182429040384347b5473d3803120f6072c4de3acdff7e74321cd75551bdc65521dde0c35d59a61332834768af710959202b53ebd2a0d07dca5f0329c1efe46630a6c98ec522cdaf2600a5d57fd6ee9245a86d8526e5bc679326c56c8063fcdb61a7731209720f2223760a4229788746c3472b698c9615ee264a1e81d6627ae70314a339ff68dafa3ddef3b5a4a1edeb9f4449246e173f1383a35d749ad74bb0872dd68bec64aeadc909ff1d06f5eaaae77737b135f6d2fa64a13ecb9bcc38be544d2a7e10b7c8062d7909896da169ae40cb3de1f455ba168e4d2064c3d7b31a5d06e7cd4dee5ae7d64f181ef7894c69bedf6c766fdb6d0d37727d54d7ec0222ff1bdf2c7a893e366b8dbe6d505c2e4b224ab2ed3d6b48489cdea6ef3653bb239e6c3e9dcf1271938117fcfe023b4dbbb9bd5268eafaebf5dac375fafb62760edcfc1",
+      "ba2c74fe177675b7599fc4753e893bcafc0fdcb7527f28f63c51b35cfe2b931fe50933a80b434088f6637314a1f8d7f597db78f3890879116428ecfe4b130986ae9df2f413118aa17c0434e416cc1e1e3f08d3d9eb5f000000ffff0300f257be0606080000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Wed, 13 Feb 2019 01:57:28 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d94adcc333793c30e525a6a1d453f92df1550023048; expires=Thu, 13-Feb-20 01:57:28 GMT; path=/; domain=.synapsefi.com; HttpOnly; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "4a83af3479f899cd-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  }
+]

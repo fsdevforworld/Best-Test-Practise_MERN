@@ -1,0 +1,19 @@
+.bodyText {
+  margin: 0 auto;
+  max-width: 328px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+.buttonContainer {
+  margin: 0 auto 16px;
+  max-width: 340px;
+}
+
+.buttonContainer > * {
+  margin-bottom: 16px;
+}
+
+.helpLinkSpacing {
+  margin-top: 8px;
+}

@@ -1,0 +1,11 @@
+version: '3'
+services:
+  node-api:
+    ports:
+      - '8080:8080'
+  mysql:
+    ports:
+      - '53306:3306'
+  redis:
+    ports:
+      - '56379:6379'

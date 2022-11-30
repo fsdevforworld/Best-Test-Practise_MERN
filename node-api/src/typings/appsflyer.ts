@@ -1,0 +1,95 @@
+export type AppsflyerProperties = {
+  appsflyerDeviceId?: string;
+  ip?: string;
+  platform?: Platforms;
+  deviceId?: string;
+  userId: number;
+};
+
+export enum Platforms {
+  iOS = 'ios',
+  Android = 'android',
+}
+
+export type RawReportRecord = {
+  'AppsFlyer ID': string;
+  'Attributed Touch Type'?: string;
+  'Attributed Touch Time'?: string;
+  'Install Time'?: string;
+  'Event Time'?: string;
+  'Event Name'?: string;
+  'Event Value'?: string;
+  'Event Revenue'?: string;
+  'Event Revenue Currency'?: string;
+  'Event Revenue USD'?: string;
+  'Event Source'?: string;
+  'Is Receipt Validated'?: string;
+  Partner?: string;
+  'Media Source'?: string;
+  Channel?: string;
+  Keywords?: string;
+  Campaign?: string;
+  'Campaign ID'?: string;
+  Adset?: string;
+  'Adset ID'?: string;
+  Ad?: string;
+  'Ad ID'?: string;
+  'Ad Type'?: string;
+  'Site ID'?: string;
+  'Sub Site ID'?: string;
+  'Sub Param 1'?: string;
+  'Sub Param 2'?: string;
+  'Sub Param 3'?: string;
+  'Sub Param 4'?: string;
+  'Sub Param 5'?: string;
+  'Cost Model'?: string;
+  'Cost Value'?: string;
+  'Cost Currency'?: string;
+  'Contributor 1 Partner'?: string;
+  'Contributor 1 Media Source'?: string;
+  'Contributor 1 Campaign'?: string;
+  'Contributor 1 Touch Type'?: string;
+  'Contributor 1 Touch Time'?: string;
+  'Contributor 2 Partner'?: string;
+  'Contributor 2 Media Source'?: string;
+  'Contributor 2 Campaign'?: string;
+  'Contributor 2 Touch Type'?: string;
+  'Contributor 2 Touch Time'?: string;
+  'Contributor 3 Partner'?: string;
+  'Contributor 3 Media Source'?: string;
+  'Contributor 3 Campaign'?: string;
+  'Contributor 3 Touch Type'?: string;
+  'Contributor 3 Touch Time'?: string;
+  Region?: string;
+  'Country Code'?: string;
+  State?: string;
+  City?: string;
+  'Postal Code'?: string;
+  DMA?: string;
+  IP?: string;
+  WIFI?: string;
+  Operator?: string;
+  Carrier?: string;
+  Language?: string;
+  'Advertising ID'?: string;
+  'Android ID'?: string;
+  'Customer User ID'?: string;
+  IMEI?: string;
+  IDFV?: string;
+  Platform?: string;
+  'Device Type'?: string;
+  'OS Version'?: string;
+  'App Version'?: string;
+  'SDK Version'?: string;
+  'App ID'?: string;
+  'App Name'?: string;
+  'Bundle ID'?: string;
+  'Is Retargeting'?: string;
+  'Retargeting Conversion Type'?: string;
+  'Attribution Lookback'?: string;
+  'Reengagement Window'?: string;
+  'Is Primary Attribution'?: string;
+  'User Agent'?: string;
+  'HTTP Referrer'?: string;
+  'Original URL'?: string;
+};

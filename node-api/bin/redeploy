@@ -1,0 +1,212 @@
+#!/bin/bash
+
+# Redeploy the current project
+# Steps:
+#   1) check if repo is dirty. if so, bail
+#   2) git fetch, check for changes
+#   3) git tag w/ --tag keyword arg, default to patch bump from latest tag (might be too much)
+#   4) git push --tags
+#   4) docker build
+#   5) docker push
+#   6) trigger rolling restart of plaid-updater and api-dave-v2
+# Keyword args:
+#   --tag
+#       - specify the tag to create, default to latest tag plus patch bump
+#   --hotfix
+#       - allow dirty repo, skip tagging and pushing to github
+#   --interactive
+#       - allow user to perform/skip/quit each step
+
+# ATTENTION: If pushing the new docker image to the registry fails, run
+# `gcloud docker --authorize-only` to connect your gcloud credentials to
+# your docker commands temporarily.
+
+# Exit on error
+set -e
+
+TAG=$1
+ENV=$2
+ARG=$3
+
+if [[  -z "$TAG" ]] ; then
+    TAG="latest"
+fi
+
+if [[  -z "$ENV" ]] ; then
+    ENV="production"
+fi
+
+if [[ "$ENV" != "production" && "$ENV" != "staging" ]] ; then
+    echo "The environment must be either \"production\" or \"staging\"."
+    exit 0
+fi
+
+INTERACTIVE=false
+SKIP_GIT_TAG=false
+
+if [[ "$ARG" = "--interactive" ]] ; then
+    INTERACTIVE=true
+elif [[ "$ARG" = "--skip-git-tag" ]] ; then
+    SKIP_GIT_TAG=true
+fi
+
+if git diff-index --quiet HEAD --; then
+    # do nothing
+    echo ""
+else
+    echo "Local repository has uncommitted changes"
+    #exit 0
+fi
+
+if [[ "$ENV" = "production" && $(git rev-parse --abbrev-ref HEAD) != "master" ]] ; then
+    read -p "You are not on master would you still like to continue? [y/n]" -n 1 -r
+    echo
+    if [[ ! $REPLY =~ ^[Yy]$ ]]
+    then
+        exit 0
+    fi
+fi
+
+if [[ "$ENV" = "production" ]] ; then
+    echo "Pulling newest version"
+    git pull
+fi
+
+VERSION=`git describe --abbrev=0 --tags`
+VERSION_BITS=(${VERSION//./ })
+
+#get number parts and increase last one by 1
+VNUM1=${VERSION_BITS[0]}
+VNUM2=${VERSION_BITS[1]}
+VNUM3=${VERSION_BITS[2]}
+VNUM3=$((VNUM3+1))
+
+#create new tag
+NEW_TAG="$VNUM1.$VNUM2.$VNUM3"
+
+bumpPackageVersion () {
+    yarn config set version-git-message "%s"
+    yarn config set version-tag-prefix ""
+    yarn version --new-version ${NEW_TAG} --force
+    git push
+    git push --tags
+}
+
+getVersion () {
+    read -p "Enter new version: " -r
+    echo
+    NEW_TAG=$REPLY
+    read -p "Use version $NEW_TAG? [y/N]" -n 1 -r
+    echo
+    if [[ $REPLY =~ ^[Yy]$ ]] ; then
+        bumpPackageVersion
+    else
+        getVersion
+    fi
+}
+
+PUSH_TAGGED_IMAGE=false
+tagRelease () {
+    PUSH_TAGGED_IMAGE=true
+    if [[ "$INTERACTIVE" = true ]] ; then
+        read -p "Use next patch version ($NEW_TAG)? [Y/n]" -n 1 -r
+        echo    # (optional) move to a new line
+        if [[ $REPLY =~ ^[Nn]$ ]] ; then
+            getVersion
+        else
+            bumpPackageVersion
+        fi
+    else
+        bumpPackageVersion
+    fi
+
+}
+if [[ "$INTERACTIVE" = true ]] ; then
+    read -p "Add new git version tag? [Y/n]" -n 1 -r
+    echo    # (optional) move to a new line
+    if [[ ! $REPLY =~ ^[Nn]$ ]] ; then
+        tagRelease
+    fi
+elif [[ "$SKIP_GIT_TAG" = false ]] ; then
+    tagRelease
+fi
+
+dockerBuild () {
+    if [[ "$PUSH_TAGGED_IMAGE" = true ]] ; then
+        docker build -f infra/api/Dockerfile -t us.gcr.io/dave-173321/api-dave-v2:${NEW_TAG} .
+    fi
+    docker build -f infra/api/Dockerfile -t us.gcr.io/dave-173321/api-dave-v2:${TAG} .
+}
+
+if [[ "$INTERACTIVE" = true ]] ; then
+    read -p "Build new docker image? [Y/n]" -n 1 -r
+    echo    # (optional) move to a new line
+    if [[ ! $REPLY =~ ^[Nn]$ ]] ; then
+        dockerBuild
+    fi
+else
+    dockerBuild
+fi
+
+pushDocker () {
+    if [[ "$PUSH_TAGGED_IMAGE" = true ]] ; then
+        docker push us.gcr.io/dave-173321/api-dave-v2:${NEW_TAG}
+    fi
+    docker push us.gcr.io/dave-173321/api-dave-v2:${TAG}
+}
+
+if [[ "$INTERACTIVE" = true ]] ; then
+    read -p "Push docker image to google container registry? [Y/n]" -n 1 -r
+    echo    # (optional) move to a new line
+    if [[ ! $REPLY =~ ^[Nn]$ ]] ; then
+        pushDocker
+    fi
+else
+    pushDocker
+fi
+
+restartConsumerPods () {
+    REGEX="\/([^/]+)\.yml$"
+    for FILE in ./infra/consumers/*.yml
+    do
+        # Use the name of the file (minus the extension) as the
+        # deployment name.
+        [[ $FILE =~ $REGEX ]]
+        DEPLOYMENT_NAME=${BASH_REMATCH[1]}
+        kubectl patch deployment $DEPLOYMENT_NAME -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"date\":\"`date +'%s'`\"}}}}}"
+    done
+}
+
+restartPods () {
+    if [[ "$ENV" = "production" ]] ; then
+        gcloud container clusters get-credentials dave-api-v2 --zone us-central1-b
+        kubectl patch deployment dave-api-v2 -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"date\":\"`date +'%s'`\"}}}}}"
+        kubectl patch deployment plaid-updater -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"date\":\"`date +'%s'`\"}}}}}"
+        kubectl patch deployment collect-advance -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"date\":\"`date +'%s'`\"}}}}}"
+        kubectl patch deployment collect-big-money-hard-pull -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"date\":\"`date +'%s'`\"}}}}}"
+        kubectl patch deployment advance-approval-ml-score-preprocess -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"date\":\"`date +'%s'`\"}}}}}"
+        kubectl patch deployment bank-of-dave-consumer -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"date\":\"`date +'%s'`\"}}}}}"
+        kubectl patch deployment job-processor -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"date\":\"`date +'%s'`\"}}}}}"
+        kubectl patch deployment overdraft-synapsepay-update-user -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"date\":\"`date +'%s'`\"}}}}}"
+        kubectl patch deployment synapsepay-upsert-transaction -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"date\":\"`date +'%s'`\"}}}}}"
+        kubectl patch deployment task-handler -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"date\":\"`date +'%s'`\"}}}}}"
+        kubectl patch deployment bank-connection-update-new-income -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"date\":\"`date +'%s'`\"}}}}}"
+        kubectl patch deployment subscription-payment-processor -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"date\":\"`date +'%s'`\"}}}}}"
+        kubectl patch deployment dave-banking-detect-first-recurring-paycheck -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"date\":\"`date +'%s'`\"}}}}}"
+        kubectl patch deployment dave-banking-close-dave-banking-account -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"date\":\"`date +'%s'`\"}}}}}"
+        restartConsumerPods
+    elif [[ "$ENV" = "staging" ]] ; then
+        gcloud container clusters get-credentials dave-api-v2-staging --zone us-central1-b
+        kubectl patch deployment dave-api-v2 -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"date\":\"`date +'%s'`\"}}}}}"
+    fi
+}
+
+if [[ "$INTERACTIVE" = true ]] ; then
+    read -p "Restart plaid updater and api-dave-v2 pods? [Y/n]" -n 1 -r
+    echo    # (optional) move to a new line
+    if [[ ! $REPLY =~ ^[Nn]$ ]] ; then
+       restartPods
+    fi
+else
+    restartPods
+fi

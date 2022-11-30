@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/Larsseit-Bold.eot');
+  src: url('../fonts/Larsseit-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Larsseit-Bold.woff2') format('woff2'),
+    url('../fonts/Larsseit-Bold.woff') format('woff'),
+    url('../fonts/Larsseit-Bold.ttf') format('truetype'),
+    url('../fonts/Larsseit-Bold.svg#Larsseit-Bold') format('svg');
+}
+@font-face {
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/Larsseit-ExtraBold.eot');
+  src: url('../fonts/Larsseit-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Larsseit-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Larsseit-ExtraBold.woff') format('woff'),
+    url('../fonts/Larsseit-ExtraBold.ttf') format('truetype'),
+    url('../fonts/Larsseit-ExtraBold.svg#Larsseit-ExtraBold') format('svg');
+}
+
+@font-face {
+  font-family: 'Basis Grotesque';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/BasisGrotesque-Regular.eot');
+  src: url('../fonts/BasisGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BasisGrotesque-Regular.woff2') format('woff2'),
+    url('../fonts/BasisGrotesque-Regular.woff') format('woff'),
+    url('../fonts/BasisGrotesque-Regular.ttf') format('truetype'),
+    url('../fonts/BasisGrotesque-Regular.svg#BasisGrotesque-Regular') format('svg');
+}
+
+@font-face {
+  font-family: 'Basis Grotesque';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/BasisGrotesque-Medium.eot');
+  src: url('../fonts/BasisGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BasisGrotesque-Medium.woff2') format('woff2'),
+    url('../fonts/BasisGrotesque-Medium.woff') format('woff'),
+    url('../fonts/BasisGrotesque-Medium.ttf') format('truetype'),
+    url('../fonts/BasisGrotesque-Medium.svg#BasisGrotesque-Medium') format('svg');
+}
+@font-face {
+  font-family: 'Basis Grotesque';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/BasisGrotesque-Bold.eot');
+  src: url('../fonts/BasisGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BasisGrotesque-Bold.woff2') format('woff2'),
+    url('../fonts/BasisGrotesque-Bold.woff') format('woff'),
+    url('../fonts/BasisGrotesque-Bold.ttf') format('truetype'),
+    url('../fonts/BasisGrotesque-Bold.svg#BasisGrotesque-Bold') format('svg');
+}
+@font-face {
+  font-family: 'Basis Grotesque';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/BasisGrotesque-Black.eot');
+  src: url('../fonts/BasisGrotesque-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BasisGrotesque-Black.woff2') format('woff2'),
+    url('../fonts/BasisGrotesque-Black.woff') format('woff'),
+    url('../fonts/BasisGrotesque-Black.ttf') format('truetype'),
+    url('../fonts/BasisGrotesque-Black.svg#BasisGrotesque-Black') format('svg');
+}

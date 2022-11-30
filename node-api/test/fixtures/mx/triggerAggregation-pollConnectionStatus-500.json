@@ -1,0 +1,57 @@
+[
+  {
+    "scope": "https://vestibule.mx.com",
+    "method": "POST",
+    "path": "/users/USR-fake-user-guid/members/MBR-fake-member-guid/aggregate",
+    "status": 200,
+    "response": {
+      "member": {
+        "aggregated_at": "2016-10-13T18:07:57+00:00",
+        "connection_status": "CONNECTED",
+        "guid": "MBR-fake-member-guid",
+        "identifier": "unique_id",
+        "institution_code": "chase",
+        "is_being_aggregated": true,
+        "metadata": "{\"credentials_last_refreshed_at\": \"2015-10-15\"}",
+        "name": "Chase Bank",
+        "status": "INITIATED",
+        "successfully_aggregated_at": "2016-10-13T17:57:38+00:00",
+        "user_guid": "USR-fake-user-guid"
+      }
+    },
+    "rawHeaders": ["mx-api-key", "test-mx-api-key", "mx-client-id", "test-mx-client-id"]
+  },
+  {
+    "scope": "https://vestibule.mx.com",
+    "method": "GET",
+    "path": "/users/USR-fake-user-guid/members/MBR-fake-member-guid/status",
+    "status": 200,
+    "response": {
+      "member": {
+        "aggregated_at": "2016-10-13T18:07:57+00:00",
+        "connection_status": "CONNECTED",
+        "guid": "MBR-fake-member-guid",
+        "is_being_aggregated": true,
+        "metadata": "{\"credentials_last_refreshed_at\": \"2015-10-15\"}",
+        "status": "INITIATED",
+        "successfully_aggregated_at": "2016-10-13T17:57:38+00:00",
+        "user_guid": "USR-fake-user-guid",
+        "has_processed_accounts": false,
+        "has_processed_transactions": false
+      }
+    },
+    "rawHeaders": ["mx-api-key", "test-mx-api-key", "mx-client-id", "test-mx-client-id"]
+  },
+  {
+    "scope": "https://vestibule.mx.com",
+    "method": "GET",
+    "path": "/users/USR-fake-user-guid/members/MBR-fake-member-guid/status",
+    "status": 500,
+    "response": {
+      "error": {
+        "message": "Internal Server Error"
+      }
+    },
+    "rawHeaders": ["mx-api-key", "test-mx-api-key", "mx-client-id", "test-mx-client-id"]
+  }
+]

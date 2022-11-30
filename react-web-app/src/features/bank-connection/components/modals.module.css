@@ -1,0 +1,38 @@
+.header {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.stepWrapper {
+  display: flex;
+}
+
+.stepText {
+  width: 262px;
+  text-align: start;
+}
+
+.icon {
+  margin-top: 20px;
+  margin-right: 14px;
+}
+
+.progressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.errorImage {
+  margin-top: 40px;
+}
+.errorTitle {
+  margin-top: 40px;
+}
+.errorBody {
+  max-width: 480px;
+}
+.errorButtonContainer {
+  margin-top: 24px;
+}

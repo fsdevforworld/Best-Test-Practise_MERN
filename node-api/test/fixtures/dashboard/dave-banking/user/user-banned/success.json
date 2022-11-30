@@ -1,0 +1,34 @@
+[
+  {
+    "scope": "https://bank-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/internal-api/v1/users/4800",
+    "body": "",
+    "status": 200,
+    "response": {
+      "bankAccounts": [],
+      "userBanned": {
+        "bannedAt": "2020-05-13T20:25:18.000Z",
+        "reason": "For testing!"
+      }
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx/1.17.7",
+      "Date",
+      "Mon, 20 Jul 2020 17:20:41 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "96",
+      "Connection",
+      "close",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"60-f3qJyU6/jge0ZE1kqIojTC7u5qI\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "scope": "https://bank-goals-api-staging-internal.trydave.com:443",
+    "method": "GET",
+    "path": "/internal/v1/recurring-goal-transfers",
+    "body": "",
+    "status": 200,
+    "response": {
+      "recurringGoalTransfers": []
+    },
+    "rawHeaders": [
+      "Date",
+      "Wed, 31 Mar 2021 22:17:53 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "354",
+      "Connection",
+      "close",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"162-F9DUxd8xWIoBIqfCSkt1wDaSXxQ\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  }
+]

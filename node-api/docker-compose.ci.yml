@@ -1,0 +1,49 @@
+version: '3'
+services:
+  node-api:
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    ports:
+      - '8080'
+    environment:
+      NODE_ENV: test
+      DB_HOST: mysql
+      PUBSUB_EMULATOR_HOST: pubsub-emulator:8681
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      JOB_PROCESSOR_REDIS_HOST: redis
+      JOB_PROCESSOR_REDIS_PORT: 6379
+    depends_on:
+      - redis
+      - mysql
+      - pubsub-emulator
+    volumes:
+      - shared:/opt/shared
+  redis:
+    image: 'redis:alpine'
+    logging:
+      driver: none
+  mysql:
+    image: 'mysql:5.7'
+    command: "--character-set-server='utf8mb4' --collation-server='utf8mb4_unicode_ci'"
+    ports:
+      - '3306'
+    logging:
+      driver: none
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: password123
+      MYSQL_DATABASE: dave_dev
+  pubsub-emulator:
+    ports:
+      - '8682:8681'
+    image: 'messagebird/gcloud-pubsub-emulator:latest'
+    environment:
+      PUBSUB_PROJECT1: dave-staging-173321,test_plaid-update:test_plaid-updater,test_balance_log,test_synapsepay-update-user:test_overdraft-synapsepay-update-user,test_bank_connection_update,test_bank-connection-update-completed,test_daily-balance-log,test_new-recurring-transaction,test_record-created
+      PUBSUB_PROJECT2: bank-project-217719,bank-testing:my-test-sub,debit-cards-staging:overdraft-api-debit-cards-dev,account-created:account-created
+
+volumes:
+  shared:
+    external: true

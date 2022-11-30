@@ -1,0 +1,300 @@
+[
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/users",
+    "body": {
+      "documents": [
+        {
+          "ip": "127.0.0.1",
+          "phone_number": "+17778889999",
+          "entity_type": "NOT_KNOWN",
+          "entity_scope": "Not Known",
+          "physical_docs": [],
+          "email": "+17778889999",
+          "name": "Louise Belcher"
+        }
+      ],
+      "phone_numbers": ["+17778889999"],
+      "extra": {
+        "supp_id": 584,
+        "cip_tag": 1
+      },
+      "logins": [
+        {
+          "email": "+17778889999"
+        }
+      ],
+      "legal_names": ["Louise Belcher"]
+    },
+    "status": 200,
+    "response": [
+      "1f8b0800000000000003000000ffff9c945d4fe4361486effb2b906f9b053b89633b77b013e80818d8593ed456c8f2c731e325936463679629e5bf57998501ba622bf52af2f1b1cff39ef83d0f487a8b4a444114d4669ae59a138631078c6d8e2d4a90ac7d731750f98002d46efc2e7a70a8448b18bb50eeed0d2a7e509ddf0deb4675019cdf35ed726f95ed92bd21401ff6debdfcf13141ca987668a234751b861ea4551150d90c759d20537b68e258f23b24174a1855f0c2a42c2b72921a60da0994a0462d019568a256b0f3593556b7f73bc7bf7fdc4977317a4c906dcdb084260654fef980a0893eae65306d371e9ab571e7b869bf352879de8aebef3b6717f27876763d43c913412ab87129b32ac5b9e15481633ad7d65ae5b4c90a213025454eb9d2997139814c18a70db358659c40b1b9672cdc6f35fa2095897e05a88cfd005b2927ede003ec1c406d16d0a30475d02f7d08be6db6e497b3ab6a3e3d9c5693717fb10edea85adad68c3a6f12d4c3d7c1f7602558fb2a1c5ae35ff21eb6dd79967dfedbd9ac92b3cbd3836abe554e81b34c0b4c5362b1d59a0b01b4603913caa6186784524baca6c6112000c67048812bed5225c01994a05a8528876efcc1169584f24290948e3dc3090a51c521a0127dbe3c389d5e5c5493bfe7d5d5b4ba9ece8ed063f2236475ba3f3d79a6338529782e082972ceb916dceac2f1dc608619cf000aa55296334b31c7ce38a52dc669860d05ca812afb133a2ee8ffa09b9e6fd1d2823b2c52cc84200eb28cbb940b862d65c0206590153a2f08b15c199b15d698bc3098e6c411aec8cf1b47c97fa1dd2468e5fb38bc7916df54348bda87d10ee8bc9a4d9e5361a97cfd9404f7b157a3f58cef6454b7a824091a11e497d6376f4148269e0ec80066e87d5ca3d2a93ac0e67deb21f80642781d8bfd1036",
+      "729e42ef69dc5cdd0dbaf64636edcb680843d76d4617e5f963825c3d128e86fd7078b27f74b471c41894a6b5afbdb6f0d642f352166e552d47cb8db2ff6dba9b04d5edad6f9ec6c6d81d54a25f09638c732e841847cfb319e7d5fe44eecf26f27a3ebda836fd7cb1ec0f667d31f36bc06ed136209b61a9a1df00bda975b34988edd6ddae87b090b1bd1b156dd77eee9697f707fb93f630ab78717765c91fe628ae3e6235f47f7df95a9f76ebe3c5278dde7b09bffc030000ffff0300c2df0e6c16060000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Wed, 15 Apr 2020 01:02:51 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d1f252638d0d48d4364ccb28879895b421586912568; expires=Fri, 15-May-20 01:02:48 GMT; path=/; domain=.synapsefi.com; HttpOnly; SameSite=Lax; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "5841be43d866eb31-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  },
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/oauth/5e965d3b74b817008e00d40d",
+    "body": {
+      "refresh_token": "refresh_iRfmUxBADoF3E86kVd1ZcGtvC0aurzjqlMpyKhQb"
+    },
+    "status": 200,
+    "response": [
+      "1f8b08000000000000037492db6e82401086effb1466ae49b38072ba4358b551a175d1d6368d5960ad780005b46aedbb378a1c6adabbf9fe996f76b3d92ff096010bd349e083060d45a5aa472545f2045994eabce031d99daac0e563215d31d0c0a43b562334f4dd685feb8e8d9a708f8003b65f07314b2634050df88622a9bc2acb7ca51384a0812ca0f37444b7e96cb26007d0ae75a729869bb835a466ffd3af27fbd9a8d795dd6765fb32271fe340b777e8a80ae8001cc46c1ab36436a92e56cb388d16ec7c54cec160ba1aee9bba19b544ac488b91cfbf7aed746720ba8d8ff3cdb2bf3e74674f2e709078d19a81f606438207a747dd313ac065d0c60e7060d92626a7479b945036aa65ee5ec0c43dec60e0c019e856a1679039e7ba5ae6fa050a9d0c9b16768a0539665e46bf215f431cddc17d6c95c37970cbc572c3b646784074e7c1b6fe0933b59afd15e577e86342f476f97a0567ce156f2893df39d8262cbe7e54a64a0d5f74e5baabf032420a43c8af231fbeef7e000000ffff0300e663130ad2020000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Wed, 15 Apr 2020 01:02:51 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d62ea2b0617c6e20c5256f168b75acb521586912571; expires=Fri, 15-May-20 01:02:51 GMT; path=/; domain=.synapsefi.com; HttpOnly; SameSite=Lax; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "5841be546dd8eb08-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  },
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/address-verification",
+    "body": {
+      "address_street": "1269 S Cochran Ave",
+      "address_city": "Los Angeles",
+      "address_subdivision": "CA",
+      "address_country_code": "US",
+      "address_postal_code": "90019"
+    },
+    "status": 200,
+    "response": [
+      "1f8b08000000000000037ccf3d6bc3400c06e0bdbfc268f6907408f836634c3b84046a92f5907d6a11c877e67436b8c1ffbdf42b713374137ade17a40b38129e2862cbc2690603a30e6aaf5b21c8ef32163dcaacac602e30604c8c62271476605e5194721822f71867ebc7bea568d9ffcb3dabb27fbbb25217bcfb0cdc176ff2b7b3e4e043ec51f89d9c45e722e9d7793fa3edbe7fdb1f9bac3c3cd5fbba81fc8661f429ceb60b8ec0c0696d43d084f24bc566b32d56aa29122530b07ddc15599355c7eaf9a53c64e5b95ea7c6d6f1c4cac18381aa846579f8000000ffff03003982e55579010000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Wed, 15 Apr 2020 01:02:52 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d564acb110e1aa2d5af1dfc60f21be3461586912571; expires=Fri, 15-May-20 01:02:51 GMT; path=/; domain=.synapsefi.com; HttpOnly; SameSite=Lax; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "5841be5699b4e7c9-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  },
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "GET",
+    "path": "/v3.1/users/5e965d3b74b817008e00d40d?full_dehydrate=yes",
+    "body": "",
+    "status": 200,
+    "response": [
+      "1f8b0800000000000003ac56db6edb38107ddfaf08887d5bc5d1fde2372776bb4112b79ba62d768b80a0c851cc9a22555e9c7a13fffb4272e2f822030bec3e093a6744ce1c5233e70961ced0102550a4098bca2c2ef320f3fd1c7c9fc53e431ec282cbb941c327644054ed73a6a1424334b3b631c3b33347ec2969f8c02c25690c547c40557db68806c19933a0cdd9d1c5572b0fe1051a861e22942a272da64219a7013362010da513c243547090b6dd799d6b5e908292344f699845691c8414b2b22a908724a9010dd1982ce0e41391ac543f4faefebc3809073e5a798829ea6a90d6a0e1b7274418d3600ca6dc2e5fb7da606d327a89a962b0cf35ca58227a296335803d405dc9f8821baee486129c98d717469668e87b8881e11a183654359ba599a25835962b89e7b0dc42cdc1bbe5566cbe839a708186e8b720cbb23ccf8ba268150269b95dbe6e81a6ca9e5c49f528df28bb5c331feef0d5f4c3d729f25e640f8b9c5661c648e8c7344f08545919978c315295344a8bc24f82344e725246b48a03880a5a9534633e89f200d26e9d76630d68180c7c0ff1060d511066037fe00f8296379850cb178086563bf050ada49d75dabc9cecb572dcc0c939083a038d3cd480aeb969a5ddd4f469321d3fdf4e2e26975f26cf779793dbe776ed66a62460e9ea12f4a12ccd6c69382502b742a2e1b77b0f69f8e1bae300c6b660433580e4f2016b304ed8eecf48d2a0930cdf8cee2e7e471e228e8a5d842a49414b2c1425b6bb09db2c6bf6c299a5bb00ec05c0c10e15b115964a62aa54039ab442e2ef4e73c3383ddcb22a392e899c63adca12b43964bb9f0034e6d28210fc0124859e28cd6b30983c102e8dc574c605d320fb03b9240243bb6aa3b901cce5028ce50f9d247d292cd7c7b5073355b79f516c416ba5b9a90f6366ae26125b4daa8a",
+      "d339970f8721b5d3acb7f2055702da6ed4d576c83f1269816d76b77d21336e01532504d92f804b0a12b7574b7063f748b32fb155d81049fb0472d66930c7e8d9bc2647b91a5b0dc438bd3c16c2cdde19d6e4e856b592dcaaaea2deeb2dcd293764175315a13849831e113a0a5410a571d2c31c68f48a62ae8f1066d943f4a724cd11a211b407354cf6a186f7a14bcdfb5676734db88475c969b81761aabdb51a68f680fdcc1acd6bd28dafaee9ec9207191f246b411c3b6937df6f3b6eb103ac3c6414e56fadf46933765f47cbc7df3f4c2778faf9e67c728bdea6325e10e1e0b037afa74f02791695859f8401f35959e64501499ac5594158e8fb5190242c606542ab0002004a73082127651592022a8a3c2488b1d835adb360681824795a046192857e1679c858625d5beba7cfe73797777793f1f397d1f5e518adbcc3022637a3cbeb7f9b394d699ac74510a4719ee76591b332adf298fa999fe511404a4898c5194bfcdcaf68454ae6fb61e4d304921c12c2fed7cc2f3ff6a5bd3383bb9cc334affc22f4b3a2082a88a2bc0af322f3599241066106515ac66910b09c5016a58cd238a57e1207559093e0bfa87defa105d7d6ed8ce24762e94c1cf6d925b4bdd56f3feaecce4b38fcb49ab46399f2065bf28086416bb22ce0ef8acbed74d222888a970fb001ea74e7052b220c7476a474864b30661bb3da99aea817e868a561e421a9de7c6ce34ac129de868c6b9ace812779bcf25025c87a4cdd9dbebb1ebd7f3f19a335b8e33679d316ba756af75d5e33ce583b775fd382072270eb9bbae83de774ef21a11eb85cffa147cca2120c37c49847a5d9c6feac4dd6ed6434c6a3e9187fbdbdbc9bb46d602d006e5bff13fa75eddfb7c488e2557b4e6f7eedc5a99d8ea6e3d317b7b6ebe7b64bde766f5d393b99de7701566d9c5ba5c1ccb055f3ce87bcbef3dbaafefcf37c3456efa2499ecebfb0e02ffade2e2e7ce2f4dfdf7f889b667935fba344c76edcea977f000000ffff03009453a72b300d0000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Wed, 15 Apr 2020 01:02:52 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d025b24b3fee9bfdee5755e11d4b503de1586912572; expires=Fri, 15-May-20 01:02:52 GMT; path=/; domain=.synapsefi.com; HttpOnly; SameSite=Lax; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "5841be5a8978774c-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  },
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/oauth/5e965d3b74b817008e00d40d",
+    "body": {
+      "refresh_token": "refresh_iRfmUxBADoF3E86kVd1ZcGtvC0aurzjqlMpyKhQb"
+    },
+    "status": 200,
+    "response": [
+      "1f8b08000000000000037492c96ec2301086ef7d0a34e7a87242c8760bc1a52d2540eca04255a12c8e084b42b32068e9bb5710b214b5b7f9fe996f6c59fe026f13b2285b843e68d0515447f51c49913c416e4b222f784c760315b8722c72b60c34e8397bd6224ee4bbf1a13598192de11e0107ecb00b13962e9c0c34e03b8aa4f2aa2c0b8d4e188106b280ced3b19367cbc59a1d41bbd6c66c25b922b5a3697b983d0bbb7ca9ca6b64a62ffa7682f6fc661e78af4ac74a80838405094b978be662a58eb378cdce47951c5ac1d63e74f55efcd0c68ab49efafcdceb677b033979f2b9fad80c77c7c172e20207a917ef18686f60136c9dc63a351e812ba08f2970608e7a989cc6235243dd6896a57b811e7ec1140307d4d2cd4a2fa070ce75b32cf50b543ab1bb26a6d582120bafa0df50ae2154a77888cd7ab80c6eb95a6e8ccc29b6884e9f46e63f61a136b3bfa2f20e434c88deaf5fafe2c2b9e20d15f23b0779ca92eb4765aad4f1dbae2cba0a2f23a430847c11f9f07df7030000ffff03007106962fd2020000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Wed, 15 Apr 2020 01:02:53 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d15bd12d55010dab4be10e48eae1d62ab1586912572; expires=Fri, 15-May-20 01:02:52 GMT; path=/; domain=.synapsefi.com; HttpOnly; SameSite=Lax; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "5841be5c4e3bd34e-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  },
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "PATCH",
+    "path": "/v3.1/users/5e965d3b74b817008e00d40d",
+    "body": {
+      "documents": [
+        {
+          "id": "5298cf27da204c85aef7b4bdddafbc36990516458ab3cf41e39cfbc7d0a381e6",
+          "name": "Mick jagger",
+          "email": "mick@rollingstone.biz",
+          "day": 1,
+          "month": 1,
+          "year": 1980,
+          "address_street": "1269 S Cochran Ave",
+          "address_city": "Los Angeles",
+          "address_subdivision": "CA",
+          "address_postal_code": "90019",
+          "address_country_code": "US",
+          "virtual_docs": [
+            {
+              "document_value": "123456789",
+              "document_type": "SSN"
+            }
+          ]
+        }
+      ]
+    },
+    "status": 200,
+    "response": [
+      "1f8b0800000000000003ac955d53db461486effb2b98bdad80fdfef09d8315e22198d43864da0ea3d98fb3584148ae5622a1c07fefc8b10d9906dae9f44aa3b367f73cef91f63df7a828031a2101468ac09ce24e1385b1068c03c70165a8a8cafa3aa1d13d4a50c5e1b96c21a2115a76dd2a8d0e0f7bdbeddb557990ee6abb4a10cb03dfdc1cdeb20372d82768d3e18b873f3e66c87adff47557f8aa497d0b45b01da051dd5755867c5542dd0d25bf416a638db7524b4f15939c500fca45833254db1b402334b1b7b0776eebe09aaf7b27bf1eedd1038c1e33141adfdf40dd2534fafd1e41dd95dd5d917cb31a36cd9a6eefa46ebed428db2e7577df56ce16c5c9ececd30c651b026ab48f54054b31f75a5888ca711742b0d179268dc182482eb475cc474e80191f9d57015ba609c8f53943e116d0881ce00c95a9b0be2b6f018dbab6879d92d3d25fef7db65757d0a20cada0bd29532a9b7a477d9ecf260ff3fc289f5ee40f8b693e7f2043e2f22e95de564568fc20f632432dfcd1972d84024278164e8d2f9ff2ee772dda6afff0ee6c9617b38fa76ff2f94ebe00ad983358501270704e1b03422aae8c0d14634684082438e1230102e0bd060adaba48ad81e851862a9bbaa25f0d5f39a011115a1a4285a258b10ca5ce767d1ac47d7c733a5d2cf2c9c3c5f8fd74821eb3bf03e6a7e3e9fb2d99014798208c51a1858f8e5b4db0b64e80b21c736d22c70683344171cea4e43244ed5ca49c0b291d79996c48fe21d93cbf98e69fa6b3e31fd24d3f6cd13c953a6243b1328644604c47aa8dc2412850401530e9b8242468eb0393c17b2e3d169c44a22df99f9b369e4ce6f9f9f9962d8ac002b641316cadc79e076ebc8e38708295e4ca600c018c1744114d9c53868353c22b2699a6dcbfd636f55fda36192ff22d1ca6447a05dc33c0ca0313",
+      "82581ea3e45c5a1a5430c0a5074e858c4c304d1d104da8d734181e9513afc06942fe09ee3243b765dbf5afdd91f3f39d3304691dc4c8a2a12a704b8591e0a47226c6e0b1d5442aef3d7196116abcd78445c6b5962184c1545e8395dcfc0bd82fb6f3cbaa4c83c7a1d959713a5e1cbd5bafc08d2dabcdad87af5d6b0743f5e5aae8ec151a910c0d158bcf4d593faf2b0d6166b3a148e0fbb6eceed028da2ac1dab65c9fca1a527a1eebda3eade937a19724512632b4ea5d55faa26e9e0c3ff5abd57a2009cd1f3314ab8170b0e1fdb7efc7c7c7f9047d0b16be09bb4d652a966508503f95852b5b1583930eb2bff3d2cb0c55cd55596f26c1d01a34423f13a594d6da18334c93adc7cef3f1a418cf26c5a7f97491af9bf9e4c41b0fde1fcf26fb1b1ffedea99f33ae964d0d45dddf3868d74cdf55bc5c2774cdceb1630b695974cdf5206af75ecee3cdc7af6fc693e62dcbb5bcbe08e4377fdcdd1e61dbb77f7efea33a5ddd9d2c7f71e8c5bfe1a7bf000000ffff0300349d5892f0070000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Wed, 15 Apr 2020 01:02:55 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=dadcdcec142221caf1f96969a0fb3f39a1586912573; expires=Fri, 15-May-20 01:02:53 GMT; path=/; domain=.synapsefi.com; HttpOnly; SameSite=Lax; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "5841be5e0d4378c0-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  }
+]

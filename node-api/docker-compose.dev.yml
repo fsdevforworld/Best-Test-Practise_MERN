@@ -1,0 +1,42 @@
+version: '3'
+services:
+  node-api:
+    volumes:
+      - ~/.config/gcloud:/root/.config/gcloud
+    ports:
+      - '8080:8080'
+  advance-approval:
+    ports:
+      - '7777:7777'
+  banking-direct:
+    ports:
+      - '7299:7299'
+  internal-dashboard-api:
+    volumes:
+      - ~/.config/gcloud:/root/.config/gcloud
+    ports:
+      - '7070:7070'
+  mx-webhook:
+    ports:
+      - '7298:7298'
+  mysql:
+    ports:
+      - '53306:3306'
+  redis:
+    ports:
+      - '56379:6379'
+  user-auth:
+    ports:
+      - '8018:8018'
+  payments-handler:
+    ports:
+      - '7337:7337'
+  repayments-api:
+    ports:
+      - '7338:7338'
+  pubsub-emulator:
+    ports:
+      - '8681:8681'
+  heath:
+    ports:
+      - '7447:7447'

@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "code": 200
+  },
+  "response": {
+    "results": {
+      "facetMap": {},
+      "results": [],
+      "hits": 0
+    }
+  }
+}

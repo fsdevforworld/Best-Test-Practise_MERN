@@ -1,0 +1,18 @@
+version: '3'
+services:
+  node-api:
+    ports:
+      - '8080:8080'
+      - '9229:9229'
+    command: >
+      bash -c "
+      ./bin/wait-for-it.sh -t 30 mysql:3306 &&
+      ./node_modules/.bin/nodemon --watch 'src/**/*.ts' --exec 'node' -r ts-node/register --nolazy --inspect=0.0.0.0 src/index.ts"
+  payments-handler:
+    ports:
+      - '7337:7337'
+      - '9228:9228'
+    command: >
+      bash -c "
+      ./bin/wait-for-it.sh -t 30 mysql:3306 &&
+      ./node_modules/.bin/nodemon --watch 'src/services/loomis-api/**/*.ts' --exec 'node' -r ts-node/register --nolazy --inspect=0.0.0.0:9228 src/services/loomis-api/index.ts"

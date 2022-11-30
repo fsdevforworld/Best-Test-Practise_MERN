@@ -1,0 +1,4 @@
+{
+  "file": "./test/safety-checks.js",
+  "require": ["chai", "chai-as-promised", "chai-subset"]
+}

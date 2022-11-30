@@ -1,0 +1,191 @@
+[
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2a82e635-d1dd-46c1-bc82-56f722a6e698/info",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "user",
+      "data": {
+        "uuid": "2a82e635-d1dd-46c1-bc82-56f722a6e698",
+        "daveUserID": 1783460,
+        "daveUserLegacyID": null,
+        "role": "USER",
+        "email": "sand8@dave.com",
+        "phoneNumber": "+14150010028",
+        "firstName": "Sandbox",
+        "lastName": "Debit Card",
+        "addressLine1": "5550 Wilshire St",
+        "addressLine2": "Apt 133",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zipCode": "90036",
+        "created": "2019-03-04T18:44:07.000Z",
+        "updated": "2019-03-04T18:45:31.000Z",
+        "synapseDocument": {
+          "uuid": "13aa6d81-caa3-410e-af27-2f6dd974fe26",
+          "userNotified": true,
+          "email": "sand8@dave.com",
+          "addressStreet": "5550 Wilshire St Apt 133",
+          "addressCity": "Los Angeles",
+          "addressSubdivision": "CA",
+          "addressPostalCode": "90036",
+          "permission": "SEND-AND-RECEIVE",
+          "permissionScope": "SEND|RECEIVE|TIER|3",
+          "phoneNumber": "+14150010028",
+          "ssnStatus": "VALID",
+          "licenseStatus": "VALID",
+          "phoneNumber2FAStatus": "VALID",
+          "name": "Sandbox Debit Card",
+          "created": "2019-03-04T18:45:31.000Z",
+          "updated": "2019-03-04T18:47:08.000Z",
+          "fullyValid": true
+        },
+        "accounts": [
+          {
+            "uuid": "0b39346b-9b00-4aee-a11e-0428fd13df81",
+            "active": true,
+            "allowed": "CREDIT-AND-DEBIT",
+            "nickname": "Sandbox Debit Card Checking",
+            "balance": 714.43,
+            "created": "2019-03-04T18:47:06.000Z",
+            "updated": "2019-04-04T21:46:03.000Z",
+            "cards": [
+              {
+                "uuid": "d56f5828-75a3-4337-a51a-d435f48d1465",
+                "created": "2019-03-04T18:47:13.000Z",
+                "updated": "2019-04-03T16:18:47.000Z",
+                "virtual": true
+              },
+              {
+                "uuid": "b3c3d4e2-b380-4556-bb33-40ec0fff4617",
+                "created": "2019-03-04T18:47:20.000Z",
+                "updated": "2019-04-03T17:50:44.000Z",
+                "virtual": false
+              },
+              {
+                "uuid": "d880cc9a-1eb5-42cf-b3ae-2cf4bd915a21",
+                "created": "2019-04-03T17:09:26.000Z",
+                "updated": "2019-04-03T17:09:26.000Z",
+                "virtual": true
+              },
+              {
+                "uuid": "999624e4-629c-4fc1-b5b4-2f193b38a220",
+                "created": "2019-04-03T17:14:25.000Z",
+                "updated": "2019-04-03T17:50:10.000Z",
+                "virtual": true
+              },
+              {
+                "uuid": "4b100f1b-64db-41b3-8db9-9462cf5a2c14",
+                "created": "2019-04-03T17:57:57.000Z",
+                "updated": "2019-04-03T17:57:57.000Z",
+                "virtual": true
+              },
+              {
+                "uuid": "6f2c6b5d-6835-4d48-93e4-349d192915e8",
+                "created": "2019-04-03T18:33:55.000Z",
+                "updated": "2019-04-03T18:33:55.000Z",
+                "virtual": true
+              },
+              {
+                "uuid": "43787416-ac4e-4680-b669-86b5574c3af3",
+                "created": "2019-04-03T20:01:45.000Z",
+                "updated": "2019-04-03T20:01:45.000Z",
+                "virtual": true
+              },
+              {
+                "uuid": "e5e0922c-5d54-47ac-998d-376c64fb11bd",
+                "created": "2019-04-03T20:03:56.000Z",
+                "updated": "2019-04-03T20:03:56.000Z",
+                "virtual": true
+              },
+              {
+                "uuid": "69daeacc-fec0-473b-8bf1-690f1d91ebe2",
+                "created": "2019-04-03T20:31:52.000Z",
+                "updated": "2019-04-03T20:31:52.000Z",
+                "virtual": false
+              },
+              {
+                "uuid": "dae55f11-ae28-43cf-b27b-e9217792aaf6",
+                "created": "2019-04-03T20:34:16.000Z",
+                "updated": "2019-04-03T20:34:16.000Z",
+                "virtual": false
+              },
+              {
+                "uuid": "c98b07e4-cdbf-40ba-8b4a-5c8285ad43f4",
+                "created": "2019-04-03T20:35:23.000Z",
+                "updated": "2019-04-03T20:35:23.000Z",
+                "virtual": false
+              }
+            ],
+            "regularACH": {
+              "accountNumber": "9899880434",
+              "regularRouting": "084106768",
+              "wireRouting": "084106768"
+            },
+            "directDepositACH": {
+              "accountNumber": "9892601028",
+              "regularRouting": "084106768",
+              "wireRouting": "084106768"
+            }
+          }
+        ],
+        "externalAccounts": [
+          {
+            "uuid": "564848fb-e014-4b8a-b2b0-434b1bdc4ff8",
+            "created": "2019-03-28T23:06:22.000Z",
+            "updated": "2019-03-28T23:06:22.000Z",
+            "active": true,
+            "accountInfo": {
+              "type": "DEBIT",
+              "network": "VISA",
+              "nickname": "VISA CrDe",
+              "nameOnAccount": " ",
+              "isInternational": false
+            },
+            "accountType": "INTERCHANGE-US",
+            "nickname": "VISA CrDe",
+            "allowed": "CREDIT-AND-DEBIT"
+          },
+          {
+            "uuid": "f71cfee1-0c85-488f-a089-1395a7f69373",
+            "created": "2019-03-29T21:59:29.000Z",
+            "updated": "2019-03-29T21:59:29.000Z",
+            "active": true,
+            "accountInfo": {
+              "type": "DEBIT",
+              "network": "VISA",
+              "nickname": "VISA CrDe",
+              "nameOnAccount": " ",
+              "isInternational": false
+            },
+            "accountType": "INTERCHANGE-US",
+            "nickname": "VISA CrDe",
+            "allowed": "CREDIT-AND-DEBIT"
+          }
+        ],
+        "payees": []
+      },
+      "message": "success",
+      "name": "ApiResponse"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "6ba338a0-3aef-4a4a-b3e3-d860d02a44b1",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Thu, 04 Apr 2019 21:46:18 GMT",
+      "Content-Length",
+      "3660",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

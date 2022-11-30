@@ -1,0 +1,156 @@
+[
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2a82e635-d1dd-46c1-bc82-56f722a6e698/accounts/0b39346b-9b00-4aee-a11e-0428fd13df81/loans/624e1b87-29c8-4bc1-8993-bf0d31ae23a0",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "loan",
+      "data": {
+        "uuid": "624e1b87-29c8-4bc1-8993-bf0d31ae23a0",
+        "loanReferenceId": "2019-04-11-0004",
+        "loanReferenceType": "ADVANCE",
+        "initialAmount": 75,
+        "metadata": {},
+        "created": "2019-04-12T00:15:44.000Z",
+        "updated": "2019-04-12T00:15:44.000Z",
+        "loanTransactions": [
+          {
+            "uuid": "bc26908b-58f4-481a-b536-22adfc1a264e",
+            "transactionReferenceId": "2019-04-11-0004",
+            "transactionType": "ADVANCE",
+            "failed": false,
+            "error": null,
+            "created": "2019-04-12T00:15:44.000Z",
+            "updated": "2019-04-12T00:15:48.000Z",
+            "transaction": {
+              "uuid": "45738a63-6687-42f0-acfe-765a0af090c4",
+              "debit": false,
+              "amount": 75,
+              "amountBreakdown": {
+                "amount": 75,
+                "fees": {
+                  "surcharge": 0,
+                  "totalFeeAmount": 0,
+                  "feeDetails": [
+                    {
+                      "feeType": "Synapse Facilitator Fee",
+                      "feeAmount": 0
+                    }
+                  ]
+                }
+              },
+              "pending": false,
+              "type": "DAVE",
+              "source": {
+                "name": "Dave",
+                "legalNames": ["Dave"]
+              },
+              "created": "2019-04-12T00:15:46.000Z",
+              "updated": "2019-04-12T00:16:05.000Z",
+              "returned": false,
+              "cancelled": false,
+              "returnedMessage": null
+            }
+          },
+          {
+            "uuid": "79f4e8a0-e32e-41fd-94d8-3007ba1e4a44",
+            "transactionReferenceId": "2019-04-11-0005",
+            "transactionType": "COLLECTION",
+            "failed": false,
+            "error": null,
+            "created": "2019-04-12T00:15:49.000Z",
+            "updated": "2019-04-12T00:15:52.000Z",
+            "transaction": {
+              "uuid": "755f88bc-b96a-4ceb-b2e4-f46f27bebc68",
+              "debit": true,
+              "amount": 50,
+              "amountBreakdown": {
+                "amount": 50,
+                "fees": {
+                  "surcharge": 0,
+                  "totalFeeAmount": 0,
+                  "feeDetails": [
+                    {
+                      "feeType": "Synapse Facilitator Fee",
+                      "feeAmount": 0
+                    }
+                  ]
+                }
+              },
+              "pending": false,
+              "type": "DAVE",
+              "source": {
+                "name": "Dave",
+                "legalNames": ["Dave"]
+              },
+              "created": "2019-04-12T00:15:51.000Z",
+              "updated": "2019-04-12T00:16:04.000Z",
+              "returned": false,
+              "cancelled": false,
+              "returnedMessage": null
+            }
+          },
+          {
+            "uuid": "dd3c68b9-caf4-4a1f-944b-88ab5995cb40",
+            "transactionReferenceId": "79f4e8a0-e32e-41fd-94d8-3007ba1e4a44",
+            "transactionType": "REFUND",
+            "failed": false,
+            "error": null,
+            "created": "2019-04-12T00:15:53.000Z",
+            "updated": "2019-04-12T00:15:57.000Z",
+            "transaction": {
+              "uuid": "2b3bd075-b829-4821-b339-6ae6f1af6162",
+              "debit": false,
+              "amount": 50,
+              "amountBreakdown": {
+                "amount": 50,
+                "fees": {
+                  "surcharge": 0,
+                  "totalFeeAmount": 0,
+                  "feeDetails": [
+                    {
+                      "feeType": "Synapse Facilitator Fee",
+                      "feeAmount": 0
+                    }
+                  ]
+                }
+              },
+              "pending": false,
+              "type": "DAVE",
+              "source": {
+                "name": "Dave",
+                "legalNames": ["Dave"]
+              },
+              "created": "2019-04-12T00:15:55.000Z",
+              "updated": "2019-04-12T00:16:03.000Z",
+              "returned": false,
+              "cancelled": false,
+              "returnedMessage": null
+            }
+          }
+        ]
+      },
+      "message": "success",
+      "name": "ApiResponse"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "5adf3803-fbb9-42c7-a254-36326c4b80a2",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Fri, 12 Apr 2019 00:18:02 GMT",
+      "Content-Length",
+      "2315",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "GET",
+    "path": "/v1/clients/secret:tabapay-clientId/accounts/wEsUcIJUgIodKBunVlAcAg",
+    "body": "",
+    "status": 200,
+    "response": {
+      "SC": 200,
+      "EC": "0",
+      "referenceID": "3cefc9b33345bbd",
+      "card": {
+        "last4": "9990",
+        "expirationDate": "202004"
+      },
+      "owner": {
+        "name": {
+          "first": "Ahmed",
+          "last": "Brakus"
+        },
+        "address": {
+          "line1": "123 Main St",
+          "line2": "Apt 456",
+          "city": "Livengood",
+          "state": "AK",
+          "zipcode": "00000"
+        },
+        "phone": {
+          "number": "6341756668"
+        }
+      }
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Fri, 27 Dec 2019 01:50:54 GMT",
+      "Content-Length",
+      "286",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  }
+]

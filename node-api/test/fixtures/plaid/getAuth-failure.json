@@ -1,0 +1,34 @@
+[
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/auth/get",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "access_token": "bad-access-token"
+    },
+    "status": 400,
+    "response": {
+      "display_message": null,
+      "error_code": "INVALID_ACCESS_TOKEN",
+      "error_message": "provided access token is in an invalid format. expected format: access-<environment>-<identifier>",
+      "error_type": "INVALID_INPUT",
+      "request_id": "2UjFQyP0ypheF3F"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Wed, 13 Feb 2019 23:58:22 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "277",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08"
+    ]
+  }
+]

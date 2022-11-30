@@ -1,0 +1,274 @@
+{
+  "braze": {
+    "plaidDownCampaign": {
+      "ios": "38f3123a-0f1d-4ea0-91c3-5ecafbc2f41d",
+      "android": "dce296de-c868-4838-be6f-a0d43bc3df0c"
+    },
+    "paybackAdvanceFormCampaign": "0d3b32ee-5b32-a01c-61d8-286f62d28cb0"
+  },
+  "datastore": {
+    "endpoint": null
+  },
+  "db": {
+    "name": "dave"
+  },
+  "dave": {
+    "api": {
+      "url": "https://api.trydave.com'"
+    },
+    "bankOfDaveInternalApi": {
+      "url": "https://bank-api.trydave.com"
+    }
+  },
+  "firebase": {
+    "databaseUrl": "https://dave-173321.firebaseio.com",
+    "dbPrefix": "production",
+    "dbBase": "dave-173321",
+    "remoteConfig": {
+      "path": "/v1/projects/dave-173321/remoteConfig"
+    }
+  },
+  "promotionsApi": {
+    "basePath": "https://promotions-api.trydave.com"
+  },
+  "sombra": {
+    "url": "https://sombra.trydave.com"
+  },
+  "empyr": {
+    "url": "https://www.mogl.com/"
+  },
+  "facebook": {
+    "pixelId": "370076790033519"
+  },
+  "gke": {
+    "taskPoolName": "task-pool-high-cpu",
+    "dockerImageName": "us.gcr.io/dave-173321/api-dave-v2:latest"
+  },
+  "internalDashboardApi": {
+    "oauth2ClientId": "294403164518-ihgq8aujbfnbd8r507tpbng8hf5as9m0.apps.googleusercontent.com"
+  },
+  "goalsApi": {
+    "basePath": "https://bank-goals-api-internal.trydave.com/internal"
+  },
+  "overdraftApi": {
+    "basePath": "https://overdraft-internal.trydave.com/internal"
+  },
+  "identityApi": {
+    "basePath": "https://identity-api.trydave.com"
+  },
+  "googleCloud": {
+    "location": "us-central1",
+    "projectId": "dave-173321",
+    "images": {
+      "bucket": "dave-images"
+    },
+    "tasks": {
+      "signingEmail": "task-handler-prod@dave-173321.iam.gserviceaccount.com",
+      "handlers": {
+        "performACHCollection": {
+          "handlerURL": "https://task-handler.trydave.com/performACHCollection",
+          "queueName": "delayed-execution-tasks"
+        },
+        "performFraudCheck": {
+          "handlerURL": "https://task-handler.trydave.com/performFraudCheck",
+          "queueName": "perform-fraud-check"
+        },
+        "refreshSanctionsScreening": {
+          "handlerURL": "https://task-handler.trydave.com/refreshSanctionsScreening",
+          "queueName": "task-handler"
+        },
+        "updateBraze": {
+          "handlerURL": "https://task-handler.trydave.com/updateBraze",
+          "queueName": "broadcast-braze-event"
+        },
+        "updatePendingSubscriptionPayment": {
+          "handlerURL": "https://task-handler.trydave.com/updatePendingSubscriptionPayment",
+          "queueName": "update-pending-subscription-payment"
+        },
+        "updateSynapsepayUser": {
+          "handlerURL": "https://task-handler.trydave.com/updateSynapsepayUser",
+          "queueName": "task-handler"
+        },
+        "collectAfterBankAccountUpdate": {
+          "handlerURL": "https://task-handler.trydave.com/collectAfterBankAccountUpdate",
+          "queueName": "collect-after-bank-account-update-task"
+        },
+        "collectAfterBankAccountUpdateScheduled": {
+          "handlerURL": "https://task-handler.trydave.com/collectAfterBankAccountUpdateScheduled",
+          "queueName": "task-handler"
+        },
+        "setSubscriptionDueDate": {
+          "handlerURL": "https://task-handler.trydave.com/setSubscriptionDueDate",
+          "queueName": "task-handler"
+        },
+        "matchDisbursementBankTransaction": {
+          "handlerURL": "https://task-handler.trydave.com/matchDisbursementBankTransaction",
+          "queueName": "match-disbursement-bank-transaction-task"
+        },
+        "updateExpectedTransactions": {
+          "handlerURL": "https://task-handler.trydave.com/updateExpectedTransactions",
+          "queueName": "update-expected-transactions-task"
+        },
+        "updatePaymentStatus": {
+          "handlerURL": "https://task-handler.trydave.com/updatePaymentStatus",
+          "queueName": "update-payment-status"
+        },
+        "updateReimbursementStatus": {
+          "handlerURL": "https://task-handler.trydave.com/updateReimbursementStatus",
+          "queueName": "task-handler"
+        },
+        "collectPastDueSubscription": {
+          "handlerURL": "https://task-handler.trydave.com/collectPastDueSubscription",
+          "queueName": "collect-subscription-after-bank-account-update-task"
+        },
+        "performPredictedPaycheckCollection": {
+          "handlerURL": "https://task-handler.trydave.com/performPredictedPaycheckCollection",
+          "queueName": "task-handler"
+        },
+        "broadcastAdvanceApproval": {
+          "handlerURL": "https://task-handler.trydave.com/broadcastAdvanceApproval",
+          "queueName": "broadcast-advance-approval"
+        },
+        "broadcastAdvanceDisbursement": {
+          "handlerURL": "https://task-handler.trydave.com/broadcastAdvanceDisbursement",
+          "queueName": "task-handler"
+        },
+        "broadcastAdvancePayment": {
+          "handlerURL": "https://task-handler.trydave.com/broadcastAdvancePayment",
+          "queueName": "task-handler"
+        },
+        "broadcastAdvanceTipChanged": {
+          "handlerURL": "https://task-handler.trydave.com/broadcastAdvanceTipChanged",
+          "queueName": "task-handler"
+        },
+        "broadcastPaymentChanged": {
+          "handlerURL": "https://task-handler.trydave.com/broadcastPaymentChanged",
+          "queueName": "task-handler"
+        },
+        "broadcastBankDisconnect": {
+          "handlerURL": "https://task-handler.trydave.com/broadcastBankDisconnect",
+          "queueName": "task-handler"
+        },
+        "sideHustleNotifications": {
+          "handlerURL": "https://task-handler.trydave.com/sideHustleNotifications",
+          "queueName": "task-handler"
+        },
+        "subscriptionCollectionPredictedPayday": {
+          "handlerURL": "https://task-handler.trydave.com/subscriptionCollectionPredictedPayday",
+          "queueName": "task-handler"
+        },
+        "tivanGatherAdvance": {
+          "handlerURL": "https://taneleer.trydave.com/advance/gathering",
+          "queueName": "tivan-gather"
+        },
+        "tivanGatherAdvanceUseCurrentBalance": {
+          "handlerURL": "https://taneleer.trydave.com/advance/gathering",
+          "queueName": "tivan-gather-use-current-balance"
+        },
+        "tivanGatherApiAdvance": {
+          "handlerURL": "https://taneleer.trydave.com/advance/gathering-once",
+          "queueName": "tivan-gather-api-tasks"
+        },
+        "stitchOldAccountTransactions": {
+          "handlerURL": "https://task-handler.trydave.com/stitchOldAccountTransactions",
+          "queueName": "task-handler"
+        },
+        "updateDisbursementStatus": {
+          "handlerURL": "https://task-handler.trydave.com/updateDisbursementStatus",
+          "queueName": "update-disbursement-status"
+        },
+        "initiateBankConnectionRefresh": {
+          "handlerURL": "https://task-handler.trydave.com/initiateBankConnectionRefresh",
+          "queueName": "initiate-bank-connection-refresh"
+        },
+        "processBankConnectionRefresh": {
+          "handlerURL": "https://task-handler.trydave.com/processBankConnectionRefresh",
+          "queueName": "process-bank-connection-refresh"
+        },
+        "completeBankConnectionRefresh": {
+          "handlerURL": "https://task-handler.trydave.com/completeBankConnectionRefresh",
+          "queueName": "complete-bank-connection-refresh"
+        },
+        "processDashboardBulkUpdate": {
+          "handlerURL": "https://task-handler.trydave.com/processDashboardBulkUpdate",
+          "queueName": "task-handler"
+        }
+      }
+    }
+  },
+  "heath": {
+    "domain": "heath-nodeport",
+    "balanceLogTopic": "daily-balance-log",
+    "bankTransactionTopic": "bank-transaction-backfill"
+  },
+  "k8s": {
+    "environment": "production",
+    "cluster": "dave-api-v2",
+    "logLevel": "info"
+  },
+  "mxAtrium": {
+    "baseUrl": "https://atrium.mx.com"
+  },
+  "plaid": {
+    "environment": "production"
+  },
+  "pubsub": {
+    "subscriptionPrefix": "",
+    "topicPrefix": "",
+    "bankOfDave": {
+      "projectId": "dave-173321"
+    }
+  },
+  "scripts": {
+    "achReturnRepayment": {
+      "internalUser": 5812549
+    }
+  },
+  "services": {
+    "balanceLogUrl": "balance-log-service-nodeport:80"
+  },
+  "snowflake": {
+    "database": "SECONDARY_APP_DB",
+    "schema": "PUBLIC"
+  },
+  "synapsepay": {
+    "hostUrl": "https://api.synapsefi.com",
+    "userFingerprintSecret": "secret-b291b207-fbac-4092-9803-c31d2df754d0",
+    "alternateFingerprintSecret": "client_secret_XYJ2ABbOCgdZUhorlDGFLt5eIkHmKEsNqi3Q6V0a"
+  },
+  "tabapay": {
+    "url": "api-use2.tabapay.net:10443"
+  },
+  "tivan": {
+    "tivanBalanceCheckLockSeconds": "7200",
+    "triggers": {
+      "bankAccountUpdate": {
+        "hundredthPercent": "1"
+      },
+      "dailyCronjob": {
+        "hundredthPercent": "1"
+      }
+    }
+  },
+  "zendesk": {
+    "url": "https://davesaves.zendesk.com",
+    "customTicketFields": {
+      "ticketPriority": 360016279211,
+      "bucket": 360009245991,
+      "phoneNumber": 114103542812,
+      "userSubmittedReason": 360012299052,
+      "daveUserId": 360031355392,
+      "daveMemberType": 360031355372,
+      "bankingUserSubmittedReason": 360019887812
+    },
+    "brands": {
+      "dave": 114094532032,
+      "daveBanking": 360002554891
+    }
+  },
+  "risk": {
+    "addressControl": {
+      "addressControlEnabled": false
+    }
+  }
+}

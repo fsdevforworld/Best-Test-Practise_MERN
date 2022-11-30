@@ -1,0 +1,120 @@
+[
+  {
+    "scope": "https://bank-goals-api-staging-internal.trydave.com:443",
+    "method": "GET",
+    "path": "/internal/v1/recurring-goal-transfers",
+    "body": "",
+    "status": 200,
+    "response": {
+      "recurringGoalTransfers": [
+        {
+          "goalId": "bdb6314059ec11ebb6b9fbdaaa3455fa",
+          "recurringTransferId": "fd60bfe0924f11eb8b9a2f31cdd60fe8",
+          "transferType": "intrabank",
+          "targetAccountId": "62500071978946f6bd038e85c737f0c8",
+          "amount": 10,
+          "nextScheduledOn": "2021-05-07",
+          "recurrence": {
+            "interval": "weekly",
+            "intervalParams": ["friday"]
+          },
+          "created": "2021-03-31T18:36:22.000Z"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Date",
+      "Tue, 04 May 2021 21:09:20 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "354",
+      "Connection",
+      "close",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"162-x9d+dqnNAKx1RHkMnt7Mj0CA5g0\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  },
+  {
+    "scope": "https://bank-goals-api-staging-internal.trydave.com:443",
+    "method": "PATCH",
+    "path": "/internal/v1/recurring-goal-transfer/fd60bfe0924f11eb8b9a2f31cdd60fe8",
+    "body": {
+      "goalId": "8814390059ed11ebb6b9fbdaaa3455fa"
+    },
+    "status": 200,
+    "response": {
+      "goalId": "8814390059ed11ebb6b9fbdaaa3455fa",
+      "recurringTransferId": "fd60bfe0924f11eb8b9a2f31cdd60fe8",
+      "transferType": "intrabank",
+      "targetAccountId": "62500071978946f6bd038e85c737f0c8",
+      "amount": 10,
+      "nextScheduledOn": "2021-05-07",
+      "recurrence": {
+        "interval": "weekly",
+        "intervalParams": ["friday"]
+      },
+      "created": "2021-03-31T18:36:22.000Z"
+    },
+    "rawHeaders": [
+      "Date",
+      "Tue, 04 May 2021 21:09:21 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "325",
+      "Connection",
+      "close",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"145-YyGmr07oHuNiISWPtUhsv95QLLc\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  },
+  {
+    "scope": "https://bank-goals-api-staging-internal.trydave.com:443",
+    "method": "GET",
+    "path": "/internal/v1/recurring-goal-transfers",
+    "body": "",
+    "status": 200,
+    "response": {
+      "recurringGoalTransfers": [
+        {
+          "goalId": "8814390059ed11ebb6b9fbdaaa3455fa",
+          "recurringTransferId": "fd60bfe0924f11eb8b9a2f31cdd60fe8",
+          "transferType": "intrabank",
+          "targetAccountId": "62500071978946f6bd038e85c737f0c8",
+          "amount": 10,
+          "nextScheduledOn": "2021-05-07",
+          "recurrence": {
+            "interval": "weekly",
+            "intervalParams": ["friday"]
+          },
+          "created": "2021-03-31T18:36:22.000Z"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Date",
+      "Tue, 04 May 2021 21:09:22 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "354",
+      "Connection",
+      "close",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"162-PvWp141CKMvtXgZwYNAiHXIoueg\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  }
+]

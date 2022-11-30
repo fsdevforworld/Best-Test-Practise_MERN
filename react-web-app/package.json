@@ -1,0 +1,137 @@
+{
+  "name": "bank-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "sh bin/start.sh",
+    "webhooks": "ngrok http 8080",
+    "start-staging": "sh bin/start-staging.sh",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "eject": "react-scripts eject",
+    "lint": "prettier --single-quote --print-width=100 --trailing-comma=all --write 'src/**/*.{ts,tsx,css}' 'test/**/*.{ts,js}' && eslint 'src/**/*[^.d$].{ts, tsx, css}' && tsc",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "dependencies": {
+    "@braze/web-sdk": "^3.3.0",
+    "@dave-inc/wire-typings": "^2.0.0",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "amplitude-js": "^5.3.1",
+    "axios": "^0.19.0",
+    "classnames": "^2.2.6",
+    "clsx": "^1.1.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "prop-types": "^15.6.0",
+    "react": "^17.0.2",
+    "react-datepicker": "^3.0.0",
+    "react-div-100vh": "^0.3.4",
+    "react-dom": "^17.0.2",
+    "react-facebook-pixel": "^0.1.3",
+    "react-helmet-async": "^1.0.4",
+    "react-id-swiper": "^2.3.2",
+    "react-load-script": "^0.0.6",
+    "react-modal": "^3.10.1",
+    "react-player": "^2.9.0",
+    "react-redux": "^7.1.0",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "4.0.3",
+    "react-swipeable-views": "^0.13.9",
+    "react-swipeable-views-utils": "^0.14.0-alpha.0",
+    "react-text-mask": "^5.4.3",
+    "redux": "^4.0.4",
+    "seedrandom": "^3.0.5",
+    "smoothscroll-polyfill": "^0.4.4",
+    "swiper": "^5.0.3",
+    "typesafe-actions": "^4.4.2",
+    "use-react-router": "^1.0.7",
+    "utility-types": "^3.7.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@dave-inc/gh-actions": "^1.0.7",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/react": "^5.1.9",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/amplitude-js": "^4.4.4",
+    "@types/chai": "^4.2.3",
+    "@types/classnames": "^2.2.9",
+    "@types/faker": "^4.1.6",
+    "@types/jest": "^26.0.15",
+    "@types/lodash": "^4.14.136",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-datepicker": "^3.0.2",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-helmet": "^5.0.11",
+    "@types/react-modal": "^3.8.2",
+    "@types/react-redux": "^7.1.1",
+    "@types/react-router-dom": "^4.3.4",
+    "@types/react-swipeable-views": "^0.13.0",
+    "@types/react-swipeable-views-utils": "^0.13.2",
+    "@types/react-text-mask": "^5.4.6",
+    "@types/seedrandom": "^2.4.28",
+    "@types/smoothscroll-polyfill": "^0.3.1",
+    "@types/storybook__addon-knobs": "^5.0.3",
+    "@types/storybook__react": "^4.0.2",
+    "@types/uuid": "^3.4.5",
+    "allure-commandline": "^2.13.0",
+    "chai": "^4.2.0",
+    "chromedriver": "^75.1.0",
+    "cypress": "^7.2.0",
+    "cypress-react-selector": "^2.3.6",
+    "faker": "^4.1.0",
+    "prettier": "^2.2.1",
+    "redux-devtools": "^3.5.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^4.1.2"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx,ts,tsx}",
+      "!**/*.spec.{ts,tsx}"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 0.15,
+        "functions": 0.4,
+        "lines": 0.3,
+        "statements": 0.25
+      }
+    },
+    "coverageReporters": [
+      "text-summary",
+      "lcov"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

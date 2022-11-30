@@ -1,0 +1,33 @@
+[
+  {
+    "scope": "https://promotions-api-staging.trydave.com:443",
+    "method": "POST",
+    "path": "/manage/segment-user",
+    "body": {
+      "userId": 227,
+      "segmentId": "cf34205a-1583-4e3e-ada1-1e050fa4d8cb"
+    },
+    "status": 200,
+    "response": {
+      "promoCampaignId": 1,
+      "segmentId": "cf34205a-1583-4e3e-ada1-1e050fa4d8cb",
+      "userId": 227
+    },
+    "rawHeaders": [
+      "Date",
+      "Fri, 30 Jul 2021 22:26:23 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "85",
+      "Connection",
+      "close",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"55-IUgBMqvpsIC4omptZi7Uyb0GCts\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "scope": "https://vestibule.mx.com",
+    "method": "GET",
+    "path": "/users/USR-fake-user-guid/members/MBR-fake-member-guid",
+    "status": 404,
+    "response": {
+      "error": {
+        "message": "We were unable to find the record you requested"
+      }
+    },
+    "rawHeaders": ["mx-api-key", "test-mx-api-key", "mx-client-id", "test-mx-client-id"]
+  }
+]

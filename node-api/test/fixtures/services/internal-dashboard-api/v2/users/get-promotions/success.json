@@ -1,0 +1,35 @@
+[
+  {
+    "scope": "https://promotions-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/manage/user-info?id=49",
+    "body": {},
+    "status": 200,
+    "response": [
+      "1f8b080000000000000364925f6bc32014c5bf8a48610f4bc0a44dfff8d6ad63f4a5942d6fcb1e8cde0459a3454df750fadd774db7b5eb4034d1730fc7dff5487b0f6ead289f2c122a45b717ba356bd3584ff9dbf1b2838a59423db41d9810ff68c36650145396666a3a4e2720eb745130963679a3a098cdeb7aca289604e1c24a04c0929ce559caf29465259b73c670dc0f33eac0a81b555e946cc68bc5b52a38ddb6e02837fd6e9750079fc2c530c70abf1574fba0ad5976b637a1a23c63ec84454674d1b7041fc84a3b90b8c0de7a1dc8d6d9cec61a9429f0d2e9c1e147fd7b4c1ebf4190aa32a43ca7e083dbc5cc36c41ec091116218742f433c4e46188428edebde7950245812a9df79b21207200fc27c68d392a594317764b1d3adae77f007c8184799e7d8285e4c7f81c45b4307c820b81e922b0ab18994630b1da08dba029bb1326337f81d34e0c048187a2b6aa906dac27821a3db6b10a1c73741b74f9bd57af34c937fc0cfbc4fefa72f000000ffff",
+      "0300764a1e3b55020000"
+    ],
+    "rawHeaders": [
+      "Server",
+      "nginx/1.17.10",
+      "Date",
+      "Wed, 03 Mar 2021 23:33:15 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Vary",
+      "Accept-Encoding",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"255-H4qgMJunG1TkZSlYymTPthSGSp0\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains",
+      "Content-Encoding",
+      "gzip"
+    ]
+  }
+]

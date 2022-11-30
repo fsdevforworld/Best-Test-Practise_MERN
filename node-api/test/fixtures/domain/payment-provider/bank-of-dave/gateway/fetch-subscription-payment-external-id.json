@@ -1,0 +1,80 @@
+[
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2a82e635-d1dd-46c1-bc82-56f722a6e698/accounts/0b39346b-9b00-4aee-a11e-0428fd13df81/payments/c80a4734-130d-4299-8d92-c67b25a3ffc7",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "payment",
+      "data": {
+        "uuid": "c80a4734-130d-4299-8d92-c67b25a3ffc7",
+        "paymentReferenceId": "tcp-0000-0000",
+        "paymentReferenceType": "COLLECTION",
+        "initialAmount": 1,
+        "metadata": {},
+        "created": "2019-04-04T20:29:23.000Z",
+        "updated": "2019-04-04T20:29:23.000Z",
+        "paymentTransactions": [
+          {
+            "uuid": "4c6c73f1-e619-4c3b-85db-c79e969d1088",
+            "transactionReferenceId": "tcp-0000-0000",
+            "transactionType": "COLLECTION",
+            "failed": false,
+            "error": null,
+            "created": "2019-04-04T20:29:23.000Z",
+            "updated": "2019-04-04T20:29:29.000Z",
+            "transaction": {
+              "uuid": "11fa267f-61c8-42aa-8345-41f7cfd5fd67",
+              "debit": true,
+              "amount": 1,
+              "amountBreakdown": {
+                "amount": 1,
+                "fees": {
+                  "surcharge": 0,
+                  "totalFeeAmount": 0,
+                  "feeDetails": [
+                    {
+                      "feeType": "Synapse Facilitator Fee",
+                      "feeAmount": 0
+                    }
+                  ]
+                }
+              },
+              "pending": false,
+              "type": "DAVE",
+              "source": {
+                "name": "Dave",
+                "legalNames": ["Dave"]
+              },
+              "created": "2019-04-04T20:29:25.000Z",
+              "updated": "2019-04-05T00:47:03.000Z",
+              "returned": false,
+              "cancelled": false,
+              "returnedMessage": null
+            }
+          }
+        ]
+      },
+      "message": "success",
+      "name": "ApiResponse"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "a63a53ad-dc58-4cbe-a926-e9fc820c62fe",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Fri, 05 Apr 2019 22:07:03 GMT",
+      "Content-Length",
+      "985",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

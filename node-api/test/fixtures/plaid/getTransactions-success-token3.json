@@ -1,0 +1,236 @@
+[
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/transactions/get",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "access_token": "access-sandbox-1fbf327f-6bf1-423d-b966-425d420d0fa2",
+      "start_date": "2019-03-18",
+      "end_date": "2019-03-19",
+      "options": {
+        "count": 2,
+        "offset": 0,
+        "account_ids": ["Z5qdlz6kPgFDRx1RzD6MuLdW6PxjKACg6JwQm"]
+      }
+    },
+    "status": 200,
+    "response": {
+      "accounts": [
+        {
+          "account_id": "Z5qdlz6kPgFDRx1RzD6MuLdW6PxjKACg6JwQm",
+          "balances": {
+            "available": 100,
+            "current": 110,
+            "limit": null
+          },
+          "mask": "0000",
+          "name": "Plaid Checking",
+          "official_name": "Plaid Gold Standard 0% Interest Checking",
+          "subtype": "checking",
+          "type": "depository"
+        }
+      ],
+      "item": {
+        "available_products": ["assets", "balance", "credit_details", "identity", "income"],
+        "billed_products": ["auth", "transactions"],
+        "error": null,
+        "institution_id": "ins_1",
+        "item_id": "R58Rmj6lzVFR9PL9BRjEUj4bd8rrLjFRLJ8vq",
+        "webhook": "https://dave-dick.ngrok.io/v1/bank/plaid_webhook"
+      },
+      "request_id": "p0nzLHfmIUxtwOJ",
+      "total_transactions": 3,
+      "transactions": [
+        {
+          "account_id": "Z5qdlz6kPgFDRx1RzD6MuLdW6PxjKACg6JwQm",
+          "account_owner": null,
+          "amount": 12,
+          "category": ["Food and Drink", "Restaurants"],
+          "category_id": "13005000",
+          "date": "2019-03-19",
+          "location": {
+            "address": null,
+            "city": null,
+            "lat": null,
+            "lon": null,
+            "state": null,
+            "store_number": "3322",
+            "zip": null
+          },
+          "name": "McDonald's",
+          "payment_meta": {
+            "by_order_of": null,
+            "payee": null,
+            "payer": null,
+            "payment_method": null,
+            "payment_processor": null,
+            "ppd_id": null,
+            "reason": null,
+            "reference_number": null
+          },
+          "pending": false,
+          "pending_transaction_id": null,
+          "transaction_id": "mk5r1376mLHypKBpNyJ3IDGx4oEMn9CLaGeww",
+          "transaction_type": "place"
+        },
+        {
+          "account_id": "Z5qdlz6kPgFDRx1RzD6MuLdW6PxjKACg6JwQm",
+          "account_owner": null,
+          "amount": 4.33,
+          "category": ["Food and Drink", "Restaurants", "Coffee Shop"],
+          "category_id": "13005043",
+          "date": "2019-03-19",
+          "location": {
+            "address": null,
+            "city": null,
+            "lat": null,
+            "lon": null,
+            "state": null,
+            "store_number": null,
+            "zip": null
+          },
+          "name": "Starbucks",
+          "payment_meta": {
+            "by_order_of": null,
+            "payee": null,
+            "payer": null,
+            "payment_method": null,
+            "payment_processor": null,
+            "ppd_id": null,
+            "reason": null,
+            "reference_number": null
+          },
+          "pending": false,
+          "pending_transaction_id": null,
+          "transaction_id": "yeVAmJy643hQ4zg4GQeMHzVq87ZbAliyBJPLJ",
+          "transaction_type": "place"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Tue, 02 Apr 2019 21:41:03 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options",
+      "DENY",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-XSS-Protection",
+      "1; mode=block"
+    ]
+  },
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/transactions/get",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "access_token": "access-sandbox-1fbf327f-6bf1-423d-b966-425d420d0fa2",
+      "start_date": "2019-03-18",
+      "end_date": "2019-03-19",
+      "options": {
+        "count": 2,
+        "offset": 2,
+        "account_ids": ["Z5qdlz6kPgFDRx1RzD6MuLdW6PxjKACg6JwQm"]
+      }
+    },
+    "status": 200,
+    "response": {
+      "accounts": [
+        {
+          "account_id": "Z5qdlz6kPgFDRx1RzD6MuLdW6PxjKACg6JwQm",
+          "balances": {
+            "available": 100,
+            "current": 110,
+            "limit": null
+          },
+          "mask": "0000",
+          "name": "Plaid Checking",
+          "official_name": "Plaid Gold Standard 0% Interest Checking",
+          "subtype": "checking",
+          "type": "depository"
+        }
+      ],
+      "item": {
+        "available_products": ["assets", "balance", "credit_details", "identity", "income"],
+        "billed_products": ["auth", "transactions"],
+        "error": null,
+        "institution_id": "ins_1",
+        "item_id": "R58Rmj6lzVFR9PL9BRjEUj4bd8rrLjFRLJ8vq",
+        "webhook": "https://dave-dick.ngrok.io/v1/bank/plaid_webhook"
+      },
+      "request_id": "gvt76MSUcmol0AS",
+      "total_transactions": 3,
+      "transactions": [
+        {
+          "account_id": "Z5qdlz6kPgFDRx1RzD6MuLdW6PxjKACg6JwQm",
+          "account_owner": null,
+          "amount": 89.4,
+          "category": ["Food and Drink", "Restaurants"],
+          "category_id": "13005000",
+          "date": "2019-03-18",
+          "location": {
+            "address": null,
+            "city": null,
+            "lat": null,
+            "lon": null,
+            "state": null,
+            "store_number": null,
+            "zip": null
+          },
+          "name": "SparkFun",
+          "payment_meta": {
+            "by_order_of": null,
+            "payee": null,
+            "payer": null,
+            "payment_method": null,
+            "payment_processor": null,
+            "ppd_id": null,
+            "reason": null,
+            "reference_number": null
+          },
+          "pending": false,
+          "pending_transaction_id": null,
+          "transaction_id": "9A8G3yDoPVTM41W4kMbpIypvQnj5gluR67obX",
+          "transaction_type": "place"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Tue, 02 Apr 2019 21:41:04 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "1738",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options",
+      "DENY",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-XSS-Protection",
+      "1; mode=block"
+    ]
+  }
+]

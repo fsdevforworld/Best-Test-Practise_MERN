@@ -1,0 +1,147 @@
+{
+  "advanceApproval": {
+    "serviceTestRatio": 1
+  },
+  "appsflyer": {
+    "gdprUrl": "https://hq1.appsflyer.com/gdpr/stub"
+  },
+  "twilio": {
+    "sid": "AC"
+  },
+  "bankingData": {
+    "serviceTestRatio": 1
+  },
+  "dave": {
+    "bankOfDaveInternalApi": {
+      "reverseTransactionAvailable": false,
+      "secret": "for-overdraft-eyes-only",
+      "url": "https://bank-api-staging.trydave.com"
+    }
+  },
+  "sombra": {
+    "stubResponse": "false",
+    "development": {
+      "expiresIn": 604800,
+      "issuer": "test-access-token-issuer",
+      "publicKey": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUEyRjE5a0ZMUnM3eFVpNXg2SjJJNApLNk9Tc2NoZTJQTDcyYnpsa3dvaU5MZ3ROcld2bERqK1ptRkVGSFE4Lys5M2VRSm9UYXpTbmxnZWtjeE9KR0VBCis5L3FVUWkyQVkvZnpQeGpDM1llZ2dOY0lzekZsMGZwa3ZOdlc1TmNObFBLZng0SGoxVFNFTUlkUXZtdEM1a0UKTDFTdTdtdW5mRlVqT3B0RjUzV2ZlNjhPMlF5UEF3WXNXZUxCOWhsd2tLSnpEdjdtUC8xOUFzVzYzNU5maWtOUApVZW04dkc2RlNlN1FuQWJQV2ZRcmNnUy9tUFBHODVxc1ZlZG40RVBEZzJ6R2RkRVlvYlN4U3lWY05iU2N2NWc2CmdzMHdZT2lVTTN1ak5DcjNEN0wxbGh6RjRNM2RhWHJoY0d6MHhyT3ZiYkdUN0pOZ01LSSs2a0dnYi9QTmlJWXkKNVFJREFRQUIKLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg==",
+      "privateKey": "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBMkYxOWtGTFJzN3hVaTV4NkoySTRLNk9Tc2NoZTJQTDcyYnpsa3dvaU5MZ3ROcld2CmxEaitabUZFRkhROC8rOTNlUUpvVGF6U25sZ2VrY3hPSkdFQSs5L3FVUWkyQVkvZnpQeGpDM1llZ2dOY0lzekYKbDBmcGt2TnZXNU5jTmxQS2Z4NEhqMVRTRU1JZFF2bXRDNWtFTDFTdTdtdW5mRlVqT3B0RjUzV2ZlNjhPMlF5UApBd1lzV2VMQjlobHdrS0p6RHY3bVAvMTlBc1c2MzVOZmlrTlBVZW04dkc2RlNlN1FuQWJQV2ZRcmNnUy9tUFBHCjg1cXNWZWRuNEVQRGcyekdkZEVZb2JTeFN5VmNOYlNjdjVnNmdzMHdZT2lVTTN1ak5DcjNEN0wxbGh6RjRNM2QKYVhyaGNHejB4ck92YmJHVDdKTmdNS0krNmtHZ2IvUE5pSVl5NVFJREFRQUJBb0lCQUM4bW9KaDFFL0lCVnNOZQpCRmpVMUx6ZDFyZ2JuRi9YQS85OVpPSllVUUFBS3dwREtkSTVZV2RhUndYV0Z2MEhhSmZjYUhLVStRazgxdHliCkUyUm1KMXE4ZjBuTmhpeHMrQzZweWNQVHArNVpZUmpNV3pzT2x0NUpZcmtvTWU0ODhHSW5YeXBqSjZ3elFVRTUKTy9iTkQ5Wm9zLzZOUTJDYkJTUmVkaXRzdkthdEp2UFptcU9Hb0cxNkRUbmgxOG9KSkFJaUc3MkpQMkF2VXNqZQorOUhsekQ5QjZpcVJoVlcyTmZ2ZU1SWEwvT2RTdno4QzBhQnAwTHoxZUtKdzdPUHhYdmg5NXBmSW8vTHYzc3BzClBrakdmTU5uYzRIQjk1TE1rMVVaZHV1b1lHb0RBNnNiY0xaYi9QdzBlZnNiT3NFSDZmNDZGR3RieUU1WWM3SU8KV3pGZVgza0NnWUVBOXNRUnIwaGsvRi92L3hhVzVTS1craDJEZSs4QmRqN2RCeWhMN21BYW9qRTdNd0pBdXZPTgo1OFh2OTdXOTFLQkNsV1hGdDhRMFM5aG50czIxNmNlZTlaV2dDKzIvcGlxeVA1NG9EeE1rcWZlMC93MnZ3QXNDCm1qdUNhUUk5MUs0ZG8wWTdKZE5hZGgvM0owZit1Zk0xcnNUcndkaDU4S0RLV0dUamd0L1NoTXNDZ1lFQTRIWXgKZitJdlFsUlEybVEwZUlEcnRZcXFCWXplK04yc0VEMVM1c1UvK2NwYWphbDZpNmFVNVlBNkdkcjRoYmorS3BrOQo1SzUrNmI1UGhIbzgvSWNaek5QRnFWV1VaZ01wKytSa05kTVZTZ2VZYU14VWxvNGppRFRWeTk5ZUx3WWV5NzBjCnF5WjZzeFRIMjhVOGxGSjIwbkJrU0N3ejJ2VVpVZElyZXBndTRROENnWUVBN011ZmtNMXVvc1BKUU1iRGpDUFMKTHpjdEdqdHk4cTVHV1h6d3lGR09uVCtTNkZMc0hMcGszUm1UT2VnN3ZwTCs4ZkFVZUZDZVFuM3FvSC9zWmViNgpBZjVQODhKMG14YnpyNXFzSkRNaGhyeStBZFozWlZqcmFXZGJzRHJIYkpTY3VqWkZ3Zmw4SUVoeVdrNTdBS09EClN5K0tjSnl6L3hXOHRuQXg1ait6KzFzQ2dZRUF5Sk4xaWlSUlBNRmhlclllV1N4QzlQZlRGS0NjUXVDN044dkUKditpMVVYNHNTdmlPUkNwNFZWaXZFcG1raU1JVmhYVm9aR2cxaXFRQUpJNmkzcm5QS1VSNEZlZ2Vjc1lUQno5QQorUVFGdXlCc1pnRm8rUnhNemhNQWxXeWxtZm1ySFQ2QlZzTk0wNmdYSytEbFVGa2NTdElhR3BBOVNrVEkrbCtICmNNWjY1YXNDZ1lBYUlqTTR1WU5iMzZFQko0Qnc0bi9vRzBNbU4yZ3YyZzNEMzFneXNvdDdoL0pnd0VOZXpHWncKT3BNT0kxQ1p2cEdCUUFRWWRVVGUySEk3UU5CR05kK2JKRjZTQTBONUdZc2ZHbmU4b2tiTTc4Vk94ZlpFNGZoUgovQWl0MDdqcjloZ0U1STdqdWZtT0IzT0VaemRTTW0wa01TanNqajZSSHNOZWloRXJmWE5Ednc9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo="
+    }
+  },
+  "fraud": {
+    "heuristics": {
+      "oneTimePayment": {
+        "maxPayments": 2,
+        "timeWindowDays": 30
+      },
+      "oneTimePaymentAttempts": {
+        "maxAttempts": 3,
+        "timeWindowDays": 30
+      }
+    }
+  },
+  "heath": {
+    "balanceLogTopic": "test_daily-balance-log"
+  },
+  "internal-auth": {
+    "clientId": "test-client-id",
+    "secret": "cbbee5a25893bd96c537d08ccddf38c76906f2e4b05152788747ea2019089b10"
+  },
+  "internalDashboardApi": {
+    "dashboardBulkUpdate": {
+      "maximumNumberOfRows": 500
+    }
+  },
+  "loomisApi": {
+    "serviceName": "localhost",
+    "servicePort": 7337
+  },
+  "ml": {
+    "underwriting": {
+      "incomeValidationNodeSingleObservation": {
+        "experiment": {
+          "active": true
+        }
+      }
+    },
+    "predictedPayback": {
+      "enabled": "TRUE"
+    },
+    "globalPredictedPayback": {
+      "enabled": "TRUE",
+      "oracle": {
+        "version": {
+          "major": 1,
+          "minor": 0
+        }
+      }
+    }
+  },
+  "mxAtrium": {
+    "experiment": {
+      "active": "TRUE",
+      "limit": "1"
+    },
+    "apiKey": "test-mx-api-key",
+    "clientId": "test-mx-client-id"
+  },
+  "pubsub": {
+    "subscriptionPrefix": "test_",
+    "topicPrefix": "test_",
+    "covid19Stimulus": {
+      "enabled": false
+    }
+  },
+  "phoneNumbers": {
+    "easyVerification": true
+  },
+  "rateLimits": {
+    "loginsByIp": {
+      "perHour": 5
+    },
+    "loginsTotal": {
+      "perMinute": 10
+    }
+  },
+  "redis": {
+    "api": {
+      "host": "localhost",
+      "port": "46379"
+    },
+    "jobProcessor": {
+      "host": "localhost",
+      "port": "46379"
+    }
+  },
+  "services": {
+    "auth": true,
+    "synapseProxy": true,
+    "balanceLogUrl": "test-balance-log-service-nodeport:8085"
+  },
+  "seedUser": {
+    "serviceName": "localhost",
+    "servicePort": 7740
+  },
+  "subscriptions": {
+    "preferAchBalanceThreshold": 35
+  },
+  "synapsepay": {
+    "alternateFingerprintSecret": "new fingerprint",
+    "receivingNodeSubscriptions": "605x376cc54d7b08a19c93fx"
+  },
+  "tivan": {
+    "host": "https://tivan.staging.trydave.com",
+    "tivanBalanceCheckLockSeconds": "1",
+    "triggers": {
+      "bankAccountUpdate": {
+        "hundredthPercent": "0",
+        "adHocHundredthPercent": 0
+      },
+      "dailyCronjob": {
+        "hundredthPercent": "0"
+      }
+    }
+  },
+  "usps": {
+    "userId": "MOCKVALUE"
+  }
+}

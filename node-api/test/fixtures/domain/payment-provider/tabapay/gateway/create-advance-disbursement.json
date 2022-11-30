@@ -1,0 +1,39 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "POST",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/transactions",
+    "body": {
+      "referenceID": "2019-04-09-005",
+      "type": "push",
+      "accounts": {
+        "sourceAccountID": "BQsCNSGV0IY6SjArjuOS9Q",
+        "destinationAccountID": "AL8FE3HESGAxb8ti45bJsQ"
+      },
+      "amount": "0.10"
+    },
+    "status": 200,
+    "response": {
+      "SC": 200,
+      "EC": "0",
+      "transactionID": "wDA3NYwFgQ2BN04SeqkbKw",
+      "network": "STAR",
+      "networkID": "122951436",
+      "networkRC": "00",
+      "status": "COMPLETED",
+      "approvalCode": "178298"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Thu, 12 Dec 2019 00:16:20 GMT",
+      "Content-Length",
+      "139",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  }
+]

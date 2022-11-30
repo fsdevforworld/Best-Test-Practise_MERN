@@ -1,0 +1,91 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "POST",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/accounts?RejectDuplicateCard",
+    "body": {
+      "referenceID": "test-id-3459134",
+      "card": {
+        "data": "encrypted_card_wow",
+        "keyID": "SxwzWCWD0MhfG-KNGYYTFQ"
+      },
+      "owner": {
+        "name": {
+          "first": "Johnny21",
+          "last": "Seckler"
+        },
+        "address": {
+          "line1": "123 Awesome St",
+          "city": "Sweet Town",
+          "state": "CA",
+          "zipcode": "91234"
+        },
+        "phone": {
+          "number": "3135551213",
+          "countryCode": "1"
+        }
+      }
+    },
+    "status": 409,
+    "response": {
+      "SC": 409,
+      "EC": "3C463000",
+      "EM": "Duplicate",
+      "duplicateAccountIDs": ["x1wRWuCE0KDRIvP6kkA7zw"]
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Mon, 06 May 2019 22:57:35 GMT",
+      "Content-Length",
+      "92",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "GET",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/accounts/x1wRWuCE0KDRIvP6kkA7zw",
+    "body": "",
+    "status": 200,
+    "response": {
+      "SC": 200,
+      "EC": "0",
+      "referenceID": "test-id-3459134",
+      "card": {
+        "last4": "9992",
+        "expirationDate": "202312"
+      },
+      "owner": {
+        "name": {
+          "first": "Johnny21",
+          "last": "Seckler"
+        },
+        "address": {
+          "line1": "123 Awesome St",
+          "city": "Sweet Town",
+          "state": "CA",
+          "zipcode": "91234"
+        },
+        "phone": {
+          "countryCode": "1",
+          "number": "3125551213"
+        }
+      }
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Mon, 06 May 2019 22:57:35 GMT",
+      "Content-Length",
+      "296",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  }
+]

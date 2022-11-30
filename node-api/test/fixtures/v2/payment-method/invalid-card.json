@@ -1,0 +1,46 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "POST",
+    "path": "/v1/clients/secret:tabapay-clientId/cards",
+    "body": {
+      "owner": {
+        "name": {
+          "first": "Jesus",
+          "last": "Stoltenberg"
+        },
+        "address": {
+          "line1": "123 Main St",
+          "line2": "Apt 456",
+          "city": "Livengood",
+          "state": "AK",
+          "zipcode": "00000"
+        },
+        "phone": {
+          "number": "3643057722",
+          "countryCode": "1"
+        }
+      },
+      "card": {
+        "data": "iV5vDVaNHLbABGpQUuB2VExI6TVJ0tQaFhQJuUNmutdgRKOLhyQMG0vmLzK3F--e_GNtKyVGWrH_HUcHOX9lI7aT3B9Kv6RDZrIQPDlN9LtaND48RpxW_mwfqN2Z9O5srqInx09JXbS9skd0vTLNClQ41lZccIpmNBP8xS2WYvsOTmLdjVxpgQC5O0m4x1MjxpU_fSyjZW2XplGeQRcOFeKdMEo_Tf1wJ5bW0YZCh0EtBYdN2Rfvj1vlNnFhtW2t0ZiZoRxUJVfMOIsZhqWgy9Gt5_9wGex6-0JwtJK2mXRe1j0MBpsuGmkVEP8w5hsOJDeaoa5Z0XrGA7KVmzTS6A",
+        "keyID": "yFAmO2KCCCihxVC3IAw_xg"
+      }
+    },
+    "status": 400,
+    "response": {
+      "SC": 400,
+      "EC": "3C3E5261",
+      "EM": "Card Number"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Tue, 19 Nov 2019 01:15:07 GMT",
+      "Content-Length",
+      "45",
+      "Connection",
+      "close"
+    ]
+  }
+]

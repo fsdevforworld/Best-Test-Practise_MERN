@@ -1,0 +1,9 @@
+[
+  {
+    "scope": "https://vestibule.mx.com",
+    "method": "DELETE",
+    "path": "/users/USR-fake-user-guid/members/MBR-fake-member-guid",
+    "status": 204,
+    "rawHeaders": ["mx-api-key", "test-mx-api-key", "mx-client-id", "test-mx-client-id"]
+  }
+]

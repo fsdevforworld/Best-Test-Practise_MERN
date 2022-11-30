@@ -1,0 +1,70 @@
+[
+  {
+    "scope": "https://rest.iad-03.braze.com:443",
+    "method": "POST",
+    "path": "/users/export/ids",
+    "body": {
+      "api_key": "secret:braze-key",
+      "external_ids": ["2"],
+      "fields_to_export": [
+        "first_name",
+        "last_name",
+        "email",
+        "phone",
+        "home_city",
+        "dob",
+        "country"
+      ]
+    },
+    "status": 201,
+    "response": [
+      "1f8b0800d93cf15e00034c8d4d0b82401445ff4abc75ca9b3ed55545cb76d5a60899c6970ace4ccc5321c4ffdeb3557037f79c0b77808e293064f7015e75e03677da126470d43dc11c1afd8f0ea48340b2ba6e0414d4476ab1dc15b28d8db7a20aff14a1d2241513a1ba2066bfc488789381f19d6bc34746d7b3d4ca5bca4ddd4ee0e479b6772535c462de9577d3ab9287d57ab34d5284f131074bccba9c0c77c64881f10b0000ffff03004a2c0a51c5000000"
+    ],
+    "rawHeaders": [
+      "Connection",
+      "close",
+      "Content-Length",
+      "179",
+      "Cache-Control",
+      "max-age=0, private, must-revalidate",
+      "Content-Encoding",
+      "gzip",
+      "Content-Type",
+      "application/json",
+      "ETag",
+      "W/\"b3e7f370ac850ef27caa88e4cf013ecc\"",
+      "Server",
+      "nginx",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains",
+      "X-RateLimit-Limit",
+      "250000",
+      "X-RateLimit-Remaining",
+      "249930",
+      "X-RateLimit-Reset",
+      "1592870400",
+      "X-Request-Id",
+      "a7dea8d0-c5d8-4811-b308-66aa4858cc77",
+      "X-Runtime",
+      "0.061384",
+      "Accept-Ranges",
+      "bytes",
+      "Date",
+      "Mon, 22 Jun 2020 23:20:57 GMT",
+      "Via",
+      "1.1 varnish",
+      "X-Served-By",
+      "cache-bur17568-BUR",
+      "X-Cache",
+      "MISS",
+      "X-Cache-Hits",
+      "0",
+      "X-Timer",
+      "S1592868057.377312,VS0,VE133",
+      "Vary",
+      "Origin,Accept-Encoding"
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/auth/get",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "access_token": "login-required-access-token"
+    },
+    "status": 400,
+    "response": {
+      "display_message": null,
+      "error_code": "ITEM_LOGIN_REQUIRED",
+      "error_message": "the login details of this item have changed (credentials, MFA, or required user action) and a user login is required to update this information. use Link's update mode to restore the item to a good state",
+      "error_type": "ITEM_ERROR",
+      "request_id": "289rzUYhsCBrTZs",
+      "suggested_action": null
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Wed, 13 Feb 2019 23:58:22 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "277",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08"
+    ]
+  }
+]

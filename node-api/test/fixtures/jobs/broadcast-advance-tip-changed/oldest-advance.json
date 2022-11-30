@@ -1,0 +1,72 @@
+[
+  {
+    "scope": "https://rest.iad-03.braze.com:443",
+    "method": "POST",
+    "path": "/users/track",
+    "body": {
+      "api_key": "secret:braze-key",
+      "attributes": [
+        {
+          "advance_amount": 75,
+          "advance_due_date": "2019-11-01",
+          "advance_fee": 0,
+          "advance_outstanding": 75,
+          "advance_payback_url": "https://dave.com/payback/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0.n6N24dbEt8jX3DYVPzzerhmvS7PfUBOs4o33D-CZMuE",
+          "advance_tip": 0,
+          "advance_tip_percent": 0,
+          "external_id": "1"
+        }
+      ]
+    },
+    "status": 201,
+    "response": [
+      "1f8b0800c2521d5c0003aa564a2c2929ca4c2a2d492d8e2f28ca4f4e2d2e4e4d51b232d451ca053213d35395ac948a4b9341e24ab500000000ffff03001a94bb942e000000"
+    ],
+    "rawHeaders": [
+      "Cache-Control",
+      "max-age=0, private, must-revalidate",
+      "Content-Encoding",
+      "gzip",
+      "Content-Type",
+      "application/json",
+      "ETag",
+      "W/\"f34a974a3de7f56c1472e483c2725291\"",
+      "Server",
+      "nginx",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains",
+      "X-RateLimit-Limit",
+      "250000",
+      "X-RateLimit-Remaining",
+      "250000",
+      "X-RateLimit-Reset",
+      "1545426000",
+      "X-Request-Id",
+      "514795eb-6350-4e2c-93bd-dc994779660c",
+      "X-Runtime",
+      "0.040161",
+      "Content-Length",
+      "69",
+      "Accept-Ranges",
+      "bytes",
+      "Date",
+      "Fri, 21 Dec 2018 20:53:22 GMT",
+      "Via",
+      "1.1 varnish",
+      "Connection",
+      "close",
+      "X-Served-By",
+      "cache-bur17542-BUR",
+      "X-Cache",
+      "MISS",
+      "X-Cache-Hits",
+      "0",
+      "X-Timer",
+      "S1545425602.984828,VS0,VE111",
+      "Vary",
+      "Accept-Encoding"
+    ]
+  }
+]

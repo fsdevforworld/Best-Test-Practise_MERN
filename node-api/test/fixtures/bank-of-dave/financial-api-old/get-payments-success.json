@@ -1,0 +1,114 @@
+[
+  {
+    "scope": "http://localhost:3002",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/61850/accounts/5c119ea6-02f7-4d35-824b-830a03aec001/payments",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "payment[]",
+      "data": [
+        {
+          "uuid": "c4be6ceb-7f2a-4ffe-a4a0-c8d8ab6f8c18",
+          "paymentReferenceId": "1",
+          "paymentReferenceType": "PAYMENT",
+          "initialAmount": 100,
+          "metadata": {
+            "b": "m",
+            "n": "s",
+            "o": "!",
+            "r": "a",
+            "u": "r"
+          },
+          "created": "2019-03-20T05:53:23.000Z",
+          "updated": "2019-03-20T05:53:23.000Z",
+          "paymentTransactions": [
+            {
+              "uuid": "e9999315-9fba-4233-a71a-09076f1f0261",
+              "transactionType": "COLLECTION",
+              "created": "2019-03-20T05:53:28.000Z",
+              "updated": "2019-03-20T05:53:28.000Z",
+              "transaction": {
+                "uuid": "5b016b3c-53cd-4fe0-8f0b-3cdaf0aef3ef",
+                "debit": false,
+                "amount": 100,
+                "amountBreakdown": {
+                  "amount": 100,
+                  "fees": {
+                    "surcharge": 0,
+                    "totalFeeAmount": 0,
+                    "feeDetails": [
+                      {
+                        "feeType": "Facilitator Fee",
+                        "feeAmount": 0
+                      }
+                    ]
+                  }
+                },
+                "pending": true,
+                "type": "TRANSFER",
+                "source": {
+                  "name": "Test Debit Card",
+                  "legalNames": ["Test Debit Card"]
+                },
+                "created": "2019-03-20T05:53:23.000Z",
+                "updated": "2019-03-20T05:53:23.000Z",
+                "returned": false,
+                "returnedMessage": null
+              }
+            },
+            {
+              "uuid": "868d83b0-0cf1-4958-a7c2-b07d6510defa",
+              "transactionType": "REFUND",
+              "created": "2019-03-20T05:56:20.000Z",
+              "updated": "2019-03-20T05:56:20.000Z",
+              "transaction": {
+                "uuid": "5b016b3c-53cd-4fe0-8f0b-3cdaf0aef3ef",
+                "debit": false,
+                "amount": 100,
+                "amountBreakdown": {
+                  "amount": 100,
+                  "fees": {
+                    "surcharge": 0,
+                    "totalFeeAmount": 0,
+                    "feeDetails": [
+                      {
+                        "feeType": "Facilitator Fee",
+                        "feeAmount": 0
+                      }
+                    ]
+                  }
+                },
+                "pending": true,
+                "type": "TRANSFER",
+                "source": {
+                  "name": "Test Debit Card",
+                  "legalNames": ["Test Debit Card"]
+                },
+                "created": "2019-03-20T05:53:23.000Z",
+                "updated": "2019-03-20T05:53:23.000Z",
+                "returned": false,
+                "returnedMessage": null
+              }
+            }
+          ]
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "ea76982d-0633-4707-98d3-7e09dd1dbd11",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Wed, 20 Mar 2019 05:59:09 GMT",
+      "Connection",
+      "close",
+      "Content-Length",
+      "1538"
+    ]
+  }
+]

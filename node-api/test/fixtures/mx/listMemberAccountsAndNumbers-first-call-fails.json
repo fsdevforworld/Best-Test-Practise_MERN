@@ -1,0 +1,46 @@
+[
+  {
+    "scope": "https://vestibule.mx.com",
+    "method": "GET",
+    "path": "/users/USR-fake-user-guid/members/MBR-fake-member-guid/accounts",
+    "status": 500,
+    "response": {
+      "error": {
+        "message": "Internal Server Error"
+      }
+    },
+    "rawHeaders": ["mx-api-key", "test-mx-api-key", "mx-client-id", "test-mx-client-id"]
+  },
+  {
+    "scope": "https://vestibule.mx.com",
+    "method": "GET",
+    "path": "/users/USR-fake-user-guid/members/MBR-fake-member-guid/account_numbers",
+    "status": 200,
+    "response": {
+      "account_numbers": [
+        {
+          "account_guid": "ACT-06d7f44b-caae-0f6e-1383-01f52e75dcb1",
+          "account_number": "10001",
+          "routing_number": "55234324000",
+          "member_guid": "MBR-fake-member-list-member-accounts-and-routing-success",
+          "user_guid": "USR-fake-user-list-member-accounts-and-routing-success"
+        },
+        {
+          "account_guid": "ACT-04323j-caae-0f3fe-1384-01f234e75dcb1",
+          "account_number": "10002",
+          "routing_number": "55234324000",
+          "member_guid": "MBR-fake-member-list-member-accounts-and-routing-success",
+          "user_guid": "USR-fake-user-list-member-accounts-and-routing-success"
+        },
+        {
+          "account_guid": "ACT-04fds3j-caae-0f3fe-1384-01f2dsf75sd1",
+          "account_number": "10003",
+          "routing_number": "55234324000",
+          "member_guid": "MBR-fake-member-list-member-accounts-and-routing-success",
+          "user_guid": "USR-fake-user-list-member-accounts-and-routing-success"
+        }
+      ]
+    },
+    "rawHeaders": ["mx-api-key", "test-mx-api-key", "mx-client-id", "test-mx-client-id"]
+  }
+]

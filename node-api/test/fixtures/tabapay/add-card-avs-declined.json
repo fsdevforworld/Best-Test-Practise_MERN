@@ -1,0 +1,64 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "POST",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/cards?AVS",
+    "body": {
+      "owner": {
+        "name": {
+          "first": "Taurean",
+          "last": "Nader"
+        },
+        "address": {
+          "zipcode": "99992"
+        }
+      },
+      "card": {
+        "data": "bklfQkzlmc-kXNEc-DvDsGW7QUs86jq3DfCgUKVZsj14FFKuDTsgbOi31Zv91hfYIPAQ9ACC2BoQxABdw7L2fe3dUG2sUtTVENJrJqVGM0Y1bxg4uQZX_yrDHAG-bAc0VPKXo-1YLjtbVyCDBakut1GIiG4zjddlhV-F4xRLSu9ddFmKhMk_7bd-y41hMKVbmBBWFU3tOrRgNVVmalDa2fOvG8tpTSqOFDOUwqGquULFC004aAYCICIRabnNSAV6zGu-kZh2CwYumMg71_Sv72XRUIeTLZIMAyf9XG35IBp56pYPQj0ATeD96bHE4Q5BV59VdviFE9_hHAJem4JQCA",
+        "keyID": "yFAmO2KCCCihxVC3IAw_xg"
+      }
+    },
+    "status": 200,
+    "response": {
+      "SC": 200,
+      "EC": "0",
+      "card": {
+        "pull": {
+          "enabled": true,
+          "network": "Visa",
+          "type": "Debit",
+          "regulated": true,
+          "currency": "840",
+          "country": "840"
+        },
+        "push": {
+          "enabled": true,
+          "network": "Visa",
+          "type": "Debit",
+          "availability": "Immediate",
+          "regulated": true,
+          "currency": "840",
+          "country": "840"
+        }
+      },
+      "AVS": {
+        "networkRC": "05",
+        "authorizeID": "194511",
+        "resultText": "DECLINE",
+        "codeAVS": "N"
+      }
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Fri, 03 Jan 2020 19:45:11 GMT",
+      "Content-Length",
+      "352",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  }
+]

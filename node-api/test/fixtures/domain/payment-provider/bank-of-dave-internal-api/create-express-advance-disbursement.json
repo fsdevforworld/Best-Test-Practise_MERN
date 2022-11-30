@@ -1,0 +1,37 @@
+[
+  {
+    "scope": "https://bank-api-staging.trydave.com:443",
+    "method": "POST",
+    "path": "/internal-api/v1/bank-accounts/0b39346b-9b00-4aee-a11e-0428fd13df81/disburse",
+    "body": {
+      "amount": 75,
+      "referenceId": "pelican-can-can-0005",
+      "disbursementType": "instant"
+    },
+    "status": 200,
+    "response": {
+      "transaction": {
+        "amount": 75,
+        "id": "784a8620-c8a2-4512-ac36-fac801a2434b",
+        "status": "pending",
+        "transactedAt": "2020-04-01T23: 13: 30.000Z"
+      }
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "95c194bf-3452-42bc-acef-9b22863dc64e",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Thu, 04 Apr 2019 20:02:30 GMT",
+      "Content-Length",
+      "972",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

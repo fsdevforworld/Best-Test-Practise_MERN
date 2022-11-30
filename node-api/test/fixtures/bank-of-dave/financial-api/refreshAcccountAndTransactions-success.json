@@ -1,0 +1,1964 @@
+[
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2a82e635-d1dd-46c1-bc82-56f722a6e698/accounts/0b39346b-9b00-4aee-a11e-0428fd13df81/transactions?startsAt=2019-03-27T07%3A00%3A00Z&endsAt=2019-04-06T06%3A59%3A59Z&page=0&perPage=500",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "234b7f29-aef9-48de-9daf-1e0ef1ed85da",
+          "debit": true,
+          "amount": 0.64,
+          "amountBreakdown": {
+            "amount": 0.64,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Keith Valentin",
+            "legalNames": ["Keith Valentin"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T23:49:37.000Z",
+          "updated": "2019-04-04T17:05:03.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "3cac5238-4a6d-446e-a096-1360a7a0eb59",
+          "debit": false,
+          "amount": 0.07,
+          "amountBreakdown": {
+            "amount": 0.07,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Ramona Niesman",
+            "legalNames": ["Ramona Niesman"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T23:49:37.000Z",
+          "updated": "2019-04-04T17:05:04.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "43ed5c1b-f0c2-4657-bd68-1b1c55171c23",
+          "debit": true,
+          "amount": 0.8,
+          "amountBreakdown": {
+            "amount": 0.8,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Hattie Bernard",
+            "legalNames": ["Hattie Bernard"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T23:22:13.000Z",
+          "updated": "2019-04-04T17:05:05.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "9ff61b84-afbd-4bb8-a349-014f67c261ef",
+          "debit": false,
+          "amount": 0.27,
+          "amountBreakdown": {
+            "amount": 0.27,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Lucille Maggio",
+            "legalNames": ["Lucille Maggio"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T23:22:13.000Z",
+          "updated": "2019-04-04T17:05:06.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "00e215de-8366-43f2-b2b0-7cab822769fa",
+          "debit": true,
+          "amount": 0.94,
+          "amountBreakdown": {
+            "amount": 0.94,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Barbara Kath",
+            "legalNames": ["Barbara Kath"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T23:03:29.000Z",
+          "updated": "2019-04-04T17:06:02.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "4980ea96-e38e-48e3-9208-6099026986e8",
+          "debit": false,
+          "amount": 0.72,
+          "amountBreakdown": {
+            "amount": 0.72,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Eleanor Lank",
+            "legalNames": ["Eleanor Lank"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T23:03:29.000Z",
+          "updated": "2019-04-04T17:06:03.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "33df1cc4-254f-4779-83ee-72b34fa81df2",
+          "debit": true,
+          "amount": 0.6,
+          "amountBreakdown": {
+            "amount": 0.6,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Ronald Terwilliger",
+            "legalNames": ["Ronald Terwilliger"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:23.000Z",
+          "updated": "2019-04-04T17:06:04.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "54e91f83-6f0c-4108-aa5b-6bdbde7e026e",
+          "debit": false,
+          "amount": 0.14,
+          "amountBreakdown": {
+            "amount": 0.14,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Mildred Allen",
+            "legalNames": ["Mildred Allen"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:23.000Z",
+          "updated": "2019-04-04T17:06:05.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "4de64493-8951-4b6c-baa4-c907600e66fb",
+          "debit": true,
+          "amount": 0.09,
+          "amountBreakdown": {
+            "amount": 0.09,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Brenda Pena",
+            "legalNames": ["Brenda Pena"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-04T17:16:06.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "f1d9d482-dc9d-411f-9f54-4c73ee9f9b6c",
+          "debit": false,
+          "amount": 0.8,
+          "amountBreakdown": {
+            "amount": 0.8,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Gerald Finnegan",
+            "legalNames": ["Gerald Finnegan"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-03T22:46:03.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "ca6e0482-4777-4687-90d5-68b652f63df1",
+          "debit": true,
+          "amount": 0.45,
+          "amountBreakdown": {
+            "amount": 0.45,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Robbie Triche",
+            "legalNames": ["Robbie Triche"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-03T22:46:03.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "bfd2b9c8-873a-4c67-8ddf-a83cdea777c8",
+          "debit": false,
+          "amount": 0.68,
+          "amountBreakdown": {
+            "amount": 0.68,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Laura Moore",
+            "legalNames": ["Laura Moore"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-04T17:16:05.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "042d5cca-3b05-47bf-8610-d9cb4dd59e43",
+          "debit": true,
+          "amount": 0.57,
+          "amountBreakdown": {
+            "amount": 0.57,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Ruth Lobue",
+            "legalNames": ["Ruth Lobue"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-04T17:16:04.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "a6179884-ea3f-4e00-b01a-d2fdd3bc576f",
+          "debit": false,
+          "amount": 0.02,
+          "amountBreakdown": {
+            "amount": 0.02,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Jennifer Williams",
+            "legalNames": ["Jennifer Williams"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-04T17:16:03.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "8caec259-2d8d-4971-b7d0-088c84222b88",
+          "debit": true,
+          "amount": 0.81,
+          "amountBreakdown": {
+            "amount": 0.81,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Jerry Hawn",
+            "legalNames": ["Jerry Hawn"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-04T17:16:02.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "684e9bb4-8ab3-4780-abbf-4cb2592a0e82",
+          "debit": false,
+          "amount": 0.61,
+          "amountBreakdown": {
+            "amount": 0.61,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Juan Flinn",
+            "legalNames": ["Juan Flinn"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-04T17:15:08.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "950d1bd1-6bb5-460c-a8dc-93d3c1e20b23",
+          "debit": true,
+          "amount": 0.89,
+          "amountBreakdown": {
+            "amount": 0.89,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Anthony Ketterling",
+            "legalNames": ["Anthony Ketterling"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-04T17:15:07.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "65b9412f-3a68-486f-b200-0cc187bbddac",
+          "debit": false,
+          "amount": 0.76,
+          "amountBreakdown": {
+            "amount": 0.76,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Patricia Andrews",
+            "legalNames": ["Patricia Andrews"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-04T17:15:06.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "fa81e086-2e41-4c83-839c-b6f8202e0e13",
+          "debit": true,
+          "amount": 0.51,
+          "amountBreakdown": {
+            "amount": 0.51,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Veronica Mayhew",
+            "legalNames": ["Veronica Mayhew"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:02.000Z",
+          "updated": "2019-04-04T17:15:05.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "c91c5a8a-20e9-4746-9dbe-8e3c03cc93f1",
+          "debit": false,
+          "amount": 100,
+          "amountBreakdown": {
+            "amount": 100,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0.75,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0.75
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "TRANSFER",
+          "source": {
+            "name": "Sandbox Debit Card",
+            "legalNames": ["Sandbox Debit Card"]
+          },
+          "created": "2019-04-03T22:46:02.000Z",
+          "updated": "2019-04-04T17:15:03.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "adc53c7e-f259-4018-b39f-057a42828b57",
+          "debit": false,
+          "amount": 0.64,
+          "amountBreakdown": {
+            "amount": 0.64,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Ethel Howell",
+            "legalNames": ["Ethel Howell"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T21:25:11.000Z",
+          "updated": "2019-04-03T21:25:24.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "5c9a1f52-cca5-4e59-9e16-11e649af0b83",
+          "debit": false,
+          "amount": 100,
+          "amountBreakdown": {
+            "amount": 100,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0.75,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0.75
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "TRANSFER",
+          "source": {
+            "name": "Sandbox Debit Card",
+            "legalNames": ["Sandbox Debit Card"]
+          },
+          "created": "2019-03-29T19:34:09.000Z",
+          "updated": "2019-03-29T19:34:17.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "ed64c269-b64a-4e36-8c57-c9427642ff7f",
+          "debit": false,
+          "amount": 100,
+          "amountBreakdown": {
+            "amount": 100,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0.75,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0.75
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "TRANSFER",
+          "source": {
+            "name": "Sandbox Debit Card",
+            "legalNames": ["Sandbox Debit Card"]
+          },
+          "created": "2019-03-29T00:01:18.000Z",
+          "updated": "2019-03-29T00:01:26.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "5be12b33-0b97-4ffe-a117-a88c537b4a5a",
+          "debit": false,
+          "amount": 100,
+          "amountBreakdown": {
+            "amount": 100,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0.75,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0.75
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "TRANSFER",
+          "source": {
+            "name": "Sandbox Debit Card",
+            "legalNames": ["Sandbox Debit Card"]
+          },
+          "created": "2019-03-29T00:00:03.000Z",
+          "updated": "2019-03-29T00:00:03.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "9918a7d8-f50b-4b08-9ccd-0486c2ca70b7",
+          "debit": false,
+          "amount": 100,
+          "amountBreakdown": {
+            "amount": 100,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0.75,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0.75
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "TRANSFER",
+          "source": {
+            "name": "Sandbox Debit Card",
+            "legalNames": ["Sandbox Debit Card"]
+          },
+          "created": "2019-03-29T00:00:02.000Z",
+          "updated": "2019-03-29T00:00:02.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "d6751416-cec3-4dca-affd-988885851311",
+          "debit": false,
+          "amount": 1,
+          "amountBreakdown": {
+            "amount": 1,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "DAVE",
+          "source": {
+            "name": "Dave",
+            "legalNames": ["Dave"]
+          },
+          "created": "2019-03-28T21:43:18.000Z",
+          "updated": "2019-03-28T21:43:25.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "88e17447-c4f2-40d7-9e0d-c6ece3feeabf",
+          "debit": true,
+          "amount": 1,
+          "amountBreakdown": {
+            "amount": 1,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "DAVE",
+          "source": {
+            "name": "Dave",
+            "legalNames": ["Dave"]
+          },
+          "created": "2019-03-27T20:52:36.000Z",
+          "updated": "2019-03-27T20:52:42.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "f5ececb6-90b3-4212-9ccb-f1bbfe5537c5",
+          "debit": true,
+          "amount": 1,
+          "amountBreakdown": {
+            "amount": 1,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "DAVE",
+          "source": {
+            "name": "Dave",
+            "legalNames": ["Dave"]
+          },
+          "created": "2019-03-27T19:34:42.000Z",
+          "updated": "2019-03-27T19:34:49.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "140c8abe-ad4c-494b-8e06-7d8ea39e5c18",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Thu, 04 Apr 2019 17:49:48 GMT",
+      "Content-Length",
+      "13191",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2a82e635-d1dd-46c1-bc82-56f722a6e698/accounts/0b39346b-9b00-4aee-a11e-0428fd13df81/transactions?startsAt=2019-03-27T07%3A00%3A00Z&endsAt=2019-04-06T06%3A59%3A59Z&page=1&perPage=500",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [
+        {
+          "uuid": "234b7f29-aef9-48de-9daf-1e0ef1ed85da",
+          "debit": true,
+          "amount": 0.64,
+          "amountBreakdown": {
+            "amount": 0.64,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Keith Valentin",
+            "legalNames": ["Keith Valentin"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T23:49:37.000Z",
+          "updated": "2019-04-04T17:05:03.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "3cac5238-4a6d-446e-a096-1360a7a0eb59",
+          "debit": false,
+          "amount": 0.07,
+          "amountBreakdown": {
+            "amount": 0.07,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Ramona Niesman",
+            "legalNames": ["Ramona Niesman"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T23:49:37.000Z",
+          "updated": "2019-04-04T17:05:04.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "43ed5c1b-f0c2-4657-bd68-1b1c55171c23",
+          "debit": true,
+          "amount": 0.8,
+          "amountBreakdown": {
+            "amount": 0.8,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Hattie Bernard",
+            "legalNames": ["Hattie Bernard"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T23:22:13.000Z",
+          "updated": "2019-04-04T17:05:05.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "9ff61b84-afbd-4bb8-a349-014f67c261ef",
+          "debit": false,
+          "amount": 0.27,
+          "amountBreakdown": {
+            "amount": 0.27,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Lucille Maggio",
+            "legalNames": ["Lucille Maggio"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T23:22:13.000Z",
+          "updated": "2019-04-04T17:05:06.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "00e215de-8366-43f2-b2b0-7cab822769fa",
+          "debit": true,
+          "amount": 0.94,
+          "amountBreakdown": {
+            "amount": 0.94,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Barbara Kath",
+            "legalNames": ["Barbara Kath"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T23:03:29.000Z",
+          "updated": "2019-04-04T17:06:02.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "4980ea96-e38e-48e3-9208-6099026986e8",
+          "debit": false,
+          "amount": 0.72,
+          "amountBreakdown": {
+            "amount": 0.72,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Eleanor Lank",
+            "legalNames": ["Eleanor Lank"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T23:03:29.000Z",
+          "updated": "2019-04-04T17:06:03.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "33df1cc4-254f-4779-83ee-72b34fa81df2",
+          "debit": true,
+          "amount": 0.6,
+          "amountBreakdown": {
+            "amount": 0.6,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Ronald Terwilliger",
+            "legalNames": ["Ronald Terwilliger"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:23.000Z",
+          "updated": "2019-04-04T17:06:04.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "54e91f83-6f0c-4108-aa5b-6bdbde7e026e",
+          "debit": false,
+          "amount": 0.14,
+          "amountBreakdown": {
+            "amount": 0.14,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Mildred Allen",
+            "legalNames": ["Mildred Allen"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:23.000Z",
+          "updated": "2019-04-04T17:06:05.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "4de64493-8951-4b6c-baa4-c907600e66fb",
+          "debit": true,
+          "amount": 0.09,
+          "amountBreakdown": {
+            "amount": 0.09,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Brenda Pena",
+            "legalNames": ["Brenda Pena"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-04T17:16:06.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "f1d9d482-dc9d-411f-9f54-4c73ee9f9b6c",
+          "debit": false,
+          "amount": 0.8,
+          "amountBreakdown": {
+            "amount": 0.8,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Gerald Finnegan",
+            "legalNames": ["Gerald Finnegan"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-03T22:46:03.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "ca6e0482-4777-4687-90d5-68b652f63df1",
+          "debit": true,
+          "amount": 0.45,
+          "amountBreakdown": {
+            "amount": 0.45,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Robbie Triche",
+            "legalNames": ["Robbie Triche"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-03T22:46:03.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "bfd2b9c8-873a-4c67-8ddf-a83cdea777c8",
+          "debit": false,
+          "amount": 0.68,
+          "amountBreakdown": {
+            "amount": 0.68,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Laura Moore",
+            "legalNames": ["Laura Moore"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-04T17:16:05.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "042d5cca-3b05-47bf-8610-d9cb4dd59e43",
+          "debit": true,
+          "amount": 0.57,
+          "amountBreakdown": {
+            "amount": 0.57,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Ruth Lobue",
+            "legalNames": ["Ruth Lobue"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-04T17:16:04.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "a6179884-ea3f-4e00-b01a-d2fdd3bc576f",
+          "debit": false,
+          "amount": 0.02,
+          "amountBreakdown": {
+            "amount": 0.02,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Jennifer Williams",
+            "legalNames": ["Jennifer Williams"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-04T17:16:03.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "8caec259-2d8d-4971-b7d0-088c84222b88",
+          "debit": true,
+          "amount": 0.81,
+          "amountBreakdown": {
+            "amount": 0.81,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Jerry Hawn",
+            "legalNames": ["Jerry Hawn"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-04T17:16:02.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "684e9bb4-8ab3-4780-abbf-4cb2592a0e82",
+          "debit": false,
+          "amount": 0.61,
+          "amountBreakdown": {
+            "amount": 0.61,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Juan Flinn",
+            "legalNames": ["Juan Flinn"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-04T17:15:08.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "950d1bd1-6bb5-460c-a8dc-93d3c1e20b23",
+          "debit": true,
+          "amount": 0.89,
+          "amountBreakdown": {
+            "amount": 0.89,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Anthony Ketterling",
+            "legalNames": ["Anthony Ketterling"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-04T17:15:07.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "65b9412f-3a68-486f-b200-0cc187bbddac",
+          "debit": false,
+          "amount": 0.76,
+          "amountBreakdown": {
+            "amount": 0.76,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Patricia Andrews",
+            "legalNames": ["Patricia Andrews"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:03.000Z",
+          "updated": "2019-04-04T17:15:06.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "fa81e086-2e41-4c83-839c-b6f8202e0e13",
+          "debit": true,
+          "amount": 0.51,
+          "amountBreakdown": {
+            "amount": 0.51,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Veronica Mayhew",
+            "legalNames": ["Veronica Mayhew"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T22:46:02.000Z",
+          "updated": "2019-04-04T17:15:05.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "c91c5a8a-20e9-4746-9dbe-8e3c03cc93f1",
+          "debit": false,
+          "amount": 100,
+          "amountBreakdown": {
+            "amount": 100,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0.75,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0.75
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "TRANSFER",
+          "source": {
+            "name": "Sandbox Debit Card",
+            "legalNames": ["Sandbox Debit Card"]
+          },
+          "created": "2019-04-03T22:46:02.000Z",
+          "updated": "2019-04-04T17:15:03.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "adc53c7e-f259-4018-b39f-057a42828b57",
+          "debit": false,
+          "amount": 0.64,
+          "amountBreakdown": {
+            "amount": 0.64,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "ACH",
+          "source": {
+            "name": "Ethel Howell",
+            "legalNames": ["Ethel Howell"],
+            "meta": {
+              "directDeposit": false
+            }
+          },
+          "created": "2019-04-03T21:25:11.000Z",
+          "updated": "2019-04-03T21:25:24.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "5c9a1f52-cca5-4e59-9e16-11e649af0b83",
+          "debit": false,
+          "amount": 100,
+          "amountBreakdown": {
+            "amount": 100,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0.75,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0.75
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "TRANSFER",
+          "source": {
+            "name": "Sandbox Debit Card",
+            "legalNames": ["Sandbox Debit Card"]
+          },
+          "created": "2019-03-29T19:34:09.000Z",
+          "updated": "2019-03-29T19:34:17.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "ed64c269-b64a-4e36-8c57-c9427642ff7f",
+          "debit": false,
+          "amount": 100,
+          "amountBreakdown": {
+            "amount": 100,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0.75,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0.75
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "TRANSFER",
+          "source": {
+            "name": "Sandbox Debit Card",
+            "legalNames": ["Sandbox Debit Card"]
+          },
+          "created": "2019-03-29T00:01:18.000Z",
+          "updated": "2019-03-29T00:01:26.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "5be12b33-0b97-4ffe-a117-a88c537b4a5a",
+          "debit": false,
+          "amount": 100,
+          "amountBreakdown": {
+            "amount": 100,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0.75,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0.75
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "TRANSFER",
+          "source": {
+            "name": "Sandbox Debit Card",
+            "legalNames": ["Sandbox Debit Card"]
+          },
+          "created": "2019-03-29T00:00:03.000Z",
+          "updated": "2019-03-29T00:00:03.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "9918a7d8-f50b-4b08-9ccd-0486c2ca70b7",
+          "debit": false,
+          "amount": 100,
+          "amountBreakdown": {
+            "amount": 100,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0.75,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0.75
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "TRANSFER",
+          "source": {
+            "name": "Sandbox Debit Card",
+            "legalNames": ["Sandbox Debit Card"]
+          },
+          "created": "2019-03-29T00:00:02.000Z",
+          "updated": "2019-03-29T00:00:02.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "d6751416-cec3-4dca-affd-988885851311",
+          "debit": false,
+          "amount": 1,
+          "amountBreakdown": {
+            "amount": 1,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "DAVE",
+          "source": {
+            "name": "Dave",
+            "legalNames": ["Dave"]
+          },
+          "created": "2019-03-28T21:43:18.000Z",
+          "updated": "2019-03-28T21:43:25.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "88e17447-c4f2-40d7-9e0d-c6ece3feeabf",
+          "debit": true,
+          "amount": 1,
+          "amountBreakdown": {
+            "amount": 1,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "DAVE",
+          "source": {
+            "name": "Dave",
+            "legalNames": ["Dave"]
+          },
+          "created": "2019-03-27T20:52:36.000Z",
+          "updated": "2019-03-27T20:52:42.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        },
+        {
+          "uuid": "f5ececb6-90b3-4212-9ccb-f1bbfe5537c5",
+          "debit": true,
+          "amount": 1,
+          "amountBreakdown": {
+            "amount": 1,
+            "fees": {
+              "surcharge": 0,
+              "totalFeeAmount": 0,
+              "feeDetails": [
+                {
+                  "feeType": "Synapse Facilitator Fee",
+                  "feeAmount": 0
+                }
+              ]
+            }
+          },
+          "pending": false,
+          "type": "DAVE",
+          "source": {
+            "name": "Dave",
+            "legalNames": ["Dave"]
+          },
+          "created": "2019-03-27T19:34:42.000Z",
+          "updated": "2019-03-27T19:34:49.000Z",
+          "returned": false,
+          "cancelled": false,
+          "returnedMessage": null
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "3fe6f0b8-bc53-4fde-be5f-612b9586eb95",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Thu, 04 Apr 2019 17:49:48 GMT",
+      "Content-Length",
+      "13191",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2a82e635-d1dd-46c1-bc82-56f722a6e698/accounts/0b39346b-9b00-4aee-a11e-0428fd13df81/transactions?startsAt=2019-03-27T07%3A00%3A00Z&endsAt=2019-04-06T06%3A59%3A59Z&page=2&perPage=500",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [],
+      "message": "success",
+      "name": "ApiResponse"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "b8d96ffa-fc2c-496d-8f12-ce37de97d0c0",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Thu, 04 Apr 2019 17:49:48 GMT",
+      "Content-Length",
+      "86",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2a82e635-d1dd-46c1-bc82-56f722a6e698/accounts",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "account[]",
+      "data": [
+        {
+          "uuid": "0b39346b-9b00-4aee-a11e-0428fd13df81",
+          "active": true,
+          "allowed": "CREDIT-AND-DEBIT",
+          "nickname": "Sandbox Debit Card Checking",
+          "balance": 527.43,
+          "created": "2019-03-04T18:47:06.000Z",
+          "updated": "2019-04-04T17:49:04.000Z",
+          "cards": [],
+          "regularACH": {
+            "accountNumber": "9899880434",
+            "regularRouting": "084106768",
+            "wireRouting": "084106768"
+          },
+          "directDepositACH": {
+            "accountNumber": "9892601028",
+            "regularRouting": "084106768",
+            "wireRouting": "084106768"
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "abb69a77-c7b6-414c-8b22-14dac1b575ed",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Thu, 04 Apr 2019 17:49:49 GMT",
+      "Content-Length",
+      "519",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/2a82e635-d1dd-46c1-bc82-56f722a6e698/accounts",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "account[]",
+      "data": [
+        {
+          "uuid": "0b39346b-9b00-4aee-a11e-0428fd13df81",
+          "active": true,
+          "allowed": "CREDIT-AND-DEBIT",
+          "nickname": "Sandbox Debit Card Checking",
+          "balance": 527.43,
+          "created": "2019-03-04T18:47:06.000Z",
+          "updated": "2019-04-04T17:49:04.000Z",
+          "cards": [],
+          "regularACH": {
+            "accountNumber": "9899880434",
+            "regularRouting": "084106768",
+            "wireRouting": "084106768"
+          },
+          "directDepositACH": {
+            "accountNumber": "9892601028",
+            "regularRouting": "084106768",
+            "wireRouting": "084106768"
+          }
+        }
+      ],
+      "message": "success",
+      "name": "ApiResponse"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "abb69a77-c7b6-414c-8b22-14dac1b575ed",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Thu, 04 Apr 2019 17:49:49 GMT",
+      "Content-Length",
+      "519",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "http://127.0.0.1:59023",
+    "method": "POST",
+    "path": "/v2/bank_account/5/refresh",
+    "body": "",
+    "status": 200,
+    "response": "",
+    "rawHeaders": [
+      "X-Powered-By",
+      "Express",
+      "Cache-Control",
+      "no-cache",
+      "Pragma",
+      "no-cache",
+      "Expires",
+      "0",
+      "Date",
+      "Thu, 04 Apr 2019 17:49:48 GMT",
+      "Connection",
+      "close",
+      "Content-Length",
+      "0"
+    ]
+  }
+]

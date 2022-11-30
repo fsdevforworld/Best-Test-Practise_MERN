@@ -1,0 +1,22 @@
+[
+  {
+    "scope": "http://oracle-v1-0",
+    "method": "POST",
+    "path": "/payback-date/predicted_payback_date_model/batch-score",
+    "body": {
+      "user_id": 1,
+      "bank_account_id": 1,
+      "dates": [
+        "2020-03-17",
+        "2020-03-18",
+        "2020-03-19",
+        "2020-03-20",
+        "2020-03-21",
+        "2020-03-22",
+        "2020-03-23"
+      ]
+    },
+    "status": 500,
+    "response": {}
+  }
+]

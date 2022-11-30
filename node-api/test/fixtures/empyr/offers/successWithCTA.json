@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "code": 200
+  },
+  "response": {
+    "results": {
+      "results": [
+        {
+          "id": 11431,
+          "name": "Offer Test - PubTestC2A",
+          "latitude": 0.0,
+          "longitude": 0.0,
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/businessDefault.png",
+          "rating": 0.0,
+          "ratingCount": 0,
+          "address": {
+            "streetAddress": "1234 Main PubTestC2A",
+            "postalCode": "92009",
+            "city": "Carlsbad",
+            "state": "ca",
+            "metroName": "San Diego Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 57,
+          "categories": [],
+          "bookmarked": false,
+          "description": "Breakfast place with PubTestC2A",
+          "menuUrl": "",
+          "medias": [],
+          "buzz": [],
+          "features": [],
+          "ambiance": [],
+          "serves": [],
+          "attire": [],
+          "acceptedCards": [],
+          "bestNights": [],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -7,
+          "simpleHours": {
+            "MONDAY": "12:00am-12:00am",
+            "TUESDAY": "12:00am-12:00am",
+            "WEDNESDAY": "12:00am-12:00am",
+            "THURSDAY": "12:00am-12:00am",
+            "FRIDAY": "12:00am-12:00am",
+            "SATURDAY": "12:00am-12:00am",
+            "SUNDAY": "12:00am-12:00am"
+          },
+          "defaultDiscount": 0.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 29068,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 5.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 01/21/2019. Offer requires user activation. Maximum individual reward 250 dollars.",
+              "requiresActivation": true,
+              "basic": false,
+              "details": {
+                "dateAdded": 1548058358,
+                "startDate": 1548058358,
+                "hasSchedule": false,
+                "scheduleType": "INCLUDE",
+                "schedule": {},
+                "hasDefault": false,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              },
+              "link": {
+                "id": 83831,
+                "dateAdded": 1554744573,
+                "lastActivationDate": 1554852475,
+                "status": "ACTIVE"
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "THURSDAY",
+          "businessLocalTime": "1524"
+        },
+        {
+          "id": 11432,
+          "name": "Offer Test - PubTestC2A - No Link",
+          "latitude": 0.0,
+          "longitude": 0.0,
+          "thumbnailUrl": "https://test.mogl.com:444/images/business/businessDefault.png",
+          "rating": 0.0,
+          "ratingCount": 0,
+          "address": {
+            "streetAddress": "1234 Main PubTestC2A",
+            "postalCode": "92009",
+            "city": "Carlsbad",
+            "state": "ca",
+            "metroName": "San Diego Area",
+            "metroImage": null,
+            "metroActive": false
+          },
+          "applicationId": 57,
+          "categories": [],
+          "bookmarked": false,
+          "description": "Breakfast place with PubTestC2A",
+          "menuUrl": "",
+          "medias": [],
+          "buzz": [],
+          "features": [],
+          "ambiance": [],
+          "serves": [],
+          "attire": [],
+          "acceptedCards": [],
+          "bestNights": [],
+          "timezone": "America/Los_Angeles",
+          "timezoneOffset": -7,
+          "simpleHours": {
+            "MONDAY": "12:00am-12:00am",
+            "TUESDAY": "12:00am-12:00am",
+            "WEDNESDAY": "12:00am-12:00am",
+            "THURSDAY": "12:00am-12:00am",
+            "FRIDAY": "12:00am-12:00am",
+            "SATURDAY": "12:00am-12:00am",
+            "SUNDAY": "12:00am-12:00am"
+          },
+          "defaultDiscount": 0.0,
+          "rewards": [],
+          "rewardsSchedule": {},
+          "closed": false,
+          "status": "ACTIVE",
+          "offers": [
+            {
+              "id": 29068,
+              "rewardType": "PERCENT",
+              "rewardValue": 10.0,
+              "rewardMax": 250.0,
+              "feeType": "PERCENT",
+              "feeValue": 5.0,
+              "feeMax": 250.0,
+              "finePrint": "Not all cards are eligible and not all transactions can be monitored. For debit cards, run transaction as credit, do not use PIN. Offer valid from 01/21/2019. Offer requires user activation. Maximum individual reward 250 dollars.",
+              "requiresActivation": true,
+              "basic": false,
+              "details": {
+                "dateAdded": 1548058358,
+                "startDate": 1548058358,
+                "hasSchedule": false,
+                "scheduleType": "INCLUDE",
+                "schedule": {},
+                "hasDefault": false,
+                "userRedemptionRenewalIntervalType": "DAY",
+                "cumulative": false,
+                "dynamic": false
+              },
+              "link": {
+                "id": 83831,
+                "dateAdded": 1554744573,
+                "lastActivationDate": 1554852475,
+                "status": "NOT"
+              }
+            }
+          ],
+          "publish": true,
+          "businessLocalDay": "THURSDAY",
+          "businessLocalTime": "1524"
+        }
+      ],
+      "hits": 145
+    }
+  }
+}

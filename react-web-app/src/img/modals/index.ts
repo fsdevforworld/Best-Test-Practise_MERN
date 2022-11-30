@@ -1,0 +1,11 @@
+export { ReactComponent as BankConnecting1 } from './bank-connecting-1.svg';
+export { ReactComponent as BankConnecting2 } from './bank-connecting-2.svg';
+export { ReactComponent as BankConnecting3 } from './bank-connecting-3.svg';
+export { ReactComponent as BankConnecting4 } from './bank-connecting-4.svg';
+export { ReactComponent as Bills } from './bills.svg';
+export { ReactComponent as Download } from './download.svg';
+export { ReactComponent as HelpDesk } from './help-desk.svg';
+export { ReactComponent as Paycheck } from './paycheck.svg';
+export { ReactComponent as Security } from './security.svg';
+export { ReactComponent as Sherlock } from './sherlock.svg';
+export { ReactComponent as UnsupportedAccount } from './unsupported-account.svg';

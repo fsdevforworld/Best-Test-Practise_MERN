@@ -1,0 +1,37 @@
+[
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/accounts/balance/get",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "access_token": "access-sandbox-123",
+      "options": {
+        "account_ids": ["123"]
+      }
+    },
+    "status": 400,
+    "response": {
+      "display_message": null,
+      "error_code": "INVALID_FIELD",
+      "error_message": "options.account_ids must be a non-empty array of valid account ids",
+      "error_type": "INVALID_REQUEST",
+      "request_id": "dFxnQlsAiAVlp9h"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Thu, 14 Feb 2019 21:45:37 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "221",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08"
+    ]
+  }
+]

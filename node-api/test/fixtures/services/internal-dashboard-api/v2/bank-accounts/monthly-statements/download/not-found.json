@@ -1,0 +1,25 @@
+[
+  {
+    "scope": "https://bank-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/internal-api/v1/bank-accounts/b1dd6b3084fa11ea93125b5d6cfae18d/monthly-statements/1",
+    "body": "",
+    "status": 404,
+    "response": {
+      "customCode": "NOT_FOUND",
+      "message": "Statement not found"
+    },
+    "rawHeaders": [
+      "X-Powered-By",
+      "Express",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "58",
+      "Date",
+      "Thu, 08 Jul 2021 22:36:08 GMT",
+      "Connection",
+      "close"
+    ]
+  }
+]

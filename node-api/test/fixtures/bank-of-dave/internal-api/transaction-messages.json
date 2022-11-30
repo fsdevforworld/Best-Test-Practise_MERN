@@ -1,0 +1,196 @@
+[
+  {
+    "uuid": "14a858c6-39fd-4005-a052-7f31f81cbd06",
+    "debit": false,
+    "amount": 200,
+    "amountBreakdown": {
+      "amount": 200,
+      "fees": {
+        "surcharge": 0,
+        "totalFeeAmount": 0,
+        "feeDetails": [
+          {
+            "feeType": "Synapse Facilitator Fee",
+            "feeAmount": 0
+          }
+        ]
+      }
+    },
+    "pending": false,
+    "type": "ACH",
+    "source": {
+      "name": "Cynthia Dow",
+      "legalNames": ["Cynthia Dow"],
+      "meta": {
+        "directDeposit": true
+      }
+    },
+    "created": "2019-03-06T22:47:07.000Z",
+    "updated": "2019-03-06T22:47:10.000Z",
+    "returned": false,
+    "cancelled": false,
+    "returnedMessage": null
+  },
+  {
+    "uuid": "d95777c5-b61b-429e-8382-fe46c5e49259",
+    "debit": false,
+    "amount": 0.4,
+    "amountBreakdown": {
+      "amount": 0.4,
+      "fees": {
+        "surcharge": 0,
+        "totalFeeAmount": 0,
+        "feeDetails": [
+          {
+            "feeType": "Synapse Facilitator Fee",
+            "feeAmount": 0
+          }
+        ]
+      }
+    },
+    "pending": false,
+    "type": "ACH",
+    "source": {
+      "name": "Jolene Kumro",
+      "legalNames": ["Jolene Kumro"],
+      "meta": {
+        "directDeposit": false
+      }
+    },
+    "created": "2019-03-06T22:47:07.000Z",
+    "updated": "2019-03-06T22:47:10.000Z",
+    "returned": false,
+    "cancelled": false,
+    "returnedMessage": null
+  },
+  {
+    "uuid": "f59de78a-c995-40d6-986b-a444c7d61040",
+    "debit": true,
+    "amount": 0.72,
+    "amountBreakdown": {
+      "amount": 0.72,
+      "fees": {
+        "surcharge": 0,
+        "totalFeeAmount": 0,
+        "feeDetails": [
+          {
+            "feeType": "Synapse Facilitator Fee",
+            "feeAmount": 0
+          }
+        ]
+      }
+    },
+    "pending": false,
+    "type": "ACH",
+    "source": {
+      "name": "Karen Read",
+      "legalNames": ["Karen Read"],
+      "meta": {
+        "directDeposit": false
+      }
+    },
+    "created": "2019-03-06T22:47:04.000Z",
+    "updated": "2019-03-06T22:47:10.000Z",
+    "returned": false,
+    "cancelled": false,
+    "returnedMessage": null,
+    "mcc": "1234"
+  },
+  {
+    "uuid": "e8947158-c144-4127-aa60-bbca30a14d61",
+    "debit": false,
+    "amount": 0.96,
+    "amountBreakdown": {
+      "amount": 0.96,
+      "fees": {
+        "surcharge": 0,
+        "totalFeeAmount": 0,
+        "feeDetails": [
+          {
+            "feeType": "Synapse Facilitator Fee",
+            "feeAmount": 0
+          }
+        ]
+      }
+    },
+    "pending": false,
+    "type": "ACH",
+    "source": {
+      "name": "Carolyn Gremo",
+      "legalNames": ["Carolyn Gremo"],
+      "meta": {
+        "directDeposit": false
+      }
+    },
+    "created": "2019-03-06T22:47:04.000Z",
+    "updated": "2019-03-06T22:47:07.000Z",
+    "returned": false,
+    "cancelled": false,
+    "returnedMessage": null
+  },
+  {
+    "uuid": "ef9112c1-7c42-4ace-a0cd-8d666381fa4c",
+    "debit": true,
+    "amount": 0.38,
+    "amountBreakdown": {
+      "amount": 0.38,
+      "fees": {
+        "surcharge": 0,
+        "totalFeeAmount": 0,
+        "feeDetails": [
+          {
+            "feeType": "Synapse Facilitator Fee",
+            "feeAmount": 0
+          }
+        ]
+      }
+    },
+    "pending": false,
+    "type": "ACH",
+    "source": {
+      "name": "Leon Jennings",
+      "legalNames": ["Leon Jennings"],
+      "meta": {
+        "directDeposit": false
+      }
+    },
+    "created": "2019-03-06T22:47:00.000Z",
+    "updated": "2019-03-06T22:47:03.000Z",
+    "returned": false,
+    "cancelled": false,
+    "returnedMessage": null,
+    "mcc": "65000"
+  },
+  {
+    "uuid": "b1cd66b7-1365-4ef1-abd1-d917a617837d",
+    "debit": false,
+    "amount": 0.19,
+    "amountBreakdown": {
+      "amount": 0.19,
+      "fees": {
+        "surcharge": 0,
+        "totalFeeAmount": 0,
+        "feeDetails": [
+          {
+            "feeType": "Synapse Facilitator Fee",
+            "feeAmount": 0
+          }
+        ]
+      }
+    },
+    "pending": false,
+    "type": "ACH",
+    "source": {
+      "name": "James Cavanaugh",
+      "legalNames": ["James Cavanaugh"],
+      "meta": {
+        "directDeposit": false
+      }
+    },
+    "created": "2019-03-06T22:47:00.000Z",
+    "updated": "2019-03-06T22:47:04.000Z",
+    "returned": false,
+    "cancelled": false,
+    "returnedMessage": null
+  }
+]

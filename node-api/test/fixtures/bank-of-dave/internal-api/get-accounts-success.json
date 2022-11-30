@@ -1,0 +1,52 @@
+[
+  {
+    "scope": "https://bank-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/internal-api/v1/users/119/bank-accounts",
+    "body": "",
+    "status": 200,
+    "response": {
+      "bankAccounts": [
+        {
+          "accountNumber": "9851183927",
+          "currentBalance": 124.13,
+          "id": "7543e5802b6411eb8507d55f739d8e32",
+          "name": "Pelican Checking",
+          "routingNumber": "084106768",
+          "status": "active",
+          "accountType": "CHECKING"
+        },
+        {
+          "accountNumber": "9851183928",
+          "currentBalance": 25.16,
+          "id": "e50c29006b0511eb964127657bf01167",
+          "name": "Pelican Goals",
+          "routingNumber": "084106768",
+          "status": "active",
+          "accountType": "GOAL"
+        }
+      ],
+      "pendingAccounts": []
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx/1.17.7",
+      "Date",
+      "Mon, 26 Apr 2021 23:26:25 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "423",
+      "Connection",
+      "close",
+      "Vary",
+      "Accept-Encoding",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"1a7-onyD7BP2T6BfVaUScMA9zaGqsMo\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "scope": "https://bank-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/internal-api/v1/bank-accounts/something-fake/monthly-statements",
+    "body": "",
+    "status": 404,
+    "response": {
+      "customCode": "NOT_FOUND",
+      "message": "Account not found"
+    },
+    "rawHeaders": [
+      "X-Powered-By",
+      "Express",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "56",
+      "ETag",
+      "W/\"38-gLiOoWvYLtVdOPsrnH7rjsYPZ9E\"",
+      "Date",
+      "Mon, 02 Aug 2021 21:22:02 GMT",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

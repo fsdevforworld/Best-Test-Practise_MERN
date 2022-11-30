@@ -1,0 +1,150 @@
+[
+  {
+    "scope": "https://rest.iad-03.braze.com:443",
+    "method": "POST",
+    "path": "/users/track",
+    "body": {
+      "api_key": "secret:braze-key",
+      "attributes": [
+        {
+          "external_id": "123",
+          "first_name": "Cardi",
+          "last_name": "Offset",
+          "email": "cardib@gmail.com"
+        }
+      ],
+      "events": [
+        {
+          "external_id": "123",
+          "name": "advance-applied",
+          "time": "2018-08-19T00:00:00Z",
+          "properties": {
+            "amount": 10
+          }
+        }
+      ],
+      "purchases": [
+        {
+          "external_id": "123",
+          "product_id": "advance-payment",
+          "currency": "USD",
+          "price": 75.5,
+          "time": "2018-08-19T00:00:00Z",
+          "properties": {
+            "remainingBalance": 5.5,
+            "advanceId": 1
+          }
+        }
+      ]
+    },
+    "status": 201,
+    "response": [
+      "1f8b080035b0b45e0003aa564a2c2929ca4c2a2d492d8e2f28ca4f4e2d2e4e4d51b232d4514a2d4bcd2b41172c282d4ace482cc6509c0b6426a6a72a592915972683c4956a01000000ffff03001602227b5b000000"
+    ],
+    "rawHeaders": [
+      "Connection",
+      "close",
+      "Content-Length",
+      "85",
+      "Cache-Control",
+      "max-age=0, private, must-revalidate",
+      "Content-Encoding",
+      "gzip",
+      "Content-Type",
+      "application/json",
+      "ETag",
+      "W/\"68b326343749fed4d6cc5dda395b5367\"",
+      "Server",
+      "nginx",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains",
+      "X-RateLimit-Limit",
+      "250000",
+      "X-RateLimit-Remaining",
+      "250000",
+      "X-RateLimit-Reset",
+      "1588903200",
+      "X-Request-Id",
+      "d9266fd4-0cbb-4243-85d2-b64608692deb",
+      "X-Runtime",
+      "0.008676",
+      "Accept-Ranges",
+      "bytes",
+      "Date",
+      "Fri, 08 May 2020 01:04:53 GMT",
+      "Via",
+      "1.1 varnish",
+      "X-Served-By",
+      "cache-bur17533-BUR",
+      "X-Cache",
+      "MISS",
+      "X-Cache-Hits",
+      "0",
+      "X-Timer",
+      "S1588899893.310628,VS0,VE324",
+      "Vary",
+      "Origin,Accept-Encoding"
+    ]
+  },
+  {
+    "scope": "https://rest.iad-03.braze.com:443",
+    "method": "POST",
+    "path": "/users/delete",
+    "body": {
+      "api_key": "secret:braze-key",
+      "external_ids": [123]
+    },
+    "status": 201,
+    "response": [
+      "1f8b080035b0b45e0003aa564a49cd492d494d51b232d451ca4d2d2e4e4c4f55b2522a2e4d4e0672946a01000000ffff0300314c39f121000000"
+    ],
+    "rawHeaders": [
+      "Connection",
+      "close",
+      "Content-Length",
+      "58",
+      "Cache-Control",
+      "max-age=0, private, must-revalidate",
+      "Content-Encoding",
+      "gzip",
+      "Content-Type",
+      "application/json",
+      "ETag",
+      "W/\"bbb9b80001393a9d3a40aed1f79e945b\"",
+      "Server",
+      "nginx",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains",
+      "X-RateLimit-Limit",
+      "250000",
+      "X-RateLimit-Remaining",
+      "249998",
+      "X-RateLimit-Reset",
+      "1588903200",
+      "X-Request-Id",
+      "5a4510cd-8678-406f-b15c-b93519d58e5e",
+      "X-Runtime",
+      "0.008989",
+      "Accept-Ranges",
+      "bytes",
+      "Date",
+      "Fri, 08 May 2020 01:04:53 GMT",
+      "Via",
+      "1.1 varnish",
+      "X-Served-By",
+      "cache-bur17536-BUR",
+      "X-Cache",
+      "MISS",
+      "X-Cache-Hits",
+      "0",
+      "X-Timer",
+      "S1588899894.742826,VS0,VE77",
+      "Vary",
+      "Origin,Accept-Encoding"
+    ]
+  }
+]

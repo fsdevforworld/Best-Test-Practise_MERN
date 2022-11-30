@@ -1,0 +1,64 @@
+[
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/accounts/balance/get",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "access_token": "access-sandbox-01f630cc-e08f-4d89-9021-26a1577abcdf",
+      "options": {
+        "account_ids": ["BxRggReRAgfGegorM4JAHlR5gpExQPFwWELDl"]
+      }
+    },
+    "status": 200,
+    "response": {
+      "accounts": [
+        {
+          "account_id": "BxRggReRAgfGegorM4JAHlR5gpExQPFwWELDl",
+          "balances": {
+            "available": 200,
+            "current": 210,
+            "limit": null
+          },
+          "mask": "1111",
+          "name": "Plaid Saving",
+          "official_name": "Plaid Silver Standard 0.1% Interest Saving",
+          "subtype": "savings",
+          "type": "depository"
+        }
+      ],
+      "item": {
+        "available_products": ["assets", "balance", "credit_details", "identity", "income"],
+        "billed_products": ["auth", "transactions"],
+        "error": null,
+        "institution_id": "ins_3",
+        "item_id": "gVbLLbjbdLfRxo3DAwrGhp81QWDKrmcgGwaK8",
+        "webhook": "https://dave-dick.ngrok.io/v1/bank/plaid_webhook"
+      },
+      "request_id": "EWBEypLo0Ikkv0y"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Tue, 12 Feb 2019 20:55:14 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "789",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options",
+      "DENY",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-XSS-Protection",
+      "1; mode=block"
+    ]
+  }
+]

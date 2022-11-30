@@ -1,0 +1,71 @@
+[
+  {
+    "scope": "https://bank-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/internal-api/v1/users/3",
+    "body": "",
+    "status": 200,
+    "response": {
+      "bankAccounts": [
+        {
+          "accountNumber": "269101003201",
+          "currentBalance": 0,
+          "id": "4c6fe58e23484a0da98a683fe343e2b5",
+          "name": "error refer Checking",
+          "routingNumber": "084106768",
+          "status": "active",
+          "accountType": "CHECKING"
+        }
+      ],
+      "cards": [
+        {
+          "id": "a482eebecadb43e38f8afd9711713382",
+          "bankAccountId": "4c6fe58e23484a0da98a683fe343e2b5",
+          "bin": "514240",
+          "estimatedArrivalOn": "2020-03-24",
+          "estimatedShipOn": "2020-03-13",
+          "isPinLocked": false,
+          "isVirtual": false,
+          "lastFour": "5189",
+          "isSelfReissueEligible": false,
+          "isSelfReportLostStolenEligible": true,
+          "status": "pending_activation",
+          "shippingStatus": {
+            "status": "pending",
+            "isReturnedToSender": false,
+            "isRedirected": false
+          }
+        },
+        {
+          "id": "fad7f6b76dd149a0b9852b94172f34e3",
+          "bankAccountId": "4c6fe58e23484a0da98a683fe343e2b5",
+          "bin": "514240",
+          "isPinLocked": false,
+          "isVirtual": true,
+          "lastFour": "4525",
+          "isSelfReissueEligible": false,
+          "isSelfReportLostStolenEligible": true,
+          "status": "pending_pinset"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "X-Powered-By",
+      "Express",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "891",
+      "ETag",
+      "W/\"37b-eaZ09BGERmlJQl2kzLvVl/TS8fk\"",
+      "Date",
+      "Wed, 07 Jul 2021 17:54:21 GMT",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

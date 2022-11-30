@@ -1,0 +1,32 @@
+[
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/0/accounts",
+    "body": "",
+    "status": 401,
+    "response": {
+      "name": "Unauthorized",
+      "message": "Unauthorized",
+      "code": 401,
+      "type": "AUTHORIZATION_ERROR",
+      "data": {}
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "19abb0c6-20b6-4deb-bdad-c8c4750641b6",
+      "Content-type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 26 Mar 2019 19:53:26 GMT",
+      "Transfer-Encoding",
+      "chunked",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

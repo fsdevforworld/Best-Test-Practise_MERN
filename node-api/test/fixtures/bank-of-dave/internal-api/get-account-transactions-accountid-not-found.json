@@ -1,0 +1,29 @@
+[
+  {
+    "scope": "https://bank-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/internal-api/v1/bank-accounts/pelican-rulez/transactions?startsAt=2019-03-01+08%3A00%3A00&endsAt=2019-03-26+06%3A59%3A59&page=1&perPage=1",
+    "body": "",
+    "status": 404,
+    "response": {
+      "customCode": "NOT_FOUND",
+      "message": "NotFound"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "4340888d-fdde-453b-b0cb-264245464dc3",
+      "Content-type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 02 Apr 2019 23:47:47 GMT",
+      "Transfer-Encoding",
+      "chunked",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

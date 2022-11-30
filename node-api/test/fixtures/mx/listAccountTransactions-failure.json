@@ -1,0 +1,14 @@
+[
+  {
+    "scope": "https://vestibule.mx.com",
+    "method": "GET",
+    "path": "/users/USR-fake-user-guid/accounts/ACT-fake-account-guid-1/transactions?from_date=2019-08-01&to_date=2019-09-01&page=1&records_per_page=0",
+    "status": 404,
+    "response": {
+      "error": {
+        "message": "Pagination query parameter must be an integer greater than zero."
+      }
+    },
+    "rawHeaders": ["mx-api-key", "test-mx-api-key", "mx-client-id", "test-mx-client-id"]
+  }
+]

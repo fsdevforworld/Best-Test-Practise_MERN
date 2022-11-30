@@ -1,0 +1,53 @@
+[
+  {
+    "scope": "https://hq1.appsflyer.com:443",
+    "method": "POST",
+    "path": "/gdpr/stub?api_token=secret:appsflyer-pullApiToken",
+    "body": {
+      "subject_request_id": "41d54f51-51f2-433d-802b-89e1ef0a94d5",
+      "subject_request_type": "erasure",
+      "submitted_time": "2020-07-02T22:01:32.000Z",
+      "property_id": "id1193801909",
+      "subject_identities": [
+        {
+          "identity_type": "appsflyer_id",
+          "identity_value": "1552649463735-1979453",
+          "identity_format": "raw"
+        }
+      ]
+    },
+    "status": 201,
+    "response": {
+      "subject_request_id": "41d54f51-51f2-433d-802b-89e1ef0a94d5",
+      "received_time": "2020-07-02T23:29:41.568Z",
+      "expected_completion_time": "2020-08-01T23:59:59.999Z",
+      "encoded_request": "eyJzdWJqZWN0X3JlcXVlc3RfaWQiOiI0MWQ1NGY1MS01MWYyLTQzM2QtODAyYi04OWUxZWYwYTk0ZDUiLCJzdWJqZWN0X3JlcXVlc3RfdHlwZSI6ImVyYXN1cmUiLCJzdWJtaXR0ZWRfdGltZSI6IjIwMjAtMDctMDJUMjI6MDE6MzIuMDAwWiIsInByb3BlcnR5X2lkIjoiaWQxMTkzODAxOTA5Iiwic3ViamVjdF9pZGVudGl0aWVzIjpbeyJpZGVudGl0eV90eXBlIjoiYXBwc2ZseWVyX2lkIiwiaWRlbnRpdHlfdmFsdWUiOiIxNTUyNjQ5NDYzNzM1LTE5Nzk0NTMiLCJpZGVudGl0eV9mb3JtYXQiOiJyYXcifV19"
+    },
+    "rawHeaders": [
+      "Date",
+      "Thu, 02 Jul 2020 23:29:41 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "563",
+      "Connection",
+      "close",
+      "Access-Control-Allow-Headers",
+      "Origin, X-Requested-With, Content-Type, Accept",
+      "Access-Control-Allow-Origin",
+      "*",
+      "Etag",
+      "W/\"233-4DHfXjN+GWAl0Sy65E7vh9BLu4E\"",
+      "Strict-Transport-Security",
+      "max-age=604800",
+      "Vary",
+      "Accept-Encoding",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "X-Xss-Protection",
+      "1; mode=block"
+    ]
+  }
+]

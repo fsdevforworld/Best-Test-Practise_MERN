@@ -1,0 +1,29 @@
+[
+  {
+    "scope": "https://api.appcast.io:443",
+    "method": "POST",
+    "path": "/search?job_id=invalid-appcast-id",
+    "body": "",
+    "status": 200,
+    "response": {
+      "jobs_count": 0,
+      "page": 0,
+      "pages_total": 0,
+      "jobs": []
+    },
+    "rawHeaders": [
+      "Date",
+      "Thu, 13 Aug 2020 01:04:42 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "51",
+      "Connection",
+      "close",
+      "Server",
+      "nginx",
+      "X-Content-Type-Options",
+      "nosniff"
+    ]
+  }
+]

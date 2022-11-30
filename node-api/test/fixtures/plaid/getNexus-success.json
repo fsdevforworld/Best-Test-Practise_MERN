@@ -1,0 +1,46 @@
+[
+  {
+    "scope": "https://sandbox.plaid.com:443",
+    "method": "POST",
+    "path": "/item/get",
+    "body": {
+      "client_id": "secret:plaid-clientId",
+      "secret": "secret:plaid-secret",
+      "access_token": "access-sandbox-01f630cc-e08f-4d89-9021-26a1577abcdf"
+    },
+    "status": 200,
+    "response": {
+      "item": {
+        "available_products": ["assets", "balance", "credit_details", "identity"],
+        "billed_products": ["auth", "transactions"],
+        "error": null,
+        "institution_id": "ins_13",
+        "item_id": "PnNw6XRlyKUrMeVMmVGqukr8xPDgLai7kLzKX",
+        "webhook": "https://dave-dick.ngrok.io/v1/bank/plaid_webhook"
+      },
+      "request_id": "L85jIvytlS57na4"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Tue, 02 Apr 2019 23:22:56 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "403",
+      "Connection",
+      "close",
+      "Plaid-Version",
+      "2017-03-08",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options",
+      "DENY",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-XSS-Protection",
+      "1; mode=block"
+    ]
+  }
+]

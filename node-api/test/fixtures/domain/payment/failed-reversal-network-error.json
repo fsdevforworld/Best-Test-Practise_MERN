@@ -1,0 +1,22 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "DELETE",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/transactions/j6cAbRQECKUvzugPJSOCyQ?reversal",
+    "body": "",
+    "status": 422,
+    "response": {},
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Wed, 29 May 2019 00:07:26 GMT",
+      "Content-Length",
+      "66",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  }
+]

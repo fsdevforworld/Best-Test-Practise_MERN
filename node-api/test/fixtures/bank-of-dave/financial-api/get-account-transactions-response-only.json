@@ -1,0 +1,2068 @@
+{
+  "code": 200,
+  "type": "transaction[]",
+  "data": [
+    {
+      "uuid": "cf74781b-0bd4-47c9-b8fe-aae73daa76c5",
+      "debit": true,
+      "amount": 58.71,
+      "amountBreakdown": {
+        "amount": 58.71,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "ACH",
+      "source": {
+        "name": "Michael Kimpel",
+        "legalNames": ["Michael Kimpel"],
+        "meta": {
+          "directDeposit": false
+        }
+      },
+      "created": "2019-04-26T00:17:52.000Z",
+      "updated": "2019-04-28T02:29:01.000Z",
+      "transactedAt": "2019-04-26T00:17:52.000Z",
+      "settledAt": "2019-04-26T00:17:54.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "5b46c5b6-177b-453e-95d0-31855e876fe8",
+      "debit": false,
+      "amount": 78.65,
+      "amountBreakdown": {
+        "amount": 78.65,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "ACH",
+      "source": {
+        "name": "Joseph Thompson",
+        "legalNames": ["Joseph Thompson"],
+        "meta": {
+          "directDeposit": false
+        }
+      },
+      "created": "2019-04-26T00:17:52.000Z",
+      "updated": "2019-04-28T02:29:01.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "fd915fbd-122a-4e0d-8226-73ebf3fc3acc",
+      "debit": true,
+      "amount": 1,
+      "amountBreakdown": {
+        "amount": 1,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-18T22:47:42.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "d94b914a-25ea-4ad2-8258-ea1394e5b48d",
+      "debit": true,
+      "amount": 2,
+      "amountBreakdown": {
+        "amount": 2,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-18T22:26:00.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "716a5190-2b0f-4427-9e35-5a6e8fc9d713",
+      "debit": true,
+      "amount": 5,
+      "amountBreakdown": {
+        "amount": 5,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-17T20:22:51.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "7441de6d-652a-4d55-a0d7-b0ceddbc38a0",
+      "debit": true,
+      "amount": 20,
+      "amountBreakdown": {
+        "amount": 20,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-17T19:55:15.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "dccd4024-4994-4a12-8f2e-32fbc403771e",
+      "debit": true,
+      "amount": 20,
+      "amountBreakdown": {
+        "amount": 20,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-17T19:54:44.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "852c4e24-3e8d-4c60-a297-64c7440a936a",
+      "debit": true,
+      "amount": 20,
+      "amountBreakdown": {
+        "amount": 20,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-17T19:43:23.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "bcc79b68-5261-4ad0-a631-edc89a22d552",
+      "debit": false,
+      "amount": 100,
+      "amountBreakdown": {
+        "amount": 100,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-12T20:36:19.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "e909719e-0889-4c4f-ac0d-4b97e8d72353",
+      "debit": true,
+      "amount": 100,
+      "amountBreakdown": {
+        "amount": 100,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-12T20:30:24.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "77dbebc7-6f1c-4fe5-be8b-dfef009bf509",
+      "debit": false,
+      "amount": 100,
+      "amountBreakdown": {
+        "amount": 100,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-12T18:41:12.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "b5d531f6-cd0a-451c-99aa-1df52e8efd5a",
+      "debit": false,
+      "amount": 100,
+      "amountBreakdown": {
+        "amount": 100,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-12T18:40:41.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "4bad9d13-62c5-4b28-acf9-e5c921ebcf41",
+      "debit": true,
+      "amount": 100,
+      "amountBreakdown": {
+        "amount": 100,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-12T18:33:22.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "9b727f05-7fa1-41fa-ad42-e5814653bc83",
+      "debit": false,
+      "amount": 100,
+      "amountBreakdown": {
+        "amount": 100,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-12T18:26:42.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "3f60fd3f-1942-4e06-8ad1-28e97b44a80f",
+      "debit": false,
+      "amount": 1,
+      "amountBreakdown": {
+        "amount": 1,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-12T18:07:14.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "b7e36d6a-b848-4396-b88b-39199176d2a8",
+      "debit": true,
+      "amount": 1,
+      "amountBreakdown": {
+        "amount": 1,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-12T17:57:36.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "de85fe70-58fa-441c-9545-96b8cb698585",
+      "debit": false,
+      "amount": 50,
+      "amountBreakdown": {
+        "amount": 50,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-12T01:27:45.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "b0f7a157-00f6-4601-bd16-1a3c7ad493b5",
+      "debit": true,
+      "amount": 50,
+      "amountBreakdown": {
+        "amount": 50,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-12T01:09:34.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "14d946e3-5fc7-4824-8175-b6f3f3384b12",
+      "debit": false,
+      "amount": 75,
+      "amountBreakdown": {
+        "amount": 75,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-12T01:09:29.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "2b3bd075-b829-4821-b339-6ae6f1af6162",
+      "debit": false,
+      "amount": 50,
+      "amountBreakdown": {
+        "amount": 50,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-12T00:15:55.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "755f88bc-b96a-4ceb-b2e4-f46f27bebc68",
+      "debit": true,
+      "amount": 50,
+      "amountBreakdown": {
+        "amount": 50,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-12T00:15:51.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "45738a63-6687-42f0-acfe-765a0af090c4",
+      "debit": false,
+      "amount": 75,
+      "amountBreakdown": {
+        "amount": 75,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-12T00:15:46.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "7847547c-162f-4b42-b969-48b77e9c6894",
+      "debit": false,
+      "amount": 50,
+      "amountBreakdown": {
+        "amount": 50,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-12T00:08:38.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "414b370b-7781-4516-a1ad-b1055f6dedc3",
+      "debit": true,
+      "amount": 50,
+      "amountBreakdown": {
+        "amount": 50,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-12T00:08:34.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "c1e19b7a-7915-4ce3-a4b3-a32c6754cf44",
+      "debit": false,
+      "amount": 75,
+      "amountBreakdown": {
+        "amount": 75,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-12T00:08:29.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "8abb1f73-fb10-41fe-8813-3ed4e6fcf435",
+      "debit": false,
+      "amount": 1,
+      "amountBreakdown": {
+        "amount": 1,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-11T23:13:40.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "6865d328-e9ed-4c7d-a7ed-0e509d06f8b7",
+      "debit": true,
+      "amount": 1,
+      "amountBreakdown": {
+        "amount": 1,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-11T23:09:23.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "195e8f54-c4a2-478e-ba88-9b5dd74cba33",
+      "debit": true,
+      "amount": 111.16,
+      "amountBreakdown": {
+        "amount": 111.16,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-05T22:13:01.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "11fa267f-61c8-42aa-8345-41f7cfd5fd67",
+      "debit": true,
+      "amount": 1,
+      "amountBreakdown": {
+        "amount": 1,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-04T20:29:25.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "f1424ec4-d886-449a-a5f4-df06113297e0",
+      "debit": true,
+      "amount": 75,
+      "amountBreakdown": {
+        "amount": 75,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-04T20:24:00.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "200aac2a-b002-4f5c-956d-ae213dd1fda8",
+      "debit": false,
+      "amount": 75,
+      "amountBreakdown": {
+        "amount": 75,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-04T20:20:37.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "3d8fbe71-b052-4465-b216-6bf3b02ddae0",
+      "debit": true,
+      "amount": 20,
+      "amountBreakdown": {
+        "amount": 20,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-04T20:03:14.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "46dde231-c893-427d-a235-f4ac4b0dbd88",
+      "debit": true,
+      "amount": 1,
+      "amountBreakdown": {
+        "amount": 1,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-04T20:02:32.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "de0b4d06-6869-45ef-b247-fb22787f2df2",
+      "debit": false,
+      "amount": 75,
+      "amountBreakdown": {
+        "amount": 75,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-04T20:02:26.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "214eeda6-f1ae-405e-a42e-5b3942e9e557",
+      "debit": true,
+      "amount": 20,
+      "amountBreakdown": {
+        "amount": 20,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-04T20:00:57.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "20799101-9f76-49a9-a84b-2eb55166d15c",
+      "debit": true,
+      "amount": 20,
+      "amountBreakdown": {
+        "amount": 20,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-04T19:59:15.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "dbd882ed-537f-4c3d-97b9-c7922bdc7ed6",
+      "debit": true,
+      "amount": 20,
+      "amountBreakdown": {
+        "amount": 20,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-04T19:57:25.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "45c8b88f-a2b2-4ab8-b6e9-9933eb162c22",
+      "debit": true,
+      "amount": 20,
+      "amountBreakdown": {
+        "amount": 20,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-04T19:56:51.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "a888a017-cb8e-4fe0-abe8-3bdc226dbafd",
+      "debit": true,
+      "amount": 1,
+      "amountBreakdown": {
+        "amount": 1,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-04T18:52:46.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "3f167254-c295-44e2-884c-922ed9e8c0ff",
+      "debit": false,
+      "amount": 75,
+      "amountBreakdown": {
+        "amount": 75,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-04T18:35:00.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "946ac9aa-6b1c-4dee-aad3-ff5f3c2c87be",
+      "debit": false,
+      "amount": 75,
+      "amountBreakdown": {
+        "amount": 75,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-04T18:34:15.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "225949b8-e25d-4de6-a653-d445905713cf",
+      "debit": false,
+      "amount": 75,
+      "amountBreakdown": {
+        "amount": 75,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-04T18:33:21.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "17450fb1-cfd8-4b14-8e1b-e51558f3028b",
+      "debit": true,
+      "amount": 10,
+      "amountBreakdown": {
+        "amount": 10,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-04-04T18:03:25.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "234b7f29-aef9-48de-9daf-1e0ef1ed85da",
+      "debit": true,
+      "amount": 0.64,
+      "amountBreakdown": {
+        "amount": 0.64,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "ACH",
+      "source": {
+        "name": "Keith Valentin",
+        "legalNames": ["Keith Valentin"],
+        "meta": {
+          "directDeposit": false
+        }
+      },
+      "created": "2019-04-03T23:49:37.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "3cac5238-4a6d-446e-a096-1360a7a0eb59",
+      "debit": false,
+      "amount": 0.07,
+      "amountBreakdown": {
+        "amount": 0.07,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "ACH",
+      "source": {
+        "name": "Ramona Niesman",
+        "legalNames": ["Ramona Niesman"],
+        "meta": {
+          "directDeposit": false
+        }
+      },
+      "created": "2019-04-03T23:49:37.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "43ed5c1b-f0c2-4657-bd68-1b1c55171c23",
+      "debit": true,
+      "amount": 0.8,
+      "amountBreakdown": {
+        "amount": 0.8,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "ACH",
+      "source": {
+        "name": "Hattie Bernard",
+        "legalNames": ["Hattie Bernard"],
+        "meta": {
+          "directDeposit": false
+        }
+      },
+      "created": "2019-04-03T23:22:13.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "9ff61b84-afbd-4bb8-a349-014f67c261ef",
+      "debit": false,
+      "amount": 0.27,
+      "amountBreakdown": {
+        "amount": 0.27,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "ACH",
+      "source": {
+        "name": "Lucille Maggio",
+        "legalNames": ["Lucille Maggio"],
+        "meta": {
+          "directDeposit": false
+        }
+      },
+      "created": "2019-04-03T23:22:13.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "00e215de-8366-43f2-b2b0-7cab822769fa",
+      "debit": true,
+      "amount": 0.94,
+      "amountBreakdown": {
+        "amount": 0.94,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "ACH",
+      "source": {
+        "name": "Barbara Kath",
+        "legalNames": ["Barbara Kath"],
+        "meta": {
+          "directDeposit": false
+        }
+      },
+      "created": "2019-04-03T23:03:29.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "f1d9d482-dc9d-411f-9f54-4c73ee9f9b6c",
+      "debit": false,
+      "amount": 0.8,
+      "amountBreakdown": {
+        "amount": 0.8,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "ACH",
+      "source": {
+        "name": "Gerald Finnegan",
+        "legalNames": ["Gerald Finnegan"],
+        "meta": {
+          "directDeposit": false
+        }
+      },
+      "created": "2019-04-03T22:46:03.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "ca6e0482-4777-4687-90d5-68b652f63df1",
+      "debit": true,
+      "amount": 0.45,
+      "amountBreakdown": {
+        "amount": 0.45,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "ACH",
+      "source": {
+        "name": "Robbie Triche",
+        "legalNames": ["Robbie Triche"],
+        "meta": {
+          "directDeposit": false
+        }
+      },
+      "created": "2019-04-03T22:46:03.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "adc53c7e-f259-4018-b39f-057a42828b57",
+      "debit": false,
+      "amount": 0.64,
+      "amountBreakdown": {
+        "amount": 0.64,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "ACH",
+      "source": {
+        "name": "Ethel Howell",
+        "legalNames": ["Ethel Howell"],
+        "meta": {
+          "directDeposit": false
+        }
+      },
+      "created": "2019-04-03T21:25:11.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "5c9a1f52-cca5-4e59-9e16-11e649af0b83",
+      "debit": false,
+      "amount": 99.25,
+      "amountBreakdown": {
+        "amount": 100,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0.75,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0.75
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "TRANSFER",
+      "source": {
+        "name": "Sandbox Debit Card",
+        "legalNames": ["Sandbox Debit Card"]
+      },
+      "created": "2019-03-29T19:34:09.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "ed64c269-b64a-4e36-8c57-c9427642ff7f",
+      "debit": false,
+      "amount": 99.25,
+      "amountBreakdown": {
+        "amount": 100,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0.75,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0.75
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "TRANSFER",
+      "source": {
+        "name": "Sandbox Debit Card",
+        "legalNames": ["Sandbox Debit Card"]
+      },
+      "created": "2019-03-29T00:01:18.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "5be12b33-0b97-4ffe-a117-a88c537b4a5a",
+      "debit": false,
+      "amount": 99.25,
+      "amountBreakdown": {
+        "amount": 100,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0.75,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0.75
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "TRANSFER",
+      "source": {
+        "name": "Sandbox Debit Card",
+        "legalNames": ["Sandbox Debit Card"]
+      },
+      "created": "2019-03-29T00:00:03.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "9918a7d8-f50b-4b08-9ccd-0486c2ca70b7",
+      "debit": false,
+      "amount": 99.25,
+      "amountBreakdown": {
+        "amount": 100,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0.75,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0.75
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "TRANSFER",
+      "source": {
+        "name": "Sandbox Debit Card",
+        "legalNames": ["Sandbox Debit Card"]
+      },
+      "created": "2019-03-29T00:00:02.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "d6751416-cec3-4dca-affd-988885851311",
+      "debit": false,
+      "amount": 1,
+      "amountBreakdown": {
+        "amount": 1,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-03-28T21:43:18.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "88e17447-c4f2-40d7-9e0d-c6ece3feeabf",
+      "debit": true,
+      "amount": 1,
+      "amountBreakdown": {
+        "amount": 1,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-03-27T20:52:36.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "f5ececb6-90b3-4212-9ccb-f1bbfe5537c5",
+      "debit": true,
+      "amount": 1,
+      "amountBreakdown": {
+        "amount": 1,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-03-27T19:34:42.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "70a1ff9b-32d9-4f2d-9394-55eb3a718d7a",
+      "debit": true,
+      "amount": 1,
+      "amountBreakdown": {
+        "amount": 1,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-03-26T21:46:46.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "b585ad38-66f0-4c51-8238-d86e95592bfd",
+      "debit": true,
+      "amount": 40,
+      "amountBreakdown": {
+        "amount": 40,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-03-26T21:29:56.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "af3fa508-193a-4a08-b8e5-87ee144fb9dc",
+      "debit": false,
+      "amount": 75,
+      "amountBreakdown": {
+        "amount": 75,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "DAVE",
+      "source": {
+        "name": "Dave",
+        "legalNames": ["Dave"]
+      },
+      "created": "2019-03-26T20:35:01.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "14a858c6-39fd-4005-a052-7f31f81cbd06",
+      "debit": true,
+      "amount": 0.35,
+      "amountBreakdown": {
+        "amount": 0.35,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "ACH",
+      "source": {
+        "name": "Cynthia Dow",
+        "legalNames": ["Cynthia Dow"],
+        "meta": {
+          "directDeposit": false
+        }
+      },
+      "created": "2019-03-06T22:47:07.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "d95777c5-b61b-429e-8382-fe46c5e49259",
+      "debit": false,
+      "amount": 0.4,
+      "amountBreakdown": {
+        "amount": 0.4,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "ACH",
+      "source": {
+        "name": "Jolene Kumro",
+        "legalNames": ["Jolene Kumro"],
+        "meta": {
+          "directDeposit": false
+        }
+      },
+      "created": "2019-03-06T22:47:07.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "f59de78a-c995-40d6-986b-a444c7d61040",
+      "debit": true,
+      "amount": 0.72,
+      "amountBreakdown": {
+        "amount": 0.72,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "ACH",
+      "source": {
+        "name": "Karen Read",
+        "legalNames": ["Karen Read"],
+        "meta": {
+          "directDeposit": false
+        }
+      },
+      "created": "2019-03-06T22:47:04.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "e8947158-c144-4127-aa60-bbca30a14d61",
+      "debit": false,
+      "amount": 0.96,
+      "amountBreakdown": {
+        "amount": 0.96,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "ACH",
+      "source": {
+        "name": "Carolyn Gremo",
+        "legalNames": ["Carolyn Gremo"],
+        "meta": {
+          "directDeposit": false
+        }
+      },
+      "created": "2019-03-06T22:47:04.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "ef9112c1-7c42-4ace-a0cd-8d666381fa4c",
+      "debit": true,
+      "amount": 0.38,
+      "amountBreakdown": {
+        "amount": 0.38,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "ACH",
+      "source": {
+        "name": "Leon Jennings",
+        "legalNames": ["Leon Jennings"],
+        "meta": {
+          "directDeposit": false
+        }
+      },
+      "created": "2019-03-06T22:47:00.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    },
+    {
+      "uuid": "b1cd66b7-1365-4ef1-abd1-d917a617837d",
+      "debit": false,
+      "amount": 0.19,
+      "amountBreakdown": {
+        "amount": 0.19,
+        "fees": {
+          "surcharge": 0,
+          "totalFeeAmount": 0,
+          "feeDetails": [
+            {
+              "feeType": "Synapse Facilitator Fee",
+              "feeAmount": 0
+            }
+          ]
+        }
+      },
+      "pending": false,
+      "type": "ACH",
+      "source": {
+        "name": "James Cavanaugh",
+        "legalNames": ["James Cavanaugh"],
+        "meta": {
+          "directDeposit": false
+        }
+      },
+      "created": "2019-03-06T22:47:00.000Z",
+      "updated": "2019-04-26T00:14:06.000Z",
+      "returned": false,
+      "cancelled": false,
+      "returnedMessage": null,
+      "disputed": false
+    }
+  ],
+  "message": "success",
+  "name": "ApiResponse"
+}

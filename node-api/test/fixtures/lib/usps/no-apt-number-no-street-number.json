@@ -1,0 +1,38 @@
+[
+  {
+    "scope": "https://secure.shippingapis.com",
+    "method": "GET",
+    "path": "/ShippingAPI.dll?API=Verify&XML=%3C%3Fxml%20version%3D%221.0%22%3F%3E%3CAddressValidateRequest%20USERID%3D%22MOCKVALUE%22%3E%3CRevision%3E1%3C%2FRevision%3E%3CAddress%3E%3CAddress1%2F%3E%3CAddress2%3EN%20Euclid%20Ave%3C%2FAddress2%3E%3CCity%3EPasadena%3C%2FCity%3E%3CState%3ECA%3C%2FState%3E%3CUrbanization%2F%3E%3CZip5%3E91104%3C%2FZip5%3E%3CZip4%2F%3E%3C%2FAddress%3E%3C%2FAddressValidateRequest%3E",
+    "body": "",
+    "status": 200,
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<AddressValidateResponse><Address><Error><Number>-2147219403</Number><Source>clsAMS</Source><Description>Multiple addresses were found for the information you entered, and no default exists.</Description><HelpFile/><HelpContext/></Error></Address></AddressValidateResponse>",
+    "rawHeaders": [
+      "X-Backside-Transport",
+      "OK OK",
+      "Cache-Control",
+      "private",
+      "Content-Type",
+      "text/xml",
+      "Server",
+      "Microsoft-IIS/10.0",
+      "X-AspNet-Version",
+      "4.0.30319",
+      "X-Powered-By",
+      "ASP.NET",
+      "Date",
+      "Tue, 08 Dec 2020 20:34:30 GMT",
+      "X-Global-Transaction-ID",
+      "e41d61745fcfe34fc1a11e71",
+      "Access-Control-Allow-Origin",
+      "*",
+      "Connection",
+      "Keep-Alive",
+      "Content-Length",
+      "312",
+      "X-FRAME-OPTIONS",
+      "SAMEORIGIN",
+      "Strict-Transport-Security",
+      "max-age=3600; includeSubDomains"
+    ]
+  }
+]

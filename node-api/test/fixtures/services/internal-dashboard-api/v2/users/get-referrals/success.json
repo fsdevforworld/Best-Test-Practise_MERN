@@ -1,0 +1,33 @@
+[
+  {
+    "scope": "https://promotions-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/manage/referred-user/3",
+    "body": {},
+    "status": 200,
+    "response": [
+      "1f8b0800000000000003e4934d4bc3401086ff4a59bc9985fde8d6ba37a5a914d44acc4d4ad926d3104c36b2d9eaa1f4bf3b896d6d357a503c093964867766df99875913074b700e5c4df4c39a24a67c3279662729d13c2035642558df442459cabe60ca50ae8692f6410235a9e19403536c69fae93059102cf1c6f991f1802582094ed9804a16b3816642f7d529639a31d4814db72a0cbccbb30c1cd1765514017a7a310edf5ce35f0ae593cf2b7b51562beb89569b805853c24e9b429db8bc95ec5250e459be28e0c885a042c5f8b8925af0bd8bf7fe13bbacb63b708085e927ff62a0b93ca8c4bd814da05d4e59258fd141a619c9d8da244deb7b6ffc0a7b0bc682ce896687e99d9a44e1280c6fc2d1d626940667da15f1604f6ecbeacd506b476e820f28e531cb281c875174717d3fbf9a8c63351f5dceefa2e9cdb4939fa492c76ca8dbc93bf8bda91465bcd9923ac76faffa1158d26ed299a277a27a8bcae2363e7026aa3776395aa87b0e12c89f01a5e40bf2920a11f3332d7004f10df96e0ab7d378fe1b12b37ddc7161ff19cba0394821b43cc39bfc732cf2088bd8cc36af000000ffff",
+      "0300ada39370fb040000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Fri, 30 Jul 2021 23:48:37 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Vary",
+      "Accept-Encoding",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"4fb-I0EK6xLmM7CHHznHzNfAnzykd+I\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains",
+      "Content-Encoding",
+      "gzip"
+    ]
+  }
+]

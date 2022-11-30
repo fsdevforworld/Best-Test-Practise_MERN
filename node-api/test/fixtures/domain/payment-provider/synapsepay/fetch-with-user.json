@@ -1,0 +1,569 @@
+[
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/users",
+    "body": {
+      "documents": [
+        {
+          "ip": "123.123.123.123",
+          "phone_number": "+17375204703",
+          "entity_type": "NOT_KNOWN",
+          "entity_scope": "Not Known",
+          "physical_docs": [
+            {
+              "document_value": "data:application/pdf;base64,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\n",
+              "document_type": "LEGAL_AGREEMENT"
+            }
+          ],
+          "email": "+17375204703",
+          "name": "Justina Hodkiewicz"
+        }
+      ],
+      "phone_numbers": ["+17375204703"],
+      "extra": {
+        "supp_id": 1,
+        "is_business": false,
+        "cip_tag": 1
+      },
+      "logins": [
+        {
+          "email": "+17375204703"
+        }
+      ],
+      "legal_names": ["Justina Hodkiewicz"]
+    },
+    "status": 200,
+    "response": [
+      "1f8b0800000000000003b455db52e346147ce72b547acd06e6a2b9f1e65d6bc1010c3106b2954aa9e6728427c892e291b864c3bfa764bc92494c1549256f1a9d9e3ea77ba67abeee45519c79171f463173ca80002e84058468ae05cb130422feb00615bebc0bf161f4752f8aa2280e50e4fd2a8ae2c50aba75bc689a3a1c1e1cb4baf95ed77e3f3c95ba0e90fb7d5b2d0feee93e3e6803acc2c19bedd68ccf7b51f4bc6e6c0b0f653334de0c2b95565673c92d1194279858102657eb61a3282ef5123adc58df4374a94b67aac7e8e4cba788eca3b8e776956d9750369dae9fd71b7b3d5036be79ca82adea35d1b46aa293b27a28371d0648f3b4419ccfb393e9f9cd7440bccc4a31289bdb840bccb5cc29c60903050839a4726905b08473ce92c421a61297682d3907460de3081909db7cdd40abae5dd91645ffff9bda1fdad0f85247c795bbf3f0e0edefc3de1a564b1f82afca41d4d5f43a9d4d3e4fd2f1166ef114bcd545e62a3bf8b2edcd1af6cdba5efe697a343acd4647b3343d4ba7f39e70cb0849c058c931e11673812805638d932cb12c2739506570b748a8b5d449e6a8c86d6ea5e1584820d6bce62c7468b2b676ba818e1d3381122519a554e057c0d0e8a6eda4c497571fcf26f3793afe63965e4fd29bc9f428ee91cf9baf5f7a2b4265fd3f37e2e2f87c9a66d3abb38fe96c970bb9909c23a312a100138772439534d4269a6944040847a56354538e0535960a0c083bab80530388f177ba9020f1af5cf8f04e99938b9de290e4920092c429ec9448a4528e02c28672cd35950491445166402a84949522410e2b8615cf9524e8bde208fd5fc5a567a3c9e92e7d2631b9d346939cb0043bcd9c7532012db826392582880433c6494eb16284128488819c11c2142790c37bafb012ffcd15bef7aba6ddbac343e541377651f8b00ebff8229d8e7baa8e660d8c61a97d",
+      "316c8ce1b159e9218badafb346df76a36f72b79392fd5af9f2b520c209db20d6145900dbae7cf3141f46b92e026c8a3e64a60dbe8410fe5e69566d78316abbf096875b2debd614de6665d5bc4ece38b475fdf2fae1fe4df0215b78e7a0dcee131770ab8baccbd9210a76c56def5c51ddfa72d7bbd239da39fe1d165430821281e890be7d34cfd2d1381b4dc7d9cd6c324fff7a2e4398ef88f1b85e54256465bb34b0da1af755c7816a5135d5d611af205f4158644d75b7f6a0fff1e596badf420d3f7e2277d7053737d85e3ca213357f1a35edfdd5e7b3e5e54f68769cbfccf0c6f57afe130000ffff0300aa42e2fc72080000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Tue, 08 Oct 2019 01:35:35 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d3380ce3313a808261b6e7d1b98a3ed561570498531; expires=Wed, 07-Oct-20 01:35:31 GMT; path=/; domain=.synapsefi.com; HttpOnly; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "522460f09db0e7f1-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  },
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/oauth/5d9be7e677ce003fa75f40e7",
+    "body": {
+      "refresh_token": "refresh_Yg3dqspeQC2kVl6bW1cPx0K9TyAtuvUFMmSX0RHf"
+    },
+    "status": 200,
+    "response": [
+      "1f8b08000000000000036c925b6f82301886eff9150dd7cb5241a8ec8e41d5444584ea74cb4238142528380e0633f7df174012ab5ebecff7f6f9d2a6bf1c00bcbf8f68523851c0bf015e1a28aee2bbf240f60524cafd9ee053e4850aff72534ddc03adcbba7ba2c07693c04b2b30d9684078856d9156c728a3b9e31675af272128410989123b8d927a8a04783d95ba65b173627aae711be07c8d7c6b84cff6d820e1705b452b7d10ab9e7c587cc2c95e9be6a55004a2d90a321a6634df39cc02851915694c9bb51dd86cc5e0273fd28526c4abbdec7df47cb38213859cd5a23c2d87b383bd86d6386c37e47e7aaceffec5010000bfb4b1753155a28d9b7147469874d998ebd8be9873fb8edc551e32236d888ea798e00e114b35586f4b6e3c3578c88cb721acd75ebe1b98b0e68eddb85af484307e9ba804cfb07177b6a34fe1753507c077f3e2654eb3ee73068a47119511f2298462e82229ec438a78eeef1f0000ffff03005e29c44bca020000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Tue, 08 Oct 2019 01:35:35 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d1b681e8f4f53545b726394f35cfbfb7b1570498535; expires=Wed, 07-Oct-20 01:35:35 GMT; path=/; domain=.synapsefi.com; HttpOnly; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "52246106a89977b2-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  },
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "GET",
+    "path": "/v3.1/users/5d9be7e677ce003fa75f40e7?full_dehydrate=yes",
+    "body": "",
+    "status": 200,
+    "response": [
+      "1f8b0800000000000003ec584b73db3812befb57b078ddd8025f20e99b626b6c8f6d25632bc9ce4c6da140a0692122010e00cad14efcdfb748ca7ac426959da9b9e5a02a11fda1d1dd5f0368f49f478ee312c1dd53c78d789a410c388e192014e4348ef21041ecbe694185900be39e3a7f1e398ee3b8068a7cf3e538ee5c43f3edceadadcce96854537b4c2b7162569256067271c254395a0627dea836a0cda877b956e3d391e33c750b2fdd53c76fffb24280b45b1bd67627294d19c509667e1ce0d0f319c4599eb6763b8e2b69090dee9c2ec1b9a79267ea8b73fdeb99e39f2077b30c57ac2e41dac6c5dfdb891bd728e71a8c214cd8957beac8ba28debc90a95a5abd224c71e8c354ca585a0c428cd500b6575a675c2c85114abe8014829a6f07396dec45db6f3042032786a9ea85095c31a22a2b94240b58bd2235bde356d8e2853e28a9289ab8ffcb8b8338f25118a3c0dd8aa51576b531c59d2aeb5c4bf5285f40ec6a8d783723d7d3779fa65b449700810729cb5988630fd3240f3c2f8c200584384af384c5108518e3280c398ad290879426184314641146284b60575f63906e96432769b41daf9a753c3f38d9f96da7954adaf95ea49f73eee7da5821a973a9f842c0a360ffddceaa4097c234646ea3703f999e7fbd9b9c4dae3e4ebeceae26775fbd9d09732581c8bacc40f707b69aaf8c60b4200d359b64de4de867e2da7cdf84f7667231be21e38bbbc9e476329d6d14eea397b4a861779f332e9ff7784557ed26afab42516e463ef2d291874628197df8cdbf5b15d7e6f355ed61f865fa7826bf7c7c8f6e26e5e5a77741456771b8f843a8f13d9b9f277689de5e9c543cdfb7a1233bf1216309f67ccc3c1ca320808c653c894216e57e0e419a79cd47183016f024e2419cb39c2519f6e2047c96edeb2ca8b1a4ae38b5d068f7a218856912055192447bc0122cdd",
+      "39ee9e47a96573302f04db3ddb982c9525b9aa25df5b7b1dd7ec0042f0661be48251db6dfb1df01ef6697faaaba13b8feaf6c4f48e7a90aeb1d4d6ad9df71fdede5ecd6693f3ade2a7f5bfff6cd2cb300d20857c201a4c5dd87de7dd087bdd5e25b7e3d9d9e58e3f2ead59d127634a32d092146aebe76b385ef5aae096f589a077120cd894539b13a924614a55a0a9154b209f6b2d0c176cc8c83c1324a37241b4ca32d06608d7f2039a0869a128c403480683782d4a30843e50218d256c2e0aae411e9a22242d08342b555a1820422ec158f1d0067bd8c0d5fab4e903705536aa18b1a0b5d2c29443e8795d5249aca6792ed842c8872170596b7e207e4ba18ae65ceae232847ca4d202df586987c1736181305514b4df79211948d25ca88530b61766fa09b58a182ad93009b5ad3598c3c0f9a2a4df812a89d5404dad5787c1c2f4665649bfc3a4524961551ba1031b5b9a6361689f54e59491087b83816e41a0bc0087d120668091673911fa20c4ac062187dc91e620a42ad8a0dc70392c376258bed262d8827aa1a990d08515fbbd5893f7ae5441d52beaf7afd2a2a4edfdd55e0c7db081080c386fa1389cbbf5a2ff6aa897fba2a36f2e56d72826feff12ecfde5bbe9844c3fdcbe9ddc1daabf5e2dfe76eaa43c4e3046591ac629783e477916a44916b0904614f931c43c487814d0007b7190b120f600799ca580830c50847fd44987eba4af1fc73757bbd5d29bef24faeafd217afbde1abb0ca304273ea0c4e7a9c7d3384cd2940780bc2cc014d320f1911fa6419441922294b2240e11f7d2c84b719e263efac1f03fc8f0e4767c75f377f770166639a719f5733f0a3d4e23ce7812028d31f5f3c08ffd38f4a208fb79e0a5911ff808f919e491ef4729f621871f0cff05865fbc789642db7ae730df4a1e9b9014bdb5a4bb82b67a449b8e563bb5eb8c6c55b9f0c5ea6dc05d262a626953187beb0e564319f9ac84dc27cec7fe9ab84e0531c06add35a9725a18580b8521596d84ec28fa4662756dba84d815f4e64a9ce0e7b69ab2fb3d1fb7aab34230f25260eaaaea9a8cdea6df9617745dfbcf8e7fba195f5c4ccebb46a3a8b657e68b6370134361c85c70debe7c3686bb053cd08234cd971d1daff460366a0af520e42b2dbf03cdab4dbfe66e323e27e3e939f97477359bb8df10bdedf03cf7768ec7d3f3e3757fa77377b7a9b363f4deba5b857365d54ee668c8359839b16ad1bd019f077e7d08f81fa6825fcefcc5c702679f3cf6fe0bba4e67abb1ad971f7eba2defff8dee2ebb0e4b5f1e1f3dfd0f0000ffff03005872d84f1f160000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Tue, 08 Oct 2019 01:35:36 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d9c71e0c635925ce7e5d58f5795ffe98d1570498535; expires=Wed, 07-Oct-20 01:35:35 GMT; path=/; domain=.synapsefi.com; HttpOnly; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "52246108bfeae809-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  },
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/oauth/5d9be7e677ce003fa75f40e7",
+    "body": {
+      "refresh_token": "refresh_Yg3dqspeQC2kVl6bW1cPx0K9TyAtuvUFMmSX0RHf"
+    },
+    "status": 200,
+    "response": [
+      "1f8b08000000000000036c925d6f82301486eff9150dd7cb5241a8ec0eb5eaa62283b2e996c5f07150a6820a3acddc7f5f0049ac7af93ee7ed73d2a6bf0242a2bf8c20cea651203e21516968aee6bb6a43f52522abf59ae403f1424d7cb8a8c6ee0af272dbdd03b2dd38f09203ea4f5a487ac465110eeb680be9d4cdf25e4d2158c10a91557e1ac5f99448f87c2a7177d97cba80638ecbd07ca9abd6283be276375d7cfcac9e3b06c38def8daf0ce6e1d00c66e318268e474bc116c22da4f329b7a0c18db26401c5da0a4c6672b049d7f0da92166f4bd57baff9e601f73576d4b3dddee90c57f6185bbdb0dc90fac93abffba7801042a26353eb64eaacd52bc615e952566563d4a6f6c91cd957e4aa7293396941da744019ad10b37483f796e4c293839bcc790bc27b6da76950c69b2b76e12ad11dc2f96da6333aa4c6d5d98ade85e7d502425fc58bef52d8569f33d03c20a012e203c672e81225ac6320a2f0f70f0000ffff0300e34cd12dca020000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Tue, 08 Oct 2019 01:35:36 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d56ee33bd70bee3f15aee32af67dc3a791570498536; expires=Wed, 07-Oct-20 01:35:36 GMT; path=/; domain=.synapsefi.com; HttpOnly; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "5224610a98d8e7c5-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  },
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/users/5d9be7e677ce003fa75f40e7/nodes",
+    "body": {
+      "type": "ACH-US",
+      "info": {
+        "nickname": "",
+        "name_on_account": "Justina Hodkiewicz",
+        "account_num": "1111222233334444",
+        "routing_num": "122105155",
+        "type": "PERSONAL",
+        "class": "CHECKING"
+      },
+      "extra": {
+        "supp_id": 1,
+        "other": {
+          "transactions": []
+        }
+      }
+    },
+    "status": 200,
+    "response": [
+      "1f8b08000000000000039c554d6fe23010bdf32b2c9f21040804b85140dbaa6db62a45abd56a15197b008bc48e62078a2afefbca26a409a1dad55e10ccbc19bf79f3c14703210c692ad3904a06788cb08b9bc6b8d53a296c5d37b7463ce61a8f51d7b53f85641052990963eb142685c7e8570321843eec274238e4cc24eab3d10a7c180e5967e5b38ec7880b2e617d9bfd0c8cb8d89904975084b082685db1187e29189be5a9c6ed7646748b24dc51474112056bee5019b7f73da7d3ce14a4aa9d3f3df07d0aaedb5b13bfbff65cf0db9671fb4b66c5a3a7fcdba9e04aa2481ec016367d9dcf1ede5a9360d69acdef1ede3e0ba21107ab4fa9a05c8ce1888c28190c07b4ebf7065ea74bc15fad4745ac9193c4b60333b207b42082ade43b7afc39455dc7c53542f0ae53527d4a486d12882c8a4a69a5de427a2d29a114940ab5dc81a8852084634e5319c6a0c95564e1235a439c68d33eb7790ba040e86260ae216ac793d0e2f018ad49a4a0e43f55a86409231a58282f441b3770586549721ebc4e4d2a2ed6b2aa14a1965828b2d828ee799e57ee04612c05654ac3f397d673d0fa1174264db47873d0cb64f9d444cf41132d17e590158988a050d339ce05c0ae932f56e1a3599a82a047e35d2e66f8665d2b2276c56e660a5fbbb691dcc8f27250262e8b9190a3dd0c0b343815ee7b89599270eb2462534bf67fb9f65fe4129bf032d2cb05ba9b048f2898d470ff00c9d2a8ccea70383899321ecb880b06efce56c751399046e4dcc0e9fd7cfaf8107c2b3b63a2e936ac8d85d9aa98f028b47e132ca40ed73213acda39c3f9afa0642b05882c5e417a0b7bb3db36b114613e9f2602554e04a7bb8b60657b2a33cd8ddee779ee77fafdb25b1f131bf2327f5d7c0f264ff56bc25548a8e67b03d369068543f318222ea038f3e5536f11663bcddaf57dd71b0dfbbdc1c01b56d53a",
+      "9f251c480688a660b6d9a9dfdadf9f6fe67427d3fb5669cbb039eed53f97da853fa735296d3a9c90cdf5bf96caecedcb0b6d9cfe000000ffff030036827ae218070000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Tue, 08 Oct 2019 01:35:37 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d8c8fa8a0f99afb80417c8194df75567a1570498536; expires=Wed, 07-Oct-20 01:35:36 GMT; path=/; domain=.synapsefi.com; HttpOnly; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "5224610c8e91993b-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  },
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "GET",
+    "path": "/v3.1/users/5d9be7e677ce003fa75f40e7?full_dehydrate=yes",
+    "body": "",
+    "status": 200,
+    "response": [
+      "1f8b0800000000000003ec584b73db3812befb57b078ddd8025f20e99b626b6c8f6d25632bc9ce4c6da140a0692122010e00cad14efcdfb748ca7ac426959da9b9e5a02a11fda1d1dd5f0368f49f478ee312c1dd53c78d789a410c388e192014e4348ef21041ecbe694185900be39e3a7f1e398ee3b8068a7cf3e538ee5c43f3edceadadcce96854537b4c2b7162569256067271c254395a0627dea836a0cda877b956e3d391e33c750b2fdd53c76fffb24280b45b1bd67627294d19c509667e1ce0d0f319c4599eb6763b8e2b69090dee9c2ec1b9a79267ea8b73fdeb99e39f2077b30c57ac2e41dac6c5dfdb891bd728e71a8c214cd8957beac8ba28debc90a95a5abd224c71e8c354ca585a0c428cd500b6575a675c2c85114abe8014829a6f07396dec45db6f3042032786a9ea85095c31a22a2b94240b58bd2235bde356d8e2853e28a9289ab8ffcb8b8338f25118a3c0dd8aa51576b531c59d2aeb5c4bf5285f40ec6a8d783723d7d3779fa65b449700810729cb5988630fd3240f3c2f8c200584384af384c5108518e3280c398ad290879426184314641146284b60575f63906e96432769b41daf9a753c3f38d9f96da7954adaf95ea49f73eee7da5821a973a9f842c0a360ffddceaa4097c234646ea3703f999e7fbd9b9c4dae3e4ebeceae26775fbd9d09732581c8bacc40f707b69aaf8c60b4200d359b64de4de867e2da7cdf84f7667231be21e38bbbc9e476329d6d14eea397b4a861779f332e9ff7784557ed26afab42516e463ef2d291874628197df8cdbf5b15d7e6f355ed61f865fa7826bf7c7c8f6e26e5e5a77741456771b8f843a8f13d9b9f277689de5e9c543cdfb7a1233bf1216309f67ccc3c1ca320808c653c894216e57e0e419a79cd47183016f024e2419cb39c2519f6e2047c96edeb2ca8b1a4ae38b5d068f7a218856912055192447bc0122cdd",
+      "39ee9e47a96573302f04db3ddb982c9525b9aa25df5b7b1dd7ec0042f0661be48251db6dfb1df01ef6697faaaba13b8feaf6c4f48e7a90aeb1d4d6ad9df71fdede5ecd6693f3ade2a7f5bfff6cd2cb300d20857c201a4c5dd87de7dd087bdd5e25b7e3d9d9e58e3f2ead59d127634a32d092146aebe76b385ef5aae096f589a077120cd894539b13a924614a55a0a9154b209f6b2d0c176cc8c83c1324a37241b4ca32d06608d7f2039a0869a128c403480683782d4a30843e50218d256c2e0aae411e9a22242d08342b555a1820422ec158f1d0067bd8c0d5fab4e903705536aa18b1a0b5d2c29443e8795d5249aca6792ed842c8872170596b7e207e4ba18ae65ceae232847ca4d202df586987c1736181305514b4df79211948d25ca88530b61766fa09b58a182ad93009b5ad3598c3c0f9a2a4df812a89d5404dad5787c1c2f4665649bfc3a4524961551ba1031b5b9a6361689f54e59491087b83816e41a0bc0087d120668091673911fa20c4ac062187dc91e620a42ad8a0dc70392c376258bed262d8827aa1a990d08515fbbd5893f7ae5441d52beaf7afd2a2a4edfdd55e0c7db081080c386fa1389cbbf5a2ff6aa897fba2a36f2e56d72826feff12ecfde5bbe9844c3fdcbe9ddc1daabf5e2dfe76eaa43c4e3046591ac629783e477916a44916b0904614f931c43c487814d0007b7190b120f600799ca580830c50847fd44987eba4af1fc73757bbd5d29bef24faeafd217afbde1abb0ca304273ea0c4e7a9c7d3384cd2940780bc2cc014d320f1911fa6419441922294b2240e11f7d2c84b719e263efac1f03fc8f0e4767c75f377f770166639a719f5733f0a3d4e23ce7812028d31f5f3c08ffd38f4a208fb79e0a5911ff808f919e491ef4729f621871f0cff05865fbc789642db7ae730df4a1e9b9014bdb5a4bb82b67a449b8e563bb5eb8c6c55b9f0c5ea6dc05d262a626953187beb0e564319f9ac84dc27cec7fe9ab84e0531c06add35a9725a18580b8521596d84ec28fa4662756dba84d815f4e64a9ce0e7b69ab2fb3d1fb7aab34230f25260eaaaea9a8cdea6df9617745dfbcf8e7fba195f5c4ccebb46a3a8b657e68b6370134361c85c70debe7c3686bb053cd08234cd971d1daff460366a0af520e42b2dbf03cdab4dbfe66e323e27e3e939f97477359bb8df10bdedf03cf7768ec7d3f3e3757fa77377b7a9b363f4deba5b857365d54ee668c8359839b16ad1bd019f077e7d08f81fa6825fcefcc5c702679f3cf6fe0bba4e67abb1ad971f7eba2defff8dee2ebb0e4b5f1e1f3dfd0f0000ffff",
+      "03005872d84f1f160000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Tue, 08 Oct 2019 01:35:37 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=da6c547f903d48dffe04241446698b47a1570498537; expires=Wed, 07-Oct-20 01:35:37 GMT; path=/; domain=.synapsefi.com; HttpOnly; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "52246111bc0b98b7-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  },
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/oauth/5d9be7e677ce003fa75f40e7",
+    "body": {
+      "refresh_token": "refresh_Yg3dqspeQC2kVl6bW1cPx0K9TyAtuvUFMmSX0RHf"
+    },
+    "status": 200,
+    "response": [
+      "1f8b08000000000000036c925d6f82301486eff9150dd7cb5241e8d81dd34e371599d4a95b1653e130990a8e0f8799fbef0b2089552fdfe7bc7d4edaf457424876d70184e93cf0e47b246b7706375caedfe9ae4254bdd9505c200bdf906f4eaa21df40516ef31d208787de22ca516fd642ca2dae8a906f831892394f8b5e432358c31a5189380dc2624a147c3c15f12c5dce57b02f70157ec6cbaf49be0f76dc824d9a0c86467ff56c775c9d6d7b51e8c58af994bd4d5bb34a10831f43b29c0b0b88304aa315946b6b30fb54bdef640b2f2d65f5bad61793866be7b867b0bd9966bbf1e360e34cf1a8eb571b1237da16777f971042481e3b7474b04dd6ea96e39a7428abb3356c53e7600f9d337256b9c882b4246ddaa78cd6888d4c4bf456e4c453808b2c784b227a9df183459968aed989ab425788e07798c9e8805a67676b7a151e574b087d942f9e2510d79fd33316404027c4058c559f13cd6f6220b2f4f70f0000ffff03007393237cca020000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Tue, 08 Oct 2019 01:35:37 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d63ed496533b07d32799f254641c575861570498537; expires=Wed, 07-Oct-20 01:35:37 GMT; path=/; domain=.synapsefi.com; HttpOnly; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "52246113a80a997d-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  },
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "GET",
+    "path": "/v3.1/users/5d9be7e677ce003fa75f40e7/nodes/5d9be7e88d1b7d14da0e0ad5",
+    "body": "",
+    "status": 200,
+    "response": [
+      "1f8b08000000000000039c555d6fda30147de7575cf91942288140df18a0ad6a9b55a3689aa6c932f6a5582476143bb4a8ea7f9f6c9240d67d487bcc3de75e9ffb99d70e00a152906b202331dd608c9389186c623188040b31646244ba9e944ab537e41a5e3b0000c460ba6dbe00c8ae40f74d76d6e6e6badf2f99edb15c06e6a8586e702b03aeb3fe61180cfaa5c1c2f4abe7c671cc310c875b168fb65188715f69810dfc5e8d7ff0ad03f0e675b134d5cfe813987f592e6e1e7bb364d15b2c3fdc3c9e84f354a2b267e155b293299b72369e8cf9553c1c47832b8ef1663bf53e0044b10c1d6fc10e082ba6c446bfc0edb7395c0521691ec7175bb07368a5ad7352659a5661b4dd61715926c6391a43addea36a5101482679a16986965d783476662d66b9752d08bbbf820695a55c973ed14bd8ec654e3d875cc396a5062becad79b6cc05b328a8ae05752e7062ca3c3f0dc8a0495baaad3e67cdb87f98aa3273158ba228aaabc88428d038c964f9d0bb4f7a5f93c1ac0babc7001e66ebbb2edc275d58af6afa86a54c716cd52bab9222611086a411cdcba240c58f0e59af16a4a579c3d49e722d7c074b432ecdbb543fe9cb41e542d5439ab3a39f524f743c430fc3dc0d2cdd05b97a6a05fabf3887dfc4514fb41eb7f50a3ecc925b48662dce3fe0b2482f953c3f3f07a57188572195c0976067b3b476e2293b3565fe6939bfbd493ed640c62cdfd1567bdd94674ca6d463ce49694bb7ba54e2dc0da7efaf847ca715aa32db60f13b5eab7b3e9856b49a2bc784662d25dfd7c5a86d852ead74353ccddf68301ad5903de69efab0fcb2fa9ccceece9b2b0d65dcca83836d51a2375a99612a95b37df7019a12b80d712b308ac3683a190dc7e36872cefeb4f624d1028117e8b62968e5f4c738f1f06af02e8e3b80d415871728a4855e0fd68a6d5204abc1a012e0171a04e6da48",
+      "6b8019703e50dd4290eedbc2e91e06e78bf9e394655594d9fc53afda3de24e72fb37f0ee2e93cedb4f000000ffff030023fb07812e060000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Tue, 08 Oct 2019 01:35:38 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d8f3d40659d43c8203c05b0d93328d0cc1570498537; expires=Wed, 07-Oct-20 01:35:37 GMT; path=/; domain=.synapsefi.com; HttpOnly; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "522461154812e801-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  },
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/users/5d9be7e677ce003fa75f40e7/nodes/5d9be7e88d1b7d14da0e0ad5/trans",
+
+    "body": {
+      "to": {
+        "type": "DEPOSIT-US",
+        "id": "5c37916d51112300617059ee"
+      },
+      "amount": {
+        "amount": 100,
+        "currency": "USD"
+      },
+      "extra": {
+        "same_day": true,
+        "note": "asdfsdf",
+        "supp_id": "asdfsdf",
+        "ip": "192.168.0.124"
+      },
+      "fees": [
+        {
+          "fee": -0.25,
+          "note": "Transfer fee",
+          "to": {
+            "id": "5c37918951112300617059f9"
+          }
+        }
+      ]
+    },
+    "status": 200,
+    "response": [
+      "1f8b08000000000000038c54c96edb3014bce72b081d8b44a6246bcb2d8803a42dd016590e45110814f99410964881a49cb845febda0165aca869c6cf28d1e67e62dff8e10f20acebc53e4c52c2f2105b2ce691a974119274948d759e41df7a09a8badf64ed1bf238410f234d4953b21e43d28b067efc198569fae561d3127a4e5bede0bd26aa8b84f65b3da457eb0ea3428bd1a9f4bd29402c65145d2b85a634857423270e12c634199b260cd08064c58bc328a08177e4db6e7f37c84d0f3407be79da2b0ff4b1ad9097350e0ce01c63e3e1e2e69a71408bab7526eaf379e4b446b0ef3af47cfb29ce494245942c3344ad64148212dabdc1bd309d280c57d411bb203744d042be513fafefb1c853e3e648727a3c88c9ad660df125d5d4fc4141003ac90c2328e53bcceb338cac2281b01f74a76ed50cad967bcb5cf0769e807b98ffd7822561353f7a9bc4e6c857c14c7e3af03484a0cef21aec68431055a17949bfde29979cc9aaaf605950cdec3b4521b527f08d15dc9f88eeb81c10252136b0d3e9c7b081e0a3ff92e4def3bd1acd2ac9a4449f3006aa1c818421f1a10c6b6f69f3b979471dd76068a4aaae6258131669dae48adc105b82e5a2507d6569f02c6cd845af06b95a456e6bbd5d4a48182116bb3511d4cb7604c0d966ec1a0eea353e3eaae1dabff52b451846eb9b82f44d794bd7cabc6b55e05d06befc1ce980aac7f27d80f9dbac9d31b3b80152864312e6ae4ccd7c37cd028cd832c8f832008238c9320c5715ee5de087c76e37a379051b2793563ef6c0237639c6ea739739af76d7f3e3bbf3cb9bd9e6eede299577fb9f85e6da283b81aee495dd8470e56f5816f9d365c107429d996c323a77f2765772f1691026acba60d31dd6c8d32d29bfa560b2cfc26d40e233a1fb6803f2972e9bcf3ab8bb39b8bcd32300a0c0e8bc6f0066a2ee075c5df67f2392e1f",
+      "b07993cfbcecb3e659344ec2968de31a6e51f42ba0c0775cdca31f9201da402b3537e850f7a91b3617bf7e5e7fbdf944472451804b1a0c6b3d8daa12324acacf7484ddf36ff4c0d1f37f000000ffff03001dc388896b070000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Tue, 08 Oct 2019 01:35:39 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=debd499455c8d74e431e6c1d24ac2e39d1570498538; expires=Wed, 07-Oct-20 01:35:38 GMT; path=/; domain=.synapsefi.com; HttpOnly; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "52246116e91fe7d5-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  },
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "GET",
+    "path": "/v3.1/users/5d9be7e677ce003fa75f40e7",
+    "body": "",
+    "status": 200,
+    "response": [
+      "1f8b0800000000000003cc555d4fe346147ddf5f61f9b50bcc87e78bb72c719714126808d0555559f3714da63876366303e9c27faf1c821dba20b5522bf52de37be6dc7bce4cce7cfb104571e65d7c18c5cc290302b8101610a2b9162c4f1088f8e30654f8f236c487d1b70f511445718022ef565114cf57d0aee3795d2fc3e1c141a3eb3dbdf4fb615dea6580dcefdb6a717047f7f1411360150ede6db7617cfa10454f9bc6b6f050d67de3edb05269653597dc1241798289056172b519368ae2522fa0c50df51d4417ba74a67a884ebe1c45641fc51db7ab6cb380b26e75fdbad9d8e981b2f6f53a0bb65a6e8826551d9d94d57db9edd043eaf5167136cb4e2667d7931ef13c2bc5a06c6e132e30d732a718270c1420e490caa515c012ce394b1287984a5ca2b5e41c18358c236424ecf2b503adda76685fb1eefb8bda9f9a50fb5247c795bbf570efed1ffdde25ac163e045f95bda88b74327c9ca647e9e82a7d9c8dd2e923ded9305f076f7591b9caf606ed9ab481bd78d8f9709a7e1e9c6683cfd3341da7935947b8e3882460ace498708bb9409482b1c649965896931ca832b85d24d45aea247354e436b7d2702c24106b5e73163ad459b374ba86961d33811225196552b257c050ebba091be1979fc6a3d92c1dc65dfd69fbebb7ce805059ffcfe59f1f9f4dd26c7239fe944edfd29e0bc939322a110a307128375449436da29946448070543a4635e5585063a9c080b0b30a38358018fff7b43f5e0d4e47bb0e7cfc9b1247e76f0a43924b024812a7b05322914a390a081bca35d754124412459901a91052568a0439ac18563c5792a0ff81b0743c189dbea5cd242677da6892139660a799b34e26a005d724a744109160c638c929568c5082103190334298e20472f80fb57d776deffcaa6e76ee6d5fb9d7b59d173e6cf22e9e9c65e3c1ece8b80fdc0d328685f645bf",
+      "3386877aa5fbfcb57e99d5faa69d7b9bb5ad8eecf7ca97afd5104eb66a9e29b200b659f97a1d1f46b92e026c8b3e64a609be8410beafd4ab263cbbb45b78d74021f916b26c4ce16d5656757bb2655314db426896cbe7170f77ef800fd9dc3b07e56e9fb8801b5d646db6f6ffffb722b673aea86e7cf9d65bd23ada5afe03165430821281681fb45d1c4fd3c1301b4c86d9f574344bff7a2e7d80bf44f7de6032dcdbc6f7f32bbd9c57256465b330b0da19fa55df9e705ed5d5ce41af205f4198677575bb71a2fbf0e586baaf61093f1f91dbab829b6b6ccf1fd0899aad07757377f9e37871f10b9a1ee7cf33bc77cb9efe040000ffff0300b54fb06a6d080000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Tue, 08 Oct 2019 01:35:39 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d32c4b2b485447ddc8c7d0a0c425f06301570498539; expires=Wed, 07-Oct-20 01:35:39 GMT; path=/; domain=.synapsefi.com; HttpOnly; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "52246120bca3e798-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  },
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/oauth/5d9be7e677ce003fa75f40e7",
+    "body": {
+      "refresh_token": "refresh_Yg3dqspeQC2kVl6bW1cPx0K9TyAtuvUFMmSX0RHf"
+    },
+    "status": 200,
+    "response": [
+      "1f8b08000000000000036c925d6f82301486eff9150dd7cb5211a8ec0eb1cec4898e56a75b1652e030097e0dd069e6fefb024822e8e5fb9cb7cf499bfe4a08c9fe2a824de64681fc8464ad6308c3177a47f715d2d6d596e203f142437eb8aa6ec41af2724f1c0031b109bced110d1716521e715984e32e4a20754596f75a1ac11ad688da98469b7c4a147ce15bb1cf966e0ca71c9761e2b07eda6dab348e88b9582d4fa0bcce926c6ff05d6bfe636331b674fc7e98968204c204d2a55b5ba0d746d93686626d05165fede03bddc1aba5c4b395eebdb5fcc9110f0d7e32b3fd61da1fadd91c3b83b0dc90fadb5d7ef70f092184e429a3ce7962726b508c2bf24c7995ed718fb2f364cc1aa451b9c93569417af485725a21ee9876dd5b922b4f0e6e72cd5b90ba974dbb36e57573c5ae5c25ba436a7ec64d4e47d46e9cade85d78592d21f459bcf83e85a4fa9c81e101019d101f306e878268a18a81c8d2df3f000000ffff03005582cc73ca020000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Tue, 08 Oct 2019 01:35:40 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=dff03bafb63b2bd030be41f318cd08fb51570498539; expires=Wed, 07-Oct-20 01:35:39 GMT; path=/; domain=.synapsefi.com; HttpOnly; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "52246122690377a6-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  },
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "GET",
+    "path": "/v3.1/users/5d9be7e677ce003fa75f40e7/nodes/5d9be7e88d1b7d14da0e0ad5/trans/5d9be7ea49c75b1b5662c483",
+    "body": "",
+    "status": 200,
+    "response": [
+      "1f8b08000000000000038c54c96edb3014bce72b081d8b44a6246bcb2d8803a42dd016590e45110814f99410964881a49cb845febda0165aca869c6cf28d1e67e62dff8e10f20acebc53e4c52c2f2105b2ce691a974119274948d759e41df7a09a8badf64ed1bf238410f234d4953b21e43d28b067efc198569fae561d3127a4e5bede0bd26aa8b84f65b3da457eb0ea3428bd1a9f4bd29402c65145d2b85a634857423270e12c634199b260cd08064c58bc328a08177e4db6e7f37c84d0f3407be79da2b0ff4b1ad9097350e0ce01c63e3e1e2e69a71408bab7526eaf379e4b446b0ef3af47cfb29ce494245942c3344ad64148212dabdc1bd309d280c57d411bb203744d042be513fafefb1c853e3e648727a3c88c9ad660df125d5d4fc4141003ac90c2328e53bcceb338cac2281b01f74a76ed50cad967bcb5cf0769e807b98ffd7822561353f7a9bc4e6c857c14c7e3af03484a0cef21aec68431055a17949bfde29979cc9aaaf605950cdec3b4521b527f08d15dc9f88eeb81c10252136b0d3e9c7b081e0a3ff92e4def3bd1acd2ac9a4449f3006aa1c818421f1a10c6b6f69f3b979471dd76068a4aaae6258131669dae48adc105b82e5a2507d6569f02c6cd845af06b95a456e6bbd5d4a48182116bb3511d4cb7604c0d966ec1a0eea353e3eaae1dabff52b451846eb9b82f44d794bd7cabc6b55e05d06befc1ce980aac7f27d80f9dbac9d31b3b80152864312e6ae4ccd7c37cd028cd832c8f832008238c9320c5715ee5de087c76e37a379051b2793563ef6c0237639c6ea739739af76d7f3e3bbf3cb9bd9e6eede299577fb9f85e6da283b81aee495dd8470e56f5816f9d365c107429d996c323a77f2765772f1691026acba60d31dd6c8d32d29bfa560b2cfc26d40e233a1fb6803f2972e9bcf3ab8bb39b8bcd32300a0c0e8bc6f0066a2ee075c5df67f2392e1f",
+      "b07993cfbcecb3e659344ec2968de31a6e51f42ba0c0775cdca31f9201da402b3537e850f7a91b3617bf7e5e7fbdf944472451804b1a0c6b3d8daa12324acacf7484ddf36ff4c0d1f37f000000ffff03001dc388896b070000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Tue, 08 Oct 2019 01:35:40 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d7251cdd3d0c81fe6c4b9e26c375bcb2f1570498540; expires=Wed, 07-Oct-20 01:35:40 GMT; path=/; domain=.synapsefi.com; HttpOnly; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "522461245898785a-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  }
+]

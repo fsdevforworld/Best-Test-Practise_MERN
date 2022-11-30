@@ -1,0 +1,606 @@
+{
+  "advanceApproval": {
+    "domain": "ADVANCE_APPROVAL_DOMAIN",
+    "serviceTestRatio": {
+      "__name": "ADVANCE_APPROVAL_TEST_RATIO",
+      "__format": "json"
+    }
+  },
+  "amplitude": {
+    "apiKey": "AMPLITUDE_API_KEY",
+    "authToken": "AMPLITUDE_AUTH_TOKEN",
+    "secretKey": "AMPLITUDE_SECRET_KEY"
+  },
+  "appbot": {
+    "username": "APPBOT_USERNAME",
+    "password": "APPBOT_PASSWORD",
+    "iOSAppId": "APPBOT_IOS_APP_ID",
+    "androidAppId": "APPBOT_ANDROID_APP_ID"
+  },
+  "bankingDirect": {
+    "plaidSecret": "BANKING_DIRECT_PLAID_SECRET"
+  },
+  "bankingData": {
+    "domain": "BANKING_DATA_DOMAIN",
+    "serviceTestRatio": {
+      "__name": "BANKING_DATA_TEST_RATIO",
+      "__format": "json"
+    }
+  },
+  "identity": {
+    "basePath": "IDENTITY_BASE_PATH",
+    "clientId": "IDENTITY_CLIENT_ID",
+    "clientSecret": "IDENTITY_CLIENT_SECRET"
+  },
+  "braze": {
+    "trackUrl": "BRAZE_URL",
+    "key": "BRAZE_KEY",
+    "plaidDownCampaign": {
+      "ios": "BRAZE_PLAID_DOWN_CAMPAIGN_IOS",
+      "android": "BRAZE_PLAID_DOWN_CAMPAIGN_ANDROID"
+    }
+  },
+  "cloudDebugger": {
+    "enabled": {
+      "__name": "GOOGLE_CLOUD_DEBUGGER_ENABLED",
+      "__format": "json"
+    }
+  },
+  "crons": {
+    "yamlPath": "CRON_YAML_PATH"
+  },
+  "dave": {
+    "website": {
+      "url": "WEBSITE_URL"
+    },
+    "api": {
+      "url": "DAVE_API_URL"
+    },
+    "bank": {
+      "url": "BANK_URL"
+    },
+    "bodFinancialApi": {
+      "url": "BOD_FINANCIAL_API_URL",
+      "secret": "BOD_FINANCIAL_API_SECRET"
+    },
+    "bankOfDaveInternalApi": {
+      "secret": "BANK_OF_DAVE_INTERNAL_API_KEY"
+    },
+    "cookie": {
+      "secret": "COOKIE_SECRET"
+    },
+    "jwt": {
+      "secret": "JWT_SECRET"
+    },
+    "vpn": {
+      "ip": "VPN_IP"
+    }
+  },
+  "db": {
+    "connectionLimit": "DB_CONNECTION_LIMIT",
+    "user": "DB_USER",
+    "password": "DB_PASSWORD",
+    "host": "DB_HOST",
+    "port": "DB_PORT",
+    "name": "DB_NAME",
+    "socketpath": "DB_SOCKETPATH",
+    "logQueries": "LOG_SQL_QUERIES",
+    "useReadReplica": "DB_USE_READ_REPLICA",
+    "replica": {
+      "host": "READ_REPLICA_HOST",
+      "port": "READ_REPLICA_PORT",
+      "socketpath": "READ_REPLICA_SOCKETPATH"
+    }
+  },
+  "datadog": {
+    "traceAgentHostname": "DD_TRACE_AGENT_HOSTNAME",
+    "enabled": {
+      "__name": "DATADOG_ENABLED",
+      "__format": "json"
+    }
+  },
+  "datastore": {
+    "endpoint": "DATASTORE_ENDPOINT"
+  },
+  "deploymentInfo": {
+    "branch": "BRANCH_NAME",
+    "commitRef": "COMMIT_REF",
+    "lastUpdated": "LAST_PATCH_DATE"
+  },
+  "directoryApi": {
+    "keyFilePath": "DIRECTORY_API_KEY_FILE_PATH"
+  },
+  "empyr": {
+    "url": "EMPYR_URL",
+    "clientId": "EMPYR_CLIENT_ID",
+    "clientSecret": "EMPYR_CLIENT_SECRET"
+  },
+  "facebook": {
+    "accessKey": "FACEBOOK_ACCESS_KEY"
+  },
+  "heath": {
+    "domain": "HEATH_DOMAIN",
+    "balanceLogServiceDomain": "BALANCE_LOG_DOMAIN",
+    "balanceLogTopic": "BALANCE_LOG_TOPIC",
+    "batchedFetchBatchSize": {
+      "__name": "HEATH_BATCHED_FETCH_SIZE",
+      "__format": "json"
+    },
+    "migratedServiceName": "HEATH_MIGRATED_DOMAIN",
+    "dualReadModeHundrethPercent": {
+      "__name": "HEATH_DUAL_READ_ROLLOUT",
+      "__format": "json"
+    },
+    "migratedHundrethPercent": {
+      "__name": "HEATH_MIGRATED_ROLLOUT",
+      "__format": "json"
+    }
+  },
+  "subscriptions": {
+    "retreivePendingPaymentWindow": "SUBSCRIPTION_PENDING_PAYMENT_WINDOW",
+    "preferAchBalanceThreshold": {
+      "__name": "PREFER_ACH_BALANCE_THRESHOLD",
+      "__format": "json"
+    }
+  },
+  "firebase": {
+    "databaseUrl": "FIREBASE_DATABASE_URL",
+    "credentials": "FIREBASE_CREDENTIALS",
+    "dbPrefix": "FIREBASE_DB_PREFIX",
+    "remoteConfig": {
+      "host": "REMOTE_CONFIG_HOST",
+      "path": "REMOTE_CONFIG_PATH",
+      "scopes": "REMOTE_CONFIG_SCOPES",
+      "credentials": "REMOTE_CONFIG_CREDENTIALS"
+    }
+  },
+  "googleCloud": {
+    "projectId": "GOOGLE_PROJECT_ID",
+    "images": {
+      "bucket": "GOOGLE_CLOUD_IMAGES_BUCKET"
+    },
+    "tasks": {
+      "signingEmail": "GOOGLE_CLOUD_TASKS_SIGNING_EMAIL"
+    }
+  },
+  "internal-auth": {
+    "clientId": "INTERNAL_AUTH_CLIENT_ID",
+    "secret": "INTERNAL_AUTH_SECRET"
+  },
+  "kms": {
+    "keyPath": "CRYPTO_KEY_PATH"
+  },
+  "k8s": {
+    "name": "DEPLOYMENT_NAME",
+    "namespace": "NAMESPACE",
+    "nodeName": "NODE_NAME",
+    "projectId": "GOOGLE_PROJECT_ID"
+  },
+  "loomisApi": {
+    "timeout": {
+      "response": {
+        "__name": "LOOMIS_API_RESPONSE_TIMEOUT",
+        "__format": "json"
+      },
+      "deadline": {
+        "__name": "LOOMIS_API_RESPONSE_DEADLINE",
+        "__format": "json"
+      },
+      "migrationMode": {
+        "payments": {
+          "mode": "LOOMIS_PAYMENTS_MIGRATION_MODE",
+          "dualReadRollout": {
+            "__name": "LOOMIS_PAYMENTS_DUAL_READ_ROLLOUT",
+            "__format": "json"
+          },
+          "migratedRollout": {
+            "__name": "LOOMIS_PAYMENTS_MIGRATED_ROLLOUT",
+            "__format": "json"
+          }
+        },
+        "paymentMethods": {
+          "mode": "LOOMIS_PAYMENT_METHOD_MIGRATION_MODE",
+          "dualReadRollout": {
+            "__name": "LOOMIS_PAYMENT_METHOD_DUAL_READ_ROLLOUT",
+            "__format": "json"
+          },
+          "migratedRollout": {
+            "__name": "LOOMIS_PAYMENT_METHOD_MIGRATED_ROLLOUT",
+            "__format": "json"
+          }
+        }
+      },
+      "migratedHost": "LOOMIS_HOST",
+      "migratedPort": "LOOMIS_PORT"
+    }
+  },
+  "minAppVersion": {
+    "sendVerification": "MIN_VERSION_SEND_VERIFICATION",
+    "login": "MIN_VERSION_LOGIN",
+    "resetPassword": "MIN_VERSION_RESET_PASSWORD",
+    "identityVerification": "MIN_VERSION_IDENTITY_VERIFICATION"
+  },
+  "ml": {
+    "useBackgroundScoring": "ML_USE_BACKGROUND_SCORING",
+    "underwritingEnabled": {
+      "__name": "UNDERWRITING_ML_ENABLED",
+      "__format": "json"
+    },
+    "underwriting": {
+      "incomeValidationNodeSingleObservation": {
+        "experiment": {
+          "active": {
+            "__name": "UNDERWRITING_INCOME_VALIDATION_SINGLE_OBSERVATION_EXPERIMENT_ACTIVE",
+            "__format": "json"
+          }
+        }
+      },
+      "accountAgeFailureUWv2": {
+        "oracle": {
+          "version": {
+            "tag": "ORACLE_UWv2_TAG"
+          }
+        }
+      },
+      "daveBankingUWv2": {
+        "oracle": {
+          "version": {
+            "tag": "ORACLE_UWv2_TAG"
+          }
+        }
+      },
+      "incomeValidationSuccessUWv2": {
+        "oracle": {
+          "version": {
+            "tag": "ORACLE_UWv2_TAG"
+          }
+        }
+      },
+      "incomeValidationFailureUWv2": {
+        "oracle": {
+          "version": {
+            "tag": "ORACLE_UWv2_TAG"
+          }
+        }
+      }
+    },
+    "predictedPayback": {
+      "enabled": "ML_PREDICTED_PAYBACK_ENABLED"
+    },
+    "globalPredictedPayback": {
+      "enabled": {
+        "__name": "ML_GLOBAL_PREDICTED_PAYBACK_ENABLED",
+        "__format": "json"
+      }
+    }
+  },
+  "mxAtrium": {
+    "experiment": {
+      "active": "MX_ATRIUM_EXPERIMENT_ACTIVE",
+      "limit": "MX_ATRIUM_EXPERIMENT_LIMIT"
+    },
+    "apiKey": "MX_ATRIUM_API_KEY",
+    "clientId": "MX_ATRIUM_CLIENT_ID",
+    "webhookBasicAuth": {
+      "username": "MX_ATRIUM_WEBHOOK_BASIC_AUTH_USERNAME",
+      "password": "MX_ATRIUM_WEBHOOK_BASIC_AUTH_PASSWORD"
+    }
+  },
+  "phoneNumbers": {
+    "easyVerification": "EASY_VERIFICATION",
+    "shouldSendVerificationCode": "SHOULD_SEND_VERIFICATION_CODE"
+  },
+  "plaid": {
+    "maxUpdaterMessages": "PLAID_UPDATER_MAX_MESSAGES",
+    "clientId": "PLAID_CLIENT_ID",
+    "publicKey": "PLAID_PUBLIC_KEY",
+    "secret": "PLAID_SECRET",
+    "environment": "PLAID_ENVIRONMENT",
+    "balanceCheckLimiterRatio": {
+      "__name": "PLAID_BALANCE_CHECK_LIMITER_RATIO",
+      "__format": "json"
+    },
+    "balanceCheckLimiterPrefix": "PLAID_BALANCE_CHECK_LIMITER_PREFIX"
+  },
+  "pubsub": {
+    "topicPrefix": "PUBSUB_TOPIC_PREFIX",
+    "subscriptionPrefix": "PUBSUB_SUBSCRIPTION_PREFIX",
+    "advanceCollectionPublishConcurrency": "ADVANCE_COLLECTION_CONCURRENCY",
+    "covid19Stimulus": {
+      "enabled": "ENABLED_COVID_19_STIMULUS_NOTIFICATIONS"
+    }
+  },
+  "rateLimits": {
+    "loginsByIp": {
+      "perHour": {
+        "__name": "LOGIN_BY_IP_PER_HOUR_RATE_LIMIT",
+        "__format": "json"
+      }
+    },
+    "loginsTotal": {
+      "perMinute": {
+        "__name": "LOGIN_TOTAL_PER_MINUTE_RATE_LIMIT",
+        "__format": "json"
+      }
+    }
+  },
+  "recurringTransaction": {
+    "autoDetectNewIncome": "RECURRING_TRANSACTION_AUTODETECT_NEW_INCOME",
+    "autoDetectNewIncomeTTL": {
+      "__name": "RECURRING_TRANSACTION_AUTODETECT_NEW_INCOME_TTL",
+      "__format": "json"
+    },
+    "autoDetectNewExpenses": "RECURRING_TRANSACTION_AUTODETECT_NEW_EXPENSES",
+    "autoDetectExpensesExperimentLimit": "AUTODETECT_EXPENSES_EXPERIMENT_LIMIT",
+    "autoDetectNewExpensesTTL": "RECURRING_TRANSACTION_AUTODETECT_NEW_EXPENSES_TTL",
+    "singleMatch": {
+      "experimentRatio": {
+        "__name": "RECURRING_TRANSACTION_SINGLE_MATCH_RATIO",
+        "__format": "json"
+      }
+    },
+    "domain": "RECURRING_TRANSACTION_DOMAIN"
+  },
+  "redis": {
+    "api": {
+      "host": "REDIS_HOST",
+      "port": "REDIS_PORT",
+      "db": "REDIS_DB"
+    },
+    "jobProcessor": {
+      "host": "JOB_PROCESSOR_REDIS_HOST",
+      "port": "JOB_PROCESSOR_REDIS_PORT",
+      "db": "JOB_PROCESSOR_REDIS_DB"
+    }
+  },
+  "scripts": {
+    "balanceLogStartingId": "BALANCE_LOG_STARTING_ID",
+    "balanceLogEndingId": "BALANCE_LOG_ENDING_ID",
+    "balanceLogMigrationConcurrency": "BALANCE_LOG_MIGRATION_CONCURRENCY",
+    "achReturnRepayment": {
+      "taskLimit": {
+        "__name": "ACH_RETURN_REPAYMENT_TASK_LIMIT",
+        "__format": "json"
+      },
+      "bucketName": "ACH_RETURN_REPAYMENT_BUCKET_NAME",
+      "filePath": "ACH_RETURN_REPAYMENT_FILE_PATH"
+    }
+  },
+  "sendgrid": {
+    "apiKey": "SENDGRID_API_KEY",
+    "emailVerificationId": "SENDGRID_EMAIL_VERIFICATION_ID"
+  },
+  "services": {
+    "sigtermStopDelay": {
+      "__name": "SIGTERM_STOP_DELAY",
+      "__format": "json"
+    },
+    "auth": "AUTH_SERVICE",
+    "synapseProxy": "SYNAPSE_PROXY_SERVICE"
+  },
+  "skipRateLimit": "SKIP_RATE_LIMIT",
+  "snowflake": {
+    "username": "SNOWFLAKE_USER",
+    "password": "SNOWFLAKE_PASSWORD"
+  },
+  "sombra": {
+    "stubResponse": "SOMBRA_STUB_RESPONSE"
+  },
+  "synapsepay": {
+    "clientId": "SYNAPSEPAY_CLIENT_ID",
+    "clientSecret": "SYNAPSEPAY_SECRET",
+    "environment": "SYNAPSEPAY_ENVIRONMENT",
+    "feeNodeId": "SYNAPSEPAY_FEE_NODE_ID",
+    "receivingNodeId": "SYNAPSEPAY_RECEIVING_NODE_ID",
+    "disbursingNodeId": "SYNAPSEPAY_DISBURSING_NODE_ID",
+    "disbursingNodeIdACH": "SYNAPSEPAY_DISBURSING_NODE_ID_ACH",
+    "receivingNodeIdACH": "SYNAPSEPAY_RECEIVING_NODE_ID_ACH",
+    "receivingNodeSubscriptions": "SYNAPSEPAY_SUBSCRIPTION_RECEIVING_NODE_ID",
+    "disbursingUserId": "SYNAPSEPAY_DISBURSING_USER_ID",
+    "disbursingUserFingerprint": "SYNAPSEPAY_DISBURSING_USER_FINGERPRINT",
+    "useNewACH": {
+      "__name": "SYNAPSEPAY_USE_NEW_ACH",
+      "__format": "json"
+    }
+  },
+  "tabapay": {
+    "settlementAccount": "TABAPAY_SETTLEMENT_ACCOUNT",
+    "token": "TABAPAY_TOKEN",
+    "clientId": "TABAPAY_CLIENT_ID",
+    "advanceSubId": "TABAPAY_ADVANCE_SUB_ID",
+    "subscriptionSubId": "TABAPAY_SUBSCRIPTION_SUB_ID",
+    "bankFundingSubId": "TABAPAY_BANK_FUNDING_SUB_ID",
+    "sftp": {
+      "sftpUsername": "SFTP_USERNAME",
+      "sshPrivateKey": "SSH_PRIVATE_KEY"
+    },
+    "experiments": {
+      "repaymentACH": {
+        "percent": {
+          "__name": "TABAPAY_ACH_REPAYMENTS_EXPERIMENT_PERCENT",
+          "__format": "json"
+        },
+        "overrides": {
+          "__name": "TABAPAY_ACH_REPAYMENTS_USERID_OVERRIDES",
+          "__format": "json"
+        }
+      },
+      "disbursementACH": {
+        "percent": {
+          "__name": "TABAPAY_ACH_DISBURSEMENTS_EXPERIMENT_PERCENT",
+          "__format": "json"
+        },
+        "overrides": {
+          "__name": "TABAPAY_ACH_DISBURSEMENTS_USERID_OVERRIDES",
+          "__format": "json"
+        }
+      }
+    }
+  },
+  "tivan": {
+    "tivanBalanceCheckLockSeconds": "TIVAN_BALANCE_CHECK_LOCK_SECONDS",
+    "triggers": {
+      "bankAccountUpdate": {
+        "hundredthPercent": "TIVAN_BANK_ACCOUNT_UPDATE_ROLLOUT",
+        "adHocHundredthPercent": {
+          "__name": "TIVAN_BANK_ACCOUNT_UPDATE_AD_HOC_ROLLOUT",
+          "__format": "json"
+        }
+      },
+      "dailyCronjob": {
+        "hundredthPercent": "TIVAN_CLOUD_TASK_ROLLOUT"
+      },
+      "userPayment": {
+        "tivanPercentage": {
+          "__name": "TIVAN_TRIGGER_USER_PAYMENT_PCT",
+          "__format": "json"
+        },
+        "internalUsersEnabled": {
+          "__name": "TIVAN_INTERNAL_USER_PAYMENT",
+          "__format": "json"
+        }
+      }
+    }
+  },
+  "twilio": {
+    "messagingSid": "TWILIO_MESSAGING_SID",
+    "sid": "TWILIO_SID",
+    "secret": "TWILIO_SECRET",
+    "phoneNumber": "TWILIO_PHONE_NUMBER"
+  },
+  "zendesk": {
+    "email": "ZENDESK_EMAIL",
+    "token": "ZENDESK_TOKEN",
+    "chat": {
+      "token": "ZENDESK_CHAT_TOKEN"
+    }
+  },
+  "experiments": {
+    "add-one-day-to-payback-date_friday": {
+      "active": {
+        "__name": "ADD_ONE_DAY_EXPERIMENT_FRIDAY_ACTIVE",
+        "__format": "json"
+      },
+      "ratio": {
+        "__name": "ADD_ONE_DAY_EXPERIMENT_FRIDAY_RATIO",
+        "__format": "json"
+      },
+      "limit": {
+        "__name": "ADD_ONE_DAY_EXPERIMENT_FRIDAY_LIMIT",
+        "__format": "json"
+      }
+    },
+    "add-one-day-to-payback-date_not-friday": {
+      "active": {
+        "__name": "ADD_ONE_DAY_EXPERIMENT_NOT_FRIDAY_ACTIVE",
+        "__format": "json"
+      },
+      "ratio": {
+        "__name": "ADD_ONE_DAY_EXPERIMENT_NOT_FRIDAY_RATIO",
+        "__format": "json"
+      },
+      "limit": {
+        "__name": "ADD_ONE_DAY_EXPERIMENT_NOT_FRIDAY_LIMIT",
+        "__format": "json"
+      }
+    },
+    "max-score-payback-date": {
+      "active": {
+        "__name": "MAX_SCORE_PAYBACK_DATE_EXPERIMENT_ACTIVE",
+        "__format": "json"
+      },
+      "ratio": {
+        "__name": "MAX_SCORE_PAYBACK_DATE_EXPERIMENT_RATIO",
+        "__format": "json"
+      },
+      "limit": {
+        "__name": "MAX_SCORE_PAYBACK_DATE_EXPERIMENT_LIMIT",
+        "__format": "json"
+      }
+    },
+    "global-payback-date-model-experiment": {
+      "active": {
+        "__name": "ML_GLOBAL_PREDICTED_PAYBACK_ENABLED",
+        "__format": "json"
+      },
+      "ratio": {
+        "__name": "ML_GLOBAL_PREDICTED_PAYBACK_RATIO",
+        "__format": "json"
+      },
+      "limit": {
+        "__name": "ML_GLOBAL_PREDICTED_PAYBACK_LIMIT",
+        "__format": "json"
+      }
+    },
+    "match-account-transition-income": {
+      "active": {
+        "__name": "MATCH_TRANSITIONED_INCOME_EXPERIMENT_ENABLED",
+        "__format": "json"
+      },
+      "ratio": {
+        "__name": "MATCH_TRANSITIONED_INCOME_EXPERIMENT_RATIO",
+        "__format": "json"
+      },
+      "limit": {
+        "__name": "MATCH_TRANSITIONED_INCOME_EXPERIMENT_LIMIT",
+        "__format": "json"
+      }
+    },
+    "accountAgeFailureUWv2": {
+      "active": {
+        "__name": "EXPERIMENT_ACCOUNT_AGE_UWv2_ACTIVE",
+        "__format": "json"
+      },
+      "ratio": {
+        "__name": "EXPERIMENT_ACCOUNT_AGE_UWv2_RATIO",
+        "__format": "json"
+      },
+      "limit": {
+        "__name": "EXPERIMENT_ACCOUNT_AGE_UWv2_LIMIT",
+        "__format": "json"
+      }
+    },
+    "daveBankingUWv2": {
+      "active": {
+        "__name": "EXPERIMENT_DAVE_BANKING_UWv2_ACTIVE",
+        "__format": "json"
+      },
+      "ratio": {
+        "__name": "EXPERIMENT_DAVE_BANKING_UWv2_RATIO",
+        "__format": "json"
+      },
+      "limit": {
+        "__name": "EXPERIMENT_DAVE_BANKING_UWv2_LIMIT",
+        "__format": "json"
+      }
+    },
+    "incomeValidationSuccessUWv2": {
+      "active": {
+        "__name": "EXPERIMENT_IVS_UWv2_ACTIVE",
+        "__format": "json"
+      },
+      "ratio": {
+        "__name": "EXPERIMENT_IVS_UWv2_RATIO",
+        "__format": "json"
+      },
+      "limit": {
+        "__name": "EXPERIMENT_IVS_UWv2_LIMIT",
+        "__format": "json"
+      }
+    },
+    "incomeValidationFailureUWv2": {
+      "active": {
+        "__name": "EXPERIMENT_IVF_UWv2_ACTIVE",
+        "__format": "json"
+      },
+      "ratio": {
+        "__name": "EXPERIMENT_IVF_UWv2_RATIO",
+        "__format": "json"
+      },
+      "limit": {
+        "__name": "EXPERIMENT_IVF_UWv2_LIMIT",
+        "__format": "json"
+      }
+    }
+  }
+}

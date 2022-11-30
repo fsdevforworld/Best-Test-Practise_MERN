@@ -1,0 +1,15 @@
+.inputContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.security {
+  display: inline-flex;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.securityText {
+  margin-top: 2px;
+}

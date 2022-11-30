@@ -1,0 +1,18 @@
+{
+    "baseUrl": "http://localhost:3000/",
+    "watchForFileChanges": false,
+    "integrationFolder": "test/cypress/integration",
+    "pluginsFile": "test/cypress/plugins",
+    "screenshotsFolder": "test/cypress/screenshots",
+    "screenshotOnRunFailure": false,
+    "supportFile": "test/cypress/support",
+    "video": false,
+    "videoUploadOnPasses": false,
+    "viewportWidth": 1440,
+    "viewportHeight": 916,
+    "env": {
+        "cypress-react-selector": {
+          "root": "#root"
+        }
+      }
+}

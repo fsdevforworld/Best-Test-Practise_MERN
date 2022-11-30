@@ -1,0 +1,29 @@
+[
+  {
+    "scope": "https://bank-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/internal-api/v1/users/119/bank-accounts",
+    "body": "",
+    "status": 404,
+    "response": {
+      "customCode": "NOT_FOUND",
+      "message": "NotFound"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "37241b4d-3722-4d47-a29e-f34eff005d8c",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 26 Mar 2019 19:27:46 GMT",
+      "Content-Length",
+      "516",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

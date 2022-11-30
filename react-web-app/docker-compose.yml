@@ -1,0 +1,9 @@
+version: '3'
+services:
+  react-web-app:
+    image: react-web-app
+    build:
+      context: .
+      dockerfile: ./infra/Dockerfile
+    ports:
+      - '80'

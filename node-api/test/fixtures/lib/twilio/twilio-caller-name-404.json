@@ -1,0 +1,49 @@
+[
+  {
+    "scope": "https://lookups.twilio.com:443",
+    "method": "GET",
+    "path": "/v1/PhoneNumbers/+13555877777?Type=caller-name",
+    "body": "",
+    "status": 404,
+    "response": {
+      "code": 20404,
+      "message": "The requested resource /PhoneNumbers/+13555877777 was not found",
+      "more_info": "https://www.twilio.com/docs/errors/20404",
+      "status": 404
+    },
+    "rawHeaders": [
+      "Date",
+      "Fri, 10 May 2019 00:36:39 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "165",
+      "Connection",
+      "close",
+      "Twilio-Request-Id",
+      "RQ66b9320f9f3841b899f868bb673c7ed7",
+      "Twilio-Request-Duration",
+      "0.020",
+      "Access-Control-Allow-Origin",
+      "*",
+      "Access-Control-Allow-Headers",
+      "Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since",
+      "Access-Control-Allow-Methods",
+      "GET, POST, DELETE, OPTIONS",
+      "Access-Control-Expose-Headers",
+      "ETag",
+      "Access-Control-Allow-Credentials",
+      "true",
+      "X-Powered-By",
+      "AT-5000",
+      "X-Shenanigans",
+      "none",
+      "X-Home-Region",
+      "us1",
+      "X-API-Domain",
+      "lookups.twilio.com",
+      "Strict-Transport-Security",
+      "max-age=31536000"
+    ]
+  }
+]

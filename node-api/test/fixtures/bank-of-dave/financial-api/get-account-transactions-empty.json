@@ -1,0 +1,32 @@
+[
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/1783460/accounts/0b39346b-9b00-4aee-a11e-0428fd13df81/transactions?startsAt=2019-03-20T04%3A47%3A42.000Z",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction[]",
+      "data": [],
+      "message": "success",
+      "name": "ApiResponse"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "4104733b-261e-4698-bdb3-29b490f2abae",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 26 Mar 2019 19:53:27 GMT",
+      "Content-Length",
+      "86",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

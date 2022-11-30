@@ -1,0 +1,147 @@
+[
+  {
+    "scope": "https://rest.iad-03.braze.com:443",
+    "method": "POST",
+    "path": "/users/track",
+    "body": {
+      "api_key": "secret:braze-key",
+      "attributes": [
+        {
+          "advance_amount": 75,
+          "advance_due_date": "2018-09-20",
+          "advance_fee": 4.99,
+          "advance_outstanding": 75,
+          "advance_payback_url": "https://dave.com/payback/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0.n6N24dbEt8jX3DYVPzzerhmvS7PfUBOs4o33D-CZMuE",
+          "advance_tip": 0,
+          "advance_tip_percent": 3,
+          "push_notifications_enabled": false,
+          "text_messages_enabled": false,
+          "external_id": "1"
+        }
+      ],
+      "purchases": [
+        {
+          "external_id": "1",
+          "currency": "USD",
+          "time": "2018-09-18T00:00:00Z",
+          "properties": {
+            "advanceId": 1,
+            "amount": 75,
+            "createdWithOffset": "2018-09-17T17:00:00-07:00",
+            "paybackDate": "2018-09-20",
+            "deliveryFee": 4.99,
+            "tipAmount": 0,
+            "paymentMethodLastFour": "0000",
+            "institutionName": "bank of pep",
+            "isExperimental": false,
+            "experimentName": ""
+          },
+          "product_id": "express delivery fee set",
+          "price": 4.99
+        }
+      ],
+      "events": [
+        {
+          "name": "advance disbursed",
+          "external_id": "1",
+          "time": "2018-09-18T00:00:00Z",
+          "properties": {
+            "advanceId": 1,
+            "amount": 75,
+            "createdWithOffset": "2018-09-17T17:00:00-07:00",
+            "paybackDate": "2018-09-20",
+            "deliveryFee": 4.99,
+            "tipAmount": 0,
+            "paymentMethodLastFour": "0000",
+            "institutionName": "bank of pep",
+            "isExperimental": false,
+            "experimentName": ""
+          }
+        }
+      ]
+    },
+    "status": 201,
+    "response": [
+      "1f8b0800d9708e5f0003aa564a2c2929ca4c2a2d492d8e2f28ca4f4e2d2e4e4d51b232d4514a2d4bcd2b41172c282d4ace482cc6509c0b6426a6a72a592915972683c4956a01000000ffff03001602227b5b000000"
+    ],
+    "rawHeaders": [
+      "Connection",
+      "close",
+      "Content-Length",
+      "85",
+      "Cache-Control",
+      "max-age=0, private, must-revalidate",
+      "Content-Encoding",
+      "gzip",
+      "Content-Type",
+      "application/json",
+      "ETag",
+      "W/\"68b326343749fed4d6cc5dda395b5367\"",
+      "Server",
+      "nginx",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains",
+      "X-RateLimit-Limit",
+      "250000",
+      "X-RateLimit-Remaining",
+      "250000",
+      "X-RateLimit-Reset",
+      "1603173600",
+      "X-Request-Id",
+      "85888a5e-408e-4f96-8328-63c1b1da705c",
+      "X-Runtime",
+      "0.011006",
+      "Accept-Ranges",
+      "bytes",
+      "Date",
+      "Tue, 20 Oct 2020 05:08:41 GMT",
+      "Via",
+      "1.1 varnish",
+      "X-Served-By",
+      "cache-bur17542-BUR",
+      "X-Cache",
+      "MISS",
+      "X-Cache-Hits",
+      "0",
+      "X-Timer",
+      "S1603170522.886303,VS0,VE81",
+      "Vary",
+      "Origin,Accept-Encoding"
+    ]
+  },
+  {
+    "scope": "https://api2.appsflyer.com:443",
+    "method": "POST",
+    "path": "/inappevent/com.dave",
+    "body": {
+      "appsflyer_id": "some-appflyer-id",
+      "advertising_id": "some-difa",
+      "customer_user_id": 1,
+      "eventName": "advance disbursed",
+      "eventValue": "{\"af_revenue\":4.99}",
+      "eventCurrency": "USD",
+      "ip": "some.ip",
+      "eventTime": "2020-07-06 23:53:36.000",
+      "af_events_api": "true",
+      "json": true
+    },
+    "status": 200,
+    "response": "ok",
+    "rawHeaders": [
+      "Content-Type",
+      "application/octet-stream",
+      "Date",
+      "Tue, 20 Oct 2020 05:08:42 GMT",
+      "Server",
+      "http-kit",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains",
+      "Content-Length",
+      "2",
+      "Connection",
+      "Close"
+    ]
+  }
+]

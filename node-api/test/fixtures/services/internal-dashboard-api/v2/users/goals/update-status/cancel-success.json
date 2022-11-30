@@ -1,0 +1,107 @@
+[
+  {
+    "scope": "https://bank-goals-api-staging-internal.trydave.com:443",
+    "method": "GET",
+    "path": "/internal/v1/goals/00f07410deb411ebab7db5b19361694e",
+    "body": "",
+    "status": 200,
+    "response": {
+      "id": "00f07410deb411ebab7db5b19361694e",
+      "currentBalance": 0,
+      "goalAccountId": "fb106500deb311ebab7db5b19361694e",
+      "goalType": "other",
+      "name": "Recurring Transfer Goal",
+      "targetAmount": 1000,
+      "created": "2021-07-06T23:43:45.000Z",
+      "status": "active"
+    },
+    "rawHeaders": [
+      "Date",
+      "Fri, 23 Jul 2021 23:48:12 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "238",
+      "Connection",
+      "close",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"ee-rIpwRHEQRrGTT+UvBKU4da09+ik\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  },
+  {
+    "scope": "https://bank-goals-api-staging-internal.trydave.com:443",
+    "method": "PATCH",
+    "path": "/internal/v1/goals/00f07410deb411ebab7db5b19361694e",
+    "body": {
+      "status": "canceled"
+    },
+    "status": 200,
+    "response": {
+      "id": "00f07410deb411ebab7db5b19361694e",
+      "currentBalance": 0,
+      "goalAccountId": "fb106500deb311ebab7db5b19361694e",
+      "goalType": "other",
+      "name": "Recurring Transfer Goal",
+      "targetAmount": 1000,
+      "created": "2021-07-06T23:43:45.000Z",
+      "status": "canceled",
+      "balanceAtClosure": 0,
+      "closedAt": "2021-07-23T23:48:13.568Z"
+    },
+    "rawHeaders": [
+      "Date",
+      "Fri, 23 Jul 2021 23:48:13 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "299",
+      "Connection",
+      "close",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"12b-YDRf4RhTO0UPNdBdigHwD+bXhAA\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  },
+  {
+    "scope": "https://bank-goals-api-staging-internal.trydave.com:443",
+    "method": "GET",
+    "path": "/internal/v1/goals/00f07410deb411ebab7db5b19361694e",
+    "body": "",
+    "status": 200,
+    "response": {
+      "id": "00f07410deb411ebab7db5b19361694e",
+      "currentBalance": 0,
+      "goalAccountId": "fb106500deb311ebab7db5b19361694e",
+      "goalType": "other",
+      "name": "Recurring Transfer Goal",
+      "targetAmount": 1000,
+      "created": "2021-07-06T23:43:45.000Z",
+      "status": "canceled",
+      "balanceAtClosure": 0,
+      "closedAt": "2021-07-23T23:48:13.568Z"
+    },
+    "rawHeaders": [
+      "Date",
+      "Fri, 23 Jul 2021 23:48:13 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "299",
+      "Connection",
+      "close",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"12b-YDRf4RhTO0UPNdBdigHwD+bXhAA\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  }
+]

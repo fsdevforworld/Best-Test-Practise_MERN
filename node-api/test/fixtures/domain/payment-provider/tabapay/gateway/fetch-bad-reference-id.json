@@ -1,0 +1,24 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "GET",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/transactions?referenceID=not-there-foo",
+    "body": "",
+    "status": 404,
+    "response": {
+      "SC": 404,
+      "EC": "39551200",
+      "EM": "referenceID"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Wed, 10 Apr 2019 18:20:23 GMT",
+      "Content-Length",
+      "45",
+      "Connection",
+      "close"
+    ]
+  }
+]

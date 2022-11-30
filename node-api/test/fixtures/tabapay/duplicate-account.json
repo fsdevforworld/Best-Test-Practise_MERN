@@ -1,0 +1,138 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "POST",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/accounts?RejectDuplicateCard",
+    "body": {
+      "referenceID": "test-id-3459134",
+      "card": {
+        "data": "encrypted_card_wow",
+        "keyID": "SxwzWCWD0MhfG-KNGYYTFQ"
+      },
+      "owner": {
+        "name": {
+          "first": "Johnny21",
+          "last": "Seckler"
+        },
+        "address": {
+          "line1": "123 Awesome St",
+          "city": "Sweet Town",
+          "state": "CA",
+          "zipcode": "91234"
+        },
+        "phone": {
+          "number": "3105551213",
+          "countryCode": "1"
+        }
+      }
+    },
+    "status": 409,
+    "response": {
+      "SC": 409,
+      "EC": "3C463000",
+      "EM": "Duplicate",
+      "duplicateAccountIDs": ["B1QDWt6U0KJVvjSFNYqLAQ"]
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Mon, 06 May 2019 22:45:24 GMT",
+      "Content-Length",
+      "92",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "GET",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/accounts/B1QDWt6U0KJVvjSFNYqLAQ",
+    "body": "",
+    "status": 200,
+    "response": {
+      "SC": 200,
+      "EC": "0",
+      "referenceID": "test-id-3452134",
+      "card": {
+        "last4": "9997",
+        "expirationDate": "202312"
+      },
+      "owner": {
+        "name": {
+          "first": "Johnny21",
+          "last": "Seckler"
+        },
+        "address": {
+          "line1": "123 Awesome St",
+          "city": "Sweet Town",
+          "state": "CA",
+          "zipcode": "91234"
+        },
+        "phone": {
+          "countryCode": "1",
+          "number": "3105551213"
+        }
+      }
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Mon, 06 May 2019 22:45:24 GMT",
+      "Content-Length",
+      "296",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  },
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "POST",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/accounts?OKToAddDuplicateCard",
+    "body": {
+      "referenceID": "024cae8b3b75aba",
+      "card": {
+        "data": "encrypted_card_wow",
+        "keyID": "SxwzWCWD0MhfG-KNGYYTFQ"
+      },
+      "owner": {
+        "name": {
+          "first": "Johnny21",
+          "last": "Seckler"
+        },
+        "address": {
+          "line1": "123 Awesome St",
+          "city": "Sweet Town",
+          "state": "CA",
+          "zipcode": "91234"
+        },
+        "phone": {
+          "number": "3105551213",
+          "countryCode": "1"
+        }
+      }
+    },
+    "status": 200,
+    "response": {
+      "SC": 200,
+      "EC": "0",
+      "accountID": "y5gRaVGF0MxuSMdZcSRL2g",
+      "notices": "**WARNING** Inactive or duplicate accounts will be automatically deleted!"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Mon, 06 May 2019 22:45:24 GMT",
+      "Content-Length",
+      "142",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  }
+]

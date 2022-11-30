@@ -1,0 +1,47 @@
+/*
+If any changes are made to the keys or hex codes, make sure to also update components/colors/index.ts
+*/
+
+:root {
+  --transparent: rgba(0, 0, 0, 0.01);
+  --white: #ffffff;
+  --pitch-black: #000000;
+  --black: #3c3c3c;
+  --gray1: #f5f5f5;
+  --gray2: #e6e6e6;
+  --gray3: #c0c0c0;
+  --gray4: #898989;
+  --gray5: #4d4d4d;
+  --green1: #d3ffe3;
+  --green2: #36d571;
+  --green3: #0b9a40;
+  --green4: #066027;
+  --green5: #043616;
+  --green6: #1ad760;
+  --berry1: #edf3fe;
+  --berry2: #82aef8;
+  --berry3: #3c81f4;
+  --berry4: #326ac8;
+  --berry5: #1c3b6f;
+  --grape1: #f3effe;
+  --grape2: #ae92fc;
+  --grape3: #8155fb;
+  --grape4: #6a46ce;
+  --grape5: #3b2773;
+  --banana1: #fff9e8;
+  --banana2: #ffd761;
+  --banana3: #ffc107;
+  --banana4: #d19e06;
+  --banana5: #745804;
+  --banana6: #ffc208;
+  --carrot1: #fef4f1;
+  --carrot2: #f9b69e;
+  --carrot3: #f68d68;
+  --carrot4: #ca7456;
+  --carrot5: #704130;
+  --candy1: #ffefef;
+  --candy2: #ff9090;
+  --candy3: #ff5252;
+  --candy4: #d14444;
+  --candy5: #742626;
+}

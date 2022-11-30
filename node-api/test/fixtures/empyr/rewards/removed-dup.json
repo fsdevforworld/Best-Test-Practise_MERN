@@ -1,0 +1,89 @@
+{
+  "business": null,
+  "card": null,
+  "payable": null,
+  "statsReport": null,
+  "transaction": {
+    "amount": 35,
+    "authorizationAmount": 35,
+    "cardId": 10169064,
+    "cashbackAmount": 0,
+    "cashbackBilled": 0,
+    "clearingAmount": 35,
+    "dateOfTransaction": 1555554695000,
+    "dateProcessed": 1556002800000,
+    "duplicationSource": "Rewards Network",
+    "id": 23622361,
+    "last4": "6542",
+    "redemptions": [
+      {
+        "cashbackAmount": 0,
+        "dateAdded": 1555554696000,
+        "dateReversed": null,
+        "id": 14371559,
+        "offerId": 279260,
+        "publisherCommission": 0,
+        "qualifiedSpend": 35,
+        "referralFee": 0,
+        "resellerCommission": 0,
+        "state": "REVERSED"
+      }
+    ],
+    "referralFee": 0,
+    "rewardTime": 1555554696000,
+    "user": {
+      "address": {
+        "city": "Bronx",
+        "metroActive": false,
+        "metroId": 601,
+        "metroImage": {
+          "value": "/images/metros/US_Mobile.png"
+        },
+        "metroName": "New York",
+        "postalCode": "10456",
+        "state": "NY",
+        "streetAddress": null
+      },
+      "donatePercent": 0,
+      "email": "2205696-dave-user@dave.com",
+      "firstname": "Giselle",
+      "id": 10577969,
+      "lastname": "Bleuz",
+      "numAlerts": 1,
+      "privacyLevel": "NO_ONE",
+      "thumbnailUrl": {
+        "value": "/images/user/userDefault.png"
+      }
+    },
+    "venue": {
+      "address": {
+        "city": "New York",
+        "metroActive": false,
+        "metroId": 601,
+        "metroImage": {
+          "value": "/images/metros/US_Mobile.png"
+        },
+        "metroName": "New York",
+        "postalCode": "10003",
+        "state": "NY",
+        "streetAddress": "113 University Pl"
+      },
+      "applicationId": 60,
+      "businessToken": null,
+      "distance": null,
+      "id": 74672,
+      "latitude": 40.7343869142235,
+      "longitude": -73.9921539848726,
+      "name": "Vapiano NYC",
+      "phone": "(212) 777-9477",
+      "rating": 3.5,
+      "ratingCount": 1138,
+      "thumbnailUrl": {
+        "value": "/images/business/74672/vapiano-nyc2061639065-thumb.jpg"
+      },
+      "yelpId": "ONEe1U1fNGT80jAEE0sCrg"
+    }
+  },
+  "transactionReport": null,
+  "type": "REMOVED_DUP"
+}

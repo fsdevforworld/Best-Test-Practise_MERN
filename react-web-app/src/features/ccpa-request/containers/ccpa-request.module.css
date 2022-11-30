@@ -1,0 +1,44 @@
+.inputContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sectionLabel {
+  margin-bottom: 10px;
+  margin-top: 12px;
+}
+
+.radioContainer {
+  margin-bottom: 20;
+  margin-top: 20;
+  display: flex;
+}
+
+.radioLabel {
+  font-size: 20;
+  flex: 1;
+}
+
+.radioButton {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+
+.disclaimer {
+  margin: 15px 25px;
+  text-align: center;
+}
+
+@media (min-width: 768px) and (min-height: 768px) {
+  .image {
+    height: 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    grid-area: image;
+    background-size: contain;
+    width: 30vw;
+    margin-left: 20%;
+    margin-top: 120px;
+  }
+}

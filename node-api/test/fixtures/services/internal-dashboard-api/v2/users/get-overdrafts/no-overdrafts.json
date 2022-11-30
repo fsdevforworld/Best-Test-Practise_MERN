@@ -1,0 +1,34 @@
+[
+  {
+    "scope": "https://overdraft-staging-internal.trydave.com:443",
+    "method": "GET",
+    "path": "/internal/v1/accounts?userId=3997091",
+    "body": "",
+    "status": 200,
+    "response": {
+      "account": {
+        "id": "00a8f330fae111ebb0db174a8894f88b",
+        "balance": 0,
+        "extraCashAccountId": "ff8a8ae0fae011eb87507308b7fdf54a",
+        "status": "ACTIVE"
+      },
+      "overdrafts": []
+    },
+    "rawHeaders": [
+      "Date",
+      "Thu, 12 Aug 2021 22:51:19 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "155",
+      "Connection",
+      "close",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"9b-x3BAcJy2TkB5nUUIyXISYlICDoQ\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  }
+]

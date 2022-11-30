@@ -1,0 +1,24 @@
+{
+  "extension": [
+      ".ts"
+  ],
+  "require": [
+      "ts-node/register"
+  ],
+  "include": [
+      "src/**/*.ts"
+  ],
+  "exclude": [
+      "**/*.d.ts"
+  ],
+  "reporter": [
+      "text-summary",
+      "lcov"
+  ],
+  "all": true,
+  "collect-coverage": true,
+  "branches": 74,
+  "statements": 88,
+  "functions": 86,
+  "lines": 88
+}

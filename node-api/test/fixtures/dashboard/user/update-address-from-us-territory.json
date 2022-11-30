@@ -1,0 +1,50 @@
+[
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/address-verification",
+    "body": {
+      "address_street": "1269 S Cochran Ave",
+      "address_city": "Los Angeles",
+      "address_subdivision": "CA",
+      "address_country_code": "US",
+      "address_postal_code": "90019"
+    },
+    "status": 200,
+    "response": [
+      "1f8b08000000000000037ccf3d6bc3400c06e0bdbfc268f6907408f836634c3b84046a92f5907d6a11c877e67436b8c1ffbdf42b713374137ade17a40b38129e2862cbc2690603a30e6aaf5b21c8ef32163dcaacac602e30604c8c62271476605e5194721822f71867ebc7bea568d9ffcb3dabb27fbbb25217bcfb0cdc176ff2b7b3e4e043ec51f89d9c45e722e9d7793fa3edbe7fdb1f9bac3c3cd5fbba81fc8661f429ceb60b8ec0c0696d43d084f24bc566b32d56aa29122530b07ddc15599355c7eaf9a53c64e5b95ea7c6d6f1c4cac18381aa846579f8000000ffff03003982e55579010000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Sun, 31 May 2020 19:18:01 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d0adc71ec10b6ee65a6f473b1c288f5711590952680; expires=Tue, 30-Jun-20 19:18:00 GMT; path=/; domain=.synapsefi.com; HttpOnly; SameSite=Lax; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "cf-request-id",
+      "030dc4760a0000d34ad0810200000001",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "59c309d01da2d34a-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  }
+]

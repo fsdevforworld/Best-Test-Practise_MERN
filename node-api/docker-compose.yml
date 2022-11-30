@@ -1,0 +1,252 @@
+version: '3'
+services:
+  node-api:
+    image: dave-api-v2
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    ports:
+      - '8080'
+    environment:
+      NODE_ENV: dev
+      PUBSUB_EMULATOR_HOST: pubsub-emulator:8681
+      PHONE_NUMBER_SEED: ${PHONE_NUMBER_SEED}
+    command: >
+      bash -c "
+      ./bin/wait-for-it.sh -t 30 mysql:3306 &&
+      ./node_modules/.bin/nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+    depends_on:
+      - redis
+      - mysql
+      - heath
+    volumes:
+      - ./src:/opt/app/src
+      - ./test:/opt/app/test
+      - ./migrations:/opt/app/migrations
+      - ./config:/opt/app/config
+      - ./bin:/opt/app/bin
+      - ./package.json:/opt/app/package.json
+      - ./package-lock.json:/opt/app/package-lock.json
+  user-auth:
+    image: dave-api-v2
+    ports:
+      - '8018'
+    environment:
+      NODE_ENV: dev
+      PUBSUB_EMULATOR_HOST: pubsub-emulator:8681
+      AUTH_SERVICE: 'true'
+      SYNAPSE_PROXY_SERVICE: 'true'
+    command: >
+      bash -c "
+      ./bin/wait-for-it.sh -t 30 mysql:3306 &&
+      ./node_modules/.bin/nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/services/run.ts"
+    depends_on:
+      - redis
+      - mysql
+      - node-api
+    volumes:
+      - ./src:/opt/app/src
+      - ./config:/opt/app/config
+      - ./bin:/opt/app/bin
+      - ./package.json:/opt/app/package.json
+      - ./package-lock.json:/opt/app/package-lock.json
+  banking-direct:
+    image: dave-api-v2
+    ports:
+      - '7299'
+    environment:
+      NODE_ENV: dev
+      PUBSUB_EMULATOR_HOST: pubsub-emulator:8681
+    command: >
+      bash -c "
+      ./bin/wait-for-it.sh -t 30 mysql:3306 &&
+      ./node_modules/.bin/nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/services/banking-direct/index.ts"
+    depends_on:
+      - redis
+      - mysql
+      - node-api
+    volumes:
+      - ./src:/opt/app/src
+      - ./config:/opt/app/config
+      - ./bin:/opt/app/bin
+      - ./package.json:/opt/app/package.json
+      - ./package-lock.json:/opt/app/package-lock.json
+  mx-webhook:
+    image: dave-api-v2
+    ports:
+      - '7298'
+    environment:
+      NODE_ENV: dev
+      PUBSUB_EMULATOR_HOST: pubsub-emulator:8681
+    command: >
+      bash -c "
+      ./bin/wait-for-it.sh -t 30 mysql:3306 &&
+      ./node_modules/.bin/nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/services/mx-webhook/index.ts"
+    depends_on:
+      - redis
+      - mysql
+      - node-api
+    volumes:
+      - ./src:/opt/app/src
+      - ./config:/opt/app/config
+      - ./bin:/opt/app/bin
+      - ./package.json:/opt/app/package.json
+      - ./package-lock.json:/opt/app/package-lock.json
+  advance-approval:
+    image: dave-api-v2
+    ports:
+      - '7777'
+    environment:
+      NODE_ENV: dev
+      PUBSUB_EMULATOR_HOST: pubsub-emulator:8681
+    command: >
+      bash -c "
+      ./bin/wait-for-it.sh -t 30 mysql:3306 &&
+      ./node_modules/.bin/nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/services/advance-approval/index.ts"
+    depends_on:
+      - redis
+      - mysql
+      - node-api
+    volumes:
+      - ./src:/opt/app/src
+      - ./config:/opt/app/config
+      - ./bin:/opt/app/bin
+      - ./package.json:/opt/app/package.json
+      - ./package-lock.json:/opt/app/package-lock.json
+  plaid-updater:
+    image: dave-api-v2
+    environment:
+      NODE_ENV: dev
+      PUBSUB_EMULATOR_HOST: pubsub-emulator:8681
+    command: >
+      bash -c "
+      ./bin/wait-for-it.sh pubsub-emulator:8682 &&
+      ./node_modules/.bin/nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/consumers/plaid-updater/index.ts"
+    depends_on:
+      - node-api
+      - redis
+      - mysql
+      - pubsub-emulator
+    volumes:
+      - ./src:/opt/app/src
+      - ./config:/opt/app/config
+      - ./bin:/opt/app/bin
+      - ./package.json:/opt/app/package.json
+      - ./package-lock.json:/opt/app/package-lock.json
+  payments-handler:
+    image: dave-api-v2
+    ports:
+      - '7337'
+    environment:
+      NODE_ENV: dev
+    command: >
+      bash -c "
+      ./bin/wait-for-it.sh -t 30 mysql:3306 &&
+      ./node_modules/.bin/nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/services/loomis-api/index.ts"
+    depends_on:
+      - redis
+      - mysql
+    volumes:
+      - ./src:/opt/app/src
+      - ./config:/opt/app/config
+      - ./bin:/opt/app/bin
+      - ./package.json:/opt/app/package.json
+      - ./package-lock.json:/opt/app/package-lock.json
+  internal-dashboard-api:
+    image: dave-api-v2
+    ports:
+      - '7070'
+    environment:
+      NODE_ENV: dev
+    command: >
+      bash -c "
+      ./bin/wait-for-it.sh -t 30 mysql:3306 &&
+      ./node_modules/.bin/nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/services/internal-dashboard-api/index.ts"
+    depends_on:
+      - redis
+      - mysql
+    volumes:
+      - ./src:/opt/app/src
+      - ./config:/opt/app/config
+      - ./bin:/opt/app/bin
+      - ./package.json:/opt/app/package.json
+      - ./package-lock.json:/opt/app/package-lock.json
+  repayments-api:
+    image: dave-api-v2
+    ports:
+      - '7338'
+    environment:
+      NODE_ENV: dev
+    command: >
+      bash -c "
+      ./bin/wait-for-it.sh -t 30 mysql:3306 &&
+      ./node_modules/.bin/nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/services/aether/index.ts"
+    depends_on:
+      - redis
+      - mysql
+    volumes:
+      - ./src:/opt/app/src
+      - ./config:/opt/app/config
+      - ./bin:/opt/app/bin
+      - ./package.json:/opt/app/package.json
+      - ./package-lock.json:/opt/app/package-lock.json
+  heath:
+    image: dave-api-v2
+    ports:
+      - '7447'
+    environment:
+      NODE_ENV: dev
+    command: >
+      bash -c "
+      ./bin/wait-for-it.sh -t 30 mysql:3306 &&
+      ./node_modules/.bin/nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/services/heath/index.ts"
+    depends_on:
+      - redis
+      - mysql
+    volumes:
+      - ./src:/opt/app/src
+      - ./config:/opt/app/config
+      - ./bin:/opt/app/bin
+      - ./package.json:/opt/app/package.json
+      - ./package-lock.json:/opt/app/package-lock.json
+  pubsub-emulator:
+    image: 'messagebird/gcloud-pubsub-emulator:latest'
+    environment:
+      PUBSUB_PROJECT1: dave-staging-173321,plaid-update:plaid-updater,bank_connection_update,bank-connection-update-completed:bank-connection-update-new-expenses:bank-connection-update-new-income,balance_log,synapsepay-update-user:overdraft-synapsepay-update-user,synapsepay-transaction,daily-balance-log:daily-balance-log,collect-advance:collect-advance,new-recurring-transaction,user-updated,advance-approval-ml-score-preprocess,record-created,bank-transaction-backfill,tabapay-chargeback
+      PUBSUB_PROJECT2: bank-project-217719,bank-testing:my-test-sub,debit-cards-staging:overdraft-api-debit-cards-dev,account-created:account-created
+  redis:
+    image: 'redis:alpine'
+    logging:
+      driver: none
+  mysql:
+    image: 'mysql:5.7'
+    command: "--character-set-server='utf8mb4' --collation-server='utf8mb4_unicode_ci'"
+    ports:
+      - '3306'
+    logging:
+      driver: none
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: password123
+      MYSQL_DATABASE: dave_dev
+    volumes:
+      - ./migrations/seeds:/docker-entrypoint-initdb.d
+  pubsub-subscribers:
+    image: dave-api-v2
+    environment:
+      NODE_ENV: dev
+      PUBSUB_EMULATOR_HOST: pubsub-emulator:8681
+    command: >
+      bash -c "
+      ./bin/wait-for-it.sh pubsub-emulator:8682 &&
+      ./node_modules/.bin/nodemon --watch 'src/**/*.ts' --exec 'ts-node' bin/scripts/pubsub-subscribers.ts"
+    depends_on:
+      - node-api
+      - redis
+      - mysql
+      - pubsub-emulator
+    volumes:
+      - ./src:/opt/app/src
+      - ./config:/opt/app/config
+      - ./bin:/opt/app/bin

@@ -1,0 +1,71 @@
+[
+  {
+    "scope": "https://rest.iad-03.braze.com:443",
+    "method": "POST",
+    "path": "/users/track",
+    "body": {
+      "api_key": "secret:braze-key",
+      "events": [
+        {
+          "external_id": "3",
+          "name": "bank account disconnected",
+          "time": "2018-11-01T00:00:00Z",
+          "properties": {
+            "bankName": "Bank of Steven",
+            "paybackUrl": "https://dave.com/payback/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTAwfQ.6ycl8yA-UZGD1M-D5w7ZkRUs2KawfVjIM03V1kHCgow"
+          }
+        }
+      ]
+    },
+    "status": 201,
+    "response": [
+      "1f8b0800faf07c5f0003aa564a2d4bcd2b298e2f28ca4f4e2d2e4e4d51b232d451ca053213d35395ac948a4b9341e24ab500000000ffff0300e5baab392a000000"
+    ],
+    "rawHeaders": [
+      "Connection",
+      "close",
+      "Content-Length",
+      "65",
+      "Cache-Control",
+      "max-age=0, private, must-revalidate",
+      "Content-Encoding",
+      "gzip",
+      "Content-Type",
+      "application/json",
+      "ETag",
+      "W/\"64fad1b8c9e82c4e791b045e741851ae\"",
+      "Server",
+      "nginx",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains",
+      "X-RateLimit-Limit",
+      "250000",
+      "X-RateLimit-Remaining",
+      "250000",
+      "X-RateLimit-Reset",
+      "1602025200",
+      "X-Request-Id",
+      "57c32ed4-0fe6-4bb5-822a-8bed2324567d",
+      "X-Runtime",
+      "0.010358",
+      "Accept-Ranges",
+      "bytes",
+      "Date",
+      "Tue, 06 Oct 2020 22:34:34 GMT",
+      "Via",
+      "1.1 varnish",
+      "X-Served-By",
+      "cache-bur17528-BUR",
+      "X-Cache",
+      "MISS",
+      "X-Cache-Hits",
+      "0",
+      "X-Timer",
+      "S1602023674.497163,VS0,VE330",
+      "Vary",
+      "Origin,Accept-Encoding"
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "GET",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/transactions/Q40CPMiF0U0M_glP1QHbfQ",
+    "body": "",
+    "status": 200,
+    "response": {
+      "SC": 200,
+      "EC": "0",
+      "referenceID": "test-reverse",
+      "network": "Visa",
+      "networkRC": "00",
+      "status": "COMPLETED",
+      "approvalCode": "222607",
+      "amount": "0.10",
+      "last4": "9990",
+      "reversalStatus": "REVERSED",
+      "reversal": {
+        "networkRC": "00"
+      }
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Fri, 22 Feb 2019 01:11:34 GMT",
+      "Content-Length",
+      "216",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  }
+]

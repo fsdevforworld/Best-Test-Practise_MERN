@@ -1,0 +1,89 @@
+{
+  "business": null,
+  "card": null,
+  "payable": null,
+  "statsReport": null,
+  "transaction": {
+    "amount": 40.98,
+    "authorizationAmount": 40.98,
+    "cardId": 10028942,
+    "cashbackAmount": 2.05,
+    "cashbackBilled": 2.05,
+    "clearingAmount": 40.98,
+    "dateOfTransaction": 1555195866000,
+    "dateProcessed": 1555311600000,
+    "duplicationSource": null,
+    "id": 23548816,
+    "last4": "9876",
+    "redemptions": [
+      {
+        "cashbackAmount": 2.05,
+        "dateAdded": 1555195867000,
+        "dateReversed": null,
+        "id": 14313806,
+        "offerId": 301416,
+        "publisherCommission": 0.4428,
+        "qualifiedSpend": 40.98,
+        "referralFee": 1.64,
+        "resellerCommission": 0,
+        "state": "COMPLETED"
+      }
+    ],
+    "referralFee": 1.64,
+    "rewardTime": 1555195867000,
+    "user": {
+      "address": {
+        "city": "Fort Washington",
+        "metroActive": false,
+        "metroId": 14714,
+        "metroImage": {
+          "value": "/images/metros/US_Mobile.png"
+        },
+        "metroName": "Fort Washington MD",
+        "postalCode": "20744",
+        "state": "MD",
+        "streetAddress": null
+      },
+      "donatePercent": 0,
+      "email": "77031-dave-user@dave.com",
+      "firstname": "Shaniece",
+      "id": 10421754,
+      "lastname": "Pryce",
+      "numAlerts": 2,
+      "privacyLevel": "NO_ONE",
+      "thumbnailUrl": {
+        "value": "/images/user/userDefault.png"
+      }
+    },
+    "venue": {
+      "address": {
+        "city": "Corpus Christi",
+        "metroActive": false,
+        "metroId": 202,
+        "metroImage": {
+          "value": "/images/metros/US_Mobile.png"
+        },
+        "metroName": "Corpus Christi",
+        "postalCode": "78415",
+        "state": "TX",
+        "streetAddress": "6116 Ayers St"
+      },
+      "applicationId": 73,
+      "businessToken": null,
+      "distance": null,
+      "id": 91894,
+      "latitude": 27.7166004,
+      "longitude": -97.4378128,
+      "name": "Bowlero",
+      "phone": "(361) 857-2695",
+      "rating": 2,
+      "ratingCount": 56,
+      "thumbnailUrl": {
+        "value": "/images/business/91894/bowlero1329190338-thumb.jpg"
+      },
+      "yelpId": "lNZZA9Cb7Jpp7BUl-aPAvA"
+    }
+  },
+  "transactionReport": null,
+  "type": "CLEARED"
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "GET",
+    "path": "/v1/clients/secret:tabapay-clientId/accounts/QIcVQo9UAKRkIfH5wsHkeQ",
+    "body": "",
+    "status": 404,
+    "response": {
+      "SC": 404,
+      "EC": "3A452000",
+      "EM": "AccountID"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Fri, 27 Dec 2019 01:41:14 GMT",
+      "Content-Length",
+      "43",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  },
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "GET",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/accounts/QIcVQo9UAKRkIfH5wsHkeQ",
+    "body": "",
+    "status": 200,
+    "response": {
+      "SC": 200,
+      "EC": "0",
+      "referenceID": "eac6bbb49d87c7b",
+      "card": {
+        "last4": "9990",
+        "expirationDate": "202004"
+      },
+      "owner": {
+        "name": {
+          "first": "Flavie",
+          "last": "Hintz"
+        },
+        "address": {
+          "line1": "123 Main St",
+          "line2": "Apt 456",
+          "city": "Livengood",
+          "state": "AK",
+          "zipcode": "00000"
+        },
+        "phone": {
+          "number": "9056159652"
+        }
+      }
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Fri, 27 Dec 2019 01:41:15 GMT",
+      "Content-Length",
+      "286",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  }
+]

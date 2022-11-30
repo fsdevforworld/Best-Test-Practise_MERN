@@ -1,0 +1,46 @@
+[
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/address-verification",
+    "body": {
+      "address_street": "blah blah blah",
+      "address_city": "blah",
+      "address_subdivision": "blah",
+      "address_country_code": "US",
+      "address_postal_code": "blah"
+    },
+    "status": 200,
+    "response": [
+      "1f8b08000000000000038c8f410ac3300c04ef7e85d0392ff0678c52ab4520db454a036ef0df4b43a090f6d0f3cc2ecc160030b3caca46b3a82c1d23209b35c3e91b26aaa4ddc531c2160000f04eb608695a492563842ba9f374309342d6537d94992d49fd432ae22ef576929c2fade6b7f6fbe4c34ffb0030f690daac90ca9373a29c8d7d6f1861bc000000ffff03004293aa3f04010000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Tue, 04 Feb 2020 18:52:36 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "55fed7b64947989f-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  }
+]

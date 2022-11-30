@@ -1,0 +1,44 @@
+{
+  "id": "e643382e-3b6c-434f-a263-b9f419fac7d1",
+  "name": "dev",
+  "values": [
+    {
+      "key": "user_token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "user_userId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "advance_token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "advance_userId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "advance_id",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "advance_defaultBankAccountId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "new_user_token",
+      "value": "",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2019-10-15T20:25:02.361Z",
+  "_postman_exported_using": "Postman/7.8.0"
+}

@@ -1,0 +1,63 @@
+[
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "GET",
+    "path": "/financial/api/1.0/users/1783460/accounts/0b39346b-9b00-4aee-a11e-0428fd13df81/transactions/14a858c6-39fd-4005-a052-7f31f81cbd06",
+    "body": "",
+    "status": 200,
+    "response": {
+      "code": 200,
+      "type": "transaction",
+      "data": {
+        "uuid": "14a858c6-39fd-4005-a052-7f31f81cbd06",
+        "debit": true,
+        "amount": 0.35,
+        "amountBreakdown": {
+          "amount": 0.35,
+          "fees": {
+            "surcharge": 0,
+            "totalFeeAmount": 0,
+            "feeDetails": [
+              {
+                "feeType": "Synapse Facilitator Fee",
+                "feeAmount": 0
+              }
+            ]
+          }
+        },
+        "pending": false,
+        "type": "ACH",
+        "source": {
+          "name": "Cynthia Dow",
+          "legalNames": ["Cynthia Dow"],
+          "meta": {
+            "directDeposit": false
+          }
+        },
+        "created": "2019-03-06T22:47:07.000Z",
+        "updated": "2019-03-06T22:47:10.000Z",
+        "returned": false,
+        "cancelled": false,
+        "returnedMessage": null
+      },
+      "message": "success",
+      "name": "ApiResponse"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "2cbe3e79-1873-4966-835b-237c5ed042e0",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Tue, 26 Mar 2019 19:53:27 GMT",
+      "Content-Length",
+      "552",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

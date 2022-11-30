@@ -1,0 +1,114 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "POST",
+    "path": "/v1/clients/secret:tabapay-clientId/cards",
+    "body": {
+      "owner": {
+        "name": {
+          "first": "Taurean",
+          "last": "Nader"
+        },
+        "address": {
+          "line1": "123 Main St",
+          "line2": "Apt 456",
+          "city": "Livengood",
+          "state": "AK",
+          "zipcode": "00000"
+        },
+        "phone": {
+          "number": "4398241071",
+          "countryCode": "1"
+        }
+      },
+      "card": {
+        "data": "gJDZ1kyvysOjRdpWcPfrAVbm92LJILRJKpHU61pfql_E16DXGSYiMzZo6naRPfMhxMdfnRh1Tk6wkELBh6u2Xy4s8hxX0RzY7xClA6LsJZWYdpoDrrP-3RZQIuswwt1J6BvTai7jd9kz7iPnoxBc9MCuYVv1rROzTzKwTOHOKjeYHwXvh4Yux-05ztE2mmz-sa1gNJ2lwhwKVgXXn9ZS2m6oA5-eyrCMQqt-46cFvjV1s8QMI02yU2r7GQeWSsNzhlMQXOvFHkAXK-R5LInPm9IG85RicQqA1tXaB11jQn8MOrV04nL15Y4R_MDvGTjsJjAZjju2nvh9Am_xBTMXcw",
+        "keyID": "yFAmO2KCCCihxVC3IAw_xg"
+      }
+    },
+    "status": 200,
+    "response": {
+      "SC": 200,
+      "EC": "0",
+      "card": {
+        "pull": {
+          "enabled": true,
+          "network": "NYCE",
+          "type": "Debit",
+          "regulated": true,
+          "currency": "840",
+          "country": "840"
+        },
+        "push": {
+          "enabled": true,
+          "network": "NYCE",
+          "type": "Debit",
+          "availability": "Immediate",
+          "regulated": true,
+          "currency": "840",
+          "country": "840"
+        }
+      }
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Mon, 18 Nov 2019 23:05:17 GMT",
+      "Content-Length",
+      "267",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  },
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "POST",
+    "path": "/v1/clients/secret:tabapay-clientId/accounts?RejectDuplicateCard",
+    "body": {
+      "referenceID": "20191118002",
+      "card": {
+        "data": "gJDZ1kyvysOjRdpWcPfrAVbm92LJILRJKpHU61pfql_E16DXGSYiMzZo6naRPfMhxMdfnRh1Tk6wkELBh6u2Xy4s8hxX0RzY7xClA6LsJZWYdpoDrrP-3RZQIuswwt1J6BvTai7jd9kz7iPnoxBc9MCuYVv1rROzTzKwTOHOKjeYHwXvh4Yux-05ztE2mmz-sa1gNJ2lwhwKVgXXn9ZS2m6oA5-eyrCMQqt-46cFvjV1s8QMI02yU2r7GQeWSsNzhlMQXOvFHkAXK-R5LInPm9IG85RicQqA1tXaB11jQn8MOrV04nL15Y4R_MDvGTjsJjAZjju2nvh9Am_xBTMXcw",
+        "keyID": "yFAmO2KCCCihxVC3IAw_xg"
+      },
+      "owner": {
+        "name": {
+          "first": "Taurean",
+          "last": "Nader"
+        },
+        "address": {
+          "line1": "123 Main St",
+          "line2": "Apt 456",
+          "city": "Livengood",
+          "state": "AK",
+          "zipcode": "00000"
+        },
+        "phone": {
+          "number": "4398241071",
+          "countryCode": "1"
+        }
+      }
+    },
+    "status": 200,
+    "response": {
+      "SC": 200,
+      "EC": "0",
+      "accountID": "gBQnH6bUUeCQ4JPiew6vuQ",
+      "notices": "**WARNING** Inactive or duplicate accounts will be automatically deleted!"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Mon, 18 Nov 2019 23:05:18 GMT",
+      "Content-Length",
+      "142",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  }
+]

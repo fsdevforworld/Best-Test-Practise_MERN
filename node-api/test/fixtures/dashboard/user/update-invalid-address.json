@@ -1,0 +1,48 @@
+[
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/address-verification",
+    "body": {
+      "address_street": "1234 Fake Address St",
+      "address_city": "Brooklyn",
+      "address_subdivision": "NY",
+      "address_country_code": "US",
+      "address_postal_code": "11212"
+    },
+    "status": 200,
+    "response": [
+      "1f8b08000000000000038cd0b16ac3400c06e0dd4f216ef662b793b794a44b4a02713a643a649f6a04f25db83b1b9c90772f0e262d970e5df57f12fcba6600ca90f0481e1b168e93aa4075ce75427ab08f4848e5cf56a34599020755c13503005067f49151f488c24655f08512285f32cf3dfa49dba16fc86bb6ff403d87c0b64b50a0d65933b3bf8ffce4c97e0670bb17b1cef7287c21a3d1184fe1578765a0dbe51d6f87fd7efb71daa93cc9dd60a39f74eb0ccdeeb34ec5d98588f200455116656a42f444f11e972faff0beda6e60b55e1f36750df5f1490f8de191033b3bafec4e6aae94ddbe010000ffff030061bebb15ca010000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Tue, 04 Feb 2020 19:04:32 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d4d1ca003397771a971aca149bbb06eea1580843071; expires=Thu, 05-Mar-20 19:04:31 GMT; path=/; domain=.synapsefi.com; HttpOnly; SameSite=Lax; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "55fee92d0e4778ea-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  }
+]

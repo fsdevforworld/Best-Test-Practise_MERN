@@ -1,0 +1,10 @@
+[
+  {
+    "scope": "http://test-balance-log-service-nodeport:8085",
+    "method": "GET",
+    "path": "/balance_history_max_daily/77777?startDate=1579507200000&endDate=1579852799999",
+    "status": 400,
+    "body": "",
+    "response": ""
+  }
+]

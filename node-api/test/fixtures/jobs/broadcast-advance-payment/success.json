@@ -1,0 +1,82 @@
+[
+  {
+    "scope": "https://rest.iad-03.braze.com:443",
+    "method": "POST",
+    "path": "/users/track",
+    "body": {
+      "api_key": "secret:braze-key",
+      "attributes": [
+        {
+          "advance_amount": 75,
+          "advance_due_date": "2018-11-01",
+          "advance_fee": 0,
+          "advance_outstanding": 75,
+          "advance_payback_url": "https://dave.com/payback/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0.n6N24dbEt8jX3DYVPzzerhmvS7PfUBOs4o33D-CZMuE",
+          "advance_tip": 0,
+          "advance_tip_percent": 0,
+          "external_id": "1"
+        }
+      ],
+      "events": [
+        {
+          "name": "advance paid",
+          "external_id": "1",
+          "properties": {
+            "isPaidInFull": false
+          },
+          "time": "2018-09-18T00:00:00Z"
+        }
+      ]
+    },
+    "status": 201,
+    "response": [
+      "1f8b0800437cf25e0003aa564a2c2929ca4c2a2d492d8e2f28ca4f4e2d2e4e4d51b232d4514a2d4bcd2b4117cc053213d35395ac948a4b9341e24ab500000000ffff0300a343462e43000000"
+    ],
+    "rawHeaders": [
+      "Connection",
+      "close",
+      "Content-Length",
+      "76",
+      "Cache-Control",
+      "max-age=0, private, must-revalidate",
+      "Content-Encoding",
+      "gzip",
+      "Content-Type",
+      "application/json",
+      "ETag",
+      "W/\"8c51f461c470d9c8868539f7854e9cac\"",
+      "Server",
+      "nginx",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains",
+      "X-RateLimit-Limit",
+      "250000",
+      "X-RateLimit-Remaining",
+      "250000",
+      "X-RateLimit-Reset",
+      "1592953200",
+      "X-Request-Id",
+      "27cdbf56-d73d-4008-b43f-7d0d26b493d8",
+      "X-Runtime",
+      "0.043026",
+      "Accept-Ranges",
+      "bytes",
+      "Date",
+      "Tue, 23 Jun 2020 22:03:48 GMT",
+      "Via",
+      "1.1 varnish",
+      "X-Served-By",
+      "cache-bur17520-BUR",
+      "X-Cache",
+      "MISS",
+      "X-Cache-Hits",
+      "0",
+      "X-Timer",
+      "S1592949828.699889,VS0,VE316",
+      "Vary",
+      "Origin,Accept-Encoding"
+    ]
+  }
+]

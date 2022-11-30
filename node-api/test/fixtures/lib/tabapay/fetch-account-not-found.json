@@ -1,0 +1,50 @@
+[
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "GET",
+    "path": "/v1/clients/secret:tabapay-clientId/accounts/idIDidIDidIDidID",
+    "body": "",
+    "status": 404,
+    "response": {
+      "SC": 404,
+      "EC": "3E243265",
+      "EM": "AccountID"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Fri, 27 Dec 2019 01:55:54 GMT",
+      "Content-Length",
+      "43",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  },
+  {
+    "scope": "https://api.sandbox.tabapay.net:10443",
+    "method": "GET",
+    "path": "/v1/clients/secret:tabapay-clientId_0001/accounts/idIDidIDidIDidID",
+    "body": "",
+    "status": 404,
+    "response": {
+      "SC": 404,
+      "EC": "3E243265",
+      "EM": "AccountID"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx",
+      "Date",
+      "Fri, 27 Dec 2019 01:55:54 GMT",
+      "Content-Length",
+      "43",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  }
+]

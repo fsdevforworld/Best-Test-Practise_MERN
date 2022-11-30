@@ -1,0 +1,33 @@
+[
+  {
+    "scope": "https://bank-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/internal-api/v1/users/7337/transactions/reference-id/tcp-0000-0000",
+    "body": "",
+    "status": 200,
+    "response": {
+      "transaction": {
+        "amount": 1,
+        "id": "c80a4734-130d-4299-8d92-c67b25a3ffc7",
+        "status": "settled",
+        "transactedAt": "2020-04-02T17:51:10.000Z"
+      }
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "52f08f0b-0275-4fdb-831e-44749573b166",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Fri, 05 Apr 2019 22:07:01 GMT",
+      "Content-Length",
+      "1627",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

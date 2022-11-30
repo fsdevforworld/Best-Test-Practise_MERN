@@ -1,0 +1,203 @@
+[
+  {
+    "scope": "https://rest.iad-03.braze.com:443",
+    "method": "POST",
+    "path": "/users/track",
+    "body": {
+      "api_key": "secret:braze-key",
+      "attributes": [
+        {
+          "external_id": "4564",
+          "phone": "+15554443333",
+          "dob": "1969-10-17",
+          "email": "oldEmail@gmail.com",
+          "country": "US",
+          "home_city": "Brooklyn",
+          "first_name": "Wyclef",
+          "last_name": "Jean"
+        }
+      ]
+    },
+    "status": 201,
+    "response": [
+      "1f8b08004f30f15e0003aa564a2c2929ca4c2a2d492d8e2f28ca4f4e2d2e4e4d51b232d451ca053213d35395ac948a4b9341e24ab500000000ffff03001a94bb942e000000"
+    ],
+    "rawHeaders": [
+      "Connection",
+      "close",
+      "Content-Length",
+      "69",
+      "Cache-Control",
+      "max-age=0, private, must-revalidate",
+      "Content-Encoding",
+      "gzip",
+      "Content-Type",
+      "application/json",
+      "ETag",
+      "W/\"f34a974a3de7f56c1472e483c2725291\"",
+      "Server",
+      "nginx",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains",
+      "X-RateLimit-Limit",
+      "250000",
+      "X-RateLimit-Remaining",
+      "250000",
+      "X-RateLimit-Reset",
+      "1592866800",
+      "X-Request-Id",
+      "9d60654a-8e86-43c6-bb41-434e6978e748",
+      "X-Runtime",
+      "0.029248",
+      "Accept-Ranges",
+      "bytes",
+      "Date",
+      "Mon, 22 Jun 2020 22:27:27 GMT",
+      "Via",
+      "1.1 varnish",
+      "X-Served-By",
+      "cache-bur17568-BUR",
+      "X-Cache",
+      "MISS",
+      "X-Cache-Hits",
+      "0",
+      "X-Timer",
+      "S1592864847.011248,VS0,VE300",
+      "Vary",
+      "Origin,Accept-Encoding"
+    ]
+  },
+  {
+    "scope": "https://rest.iad-03.braze.com:443",
+    "method": "POST",
+    "path": "/users/track",
+    "body": {
+      "api_key": "secret:braze-key",
+      "attributes": [
+        {
+          "external_id": "4564",
+          "phone": "+13334445555"
+        }
+      ],
+      "events": [
+        {
+          "time": "2020-06-16T18:10:30Z",
+          "external_id": "4564",
+          "name": "phone number updated"
+        }
+      ]
+    },
+    "status": 201,
+    "response": [
+      "1f8b08004f30f15e0003aa564a2c2929ca4c2a2d492d8e2f28ca4f4e2d2e4e4d51b232d4514a2d4bcd2b4117cc053213d35395ac948a4b9341e24ab500000000ffff0300a343462e43000000"
+    ],
+    "rawHeaders": [
+      "Connection",
+      "close",
+      "Content-Length",
+      "76",
+      "Cache-Control",
+      "max-age=0, private, must-revalidate",
+      "Content-Encoding",
+      "gzip",
+      "Content-Type",
+      "application/json",
+      "ETag",
+      "W/\"8c51f461c470d9c8868539f7854e9cac\"",
+      "Server",
+      "nginx",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains",
+      "X-RateLimit-Limit",
+      "250000",
+      "X-RateLimit-Remaining",
+      "250000",
+      "X-RateLimit-Reset",
+      "1592866800",
+      "X-Request-Id",
+      "058bd7a1-b0b9-4d9a-a34c-4f24fe80094f",
+      "X-Runtime",
+      "0.013536",
+      "Accept-Ranges",
+      "bytes",
+      "Date",
+      "Mon, 22 Jun 2020 22:27:27 GMT",
+      "Via",
+      "1.1 varnish",
+      "X-Served-By",
+      "cache-bur17537-BUR",
+      "X-Cache",
+      "MISS",
+      "X-Cache-Hits",
+      "0",
+      "X-Timer",
+      "S1592864847.399457,VS0,VE282",
+      "Vary",
+      "Origin,Accept-Encoding"
+    ]
+  },
+  {
+    "scope": "https://rest.iad-03.braze.com:443",
+    "method": "POST",
+    "path": "/users/export/ids",
+    "body": {
+      "api_key": "secret:braze-key",
+      "external_ids": ["4564"],
+      "fields_to_export": ["phone"]
+    },
+    "status": 201,
+    "response": [
+      "1f8b08004f30f15e0003aa562a2d4e2d2a56b28aae562ac8c8cf4b55b25232343636363131310502a5da581da5dcd4e2e2c474904c7169723290a3540b000000ffff03000bb991c337000000"
+    ],
+    "rawHeaders": [
+      "Connection",
+      "close",
+      "Content-Length",
+      "76",
+      "Cache-Control",
+      "max-age=0, private, must-revalidate",
+      "Content-Encoding",
+      "gzip",
+      "Content-Type",
+      "application/json",
+      "ETag",
+      "W/\"fcdfbacb084f2628eb71206128027a49\"",
+      "Server",
+      "nginx",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains",
+      "X-RateLimit-Limit",
+      "250000",
+      "X-RateLimit-Remaining",
+      "249939",
+      "X-RateLimit-Reset",
+      "1592866800",
+      "X-Request-Id",
+      "f715e425-e151-4f0c-9c1a-308756fb0879",
+      "X-Runtime",
+      "0.050100",
+      "Accept-Ranges",
+      "bytes",
+      "Date",
+      "Mon, 22 Jun 2020 22:27:27 GMT",
+      "Via",
+      "1.1 varnish",
+      "X-Served-By",
+      "cache-bur17540-BUR",
+      "X-Cache",
+      "MISS",
+      "X-Cache-Hits",
+      "0",
+      "X-Timer",
+      "S1592864848.875823,VS0,VE118",
+      "Vary",
+      "Origin,Accept-Encoding"
+    ]
+  }
+]

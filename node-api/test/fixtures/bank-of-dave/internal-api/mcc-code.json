@@ -1,0 +1,71 @@
+[
+  {
+    "scope": "https://bank-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/internal-api/v1/bank-accounts/017d777079b611eaa4c25bd905a392a2/transactions?startsAt=2020-05-05+07%3A00%3A00&endsAt=2020-05-06+06%3A59%3A59&page=1&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "transactions": [
+        {
+          "id": "f4e2ce808f0311ea868f19b098fe0555",
+          "amount": -1,
+          "isDirectDeposit": false,
+          "mcc": "4190",
+          "transactedAt": "2020-05-05T19:01:23.000Z",
+          "settledAt": "2020-05-05T19:08:23.000Z",
+          "status": "settled",
+          "name": "Nicks Knick Knacks, SALT LAKE CIT, US"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx/1.17.7",
+      "Date",
+      "Sat, 25 Jul 2020 01:53:17 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "256",
+      "Connection",
+      "close",
+      "Vary",
+      "Accept-Encoding",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"100-sL1j0mAQWo9erUXjTT9+MSg2s04\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  },
+  {
+    "scope": "https://bank-api-staging.trydave.com:443",
+    "method": "GET",
+    "path": "/internal-api/v1/bank-accounts/017d777079b611eaa4c25bd905a392a2/transactions?startsAt=2020-05-05+07%3A00%3A00&endsAt=2020-05-06+06%3A59%3A59&page=2&perPage=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "transactions": []
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx/1.17.7",
+      "Date",
+      "Sat, 25 Jul 2020 01:53:17 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "19",
+      "Connection",
+      "close",
+      "X-Powered-By",
+      "Express",
+      "ETag",
+      "W/\"13-5kNywRczdOpS8NmkyObje2mO10I\"",
+      "Strict-Transport-Security",
+      "max-age=15724800; includeSubDomains"
+    ]
+  }
+]

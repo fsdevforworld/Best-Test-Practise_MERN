@@ -1,0 +1,24 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+<rect width="80" height="80" rx="12" fill="#EEEEEE"/>
+</mask>
+<g mask="url(#mask0)">
+<rect width="80" height="80" fill="#DFE7F8"/>
+<rect x="9" y="19" width="52" height="52" rx="6" fill="#C5B1FD"/>
+<path d="M9 24.6941C9 21.5494 11.5494 19 14.6941 19H55.3059C58.4506 19 61 21.5494 61 24.6941V34H9V24.6941Z" fill="#AE92FC"/>
+<rect x="9" y="34" width="52" height="3" fill="#AE92FC"/>
+<rect x="20" y="10" width="52" height="52" rx="6" fill="white"/>
+<rect x="25" y="42" width="9" height="6" rx="2" fill="#DADADA"/>
+<rect x="25" y="51" width="9" height="6" rx="2" fill="#DADADA"/>
+<rect x="36" y="42" width="9" height="6" rx="2" fill="#DADADA"/>
+<rect x="36" y="33" width="9" height="6" rx="2" fill="#DADADA"/>
+<rect x="36" y="51" width="9" height="6" rx="2" fill="#DADADA"/>
+<rect x="47" y="42" width="9" height="6" rx="2" fill="#DADADA"/>
+<rect x="47" y="33" width="9" height="6" rx="2" fill="#DADADA"/>
+<rect x="58" y="42" width="9" height="6" rx="2" fill="#DADADA"/>
+<rect x="58" y="33" width="9" height="6" rx="2" fill="#DADADA"/>
+<rect x="47" y="51" width="9" height="6" rx="2" fill="#DADADA"/>
+<path d="M20 15.6941C20 12.5494 22.5494 10 25.6941 10H66.3059C69.4506 10 72 12.5494 72 15.6941V25H20V15.6941Z" fill="#FF5252"/>
+<rect x="20" y="25" width="52" height="3" fill="#D14444"/>
+</g>
+</svg>

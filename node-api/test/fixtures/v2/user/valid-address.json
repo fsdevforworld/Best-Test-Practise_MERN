@@ -1,0 +1,48 @@
+[
+  {
+    "scope": "https://uat-api.synapsefi.com:443",
+    "method": "POST",
+    "path": "/v3.1/address-verification",
+    "body": {
+      "address_street": "6201 S Knox ave Unit C",
+      "address_city": "Chicago",
+      "address_subdivision": "IL",
+      "address_country_code": "US",
+      "address_postal_code": "60629"
+    },
+    "status": 200,
+    "response": [
+      "1f8b080000000000000364ccb10a83301804e03d4ff193b9837510ea2652dad0a283b5740bd1fc4320359244c18aef5e149162d7bbef6e240054a2563d5a5129adfc4063a09d6b1ddf628df430bbc6d8b7d0ea83920b292d3a4763180900005d035eaf0fe995a5c9255f86bfb5e91a6f075e1b89332b8bbd688df3426f200aa2f0b437ce5b44bfd4617084026e59fe82e4798632630f48ff7c5749d52ba74c338fd89d1280894c5f000000ffff03007b001257fe000000"
+    ],
+    "rawHeaders": [
+      "Date",
+      "Tue, 08 Oct 2019 23:46:42 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d1ad45da438f273eb5b47d201e1ba26071570578402; expires=Wed, 07-Oct-20 23:46:42 GMT; path=/; domain=.synapsefi.com; HttpOnly; Secure",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, DELETE, OPTIONS",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Server",
+      "cloudflare",
+      "CF-RAY",
+      "522bfee79cb7d3a2-LAX",
+      "Content-Encoding",
+      "gzip"
+    ]
+  }
+]

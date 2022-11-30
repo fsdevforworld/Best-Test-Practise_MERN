@@ -1,0 +1,34 @@
+[
+  {
+    "scope": "https://sandbox.bod.dave.com:443",
+    "method": "POST",
+    "path": "/financial/api/1.0/users/2a82e635-d1dd-46c1-bc82-56f722a6e698/accounts/0b39346b-9b00-4aee-a11e-0428fd13df81/payments/89ca9835-c1c0-46c2-b241-a0d71ebece94/refund",
+    "body": {
+      "amount": 200,
+      "transactionReferenceId": "refund-amount-exceed-20190412"
+    },
+    "status": 400,
+    "response": {
+      "name": "InvalidParameters",
+      "message": "Amount must be 150 or lower (NodeID: core-banking-sandbox-866747b984-58zrl-33-1)",
+      "code": 400,
+      "type": "REQUEST_ERROR"
+    },
+    "rawHeaders": [
+      "X-Request-ID",
+      "2918f2f4-0b16-4e07-82be-18eeb2f47a8b",
+      "Content-type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Fri, 12 Apr 2019 20:39:35 GMT",
+      "Transfer-Encoding",
+      "chunked",
+      "Via",
+      "1.1 google",
+      "Alt-Svc",
+      "clear",
+      "Connection",
+      "close"
+    ]
+  }
+]

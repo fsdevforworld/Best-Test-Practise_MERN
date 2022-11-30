@@ -1,0 +1,321 @@
+[
+  {
+    "scope": "https://api.appcast.io:443",
+    "method": "POST",
+    "path": "/search?job_id=6721_2262-4016cfcbc087b68698af5cd55826d666",
+    "body": "",
+    "status": 200,
+    "response": {
+      "jobs_count": 1,
+      "page": 0,
+      "pages_total": 1,
+      "jobs": [
+        {
+          "job_id": "6721_2262-4016cfcbc087b68698af5cd55826d666",
+          "title": "Grocery Shopper",
+          "location": {
+            "country": "United States",
+            "state": "CA",
+            "city": "Los Angeles",
+            "zip": "90013"
+          },
+          "body": "<p>Help people get what they need while earning extra income. Shipt is a marketplace that provides fresh produce, household essentials, and more from trusted local stores. There's never been a better time to join Shipt and earn on a flexible schedule.</p>\n<p>Your role:</p>\n<ul>\n<li>Accept local orders in the Shipt Shopper app</li>\n<li>Shop and deliver orders (door drop-off options available)</li>\n<li>Deliver a high-quality customer experience</li>\n</ul>\n<p>Why choose Shipt?</p>\n<ul>\n<li>Extra income: Get paid weekly, keep 100% of tips, and earn up to $22/hr or more.</li>\n<li>Help your community: Provide a valuable service and form connections.</li>\n<li>Flexible hours: Choose your schedule and work when it’s best for you.</li>\n<li>Safety first: Door drop-off options are available – no home entry required.</li>\n<li>24/7 support: Our support team is always ready to help.</li>\n<li>Free membership: Discover the convenience of same-day delivery for yourself.</li>\n<li>Join the family: Meet sho",
+          "url": "https://click.appcast.io/track/12o1f10?cs=i3h&exch=25&jg=1drx&bid=ubUnnIfdRsq5krX1vsvoZQ==&sar_id=n7vlfj&jpos=0",
+          "employer": "Shipt",
+          "function": "Restaurant",
+          "posted_at": "2020-08-12T00:00:00Z",
+          "cpc": 0.2,
+          "cpa": 3.91,
+          "logo_url": "https://logo.appcast.io/shipt.com",
+          "search_position": 0
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Date",
+      "Thu, 13 Aug 2020 01:07:03 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "1535",
+      "Connection",
+      "close",
+      "Server",
+      "nginx",
+      "X-Content-Type-Options",
+      "nosniff"
+    ]
+  },
+  {
+    "scope": "https://api.appcast.io:443",
+    "method": "POST",
+    "path": "/search?keyword=Sales",
+    "body": "",
+    "status": 200,
+    "response": {
+      "jobs": [
+        {
+          "logo_url": "https://logo.appcast.io/northerntool&equipment-glassdoor3.8✪.com",
+          "url": "https://click.appcast.io/track/5abw0fc?cs=i3h&exch=16&jg=2c7c&bid=TEz0xVerpiuhxLt0LS4mUA==&sar_id=u7nq6q&jpos=1",
+          "posted_at": "2020-09-15T00:00:00Z",
+          "function": "Sales",
+          "cpa": 6.17,
+          "cpc": 0.24,
+          "category": "Retail",
+          "search_position": 1,
+          "title": "Sales",
+          "body": "<div><div><p style=\"background-color: rgb(255,255,255);margin: 0.0pt;text-align: center;\"><span style=\"color: rgb(51,51,51);font-family: Arial;font-size: 11.0pt;font-weight: bold;\">Northern Tool + Equipment is currently hiring for part-time Sales </span><span style=\"color: rgb(51,51,51);font-family: Arial;font-size: 11.0pt;font-weight: bold;\">Repres</span><span style=\"color: rgb(51,51,51);font-family: Arial;font-size: 11.0pt;font-weight: bold;\">e</span><span style=\"color: rgb(51,51,51);font-family: Arial;font-size: 11.0pt;font-weight: bold;\">ntatives</span><span style=\"color: rgb(51,51,51);font-family: Arial;font-size: 11.0pt;font-weight: bold;\">!</span></p><p style=\"background-color: rgb(255,255,255);margin: 0.0pt;\"><span style=\"color: rgb(51,51,51);font-family: Arial;font-size: 11.0pt;\"> </span></p><p style=\"background-color: rgb(255,255,255);margin: 0.0pt;\"><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;font-weight: bold;\">Job Summary:</span></p><p style=\"background-color: rgb(255,255,255);margin: 0.0pt;\"><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">Our retail sales </span><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">represent</span><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">atives work with customers to find the best products to meet their unique needs, create solutions and ensure a smooth sales process. We are a unique retailer that understands the value of our customer and team</span><span style=\"color: rgb(51,51,51);font-family: Arial;font-size: 11.0pt;\">. </span><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">Our retail sales team is</span><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\"> responsible for greeting and assisting customers, maintaining a neat, organized and clean sales floor, and supporting the management team with day-to-day store operations. </span></p><p style=\"background-color: rgb(255,255,255);margin: 0.0pt;\"><span style=\"font-family: Arial;font-size: 11.0pt;\"> </span></p><p style=\"background-color: rgb(255,255,255);margin: 0.0pt;\"><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;font-weight: bold;\">Requirements:</span></p><p style=\"background-color: rgb(255,255,255);margin: 0.0pt 0.0pt 0.0pt 36.75pt;\"><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">•</span><span style=\"\">          </span><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">Have a positive attitude, be energetic and service focused</span></p><p style=\"background-color: rgb(255,255,255);margin: 0.0pt 0.0pt 0.0pt 36.75pt;\"><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">•</span><span style=\"\">          </span><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">Previous retail sales experience</span><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\"> preferred</span></p><p style=\"background-color: rgb(255,255,255);margin: 0.0pt 0.0pt 0.0pt 36.75pt;\"><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">•</span><span style=\"\">          </span><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">Ability to communicate clearly with customers </span><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">and co-workers</span></p><p style=\"background-color: rgb(255,255,255);margin: 0.0pt 0.0pt 0.0pt 36.75pt;\"><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">•</span><span style=\"\">          </span><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">Ability to </span><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">lift up to</span><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\"> </span><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">7</span><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">5</span><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\"> pounds</span></p><p style=\"background-color: rgb(255,255,255);margin: 0.0pt 0.0pt 0.0pt 36.75pt;\"><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">•</span><span style=\"\">          </span><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">Knowledge of tools and light industrial products, or be willing to learn</span></p><p style=\"background-color: rgb(255,255,255);margin: 0.0pt 0.0pt 0.0pt 36.75pt;\"><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">•</span><span style=\"\">          </span><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">Mechanical aptitude</span></p><p style=\"background-color: rgb(255,255,255);margin: 0.0pt 0.0pt 0.0pt 36.75pt;\"><span style=\"background-color: rgb(255,255,255);color: rgb(51,51,51);font-family: Arial;font-size: 11.0pt;\">•</span><span style=\"\">          </span><span style=\"background-color: rgb(255,255,255);font-family: Arial;font-size: 11.0pt;\">Ability to work weekends and holidays as needed</span></p><p style=\"font-size: 11.0pt;margin: 0.0pt 0.0pt 8.0pt;\"><span style=\"font-family: Calibri;font-size: 11.0pt;\"> </span></p><p style=\"background-color: rgb(255,255,255);margin: 0.0pt 0.0pt 12.0pt;\"><span style=\"font-family: Arial;font-size: 11.0pt;font-weight: bold;\">Benefits:</span></p><p style=\"background-color: rgb(255,255,255);margin: 0.0pt 0.0pt 0.0pt 36.75pt;\"><span style=\"font-family: Arial;font-size: 11.0pt;\">•</span><span style=\"\">          </span><span style=\"font-family: Arial;font-size: 11.0pt;\">Friendly Work Environment</span></p><p style=\"background-color: rgb(255,255,255);margin: 0.0pt 0.0pt 0.0pt 36.75pt;\"><span style=\"font-family: Arial;font-size: 11.0pt;\">•</span><span style=\"\">          </span><span style=\"font-family: Arial;font-size: 11.0pt;\">Flexible Scheduling</span></p><p style=\"background-color: rgb(255,255,255);margin: 0.0pt 0.0pt 0.0pt 36.75pt;\"><span style=\"font-family: Arial;font-size: 11.0pt;\">•</span><span style=\"\">          </span><span style=\"font-family: Arial;font-size: 11.0pt;\">Competitive Wages</span></p><p style=\"background-color: rgb(255,255,255);margin: 0.0pt 0.0pt 0.0pt 36.75pt;\"><span style=\"font-family: Arial;font-size: 11.0pt;\">•</span><span style=\"\">          </span><span style=\"font-family: Arial;font-size: 11.0pt;\">401k</span></p><p style=\"background-color: rgb(255,255,255);margin: 0.0pt 0.0pt 0.0pt 36.75pt;\"><span style=\"font-family: Arial;font-size: 11.0pt;\">•</span><span style=\"\">          </span><span style=\"font-family: Arial;font-size: 11.0pt;\">Store Discount</span></p><p style=\"font-size: 11.0pt;margin: 0.0pt 0.0pt 8.0pt;\"><span style=\"font-family: Arial;font-size: 11.0pt;\"> </span></p><p style=\"font-size: 11.0pt;margin: 0.0pt 0.0pt 8.0pt;\"><span style=\"font-family: Arial;font-size: 11.0pt;\">To view complete job description, </span><a style=\"color: rgb(5,99,193);\" href=\"https://careers.jobvite.com/northerntool/docs/SalesRep.pdf\"><span style=\"color: rgb(5,99,193);font-family: Arial;font-size: 11.0pt;text-decoration: underline;\">click here</span></a><span style=\"font-family: Arial;font-size: 11.0pt;\">.</span></p></div></div>",
+          "job_id": "9284_oSrrdfwH",
+          "employer": "Northern Tool & Equipment - Glassdoor 3.8 ✪",
+          "location": {
+            "city": "Garland",
+            "state": "TX",
+            "zip": "75049",
+            "country": "United States"
+          }
+        },
+        {
+          "search_position": 0,
+          "category": "Stores",
+          "location": {
+            "city": "West Fargo",
+            "state": "ND",
+            "country": "United States",
+            "zip": "58078"
+          },
+          "employer": "Michaels",
+          "body": "<h2><b><span>We're here for the makers! Come be a part of the team where innovation and teamwork come together to support the most exciting missions in the world!</span></b></h2><p style=\"text-align:inherit\"></p>Help customers shop our store and be able to find what theyre looking for.  Maintain store recovery standards to deliver our Brand Promises.  Prevent shrink with great service. Deliver friendly customer service.<p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><p><b>Major Activities</b></p><ul><li>Adhere to Standard Operating Procedures (SOPs) and Company programs to ensure compliance to applicable laws and requirements; execute Company policies and standards</li><li>Provide a fast and friendly check out experience; execute cash handling to standards</li><li>Engage customers on benefits of Rewards program and complete enrollments</li><li>Educate customer on Voice of Customer (VOC) survey</li><li>Merchandise recovery and maintenance</li><li>Support the merchandise return / go back process and general store recovery</li><li>Acknowledge customers, help locate product and provide solutions</li><li>Participate in the truck un-load and stocking processes to ensure truck standards are followed and completed within budget</li><li>Support shrink and safety programs </li><li>Assist with Omni channel processes</li><li>execute a well merchandised and in stock store</li><li>Interacts with others in an accepting and respectful manner; remains positive and respectful, even in difficult situations; promotes commitment to the organizations vision and values; projects a positive image and serves as a role model for others</li><li>help customers shop and find what they are looking for</li><li>Cross trained in Custom Framing selling and production  </li><li>Other duties as assigned<br> </li></ul><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><p><b>Preferred Type of experience the job requires</b></p><p>    Retail and/or customer service experience preferred</p><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><p style=\"text-align:left\"><b><span>We are an Equal Opportunity Employer. Check out our EEO policy <span><span><span><span><span><span><span><span><span><span><span class=\"WIO2\">https://www.eeoc.gov/employers/upload/poster_screen_reader_optimized.pdf</span></span></span></span></span></span></span></span></span></span></span> [eeoc.gov</span></b></p>",
+          "title": "sales",
+          "job_id": "6879_R00031686",
+          "cpa": 3.06,
+          "function": "Sales",
+          "posted_at": "2020-09-16T00:00:00Z",
+          "url": "https://click.appcast.io/track/5cm8gll?cs=i3h&exch=1&jg=2w4q&bid=7g-BOD3yIyJl4P4ikp9YSg==&sar_id=u7nq6q&jpos=0",
+          "logo_url": "https://logo.appcast.io/michaels.com",
+          "cpc": 0.15
+        }
+      ],
+      "jobs_count": 110747,
+      "page": 0,
+      "pages_total": 55374
+    },
+    "rawHeaders": [
+      "Date",
+      "Thu, 13 Aug 2020 01:07:03 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "1535",
+      "Connection",
+      "close",
+      "Server",
+      "nginx",
+      "X-Content-Type-Options",
+      "nosniff"
+    ]
+  },
+  {
+    "scope": "https://api.appcast.io:443",
+    "method": "POST",
+    "path": "/search?keyword=Sales&page=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "jobs_count": 110747,
+      "jobs": [
+        {
+          "search_position": 2,
+          "title": "Enterprise Sales",
+          "url": "https://click.appcast.io/track/4v9ui6q?cs=i3h&exch=16&jg=2w8l&bid=TEz0xVerpiuhxLt0LS4mUA==&sar_id=u7no5d&jpos=2",
+          "cpa": 10.54,
+          "location": {
+            "country": "United States",
+            "city": "Needham",
+            "zip": "02494",
+            "state": "MA"
+          },
+          "job_id": "10849_955877",
+          "posted_at": "2020-09-17T00:00:00Z",
+          "cpc": 0.24,
+          "category": "Sales",
+          "employer": "Appcast",
+          "function": "Sales",
+          "logo_url": "https://logo.appcast.io/appcast.com",
+          "body": "<div><!--block--><b>Enterprise Sales </b><br />\n<br />\n<b>Description</b></div>\n\n<div><!--block--><br />\nThis is an opportunity to join our Sales Team in a Corporate Sales Representative role and continue Appcast’s proven record of success. This individual will be responsible for selling Appcast media solutions (Saas) to direct employers. If you thrive in a fast-paced, hard-working environment and are comfortable demonstrating solutions to employers, then this is the opportunity for you.</div>\n\n<div><!--block--><br />\n<b>Responsibilities</b></div>\n\n<ul>\n\t<li><!--block-->Prospect, pitch and sell Appcast media solutions to direct employers</li>\n\t<li><!--block-->Qualify inbound leads</li>\n\t<li><!--block-->Develop and close sales opportunities</li>\n\t<li><!--block-->Use both traditional and electronic communication tools to contact prospective customers</li>\n\t<li><!--block-->Achieve sales targets on a monthly and quarterly basis</li>\n\t<li><!--block-->Accurately log all sales activity in a CRM (Salesforce.com)</li>\n\t<li><!--block-->Use natural curiosity, communication skills, and drive to improve your sales performance</li>\n</ul>\n\n<div><!--block--></div>\n\n<div><!--block--><b>Candidate Traits</b></div>\n\n<ul>\n\t<li><!--block-->Bachelor’s Degree</li>\n\t<li><!--block-->‘Hunter mentality’ for closing sales</li>\n\t<li><!--block-->Excellent communication skills, both written and verbal</li>\n\t<li><!--block-->Entrepreneurial attitude with a desire to learn and continuously improve</li>\n\t<li><!--block-->Detail oriented with a strong desire to get things done accurately, efficiently and timely</li>\n\t<li><!--block-->Ability to conduct online product demonstrations</li>\n\t<li><!--block-->Data-driven and solution oriented</li>\n\t<li><!--block-->Able to work in a fast-paced, dynamic environment</li>\n\t<li><!--block-->Self-motivated, driven and has a ‘go-getter’ attitude</li>\n\t<li><!--block-->Previous experience working with Salesforce or similar CRM tools</li>\n</ul>\n\n<div><!--block--><br />\n<b>Benefits</b><br />\n </div>\n\n<ul>\n\t<li><!--block-->Competitive base salary and company bonus plan</li>\n\t<li><!--block-->Career advancement opportunities</li>\n\t<li><!--block-->Fast-paced, fun and energetic sales and marketing-centric company</li>\n\t<li><!--block-->Health & dental benefits</li>\n</ul>\n\n<div><!--block--><br />\n<b>About Appcast</b><br />\n <br />\nFounded in 2014 and headquartered near Dartmouth College in New Hampshire, Appcast has become one of the fastest growing technology companies in New England. Our programmatic recruitment marketing suite is transforming how leading employers, ad agencies and job boards find and attract talent. <br />\n <br />\nOn July 1, 2019, Appcast was acquired by StepStone. StepStone, a subsidiary of Axel Springer SE, is the leading ‘jobs’ classified business in Europe. Appcast is their 1st major investment in the US market</div>"
+        },
+        {
+          "body": "<div><!--block--><b>Enterprise Sales </b><br />\n<br />\n<b>Description</b></div>\n\n<div><!--block--><br />\nThis is an opportunity to join our Sales Team in a Corporate Sales Representative role and continue Appcast’s proven record of success. This individual will be responsible for selling Appcast media solutions (Saas) to direct employers. If you thrive in a fast-paced, hard-working environment and are comfortable demonstrating solutions to employers, then this is the opportunity for you.</div>\n\n<div><!--block--><br />\n<b>Responsibilities</b></div>\n\n<ul>\n\t<li><!--block-->Prospect, pitch and sell Appcast media solutions to direct employers</li>\n\t<li><!--block-->Qualify inbound leads</li>\n\t<li><!--block-->Develop and close sales opportunities</li>\n\t<li><!--block-->Use both traditional and electronic communication tools to contact prospective customers</li>\n\t<li><!--block-->Achieve sales targets on a monthly and quarterly basis</li>\n\t<li><!--block-->Accurately log all sales activity in a CRM (Salesforce.com)</li>\n\t<li><!--block-->Use natural curiosity, communication skills, and drive to improve your sales performance</li>\n</ul>\n\n<div><!--block--></div>\n\n<div><!--block--><b>Candidate Traits</b></div>\n\n<ul>\n\t<li><!--block-->Bachelor’s Degree</li>\n\t<li><!--block-->‘Hunter mentality’ for closing sales</li>\n\t<li><!--block-->Excellent communication skills, both written and verbal</li>\n\t<li><!--block-->Entrepreneurial attitude with a desire to learn and continuously improve</li>\n\t<li><!--block-->Detail oriented with a strong desire to get things done accurately, efficiently and timely</li>\n\t<li><!--block-->Ability to conduct online product demonstrations</li>\n\t<li><!--block-->Data-driven and solution oriented</li>\n\t<li><!--block-->Able to work in a fast-paced, dynamic environment</li>\n\t<li><!--block-->Self-motivated, driven and has a ‘go-getter’ attitude</li>\n\t<li><!--block-->Previous experience working with Salesforce or similar CRM tools</li>\n</ul>\n\n<div><!--block--><br />\n<b>Benefits</b><br />\n </div>\n\n<ul>\n\t<li><!--block-->Competitive base salary and company bonus plan</li>\n\t<li><!--block-->Career advancement opportunities</li>\n\t<li><!--block-->Fast-paced, fun and energetic sales and marketing-centric company</li>\n\t<li><!--block-->Health & dental benefits</li>\n</ul>\n\n<div><!--block--><br />\n<b>About Appcast</b><br />\n <br />\nFounded in 2014 and headquartered near Dartmouth College in New Hampshire, Appcast has become one of the fastest growing technology companies in New England. Our programmatic recruitment marketing suite is transforming how leading employers, ad agencies and job boards find and attract talent. <br />\n <br />\nOn July 1, 2019, Appcast was acquired by StepStone. StepStone, a subsidiary of Axel Springer SE, is the leading ‘jobs’ classified business in Europe. Appcast is their 1st major investment in the US market</div>",
+          "logo_url": "https://logo.appcast.io/appcast.com",
+          "function": "Sales",
+          "employer": "Appcast",
+          "category": "Sales",
+          "cpc": 0.23,
+          "posted_at": "2020-09-17T00:00:00Z",
+          "cpa": 4.59,
+          "location": {
+            "city": "Lebanon",
+            "state": "NH",
+            "zip": "03756",
+            "country": "United States"
+          },
+          "job_id": "10849_955878",
+          "url": "https://click.appcast.io/track/4v9ui6r?cs=i3h&exch=16&jg=2w8i&bid=Ybcpqjjljpfgk5fZEFmcRA==&sar_id=u7no5d&jpos=3",
+          "title": "Enterprise Sales",
+          "search_position": 3
+        }
+      ],
+      "pages_total": 55374,
+      "page": 1
+    },
+    "rawHeaders": [
+      "Date",
+      "Thu, 13 Aug 2020 01:07:03 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "1535",
+      "Connection",
+      "close",
+      "Server",
+      "nginx",
+      "X-Content-Type-Options",
+      "nosniff"
+    ]
+  },
+  {
+    "scope": "https://api.appcast.io:443",
+    "method": "POST",
+    "path": "/search?c=34.283370%2C-118.432060&r=10miles&page=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "jobs": [
+        {
+          "location": {
+            "state": "CA",
+            "city": "San Fernando",
+            "country": "United States",
+            "zip": "91340"
+          },
+          "search_position": 2,
+          "category": "Customer Service",
+          "title": "Delivery Driver - Full-time",
+          "employer": "Amazon Contracted Delivery Partners",
+          "posted_at": "2020-09-18T00:00:00Z",
+          "job_id": "10517_J3S7KJ60B6YT4PFQ7ZH-6d2b7a85559d09e4b180d1f6ce4c1b9b",
+          "cpa": 18,
+          "logo_url": "https://clickcast2-static.s3.amazonaws.com/uploads/employer/logo/10517/medium_Van._CB1529616317_.png",
+          "function": "Transportation",
+          "url": "https://click.appcast.io/track/4e0nxcb?cs=i3h&exch=7t&jg=2tl6&bid=TEz0xVerpiuhxLt0LS4mUA==&sar_id=u873an&jpos=2",
+          "body": "<div class=\"jdp-job-description-card content-card\">\n    <h2 class=\"content-card-header\">Job Description</h2>\n    <div> <p><b>Location</b>: </p> <p>DPS5 </p> <p>28820 Chase Place; Valencia, CA 91355-5422</p> <p>$15.00 - $16.25hr++</p> <p></p>\n<p>Amazon Delivery Service Partners are seeking bright, motivated, hardworking individuals to fill Contracted Delivery Associate / Driver positions! </p> <p style=\"text-align: center\"><b>No experience needed!</b></p> <p>Apply today to schedule your in-person interview with Amazon Delivery Service Partners. We're making on the spot job offers! (All job offers contingent on meeting eligibility requirements.)</p> <p> </p> <p>Responsibilities:</p> <ul> <li>Our Delivery Associates/Drivers drive a delivery van to drop off Amazon packages to customers within their community</li> <li>You can plan on working about 4-5 days a week</li> <li>You can plan on a typical working day being 10 hours</li> <li>Our drivers follow strict safety standards on and off the road</li> <li>You'll interact with Amazon customers and the public in a professional and positive manner</li> <li>You'll use handheld technology to manage the delivery process</li> </ul> <p>We Offer:</p> <ul> <li>Competitive Compensation </li> <li>Employee benefits available</li> <li>Community interaction</li> <li>Every day is fun and different</li> </ul> </div> <div> <p> </p> </div>\n</div><br><div class=\"jdp-job-requirements-card content-card\">\n    <h2 class=\"content-card-header\">Job Requirements</h2>\n    <p><b>Delivery Associates / Drivers must meet the following requirements:</b></p> <ul> <li>Must be at least 21+ years old</li> <li>Must have a valid driver's license within the state of employment</li> <li>Must be able to operate and navigate a delivery van, GVWR 10,000 lbs. or less</li> <li>Must be able to move boxes up to 50 lbs., with or without reasonable accommodation</li> <li>Must consent to a drug screening</li> <li>Must have good communication skills and the ability to work well with customers</li> </ul>\n</div>",
+          "cpc": 0.24
+        },
+        {
+          "category": "Customer Service",
+          "search_position": 3,
+          "location": {
+            "city": "San Fernando",
+            "state": "CA",
+            "country": "United States",
+            "zip": "91340"
+          },
+          "title": "Delivery Driver - Earn $15.00 - $16.25++/hr",
+          "employer": "Amazon Contracted Delivery Partners",
+          "url": "https://click.appcast.io/track/5cw8jkt?cs=i3h&exch=7t&jg=2tl6&bid=TEz0xVerpiuhxLt0LS4mUA==&sar_id=u873an&jpos=3",
+          "body": "<div class=\"jdp-job-description-card content-card\">\n    <h2 class=\"content-card-header\">Job Description</h2>\n    <div> <p><b>Location</b>: </p> <p>DPS5 </p> <p>28820 Chase Place; Valencia, CA 91355-5422</p> <p>$15.00 - $16.25hr++</p> <p></p>\n<p>Amazon Delivery Service Partners are seeking bright, motivated, hardworking individuals to fill Contracted Delivery Associate / Driver positions! </p> <p style=\"text-align: center\"><b>No experience needed!</b></p> <p>Apply today to schedule your in-person interview with Amazon Delivery Service Partners. We're making on the spot job offers! (All job offers contingent on meeting eligibility requirements.)</p> <p> </p> <p>Responsibilities:</p> <ul> <li>Our Delivery Associates/Drivers drive a delivery van to drop off Amazon packages to customers within their community</li> <li>You can plan on working about 4-5 days a week</li> <li>You can plan on a typical working day being 10 hours</li> <li>Our drivers follow strict safety standards on and off the road</li> <li>You'll interact with Amazon customers and the public in a professional and positive manner</li> <li>You'll use handheld technology to manage the delivery process</li> </ul> <p>We Offer:</p> <ul> <li>Competitive Compensation </li> <li>Employee benefits available</li> <li>Community interaction</li> <li>Every day is fun and different</li> </ul> </div> <div> <p> </p> </div>\n</div><br><div class=\"jdp-job-requirements-card content-card\">\n    <h2 class=\"content-card-header\">Job Requirements</h2>\n    <p><b>Delivery Associates / Drivers must meet the following requirements:</b></p> <ul> <li>Must be at least 21+ years old</li> <li>Must have a valid driver's license within the state of employment</li> <li>Must be able to operate and navigate a delivery van, GVWR 10,000 lbs. or less</li> <li>Must be able to move boxes up to 50 lbs., with or without reasonable accommodation</li> <li>Must consent to a drug screening</li> <li>Must have good communication skills and the ability to work well with customers</li> </ul>\n</div>",
+          "cpc": 0.24,
+          "job_id": "10517_J3S7KJ60B6YT4PFQ7ZH-bf3b9107819dd2da12594a5a25a8e569",
+          "posted_at": "2020-09-18T00:00:00Z",
+          "logo_url": "https://clickcast2-static.s3.amazonaws.com/uploads/employer/logo/10517/medium_Van._CB1529616317_.png",
+          "cpa": 18,
+          "function": "Transportation"
+        }
+      ],
+      "pages_total": 723,
+      "page": 1,
+      "jobs_count": 1446
+    },
+    "rawHeaders": [
+      "Date",
+      "Thu, 13 Aug 2020 01:07:03 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "1535",
+      "Connection",
+      "close",
+      "Server",
+      "nginx",
+      "X-Content-Type-Options",
+      "nosniff"
+    ]
+  },
+  {
+    "scope": "https://api.appcast.io:443",
+    "method": "POST",
+    "path": "/search?c=34.283370%2C-118.432060&sort_by=posted_at&sort_direction=desc&page=1",
+    "body": "",
+    "status": 200,
+    "response": {
+      "jobs": [
+        {
+          "cpc": 0.24,
+          "logo_url": "https://logo.appcast.io/davita.com",
+          "employer": "DaVita",
+          "url": "https://click.appcast.io/track/56u2pjm?cs=i3h&exch=16&jg=2qvp&bid=TEz0xVerpiuhxLt0LS4mUA==&sar_id=u8c6td&jpos=2",
+          "title": "Registered Nurse - Peritoneal Dialysis",
+          "cpa": 6.73,
+          "function": "Healthcare",
+          "search_position": 2,
+          "job_id": "10452_R0133588",
+          "category": "Nurses",
+          "body": "1700 Cesar E Chavez Ave Ste L100, Los Angeles, California, 90033, United States of America<p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><div><div>Job Description</div></div><div><div><div><div><p>As a Peritoneal Dialysis Registered Nurse (PD RN), you educate your patients on how to do their own dialysis from their homes, and you take responsibility for the complete ongoing care of each patient to ensure their treatment stays on track. You will work a Monday to Friday schedule-yet your impact on the lives of our patients will be felt every day.</p><p>If you haven’t considered Nephrology nursing before, read on as we think that you should. Dialysis Experience is NOT required.</p><p><b>What you can expect:</b></p><ul><li><b>Complexities - </b>You multitask in myriad ways - put down one patient's chart, start another, work with a physician, run out to get a medication, respond to a supplier's request - with lots of loose ends to pull together and a lot of follow up. It's challenging, fun and keeps your day fresh.</li><li><b>Educator</b> - Empower your patients by teaching them to administer their own dialysis and to take their health back into their own hands. If you feel your calling has always been to be both a nurse and educator, then you will love your work as a peritoneal dialysis nurse. Training patients takes time and mental energy and the rewards of that investment come in seeing the transformation of your patients from feeling sick and afraid, to strong and <span>independent.  </span></li><li><b>Autonomy - </b>Provide comprehensive patient care in an independent setting. Plan to be on your toes at all times. You use your mind constantly. You apply your \"core\" nursing skills to assess, diagnose and implement complete care plans as you look at the whole patient. There's a lot to track and manage and the joy comes in witnessing how your care impacts patients' lives.</li></ul><p><b>What We’ll Provide: </b></p><p>More than just pay, our DaVita Rewards package connects teammates to what matters most: robust health care coverage, retirement planning and savings tools, opportunities for career development, and well-being resources.</p><ul><li><b>Comprehensive benefits:</b> Medical, dental, vision, 401k, paid time off, PTO cash out, DaVita-negotiated discounts on hundreds of items from your cell phone plan to movie tickets, Bright Horizons backup care, elder care and more. </li><li><b>Paid training:</b> DaVita offers all new teammates a robust, paid training program to help you gain the right dialysis skills. The training is a mix of classroom and hands on training.</li><li><b>Opportunity for a nursing career for a lifetime</b>. DaVita is committed to providing robust development and experience for nurses. Whether you chose to remain in a patient facing/caregiving role or grow (leadership operations, corporate functions, integrated care, clinical research), we can guide you on that journey.</li><li>3000+ locations across the U.S. for wherever life may take you.</li></ul><p><b>Some details about this position:</b></p><ul><li>Training may take place in a facility or a training clinic with a class of new teammates other than your assigned home clinic</li><li>Hours of work may vary during the training period; however, you will typically be working between 32-40 hours per week during training</li><li>You must be flexible on the final home clinic placement it may be in a different location; there is also the potential to float to various clinics during and after your training</li><li>You must have a flexible schedule and be able to work mornings, evenings, weekends, and holiday </li></ul><p><b>Requirements:</b></p><ul><li>Current Registered Nurse (RN) license in the state of practice </li><li>Minimum of 12 months' of RN experience</li><li>Current driver's license, reliable transportation, and vehicle insurance in state of residence</li><li>Associates Degree in Nursing (A.D.N) from accredited school of nursing required; Bachelor of Science in Nursing (B.S.N);  three-year diploma from accredited diploma program may be substituted for nursing degree</li><li>Basic computer skills and proficiency in MS Word and Outlook</li></ul><p><b>You might also have (a.k.a. nice-to-haves):</b></p><ul><li>Previous Chronic Hemodialysis, Acute Dialysis and/or Home Hemodialysis (HHD) nursing experience</li><li><span>Training/Teaching/Healthcare</span> Education background</li><li>Certified Nephrology Nurse (CNN) or Certified Dialysis Nurse (CDN)</li></ul><p><b>Ready to make a difference in the lives of patients? Take the first step at </b><a href=\"https://careers.davita.com/\" target=\"_blank\"><b><span><span>https://careers.davita.com</span></span></b></a></p><p>Nurses: if this isn’t the job for you, perhaps you have a friend who would be a perfect fit. Send them this link.</p><p>Questions? Email us at <a href=\"mailto:careers@davita.com\" target=\"_blank\"><span>careers@davita.com</span></a> or send us a message on our DaVita Careers Facebook page.</p><p>DaVita is an equal opportunity employer – Vet and Disability. To learn more about what this means <a href=\"https://www.eeoc.gov/employers/upload/eeoc_self_print_poster.pdf\" target=\"_blank\"><span>click here.</span></a></p></div></div></div></div>",
+          "posted_at": "2020-09-18T00:00:00Z",
+          "location": {
+            "zip": "90033",
+            "city": "Los Angeles",
+            "state": "CA",
+            "country": "United States"
+          }
+        },
+        {
+          "cpc": 0.24,
+          "logo_url": "https://logo.appcast.io/davita.com",
+          "employer": "DaVita",
+          "url": "https://click.appcast.io/track/56u2pi1?cs=i3h&exch=16&jg=2qvp&bid=TEz0xVerpiuhxLt0LS4mUA==&sar_id=u8c6td&jpos=3",
+          "title": "Registered Nurse II",
+          "cpa": 6.73,
+          "function": "Healthcare",
+          "search_position": 3,
+          "category": "Nurses",
+          "job_id": "10452_R0134922",
+          "body": "20930 Chico St, Carson, California, 90746-3603, United States of America<p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><p>DaVita is seeking a Registered Nurse who is looking to give life in an outpatient dialysis center.  You can make an exceptional difference in the lives of our patients and their families dealing with end-stage renal failure or chronic kidney disease.</p><p>If you haven’t considered Nephrology before, read on as we think that you should. Dialysis Experience is NOT required.</p><p><b>What you can expect:</b></p><ul><li>Long term patient relationships. Build meaningful relationship with patients and their family in an intimate outpatient setting.</li><li>A team that feels and functions like a family. Staff RNs are a central part of a small interdisciplinary team of clinicians. Work alongside and support technicians, other nurses, dietitians, social workers, physicians and the center manager.  </li><li>Fun is one of our core values.  Happier nurses = healthier patients.</li><li>Specialized, complex care. RNs deliver care to patients who are often dealing with multiple co-morbidities which require unique treatment plans and the ability to leverage a broad range of nursing skills and knowledge.  </li><li>Fast paced. Our RNs oversee a group of patients (census dependent on state laws) with the support of PCTs to conduct patient observations, measuring stats and machine set up.  You will work with your head, heart and hands each day.</li><li>Schedule. Shifts are typically 10-12 hours, 3-4 days per week.  Schedule times will vary by locations but most of our RNs work early morning or days shifts.  Some holidays required.</li><li>A clinical leader: DaVita has the highest percentage of facilities meeting or exceeding CMS’s standards in the government’s two key performance programs. We expect our nurses to commit to improving patient health through clinical goal setting and quality improvement initiatives.</li></ul><p><b>What We’ll Provide: </b></p><p>More than just pay, our DaVita Rewards package connects teammates to what matters most: robust health care coverage, retirement planning and savings tools, opportunities for career development, and well-being resources.</p><ul><li><b>Comprehensive benefits:</b> Medical, dental, vision, 401k, paid time off, PTO cash out, DaVita-negotiated discounts on hundreds of items from your cell phone plan to movie tickets, Bright Horizons backup care, elder care and more. </li><li><b>Paid training:</b> DaVita offers all new teammates a robust, paid training program to help you gain the right dialysis skills. The training is a mix of classroom and hands on training.</li><li><b>Opportunity for a nursing career for a lifetime</b>. DaVita is committed to providing robust development and experience for nurses. Whether you chose to remain in a patient facing/caregiving role or grow (leadership operations, corporate functions, integrated care, clinical research), we can guide you on that journey.</li><li>3000+ locations across the U.S. for wherever life may take you.</li></ul><p><b>Some details about this position:</b></p><ul><li>Training may take place in a facility or a training clinic with a class of new teammates other than your assigned home clinic</li><li>You must be flexible on the final home clinic placement it may be in a different location; there is also the potential to float to various clinics during and after your training</li><li>You must have a flexible schedule and be able to work mornings, evenings, weekends, and holiday </li><li>Current Registered Nurse (RN) license in the state of practice; Graduate Nurse pre-licensure available in some locations</li><li>A desire to deliver care in an empathetic, compassionate way. You know, the way you’d want your own care to be </li><li>Experience assessing, trouble shooting and making sound recommendations in stressful situations </li><li>Excellent communication skills to listen and communicate with patients and teammates </li><li>Associates Degree in Nursing (A.D.N) from accredited school of nursing required; Bachelor of Science in Nursing (B.S.N);  three-year diploma from accredited diploma program may be substituted for nursing degree</li><li>Basic computer skills and proficiency in MS Word and Outlook</li><li>You might also have (a.k.a. nice-to-haves):</li><li>Intensive Care Unit (ICU), Critical Care Unit (CCU), Emergency Room (ER), or Medical Surgical (Med Surg) experience</li><li>Certified Nephrology Nurse (CNN) or Certified Dialysis Nurse (CDN)</li></ul>",
+          "posted_at": "2020-09-18T00:00:00Z",
+          "location": {
+            "state": "CA",
+            "country": "United States",
+            "zip": "90746",
+            "city": "Carson"
+          }
+        }
+      ],
+      "pages_total": 9398,
+      "jobs_count": 18796,
+      "page": 1
+    },
+    "rawHeaders": [
+      "Date",
+      "Thu, 13 Aug 2020 01:07:03 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "1535",
+      "Connection",
+      "close",
+      "Server",
+      "nginx",
+      "X-Content-Type-Options",
+      "nosniff"
+    ]
+  }
+]

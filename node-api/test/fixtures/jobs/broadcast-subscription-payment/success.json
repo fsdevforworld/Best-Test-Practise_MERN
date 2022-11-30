@@ -1,0 +1,73 @@
+[
+  {
+    "scope": "https://rest.iad-03.braze.com:443",
+    "method": "POST",
+    "path": "/users/track",
+    "body": {
+      "api_key": "secret:braze-key",
+      "purchases": [
+        {
+          "external_id": "1",
+          "product_id": "subscription paid",
+          "currency": "USD",
+          "price": 1,
+          "time": "2018-10-22T00:00:00Z",
+          "properties": {
+            "billingCycle": "2018-10",
+            "trigger": "test"
+          }
+        }
+      ]
+    },
+    "status": 201,
+    "response": [
+      "1f8b08006f4ace5b0003aa562a282d4ace482c4e2d8e2f28ca4f4e2d2e4e4d51b232d451ca053213d35395ac948a4b9341e24ab500000000ffff030092e6e18b2d000000"
+    ],
+    "rawHeaders": [
+      "Cache-Control",
+      "max-age=0, private, must-revalidate",
+      "Content-Encoding",
+      "gzip",
+      "Content-Type",
+      "application/json",
+      "ETag",
+      "W/\"5963f4599901cda17eff6fb2f6435b15\"",
+      "Server",
+      "nginx",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains",
+      "X-RateLimit-Limit",
+      "250000",
+      "X-RateLimit-Remaining",
+      "250000",
+      "X-RateLimit-Reset",
+      "1540249200",
+      "X-Request-Id",
+      "b5fe9c31-da73-4950-88df-5f1f7b1c9404",
+      "X-Runtime",
+      "0.011707",
+      "Content-Length",
+      "68",
+      "Accept-Ranges",
+      "bytes",
+      "Date",
+      "Mon, 22 Oct 2018 22:08:48 GMT",
+      "Via",
+      "1.1 varnish",
+      "Connection",
+      "close",
+      "X-Served-By",
+      "cache-bur17522-BUR",
+      "X-Cache",
+      "MISS",
+      "X-Cache-Hits",
+      "0",
+      "X-Timer",
+      "S1540246128.695991,VS0,VE328",
+      "Vary",
+      "Accept-Encoding"
+    ]
+  }
+]
